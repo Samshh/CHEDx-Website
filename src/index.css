@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* always add your css inside @layer base */
+@layer base {
+  body {
+    box-sizing: border-box;
+    /* @apply your-default-values-here; */
+  }
+
+  /* layout */
+  section,
+  nav,
+  footer {
+    @apply max-w-[1600px] mx-auto w-full;
+  }
+
+  section {
+    @apply flex flex-col justify-center items-center py-[15rem] px-[2rem];
+  }
+
+  nav,
+  footer {
+    @apply flex justify-between items-center py-[2rem] px-[2rem] select-none;
+  }
+
+  /* typeface */
+  h1 {
+    /* placeholder for now */
+    @apply text-4xl font-bold;
+  }
+  /* 
+  h2 {
+  }
+
+  h3 {
+  }
+
+  p {
+  }
+
+  span {
+  }
+
+  em {
+  } */
+}
+
+:root {
+  /* css variables here */
+}
