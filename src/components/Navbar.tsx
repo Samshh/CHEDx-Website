@@ -1,14 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import NavLogo from "/NavLogo.svg";
 import Button from "@/components/ui/button";
-import {
-  Sheet,
-  SheetClose,
-  SheetContent,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+import { Sheet, SheetClose, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import Burger from "/Burger.svg";
 
 export default function Navbar() {
@@ -52,7 +45,7 @@ export default function Navbar() {
                   </button>
                 </SheetClose>
                 <SheetClose className="flex-end text-end">
-                  <button type="button" onClick={() => navigate("/vnue")}>
+                  <button type="button" onClick={() => navigate("/venue")}>
                     <p>VENUE</p>
                   </button>
                 </SheetClose>
@@ -62,10 +55,7 @@ export default function Navbar() {
                   </button>
                 </SheetClose>
                 <SheetClose className="flex-end text-end">
-                  <button
-                    type="button"
-                    onClick={() => navigate("/breakout-sessions")}
-                  >
+                  <button type="button" onClick={() => navigate("/breakout-sessions")}>
                     <p>BREAKOUT SESSIONS</p>
                   </button>
                 </SheetClose>
