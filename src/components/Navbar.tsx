@@ -3,12 +3,13 @@ import NavLogo from "/NavLogo.svg";
 import Button from "@/components/ui/button";
 import {
   Sheet,
+  SheetClose,
   SheetContent,
-  SheetDescription,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import Burger from "/Burger.svg";
 
 export default function Navbar() {
   const navigate = useNavigate();
@@ -35,15 +36,45 @@ export default function Navbar() {
         </div>
         <div className="flex lg:hidden lg:opacity-0">
           <Sheet>
-            <SheetTrigger>Open</SheetTrigger>
+            <SheetTrigger>
+              <img src={Burger} alt="burger" />
+            </SheetTrigger>
             <SheetContent className="w-2/3">
               <SheetHeader>
-                <SheetTitle>Are you absolutely sure?</SheetTitle>
-                <SheetDescription>
-                  This action cannot be undone. This will permanently delete
-                  your account and remove your data from our servers.
-                </SheetDescription>
+                <SheetTitle className="flex-end text-end">
+                  <p>MENU</p>
+                </SheetTitle>
               </SheetHeader>
+              <div className="flex flex-col gap-[1.25rem] md:gap-[1.75rem] mt-[3rem] md:mt-[3.5rem]">
+                <SheetClose className="flex-end text-end">
+                  <button type="button" onClick={() => navigate("/")}>
+                    <p>HOME</p>
+                  </button>
+                </SheetClose>
+                <SheetClose className="flex-end text-end">
+                  <button type="button" onClick={() => navigate("/vnue")}>
+                    <p>VENUE</p>
+                  </button>
+                </SheetClose>
+                <SheetClose className="flex-end text-end">
+                  <button type="button" onClick={() => navigate("/programme")}>
+                    <p>PROGRAMME</p>
+                  </button>
+                </SheetClose>
+                <SheetClose className="flex-end text-end">
+                  <button
+                    type="button"
+                    onClick={() => navigate("/breakout-sessions")}
+                  >
+                    <p>BREAKOUT SESSIONS</p>
+                  </button>
+                </SheetClose>
+                <SheetClose className="flex-end text-end">
+                  <button type="button">
+                    <p className="text-yellow">REGISTER NOW</p>
+                  </button>
+                </SheetClose>
+              </div>
             </SheetContent>
           </Sheet>
         </div>
