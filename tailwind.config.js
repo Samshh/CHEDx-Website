@@ -4,9 +4,12 @@ module.exports = {
   theme: {
     extend: {},
     colors: {
-      primary: "#BE50C8",
+      yellow: "#FFDE59",
+      red: "#FF3131",
+      blue: "#38B6FF",
+      green: "#74C850",
       white: "#FFFFFF",
-    }
+    },
   },
   plugins: [],
-}
+};

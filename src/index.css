@@ -42,8 +42,4 @@
   p {
     @apply text-[1rem] font-light;
   }
-
-  span {
-    @apply text-primary;
-  }
 }
