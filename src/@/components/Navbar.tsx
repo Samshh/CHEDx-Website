@@ -5,7 +5,7 @@ import Button from "../ui/button";
 export default function Navbar() {
   const navigate = useNavigate();
   return (
-    <div className="sticky top-0 w-full bg-white bg-opacity-5 z-40">
+    <div className="fixed top-0 w-full bg-white bg-opacity-5 z-40">
       <nav>
         <button type="button" onClick={() => navigate("/")}>
           <img className="h-full w-auto" src={NavLogo} alt="NavLogo" />
