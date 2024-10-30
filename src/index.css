@@ -21,9 +21,12 @@
     @apply flex flex-col justify-center items-center py-[15rem] px-[2rem];
   }
 
-  nav,
-  footer {
+  nav {
     @apply flex justify-between items-center py-[1.25rem] px-[2rem] select-none;
+  }
+
+  footer {
+    @apply flex justify-between items-center py-[3.25rem] px-[2rem] select-none;
   }
 
   /* typeface */
@@ -40,6 +43,6 @@
   }
 
   p {
-    @apply text-[1rem] font-light;
+    @apply text-[0.875rem] font-light;
   }
 }

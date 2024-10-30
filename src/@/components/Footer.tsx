@@ -1,21 +1,77 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
+import FooterLogo from "/FooterLogo.svg";
+import FooterArrow from "/FooterArrow.svg";
 
 export default function Footer() {
+  const [nextLocation, setNextLocation] = useState("");
   const navigate = useNavigate();
+  const location = useLocation();
+  const [currentLocation, setCurrentLocation] = useState("");
+
+  useEffect(() => {
+    if (location.pathname === "/") {
+      setNextLocation("/venue");
+      setCurrentLocation("venue");
+    } else if (location.pathname === "/venue") {
+      setNextLocation("/programme");
+      setCurrentLocation("programme");
+    } else if (location.pathname === "/programme") {
+      setNextLocation("/breakout-sessions");
+      setCurrentLocation("breakout sessions");
+    }
+  }, [location.pathname]);
+
   return (
-    <footer>
-      <nav>
-        <div>
-          <p onClick={() => navigate("/")}>footer logo</p>
+    <div className="flex-col">
+      { location.pathname !== "/breakout-sessions" &&
+        <div className="bg-[#1e1e1e] border-[#777777] border-y-[1px]">
+          <button
+            onClick={() => navigate(nextLocation)}
+            type="button"
+            className="w-full"
+          >
+            <footer className="py-[4rem]">
+              <div className="flex flex-col items-start justify-center">
+                <div className="flex items-center justify-center gap-[1rem]">
+                  <p className="uppercase text-[0.75rem] text-[#777777]">
+                    next
+                  </p>
+                  <div className="h-[1px] w-[200px] bg-[#777777]" />
+                </div>
+                <h2 className="uppercase">{currentLocation}</h2>
+              </div>
+              <img src={FooterArrow} alt="FooterArrow" />
+            </footer>
+          </button>
         </div>
-        <div className="flex items-center justify-center gap-[1rem]">
-          <p onClick={() => navigate("/venue")}>Venue</p>
-          <p onClick={() => navigate("/programme")}>Programme</p>
-          <p onClick={() => navigate("/breakout-sessions")}>
-            Breakout Sessions
-          </p>
+      }
+      <footer className="flex-col-reverse gap-[2rem] md:flex-row">
+        <div className="flex flex-col items-center justify-center gap-[0.5rem]">
+          <button
+            className="flex items-center justify-center"
+            type="button"
+            onClick={() => navigate("/")}
+          >
+            <img className="h-auto w-[186px]" src={FooterLogo} alt="NavLogo" />
+          </button>
+          <p className="text-[#777777]">© CHEDx. All rights reserved</p>
         </div>
-      </nav>
-    </footer>
+        <div className="flex items-center justify-center gap-[1.75rem]">
+          <button onClick={() => navigate("/")} type="button">
+            <p className="uppercase">Home</p>
+          </button>
+          <button onClick={() => navigate("/venue")} type="button">
+            <p className="uppercase">Venue</p>
+          </button>
+          <button onClick={() => navigate("/programme")} type="button">
+            <p className="uppercase">Programme</p>
+          </button>
+          <button onClick={() => navigate("/breakout-sessions")} type="button">
+            <p className="uppercase">Breakout Sessions</p>
+          </button>
+        </div>
+      </footer>
+    </div>
   );
 }
