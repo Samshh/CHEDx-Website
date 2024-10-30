@@ -1,7 +1,7 @@
 import quoteOpen from "../../../public/quote_open.svg";
 import quoteClose from "../../../public/quote_close.svg";
-import Button from "../../@/ui/button";
 import { ReactNode } from "react";
+import Button from "@/components/ui/button";
 
 interface ContainerProps {
   children: ReactNode;
@@ -14,13 +14,12 @@ const Container: React.FC<ContainerProps> = ({ children }) => {
 export default function Programme() {
   return (
     <section>
-      `{" "}
+      {" "}
       <div className="relative bg-hero-bg bg-cover w-screen min-h-[80vh] flex items-center justify-center">
         {/* Gradient overlay */}
         <div className="absolute inset-0 bg-center-transparent"></div>
         <h1 className="text-primary text-center relative z-10">THE PROGRAMME</h1>
       </div>
-      `
       <Container>
         <div className="w-full">
           <img src={quoteOpen} alt="Quote Open" />

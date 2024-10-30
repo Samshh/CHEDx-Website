@@ -20,29 +20,31 @@
     @apply flex flex-col justify-center items-center px-[2rem];
   }
 
-  nav,
+  nav {
+    @apply flex justify-between items-center py-[1.25rem] px-[2rem] select-none;
+  }
+
   footer {
-    @apply flex justify-between items-center py-[2rem] px-[2rem] select-none;
+    @apply flex justify-between items-center py-[3.25rem] px-[2rem] select-none;
   }
 
   /* typeface */
   h1 {
-    @apply text-[4rem] font-bold;
+    @apply text-[3rem] md:text-[4rem] font-semibold;
   }
 
   h2 {
-    @apply text-[2.25rem] font-bold;
+    @apply text-[1.5rem] md:text-[2.25rem] font-semibold;
   }
 
   h3 {
-    @apply text-[1.25rem];
+    @apply text-[0.75rem] md:text-[1rem];
   }
 
   p {
-    @apply text-[1rem];
+    @apply text-[0.625rem] md:text-[0.875rem] font-light;
   }
-
-  span {
-    @apply text-primary;
+  :root {
+    --radius: 0.5rem;
   }
 }
