@@ -1,7 +1,9 @@
+import CHEDxLogo from "/CHEDxLogo.svg"
+
 export default function Landing() {
   return (
-    <section>
-      <h1>landing</h1>
+    <section className="relative h-screen">
+      <img src={CHEDxLogo} alt="CHEDx" />
     </section>
   );
 }
