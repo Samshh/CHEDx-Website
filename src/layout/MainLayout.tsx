@@ -12,7 +12,7 @@ export default function MainLayout() {
     window.scrollTo(0, 0);
   }, [pathname]);
   return (
-    <main>
+    <main className="relative">
       <ReactLenis root key={pathname}>
         <Navbar />
         <Sidebar />

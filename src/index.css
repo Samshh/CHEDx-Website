@@ -18,7 +18,7 @@
   }
 
   section {
-    @apply flex flex-col justify-center items-center py-[15rem] px-[2rem];
+    @apply flex flex-col justify-center items-center py-[5rem] px-[2rem];
   }
 
   nav {
@@ -45,7 +45,13 @@
   p {
     @apply text-[0.625rem] md:text-[0.875rem] font-light;
   }
+
+  .vertical-text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+  }
+  
   :root {
-    --radius: 0.5rem
+    --radius: 0.5rem;
   }
 }
