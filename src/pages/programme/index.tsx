@@ -16,7 +16,7 @@ export default function Programme() {
     <section>
       <div className="relative bg-hero-bg bg-cover w-screen min-h-[80vh] flex items-center justify-center">
         {/* Gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t bg-center-transparent bg-gr from-black/80 via-transparent to-black/80 bg-gradient-to-b"></div>
+        <div className="absolute inset-0 bg-center-transparent"></div>
         <h1 className="text-primary text-center relative z-10">THE PROGRAMME</h1>
       </div>
 
