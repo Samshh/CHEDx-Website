@@ -3,6 +3,8 @@ import Navbar from "../@/components/Navbar";
 import Footer from "../@/components/Footer";
 import { ReactLenis } from "@studio-freight/react-lenis";
 import { useEffect } from "react";
+import SidebarL from "../@/components/SidebarL";
+import SidebarR from "../@/components/SidebarR";
 
 export default function MainLayout() {
   const { pathname } = useLocation();
@@ -14,6 +16,8 @@ export default function MainLayout() {
     <main>
       <ReactLenis root key={pathname}>
         <Navbar />
+        <SidebarL />
+        <SidebarR />
         <Outlet />
         <Footer />
       </ReactLenis>

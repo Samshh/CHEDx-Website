@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 export default function Navbar() {
   const navigate = useNavigate();
   return (
-    <nav>
+    <nav className="sticky top-0">
       <div>
         <p onClick={() => navigate("/")}>logo here</p>
       </div>
