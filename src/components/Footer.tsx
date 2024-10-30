@@ -42,7 +42,7 @@ export default function Footer() {
                 <h2 className="uppercase">{currentLocation}</h2>
               </div>
               <div className="flex items-center justify-center">
-                <div className="h-[1.5px] w-[67px] md:w-[170px] bg-[#fff]" />
+                <div className="h-[1.5px] w-[67px] md:w-[170px] bg-white" />
                 <Icon icon="icon-park-outline:right" className="text-[1.5rem]" />
               </div>
             </footer>
