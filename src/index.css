@@ -23,16 +23,16 @@
 
   nav,
   footer {
-    @apply flex justify-between items-center py-[2rem] px-[2rem] select-none;
+    @apply flex justify-between items-center py-[1.25rem] px-[2rem] select-none;
   }
 
   /* typeface */
   h1 {
-    @apply text-[4rem] font-bold;
+    @apply text-[4rem] font-semibold;
   }
   
   h2 {
-    @apply text-[2.25rem] font-bold;
+    @apply text-[2.25rem] font-semibold;
   }
 
   h3 {
@@ -40,7 +40,7 @@
   }
 
   p {
-    @apply text-[1rem];
+    @apply text-[1rem] font-light;
   }
 
   span {
