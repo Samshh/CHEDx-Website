@@ -9,6 +9,7 @@ module.exports = {
     },
     backgroundImage: {
       "hero-bg": "url(/public/CHEDx_Hero.png)",
+      "breakout-card": "url(/public/Cybersecurity_BG.png)",
       "center-transparent": "linear-gradient(to bottom, #131313, transparent, #131313)",
     },
   },

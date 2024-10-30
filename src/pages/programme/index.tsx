@@ -14,12 +14,13 @@ const Container: React.FC<ContainerProps> = ({ children }) => {
 export default function Programme() {
   return (
     <section>
+      `{" "}
       <div className="relative bg-hero-bg bg-cover w-screen min-h-[80vh] flex items-center justify-center">
         {/* Gradient overlay */}
         <div className="absolute inset-0 bg-center-transparent"></div>
         <h1 className="text-primary text-center relative z-10">THE PROGRAMME</h1>
       </div>
-
+      `
       <Container>
         <div className="w-full">
           <img src={quoteOpen} alt="Quote Open" />
@@ -35,7 +36,6 @@ export default function Programme() {
           <img src={quoteClose} alt="Quote Open" />
         </div>
       </Container>
-
       <Container>
         <div className="text-center flex flex-col items-center h-full">
           <h1 className="text-primary">CHEDx 2024</h1>
@@ -46,7 +46,6 @@ export default function Programme() {
           </p>
         </div>
       </Container>
-
       <Container>
         <div className="flex items-center w-full">
           <div className="flex flex-col text-end w-2/12 self-start">
