@@ -1,4 +1,4 @@
-import Tag from "@/@/ui/tag";
+import Tag from "@/components/ui/tag";
 import CHEDxLogo from "/CHEDxLogo.svg"
 
 export default function Landing() {

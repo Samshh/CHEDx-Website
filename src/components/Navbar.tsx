@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import NavLogo from "/NavLogo.svg";
-import Button from "@/@/ui/button";
+import Button from "@/components/ui/button";
 import {
   Sheet,
   SheetContent,
