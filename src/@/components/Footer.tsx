@@ -1,7 +1,7 @@
 import { useNavigate, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import FooterLogo from "/FooterLogo.svg";
-import FooterArrow from "/FooterArrow.svg";
+import { Icon } from "@iconify/react";
 
 export default function Footer() {
   const [nextLocation, setNextLocation] = useState("");
@@ -24,28 +24,31 @@ export default function Footer() {
 
   return (
     <div className="flex-col">
-      { location.pathname !== "/breakout-sessions" &&
+      {location.pathname !== "/breakout-sessions" && (
         <div className="bg-[#1e1e1e] border-[#777777] border-y-[1px]">
           <button
             onClick={() => navigate(nextLocation)}
             type="button"
             className="w-full"
           >
-            <footer className="py-[4rem]">
+            <footer className="py-[4rem] px-[1rem] md:px-[2rem]">
               <div className="flex flex-col items-start justify-center">
                 <div className="flex items-center justify-center gap-[1rem]">
                   <p className="uppercase text-[0.75rem] text-[#777777]">
                     next
                   </p>
-                  <div className="h-[1px] w-[200px] bg-[#777777]" />
+                  <div className="h-[1px] w-[120px] md:w-[200px] bg-[#777777]" />
                 </div>
                 <h2 className="uppercase">{currentLocation}</h2>
               </div>
-              <img src={FooterArrow} alt="FooterArrow" />
+              <div className="flex items-center justify-center">
+                <div className="h-[1.5px] w-[67px] md:w-[170px] bg-[#fff]" />
+                <Icon icon="icon-park-outline:right" className="text-[1.5rem]" />
+              </div>
             </footer>
           </button>
         </div>
-      }
+      )}
       <footer className="flex-col-reverse gap-[2rem] md:flex-row">
         <div className="flex flex-col items-center justify-center gap-[0.5rem]">
           <button

@@ -1,9 +1,9 @@
 import { Outlet, useLocation } from "react-router-dom";
-import Navbar from "../@/components/Navbar";
-import Footer from "../@/components/Footer";
+import Navbar from "@/@/components/Navbar";
+import Footer from "@/@/components/Footer";
 import { ReactLenis } from "@studio-freight/react-lenis";
 import { useEffect } from "react";
-import SidebarR from "../@/components/Sidebar";
+import Sidebar from "@/@/components/Sidebar";
 
 export default function MainLayout() {
   const { pathname } = useLocation();
@@ -15,7 +15,7 @@ export default function MainLayout() {
     <main>
       <ReactLenis root key={pathname}>
         <Navbar />
-        <SidebarR />
+        <Sidebar />
         <div className="z-10">
           <Outlet />
           <Footer />

@@ -31,18 +31,21 @@
 
   /* typeface */
   h1 {
-    @apply text-[4rem] font-semibold;
+    @apply text-[3rem] md:text-[4rem] font-semibold;
   }
-  
+
   h2 {
-    @apply text-[2.25rem] font-semibold;
+    @apply text-[1.5rem] md:text-[2.25rem] font-semibold;
   }
 
   h3 {
-    @apply text-[1.25rem];
+    @apply text-[0.75rem] md:text-[1rem];
   }
 
   p {
-    @apply text-[0.875rem] font-light;
+    @apply text-[0.625rem] md:text-[0.875rem] font-light;
+  }
+  :root {
+    --radius: 0.5rem
   }
 }
