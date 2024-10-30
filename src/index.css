@@ -32,7 +32,7 @@
   }
   
   h2 {
-    @apply text-[2.25rem]
+    @apply text-[2.25rem] font-bold;
   }
 
   h3 {
@@ -44,8 +44,6 @@
   }
 
   span {
-  }
-
-  em {
+    @apply text-primary;
   }
 }
