@@ -11,9 +11,8 @@
 
   /* layout */
   section,
-  nav,
   footer {
-    @apply max-w-[1440px] mx-auto w-full;
+    @apply max-w-[1080px] mx-auto w-full;
   }
 
   section {
@@ -21,7 +20,7 @@
   }
 
   nav {
-    @apply flex justify-between items-center py-[1.25rem] px-[2rem] select-none;
+    @apply flex justify-between items-center py-[1.25rem] px-[2rem] select-none max-w-[1440px] mx-auto w-full;
   }
 
   footer {
