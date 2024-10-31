@@ -22,7 +22,7 @@ export default function Programme() {
           alt="herobg"
           className="absolute w-screen h-full object-cover"
         />
-        <div className="absolute inset-0 bg-center-transparent"></div>
+        <div className="absolute inset-0 bg-center-transparent" />
         <div className="h-full w-full max-w-[568px] max-h-[568px] rounded-full absolute bg-blue opacity-10 blur-3xl" />
         <h1 className="text-blue text-center relative z-10">THE PROGRAMME</h1>
       </div>
@@ -47,12 +47,12 @@ export default function Programme() {
         <div className="text-center flex flex-col items-center h-full">
           <h1 className="text-blue">CHEDx 2024</h1>
           <h2 className="text-secondary">Programme Schedule</h2>
-          <p className="text-secondary max-w-2xl">
+          <h3 className="text-secondary max-w-2xl">
             Join us at CHEDx 2024 for two days of innovation in education!
             Discover cutting-edge IT skills, explore AI ethics, and gain
             targeted industry insights through keynotes and interactive
             sessions.
-          </p>
+          </h3>
         </div>
       </Container>
       <Container>
