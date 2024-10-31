@@ -4,7 +4,6 @@ import quoteClose from "/quote_close.svg";
 import Button from "@/components/ui/button";
 import HeroBG from "/CHEDx_Hero.png";
 import CurvedUnderline from "/curve_underline.svg";
-import Venue from "/Venue.svg";
 
 interface ContainerProps {
   children: ReactNode;
@@ -96,7 +95,7 @@ const MappedTimeline = () => {
             )}
             <div className="flex flex-col min-h-52 border-l-[1.5px] border-blue border-dashed pl-10 z-0  relative ">
               <div className="hover:cursor-pointer min-h-52 hover:ml-10 transition-all duration-300 justify-center flex flex-col w-full">
-                <div className="border border-blue bg-none rounded-full px-2 py-1 text-center max-w-max absolute top-0">
+                <div className="border border-blue bg-none rounded-lg px-2 py-0.5 text-center max-w-max absolute top-0">
                   <span className="grow-0">{event.time}</span>
                 </div>
                 <div>
