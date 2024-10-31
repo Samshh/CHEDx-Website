@@ -1,7 +1,8 @@
-import quoteOpen from "../../../public/quote_open.svg";
-import quoteClose from "../../../public/quote_close.svg";
+import quoteOpen from "/quote_open.svg";
+import quoteClose from "/quote_close.svg";
 import { ReactNode } from "react";
 import Button from "@/components/ui/button";
+import HeroBG from "/CHEDx_Hero.png";
 
 interface ContainerProps {
   children: ReactNode;
@@ -16,8 +17,9 @@ export default function Programme() {
     <section>
       {" "}
       <div className="relative bg-hero-bg bg-cover w-screen min-h-[80vh] flex items-center justify-center">
-        {/* Gradient overlay */}
+        <img src={HeroBG} alt="herobg" className="absolute w-screen h-full object-cover" />
         <div className="absolute inset-0 bg-center-transparent"></div>
+        <div className="h-full w-full max-w-[568px] max-h-[568px] rounded-full absolute bg-blue opacity-10 blur-3xl" />
         <h1 className="text-primary text-center relative z-10">THE PROGRAMME</h1>
       </div>
       <Container>

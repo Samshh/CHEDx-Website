@@ -18,6 +18,9 @@ module.exports = {
       green: "#74C850",
       white: "#FFFFFF",
     },
+    backgroundImage: {
+      "center-transparent": "linear-gradient(to bottom, #131313, transparent, #131313)",
+    },
   },
   plugins: [],
 };
