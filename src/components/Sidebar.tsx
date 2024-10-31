@@ -10,7 +10,7 @@ export default function Sidebar() {
 
   return (
     <div className="fixed w-full left-0 top-[30%] z-40">
-      <div className="max-w-[1440px] mx-auto hidden lg:flex justify-between items-center">
+      <div className=" mx-auto hidden lg:flex justify-between items-center">
         <div className="ml-[2rem] flex flex-col gap-[2rem]">
           {["explore", "exchange", "experience"].map((text, idx) => (
             <div key={idx} className="uppercase">

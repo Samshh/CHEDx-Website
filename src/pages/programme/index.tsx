@@ -27,10 +27,10 @@ export default function Programme() {
           <img src={quoteOpen} alt="Quote Open" />
         </div>
         <div className="flex flex-col items-center text-center text-secondary">
-          <Button className="border border-primary rounded-lg hover:scale-125 transition-all duration-300">
+          <Button className="border border-blue rounded-lg hover:scale-125 transition-all duration-300">
             PROGRAMME THEME
           </Button>
-          <h1 className="text-primary">Building Synergy</h1>
+          <h1 className="text-primary text-blue">Building Synergy</h1>
           <h2 className="max-w-lg">Aligning IT Education with Industry Demands</h2>
         </div>
         <div className="w-full justify-end flex">
@@ -39,7 +39,7 @@ export default function Programme() {
       </Container>
       <Container>
         <div className="text-center flex flex-col items-center h-full">
-          <h1 className="text-primary">CHEDx 2024</h1>
+          <h1 className="text-primary text-blue">CHEDx 2024</h1>
           <h2 className="text-secondary">Programme Schedule</h2>
           <p className="text-secondary max-w-2xl">
             Join us at CHEDx 2024 for two days of innovation in education! Discover cutting-edge IT skills, explore AI
@@ -101,6 +101,7 @@ export default function Programme() {
                 </div>
               </div>
             </div>
+            <span className="text-blue font-bold">DOWNLOAD THE FULL AGENDA</span>
           </div>
         </div>
       </Container>

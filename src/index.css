@@ -49,7 +49,7 @@
     writing-mode: vertical-rl;
     transform: rotate(180deg);
   }
-  
+
   :root {
     --radius: 0.5rem;
   }
