@@ -82,7 +82,7 @@ const MappedTimeline = () => {
       </div>
       <div className="flex flex-col w-full">
         {timeline[day].map((event, eventIndex) => (
-          <div className="w-full gap-3 flex flex-col relative" key={eventIndex}>
+          <div className="w-full gap-3 flex flex-col relative " key={eventIndex}>
             {eventIndex === 0 && (
               <div className="absolute -inset-[7px] -ml-1.5 h-7 w-7 border-blue border rounded-full items-center justify-center flex">
                 <div className="h-4 w-4 rounded-full bg-blue"></div>
@@ -91,15 +91,22 @@ const MappedTimeline = () => {
             {eventIndex < timeline[day].length - 1 && (
               <div className="absolute -ml-1.5 bottom-0 h-4 w-4 rounded-full bg-blue -left-[1px]"></div>
             )}
-            <div className="flex flex-col min-h-52 border-l-2 border-blue border-dashed pl-10 justify-center relative">
-              <div className="border border-blue bg-none rounded-full px-2 py-1 text-center max-w-max absolute top-0">
-                <span className="grow-0">{event.time}</span>
+            <div className="flex flex-col min-h-52 border-l-[1.5px] border-blue border-dashed pl-10  relative ">
+              <div className="hover:cursor-pointer min-h-52 hover:ml-10 transition-all duration-300 justify-center flex flex-col w-full">
+                <div className="border border-blue bg-none rounded-full px-2 py-1 text-center max-w-max absolute top-0">
+                  <span className="grow-0">{event.time}</span>
+                </div>
+                <div className="relative">
+                  <h2>{event.segment}</h2>
+                  <sub>{event.segmentSpec}</sub>
+                  <sub>{event.subtitle}</sub>
+                </div>
               </div>
-              <div>
-                <h2>{event.segment}</h2>
-                <sub>{event.segmentSpec}</sub>
-                <sub>{event.subtitle}</sub>
-              </div>
+              {dayIndex === days.length - 1 && eventIndex === timeline[day].length - 1 && (
+                <div className="absolute bottom-0 text-blue hover:cursor-pointer hover:scale-110 transition-all duration-300">
+                  <span className="">DOWNLOAD FULL AGENDA</span>
+                </div>
+              )}
             </div>
             {dayIndex === days.length - 1 && eventIndex === timeline[day].length - 1 && (
               <div className="absolute -ml-1.5 bottom-0 h-4 w-4 rounded-full bg-blue -left-[1px]"></div>
@@ -131,7 +138,7 @@ export default function Programme() {
           />
         </div>
         <div className="flex flex-col items-center text-center text-secondary p-5">
-          <Button className="border border-blue rounded-lg hover:scale-125 transition-all duration-300">
+          <Button className="border border-blue rounded-lg hover:scale-110 transition-all duration-300">
             PROGRAMME THEME
           </Button>
           <h1 className="text-blue">Building Synergy</h1>
