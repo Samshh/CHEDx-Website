@@ -3,14 +3,14 @@ import HeroBG from "/HeroBG.svg";
 
 export default function BreakoutSessions() {
   return (
-    <section className="">
+    <section>
       <div className="relative bg-hero-bg bg-cover w-screen min-h-[80vh] flex items-center justify-center">
         <img
           src={HeroBG}
           alt="herobg"
           className="absolute w-screen h-full object-cover"
         />
-        <div className="absolute inset-0 bg-center-transparent"></div>
+        <div className="absolute inset-0 bg-center-transparent" />
         <div className="h-full w-full max-w-[568px] max-h-[568px] rounded-full absolute bg-green opacity-10 blur-3xl" />
         <h1 className="text-primary text-center relative z-10 text-green">
           BREAKOUT SESSIONS
