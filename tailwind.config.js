@@ -23,5 +23,5 @@ module.exports = {
       "center-transparent": "linear-gradient(to bottom, #fff, transparent, #fff)",
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 };
