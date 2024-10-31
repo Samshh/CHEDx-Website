@@ -17,11 +17,7 @@ export default function Programme() {
     <section>
       {" "}
       <div className="relative bg-hero-bg bg-cover w-screen min-h-[80vh] flex items-center justify-center">
-        <img
-          src={HeroBG}
-          alt="herobg"
-          className="absolute w-screen h-full object-cover"
-        />
+        <img src={HeroBG} alt="herobg" className="absolute w-screen h-full object-cover" />
         <div className="absolute inset-0 bg-center-transparent"></div>
         <div className="h-full w-full max-w-[568px] max-h-[568px] rounded-full absolute bg-blue opacity-10 blur-3xl" />
         <h1 className="text-blue text-center relative z-10">THE PROGRAMME</h1>
@@ -30,14 +26,12 @@ export default function Programme() {
         <div className="w-full">
           <img src={quoteOpen} alt="Quote Open" />
         </div>
-        <div className="flex flex-col items-center text-center text-secondary">
+        <div className="flex flex-col items-center text-center text-secondary p-5">
           <Button className="border border-blue rounded-lg hover:scale-125 transition-all duration-300">
             PROGRAMME THEME
           </Button>
           <h1 className="text-blue">Building Synergy</h1>
-          <h2 className="max-w-lg">
-            Aligning IT Education with Industry Demands
-          </h2>
+          <h2 className="max-w-lg">Aligning IT Education with Industry Demands</h2>
         </div>
         <div className="w-full justify-end flex">
           <img src={quoteClose} alt="Quote Open" />
@@ -48,10 +42,8 @@ export default function Programme() {
           <h1 className="text-blue">CHEDx 2024</h1>
           <h2 className="text-secondary">Programme Schedule</h2>
           <p className="text-secondary max-w-2xl">
-            Join us at CHEDx 2024 for two days of innovation in education!
-            Discover cutting-edge IT skills, explore AI ethics, and gain
-            targeted industry insights through keynotes and interactive
-            sessions.
+            Join us at CHEDx 2024 for two days of innovation in education! Discover cutting-edge IT skills, explore AI
+            ethics, and gain targeted industry insights through keynotes and interactive sessions.
           </p>
         </div>
       </Container>
@@ -101,10 +93,7 @@ export default function Programme() {
               <div>
                 <div>
                   <h2>Keynote Speaker</h2>
-                  <span>
-                    The Role of Higher Education in Producing Future-Ready IT
-                    Professionals
-                  </span>
+                  <span>The Role of Higher Education in Producing Future-Ready IT Professionals</span>
                 </div>
                 <div>
                   <h2>Dr. Bonifacio G. Gabales, Jr.</h2>
@@ -112,9 +101,7 @@ export default function Programme() {
                 </div>
               </div>
             </div>
-            <span className="text-blue font-bold">
-              DOWNLOAD THE FULL AGENDA
-            </span>
+            <span className="text-blue font-bold">DOWNLOAD THE FULL AGENDA</span>
           </div>
         </div>
       </Container>
