@@ -76,27 +76,29 @@ const MappedTimeline = () => {
 
   const res = days.flatMap((day, dayIndex) => (
     <div className="flex w-full" key={day}>
-      <div className="flex flex-col text-end w-[20%] self-start pr-10">
-        <h2 className="text-blue">{day}</h2>
-        <span>December 4, 2024</span>
+      <div className="text-end flex justify-end w-[25%] pr-10">
+        <div className="flex flex-col">
+          <h2 className="text-blue leading-[25px] ">{day}</h2>
+          <span>December 4, 2024</span>
+        </div>
       </div>
       <div className="flex flex-col w-full">
         {timeline[day].map((event, eventIndex) => (
-          <div className="w-full gap-3 flex flex-col relative " key={eventIndex}>
+          <div className={`w-full gap-3 flex flex-col relative`} key={eventIndex}>
             {eventIndex === 0 && (
-              <div className="absolute -inset-[7px] -ml-1.5 h-7 w-7 border-blue border rounded-full items-center justify-center flex">
-                <div className="h-4 w-4 rounded-full bg-blue"></div>
+              <div className="absolute -left-2 -ml-1.5 h-7 w-7 border-blue border bg-white z-10 rounded-full items-center justify-center flex">
+                <div className="h-4 w-4 rounded-full bg-blue z-20"></div>
               </div>
             )}
             {eventIndex < timeline[day].length - 1 && (
               <div className="absolute -ml-1.5 bottom-0 h-4 w-4 rounded-full bg-blue -left-[1px]"></div>
             )}
-            <div className="flex flex-col min-h-52 border-l-[1.5px] border-blue border-dashed pl-10  relative ">
+            <div className="flex flex-col min-h-52 border-l-[1.5px] border-blue border-dashed pl-10 z-0  relative ">
               <div className="hover:cursor-pointer min-h-52 hover:ml-10 transition-all duration-300 justify-center flex flex-col w-full">
                 <div className="border border-blue bg-none rounded-full px-2 py-1 text-center max-w-max absolute top-0">
                   <span className="grow-0">{event.time}</span>
                 </div>
-                <div className="relative">
+                <div>
                   <h2>{event.segment}</h2>
                   <sub>{event.segmentSpec}</sub>
                   <sub>{event.subtitle}</sub>
