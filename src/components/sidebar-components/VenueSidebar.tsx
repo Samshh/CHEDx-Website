@@ -1,7 +1,7 @@
 export default function VenueSidebar() {
   return (
     <>
-      <div className="flex justify-center items-center gap-[1rem] text-white">
+      <div className="flex justify-center items-center gap-[1rem] text-black">
         <p>VENUE</p>
         <div className="h-[48px] w-[6px] bg-white" />
       </div>
