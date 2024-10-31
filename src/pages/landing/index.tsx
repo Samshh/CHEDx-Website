@@ -1,12 +1,17 @@
 import Tag from "@/components/ui/tag";
 import CHEDxLogo from "/CHEDxLogo.svg";
-import HeroBG from "/HeroBG.svg";
+import HeroBG from "/CHEDx_Hero.png";
 import Button from "@/components/ui/button";
 
 export default function Landing() {
   return (
     <div className="relative">
-      <img src={HeroBG} alt="herobg" className="absolute w-screen h-full object-cover" />
+      <img
+        src={HeroBG}
+        alt="herobg"
+        className="absolute w-screen h-full object-cover"
+      />
+      <div className="absolute inset-0 bg-center-transparent"></div>
       <section className="relative h-screen">
         <div className="h-full w-full max-w-[568px] max-h-[568px] rounded-full absolute bg-yellow opacity-10 blur-3xl" />
         <div className="flex flex-col items-center justify-center gap-[3rem] mb-[4rem] z-10">

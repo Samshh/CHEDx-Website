@@ -7,7 +7,7 @@ import Burger from "/Burger.svg";
 export default function Navbar() {
   const navigate = useNavigate();
   return (
-    <div className="fixed top-0 w-full bg-white bg-opacity-5 z-40">
+    <div className="fixed top-0 w-full bg-black bg-opacity-5 z-40">
       <nav>
         <button type="button" onClick={() => navigate("/")}>
           <img className="h-full w-auto" src={NavLogo} alt="NavLogo" />
@@ -25,7 +25,7 @@ export default function Navbar() {
           <button onClick={() => navigate("/breakout-sessions")} type="button">
             <p className="uppercase">Breakout Sessions</p>
           </button>
-          <Button className="border-[1px] border-white">Register Now</Button>
+          <Button className="border-[1px] border-black">Register Now</Button>
         </div>
         <div className="flex lg:hidden lg:opacity-0">
           <Sheet>

@@ -25,7 +25,7 @@ export default function Footer() {
   return (
     <div className="flex-col">
       {location.pathname !== "/breakout-sessions" && (
-        <div className="bg-[#1e1e1e] border-[#777777] border-y-[1px]">
+        <div className="bg-white border-[#1e1e1e] border-y-[1px]">
           <button
             onClick={() => navigate(nextLocation)}
             type="button"
@@ -34,15 +34,15 @@ export default function Footer() {
             <footer className="py-[4rem] px-[1rem] md:px-[2rem]">
               <div className="flex flex-col items-start justify-center">
                 <div className="flex items-center justify-center gap-[1rem]">
-                  <p className="uppercase text-[0.75rem] text-[#777777]">
+                  <p className="uppercase text-[0.75rem]">
                     next
                   </p>
-                  <div className="h-[1px] w-[120px] md:w-[200px] bg-[#777777]" />
+                  <div className="h-[1px] w-[120px] md:w-[200px] bg-black" />
                 </div>
                 <h2 className="uppercase">{currentLocation}</h2>
               </div>
               <div className="flex items-center justify-center">
-                <div className="h-[1.5px] w-[67px] md:w-[170px] bg-white" />
+                <div className="h-[1.5px] w-[67px] md:w-[170px] bg-black" />
                 <Icon icon="icon-park-outline:right" className="text-[1.5rem]" />
               </div>
             </footer>
