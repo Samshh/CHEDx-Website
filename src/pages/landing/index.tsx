@@ -8,7 +8,7 @@ import BagongPilipinas from "/landingLogos/BagongPilipinas.svg";
 import PSITS from "/landingLogos/PSITS.svg";
 import CHEDLogo from "/landingLogos/CHEDLogo.svg";
 import CDITE from "/landingLogos/CDITE.svg";
-import LandingCard from "./components/landingCard";
+import LandingCard from "./components/LandingCard";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useRef, useState } from "react";
@@ -35,7 +35,7 @@ export default function Landing() {
         trigger: cardsTrigger.current,
         start: "top center",
         end: "bottom center",
-        toggleActions: "play none none reset",
+        toggleActions: "play none none reverse",
         onEnter: () => {
           setCard1Number(0);
           setCard2Number(0);
@@ -180,14 +180,14 @@ export default function Landing() {
             <div ref={card3}>
               <LandingCard
                 title="breakout sessions"
-                icon="ph:users-light"
+                icon="ph:users"
                 number={card3number}
               />
             </div>
             <div ref={card4}>
               <LandingCard
                 title="big event"
-                icon="lets-icons:calendar-light"
+                icon="proicons:calendar"
                 number={card4number}
               />
             </div>
