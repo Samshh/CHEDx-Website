@@ -9,9 +9,112 @@ import PSITS from "/landingLogos/PSITS.svg";
 import CHEDLogo from "/landingLogos/CHEDLogo.svg";
 import CDITE from "/landingLogos/CDITE.svg";
 import LandingCard from "./components/landingCard";
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+import { useRef, useState } from "react";
+import ScrollTrigger from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Landing() {
   const partners = [IBAP, USEP, BagongPilipinas, PSITS, CHEDLogo, CDITE];
+  const cardsTrigger = useRef(null);
+  const card1 = useRef(null);
+  const card2 = useRef(null);
+  const card3 = useRef(null);
+  const card4 = useRef(null);
+  const [card1number, setCard1Number] = useState(0);
+  const [card2number, setCard2Number] = useState(0);
+  const [card3number, setCard3Number] = useState(0);
+  const [card4number, setCard4Number] = useState(0);
+
+  useGSAP(() => {
+    const tl = gsap.timeline({
+      ease: "power2.inOut",
+      scrollTrigger: {
+        trigger: cardsTrigger.current,
+        start: "top center",
+        end: "bottom center",
+        toggleActions: "play none none reset",
+        onEnter: () => {
+          setCard1Number(0);
+          setCard2Number(0);
+          setCard3Number(0);
+          setCard4Number(0);
+        }
+      },
+    });
+
+    tl.from(card1.current, {
+      opacity: 0,
+      y: 50,
+      duration: 0.25,
+      onComplete: () => {
+        const car1Interval = setInterval(() => {
+            setCard1Number((prev: number) => {
+            const next = prev + 2;
+            if (next > 52) {
+              clearInterval(car1Interval);
+              return 52;
+            }
+            return next;
+            })
+        }, 50);
+      }
+    })
+      .from(card2.current, {
+        opacity: 0,
+        y: 50,
+        duration: 0.25,
+        onComplete: () => {
+          const car2Interval = setInterval(() => {
+            setCard2Number((prev: number) => {
+              const next = prev + 2;
+              if (next > 22) {
+                clearInterval(car2Interval);
+                return 22;
+              }
+              return next;
+            });
+          }, 50);
+        }
+      })
+      .from(card3.current, {
+        opacity: 0,
+        y: 50,
+        duration: 0.25,
+        onComplete: () => {
+          const car3Interval = setInterval(() => {
+            setCard3Number((prev: number) => {
+              const next = prev + 1;
+              if (next > 14) {
+                clearInterval(car3Interval);
+                return 14;
+              }
+              return next;
+            });
+          }, 50);
+        }
+      })
+      .from(card4.current, {
+        opacity: 0,
+        y: 50,
+        duration: 0.25,
+        onComplete: () => {
+          const car4Interval = setInterval(() => {
+            setCard4Number((prev: number) => {
+              const next = prev + 1;
+              if (next > 1) {
+                clearInterval(car4Interval);
+                return 1;
+              }
+              return next;
+            });
+          }, 500);
+        }
+      });
+  });
+
   return (
     <div className="flex flex-col">
       <div className="relative">
@@ -47,7 +150,7 @@ export default function Landing() {
               <img key={index} src={partner} alt={`partner-${index}`} />
             ))}
           </div>
-          <div className="text-center flex flex-col gap-[2rem]">
+          <div className="text-center flex flex-col gap-[2rem]" ref={cardsTrigger}>
             <h2>
               <span className="text-yellow">What is CHEDx,</span>
               <br /> and why should you join?
@@ -60,26 +163,34 @@ export default function Landing() {
             </h3>
           </div>
           <div className="grid max-w-[471px] grid-rows-2 grid-cols-2 lg:grid-rows-1 lg:grid-cols-4 gap-[2rem] w-full lg:max-w-[985px]">
-            <LandingCard
-              title="speakers"
-              icon="pepicons-pencil:microphone-handheld"
-              number={52}
-            />
-            <LandingCard
-              title="speakers"
-              icon="pepicons-pencil:microphone-handheld"
-              number={52}
-            />
-            <LandingCard
-              title="speakers"
-              icon="pepicons-pencil:microphone-handheld"
-              number={52}
-            />
-            <LandingCard
-              title="speakers"
-              icon="pepicons-pencil:microphone-handheld"
-              number={52}
-            />
+            <div ref={card1}>
+              <LandingCard
+                title="speakers"
+                icon="pepicons-pencil:microphone-handheld"
+                number={card1number}
+              />
+            </div>
+            <div ref={card2}>
+              <LandingCard
+                title="booths"
+                icon="clarity:store-line"
+                number={card2number}
+              />
+            </div>
+            <div ref={card3}>
+              <LandingCard
+                title="breakout sessions"
+                icon="ph:users-light"
+                number={card3number}
+              />
+            </div>
+            <div ref={card4}>
+              <LandingCard
+                title="big event"
+                icon="lets-icons:calendar-light"
+                number={card4number}
+              />
+            </div>
           </div>
         </section>
       </div>
