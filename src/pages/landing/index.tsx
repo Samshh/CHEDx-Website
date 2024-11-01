@@ -2,8 +2,15 @@ import Tag from "@/components/ui/tag";
 import CHEDxLogo from "/CHEDxLogo.svg";
 import HeroBG from "/CHEDx_Hero.png";
 import Button from "@/components/ui/button";
+import IBAP from "/landingLogos/IBAP.svg";
+import USEP from "/landingLogos/USEP.svg";
+import BagongPilipinas from "/landingLogos/BagongPilipinas.svg";
+import PSITS from "/landingLogos/PSITS.svg";
+import CHEDLogo from "/landingLogos/CHEDLogo.svg";
+import CDITE from "/landingLogos/CDITE.svg";
 
 export default function Landing() {
+  const partners = [IBAP, USEP, BagongPilipinas, PSITS, CHEDLogo, CDITE];
   return (
     <div className="flex flex-col">
       <div className="relative">
@@ -14,7 +21,7 @@ export default function Landing() {
         />
         <div className="absolute inset-0 bg-center-transparent" />
         <section className="relative h-screen">
-          <div className="h-full w-full max-w-[568px] max-h-[568px] rounded-full absolute bg-yellow opacity-10 blur-3xl" />
+          <div className="h-full w-full max-w-[568px] max-h-[568px] rounded-full absolute bg-yellow opacity-15 blur-3xl" />
           <div className="flex flex-col items-center justify-center gap-[3rem] mb-[4rem] z-10">
             <div className="flex flex-col items-center justify-center">
               <Tag className="border-yellow">V 2024</Tag>
@@ -31,9 +38,26 @@ export default function Landing() {
           </div>
         </section>
       </div>
-      <div>
-        <section>
-          hello
+      <div className="py-[5rem]">
+        <section className="relative gap-[5rem]">
+        <div className="h-full w-full max-w-[568px] max-h-[568px] rounded-full absolute bg-yellow opacity-15 blur-3xl" />
+          <div className="max-w-[751px] w-full flex justify-center sm:justify-between items-center gap-[3rem] flex-wrap">
+            {partners.map((partner, index) => (
+              <img key={index} src={partner} alt={`partner-${index}`} />
+            ))}
+          </div>
+          <div className="text-center flex flex-col gap-[2rem]">
+            <h2>
+              <span className="text-yellow">What is CHEDx,</span>
+              <br /> and why should you join?
+            </h2>
+            <h3 className="max-w-[768px]">
+              In today’s fast-evolving tech landscape, CHEDx keeps you informed
+              on ethical implications, promotes responsible use, and fosters
+              collaboration to make technology impactful, bridging gaps and
+              strengthening human connections.
+            </h3>
+          </div>
         </section>
       </div>
     </div>
