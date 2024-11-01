@@ -8,6 +8,7 @@ import BagongPilipinas from "/landingLogos/BagongPilipinas.svg";
 import PSITS from "/landingLogos/PSITS.svg";
 import CHEDLogo from "/landingLogos/CHEDLogo.svg";
 import CDITE from "/landingLogos/CDITE.svg";
+import LandingCard from "./components/landingCard";
 
 export default function Landing() {
   const partners = [IBAP, USEP, BagongPilipinas, PSITS, CHEDLogo, CDITE];
@@ -40,7 +41,7 @@ export default function Landing() {
       </div>
       <div className="py-[5rem]">
         <section className="relative gap-[5rem]">
-        <div className="h-full w-full max-w-[568px] max-h-[568px] rounded-full absolute bg-yellow opacity-15 blur-3xl" />
+          <div className="h-full w-full max-w-[568px] max-h-[568px] rounded-full absolute bg-yellow opacity-15 blur-3xl" />
           <div className="max-w-[751px] w-full flex justify-center sm:justify-between items-center gap-[3rem] flex-wrap">
             {partners.map((partner, index) => (
               <img key={index} src={partner} alt={`partner-${index}`} />
@@ -57,6 +58,28 @@ export default function Landing() {
               collaboration to make technology impactful, bridging gaps and
               strengthening human connections.
             </h3>
+          </div>
+          <div className="grid max-w-[471px] grid-rows-2 grid-cols-2 lg:grid-rows-1 lg:grid-cols-4 gap-[2rem] w-full lg:max-w-[985px]">
+            <LandingCard
+              title="speakers"
+              icon="pepicons-pencil:microphone-handheld"
+              number={52}
+            />
+            <LandingCard
+              title="speakers"
+              icon="pepicons-pencil:microphone-handheld"
+              number={52}
+            />
+            <LandingCard
+              title="speakers"
+              icon="pepicons-pencil:microphone-handheld"
+              number={52}
+            />
+            <LandingCard
+              title="speakers"
+              icon="pepicons-pencil:microphone-handheld"
+              number={52}
+            />
           </div>
         </section>
       </div>
