@@ -266,18 +266,22 @@ export default function Landing() {
           </div>
           <div></div>
         </section>
-        <div className="bg-yellow bg-opacity-20 w-full">
-          <section className="py-[5rem] gap-[2rem] flex-col-reverse md:flex-row justify-between">
-            <div className="flex flex-col items-center md:items-start justify-center gap-[2.5rem]">
-              <h2 className="text-center md:text-start">
-                <span className="text-yellow">Exciting things are comming...</span>
-                <br /> Be the first to know what's next
-              </h2>
-              <Button className="bg-yellow text-white">Join the mailing list</Button>
-            </div>
-            <img src={landingArrow} alt="venue" />
-          </section>
-        </div>
+      </div>
+      <div className="bg-yellow bg-opacity-20 w-full">
+        <section className="py-[5rem] gap-[2rem] flex-col-reverse md:flex-row justify-between">
+          <div className="flex flex-col items-center md:items-start justify-center gap-[2.5rem]">
+            <h2 className="text-center md:text-start">
+              <span className="text-yellow">
+                Exciting things are comming...
+              </span>
+              <br /> Be the first to know what's next
+            </h2>
+            <Button className="bg-yellow text-white">
+              Join the mailing list
+            </Button>
+          </div>
+          <img src={landingArrow} alt="venue" />
+        </section>
       </div>
     </div>
   );
