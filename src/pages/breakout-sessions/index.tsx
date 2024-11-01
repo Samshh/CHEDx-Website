@@ -12,7 +12,7 @@ export default function BreakoutSessions() {
           <div className="h-full w-full max-w-[568px] max-h-[568px] rounded-full absolute bg-green opacity-10 blur-3xl" />
           <h1 className="text-primary text-center relative z-10 text-green">BREAKOUT SESSIONS</h1>
         </div>
-        <div className="flex flex-col gap-5 mb-7">
+        <div className="flex flex-col gap-5 mb-7 pt-[5rem]">
           <div className="w-full flex justify-center">
             <div className="border border-green p-2 rounded-lg">
               <p>DAY 1</p>
@@ -42,7 +42,7 @@ export default function BreakoutSessions() {
           <h2>DECEMBER 5, 2024</h2>
         </div>
 
-        <div className="w-full">
+        <div className="w-full pb-[5rem]">
           <div className="grid grid-cols-2 gap-5">
             <div className="relative">
               <img src={CardImage} alt="Card Image" className="w-full h-full object-cover rounded-lg" />
