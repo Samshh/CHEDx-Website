@@ -13,6 +13,9 @@ import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useRef, useState } from "react";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import CurvedUnderline from "/underlines/landing_underline.svg";
+import CurvedUnderline2 from "/underlines/landing2_underline.svg";
+import landingArrow from "/landingArrow.svg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -41,7 +44,7 @@ export default function Landing() {
           setCard2Number(0);
           setCard3Number(0);
           setCard4Number(0);
-        }
+        },
       },
     });
 
@@ -51,16 +54,16 @@ export default function Landing() {
       duration: 0.25,
       onComplete: () => {
         const car1Interval = setInterval(() => {
-            setCard1Number((prev: number) => {
+          setCard1Number((prev: number) => {
             const next = prev + 2;
             if (next > 52) {
               clearInterval(car1Interval);
               return 52;
             }
             return next;
-            })
+          });
         }, 50);
-      }
+      },
     })
       .from(card2.current, {
         opacity: 0,
@@ -77,7 +80,7 @@ export default function Landing() {
               return next;
             });
           }, 50);
-        }
+        },
       })
       .from(card3.current, {
         opacity: 0,
@@ -94,7 +97,7 @@ export default function Landing() {
               return next;
             });
           }, 50);
-        }
+        },
       })
       .from(card4.current, {
         opacity: 0,
@@ -111,7 +114,7 @@ export default function Landing() {
               return next;
             });
           }, 500);
-        }
+        },
       });
   });
 
@@ -145,15 +148,31 @@ export default function Landing() {
       <div className="py-[5rem]">
         <section className="relative gap-[5rem]">
           <div className="h-full w-full max-w-[568px] max-h-[568px] rounded-full absolute bg-yellow opacity-15 blur-3xl" />
-          <div className="max-w-[751px] w-full flex justify-center sm:justify-between items-center gap-[3rem] flex-wrap">
+          <div className="max-w-[751px] w-full flex justify-center items-center gap-[3.36rem] flex-wrap">
             {partners.map((partner, index) => (
-              <img key={index} src={partner} alt={`partner-${index}`} />
+              <img
+                className="h-[65px] w-auto"
+                key={index}
+                src={partner}
+                alt={`partner-${index}`}
+              />
             ))}
           </div>
-          <div className="text-center flex flex-col gap-[2rem]" ref={cardsTrigger}>
+          <div
+            className="text-center flex flex-col gap-[2rem]"
+            ref={cardsTrigger}
+          >
             <h2>
               <span className="text-yellow">What is CHEDx,</span>
-              <br /> and why should you join?
+              <br /> and why should{" "}
+              <span className="inline-block relative">
+                <span>you join?</span>
+                <img
+                  className="absolute -bottom-2 left-1/2 transform -translate-x-1/2"
+                  src={CurvedUnderline}
+                  alt="underline"
+                />
+              </span>
             </h2>
             <h3 className="max-w-[768px]">
               In today’s fast-evolving tech landscape, CHEDx keeps you informed
@@ -193,6 +212,72 @@ export default function Landing() {
             </div>
           </div>
         </section>
+      </div>
+      <div className="py-[5rem]">
+        <section className="relative">
+          <div className="h-full w-full rounded-full absolute bg-yellow opacity-30 blur-3xl" />
+          <h1>video here</h1>
+        </section>
+      </div>
+      <div className="py-[5rem]">
+        <section className="gap-[4rem]">
+          <div className="flex flex-col gap-[2rem] text-center">
+            <h2>
+              <span className="text-yellow">Meet the</span>{" "}
+              <span className="inline-block relative">
+                Speakers
+                <img
+                  className="absolute -bottom-2 left-1/2 transform -translate-x-1/2"
+                  src={CurvedUnderline}
+                  alt="underline"
+                />
+              </span>
+            </h2>
+            <h3 className="max-w-[768px]">
+              The summit brings together top experts to foster collaboration,
+              open dialogue, and forward thinking, equipping delegates and
+              industries with the insights and networks to confidently navigate
+              the evolving workplace.
+            </h3>
+          </div>
+          <div></div>
+        </section>
+      </div>
+      <div className="py-[5rem]">
+        <section className="gap-[4rem]">
+          <div className="flex flex-col gap-[2rem] text-center">
+            <h2>
+              <span className="text-yellow">CHEDx 2024</span>
+              <br />
+              <span className="inline-block relative">
+                Programme Schedule
+                <img
+                  className="absolute -bottom-2 left-1/2 transform -translate-x-1/2"
+                  src={CurvedUnderline2}
+                  alt="underline"
+                />
+              </span>
+            </h2>
+            <h3 className="max-w-[652px]">
+              From insightful keynotes to engaging breakouts, each session is
+              designed to inspire, educate, and propel you into the forefront of
+              the ever-evolving landscape of technology and education.
+            </h3>
+          </div>
+          <div></div>
+        </section>
+        <div className="bg-yellow bg-opacity-20 w-full">
+          <section className="py-[5rem] gap-[2rem] flex-col-reverse md:flex-row justify-between">
+            <div className="flex flex-col items-center md:items-start justify-center gap-[2.5rem]">
+              <h2 className="text-center md:text-start">
+                <span className="text-yellow">Exciting things are comming...</span>
+                <br /> Be the first to know what's next
+              </h2>
+              <Button className="bg-yellow text-white">Join the mailing list</Button>
+            </div>
+            <img src={landingArrow} alt="venue" />
+          </section>
+        </div>
       </div>
     </div>
   );

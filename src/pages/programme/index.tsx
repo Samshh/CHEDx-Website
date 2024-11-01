@@ -3,7 +3,7 @@ import quoteOpen from "/quote_open.svg";
 import quoteClose from "/quote_close.svg";
 import Button from "@/components/ui/button";
 import HeroBG from "/CHEDx_Hero.png";
-import CurvedUnderline from "/curve_underline.svg";
+import CurvedUnderline from "/underlines/programme_underline.svg";
 
 interface ContainerProps {
   children: ReactNode;
@@ -141,7 +141,7 @@ export default function Programme() {
             />
           </div>
           <div className="flex flex-col items-center text-center text-secondary p-5">
-            <Button className="border border-blue rounded-lg hover:scale-110 transition-all duration-300">
+            <Button className="border border-blue rounded-lg hover:scale-110 transition-all duration-300 cursor-default">
               PROGRAMME THEME
             </Button>
             <h1 className="text-blue">Building Synergy</h1>
