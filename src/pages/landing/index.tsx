@@ -123,6 +123,7 @@ export default function Landing() {
 
   return (
     <div className="flex flex-col">
+      {/* section1 */}
       <div className="relative">
         <img src={HeroBG} alt="herobg" className="absolute w-screen h-full object-cover" />
         <div className="absolute inset-0 bg-center-transparent" />
@@ -144,7 +145,8 @@ export default function Landing() {
           </div>
         </section>
       </div>
-      <div className="py-[5rem]">
+      {/* section2 */}
+      <div className="py-[5rem]" id="whyJoin">
         <section className="relative gap-[5rem]">
           <div className="h-full w-full max-w-[568px] max-h-[568px] rounded-full absolute bg-yellow opacity-15 blur-3xl" />
           <div className="max-w-[751px] w-full flex justify-center items-center gap-[3.36rem] flex-wrap">
@@ -187,6 +189,7 @@ export default function Landing() {
           </div>
         </section>
       </div>
+      {/* section3 */}
       <div className="py-[5rem]">
         <section className="relative">
           <div className="h-full w-full rounded-full absolute bg-yellow opacity-30 blur-3xl" />
@@ -200,6 +203,7 @@ export default function Landing() {
           </div>
         </section>
       </div>
+      {/* section4 */}
       <div className="py-[5rem]">
         <section className="gap-[4rem]">
           <div className="flex flex-col text-center">
@@ -222,7 +226,8 @@ export default function Landing() {
           <LanddingCarousel />
         </div>
       </div>
-      <div className="py-[5rem]">
+      {/* section5 */}
+      <div className="py-[5rem]" id="theSpeaker">
         <section className="gap-[4rem]">
           <div className="flex flex-col gap-[2rem] text-center">
             <h2>
@@ -245,7 +250,8 @@ export default function Landing() {
           <div></div>
         </section>
       </div>
-      <div className="py-[5rem]">
+      {/* section6 */}
+      <div className="py-[5rem]" id="progSched">
         <section className="gap-[4rem]">
           <div className="flex flex-col gap-[2rem] text-center">
             <h2>
@@ -270,7 +276,8 @@ export default function Landing() {
           </div>
         </section>
       </div>
-      <div className="bg-yellow bg-opacity-20 w-full">
+      {/* section7 */}
+      <div className="bg-yellow bg-opacity-20 w-full" id="nextPage">
         <section className="py-[5rem] gap-[2rem] flex-col-reverse md:flex-row justify-between">
           <div className="flex flex-col items-center md:items-start justify-center gap-[2.5rem]">
             <h2 className="text-center md:text-start">
