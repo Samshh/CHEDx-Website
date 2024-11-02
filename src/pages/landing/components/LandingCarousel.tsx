@@ -1,46 +1,57 @@
-import { useEffect, useRef } from "react";
+import { useRef, useMemo } from "react";
 import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
 import landingIMG1 from "/landingIMG1.png";
 import landingIMG2 from "/landingIMG2.png";
 import landingIMG3 from "/landingIMG3.png";
 
 export default function ImageCarousel() {
-  const carouselRef = useRef(null);
-  const images = [landingIMG1, landingIMG2, landingIMG3];
+  const carouselRef = useRef<HTMLDivElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
 
-  const duplicatedImages = [...images, ...images];
+  // Using placeholder images - replace with your actual imports
+  const images = useMemo(() => [landingIMG1, landingIMG2, landingIMG3], []);
 
-  useEffect(() => {
+  const duplicatedImages = useMemo(
+    () => [...images, ...images, ...images],
+    [images]
+  );
+
+  useGSAP(() => {
     const ctx = gsap.context(() => {
-      const animation = gsap.to(".carousel", {
-        xPercent: -50,
-        ease: "none",
-        duration: 20,
-        repeat: -1,
-      });
+      if (!containerRef.current || !carouselRef.current) return;
 
-      animation.eventCallback("onUpdate", () => {
-        const carousel = document.querySelector(".carousel");
-        const progress = animation.progress();
-        if (progress >= 0.5) {
-          animation.progress(0);
-          if (carousel) {
-            const firstSet = Array.from(carousel.querySelectorAll("img")).slice(0, images.length);
-            firstSet.forEach((img) => {
-              carousel.appendChild(img);
-            });
-          }
-        }
+      const carousel = containerRef.current;
+      const imageWidth = carousel.firstElementChild?.clientWidth || 0;
+      const gap = 32;
+      const totalWidth = imageWidth + gap;
+
+      gsap.to(carousel, {
+        x: `-=${totalWidth}`,
+        ease: "none",
+        duration: 10,
+        repeat: -1,
+        onRepeat: () => {
+          const firstImage = carousel.firstElementChild;
+          if (!firstImage) return;
+
+          carousel.appendChild(firstImage);
+
+          gsap.set(carousel, { x: 0 });
+        },
       });
     }, carouselRef);
 
     return () => ctx.revert();
-  }, [images]);
+  }, [duplicatedImages]);
 
   return (
     <div className="overflow-hidden w-full" ref={carouselRef}>
       <div className="relative w-screen">
-        <div className="flex carousel justify-center items-center gap-8">
+        <div
+          className="flex carousel justify-center items-center gap-8"
+          ref={containerRef}
+        >
           {duplicatedImages.map((image, index) => (
             <img
               key={index}
