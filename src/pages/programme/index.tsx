@@ -70,24 +70,26 @@ export default function Programme() {
           </div>
         </Container>
         <Container>
-          <div className="text-center flex flex-col items-center h-full">
-            <h1 className="text-blue">CHEDx 2024</h1>
-            <div className="relative">
-              <h2 className="text-secondary relative z-10">
-                Programme Schedule
-              </h2>
-              <img
-                src={CurvedUnderline}
-                alt=""
-                className="absolute lg:top-10 left-0 z-0 sm:bottom-0 bottom-0"
-              />
+          <div className="text-center flex flex-col items-center h-full gap-[2rem]">
+            <div>
+              <h1 className="text-blue">CHEDx 2024</h1>
+              <div className="relative">
+                <h2 className="text-secondary relative z-10">
+                  Programme Schedule
+                </h2>
+                <img
+                  src={CurvedUnderline}
+                  alt=""
+                  className="absolute lg:top-10 left-0 z-0 sm:bottom-0 bottom-0"
+                />
+              </div>
             </div>
-            <p className="text-secondary max-w-2xl">
+            <h3 className="text-secondary max-w-2xl">
               Join us at CHEDx 2024 for two days of innovation in education!
               Discover cutting-edge IT skills, explore AI ethics, and gain
               targeted industry insights through keynotes and interactive
               sessions.
-            </p>
+            </h3>
           </div>
         </Container>
         <Container>
