@@ -216,7 +216,33 @@ export default function Landing() {
       <div className="py-[5rem]">
         <section className="relative">
           <div className="h-full w-full rounded-full absolute bg-yellow opacity-30 blur-3xl" />
-          <h1>video here</h1>
+          <div className="z-10 h-full w-full overflow-hidden">
+            <iframe
+              className="w-full h-[50vh] lg:h-[60vh] rounded-2xl"
+              src="https://www.youtube.com/embed/cVQJtz2JwRA?si=9i5FxneXHyOhZplv"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            ></iframe>
+          </div>
+        </section>
+      </div>
+      <div className="py-[5rem]">
+        <section className="gap-[4rem]">
+          <div className="flex flex-col text-center">
+            <h2>
+              <span className="text-yellow">CHEDx 2023 was a success,</span>
+              <br />
+              <span className="inline-block relative">
+                so we're doing it again!
+                <img
+                  className="absolute -bottom-2 left-1/2 transform -translate-x-1/2"
+                  src={CurvedUnderline2}
+                  alt="underline"
+                />
+              </span>
+            </h2>
+          </div>
+          <div></div>
         </section>
       </div>
       <div className="py-[5rem]">

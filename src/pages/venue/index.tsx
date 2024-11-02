@@ -34,7 +34,7 @@ export default function Venue() {
               <br /> See the embedded map below!
             </h3>
           </div>
-          <div className="w-full lg:w-[60vw] h-[50vh] rounded-lg overflow-hidden select-all z-10">
+          <div className="w-full lg:w-[60vw] h-[50vh] rounded-2xl overflow-hidden select-all z-10">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2702.9113505604123!2d125.62811235323208!3d7.09904807499031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f96c49ed5ede71%3A0x106fd6cf7f8bf06b!2sSMX%20Convention%20Center%20Davao!5e0!3m2!1sen!2sph!4v1730362045365!5m2!1sen!2sph"
               className="w-full h-full"
@@ -42,7 +42,7 @@ export default function Venue() {
               allowFullScreen
             ></iframe>
           </div>
-          <div className="h-full w-full max-w-[568px] max-h-[568px] rounded-full absolute bottom-[3rem] bg-red opacity-10 blur-3xl" />
+          <div className="h-full w-full max-h-[568px] rounded-full absolute bottom-[3rem] bg-red opacity-10 blur-3xl" />
         </section>
       </section>
       <div className="bg-red bg-opacity-20 w-full">
