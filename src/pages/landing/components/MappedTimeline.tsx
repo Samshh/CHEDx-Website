@@ -85,75 +85,6 @@ const timeline: Timeline = {
       subtitle: "",
     },
   ],
-
-  "DAY 2": [
-    {
-      time: "8:00 AM - 8:45 AM",
-      segment: "Registration",
-      title: "",
-      subtitle: "",
-    },
-    {
-      time: "8:45 AM - 9:15 AM",
-      segment: "PQF and PSF: Supporting the Frameworks c/o IBPAP",
-      title: "PQF National Coordinating Council, PSF Resource Persons",
-      subtitle: "",
-    },
-    {
-      time: "9:15 AM - 10:0 AM",
-      segment: "PSF Foundational Overview c/o IBPAP",
-      title: "DTI PTTC",
-      subtitle: "",
-    },
-    {
-      time: "10:00 AM - 10:15 AM",
-      segment: "Turnover Ceremony of PSF from DICT to Industry Associations c/o IBPAP",
-      title: "USec Jocelle Batapa-Sique",
-      subtitle: "DICT",
-    },
-    {
-      time: "10:45 AM - 11:45 AM",
-      segment: "BREAKOUT ROOMS",
-      title: "",
-      subtitle: "",
-    },
-    {
-      time: "11:45 AM - 1:30 PM",
-      segment: "Group Photo",
-      title: "Lunch",
-      subtitle: "",
-    },
-    {
-      time: "1:30 PM - 3:00 PM",
-      segment: "BREAKOUT ROOMS",
-      title: "",
-      subtitle: "",
-    },
-    {
-      time: "3:00 PM - 3:15 PM",
-      segment: "PM Snacks",
-      title: "X-plore Partnerships and Exhibits",
-      subtitle: "",
-    },
-    {
-      time: "3:15 PM - 5:00 PM",
-      segment: "Building Synergy: Aligning IT Education with Industry Demands (panel discussion with audience Q & A)",
-      title: "representing the SUCs & the Industry",
-      subtitle: "",
-    },
-    {
-      time: "5:00 PM - 5:15 PM",
-      segment: "Covenant Signing",
-      title: "",
-      subtitle: "",
-    },
-    {
-      time: "5:15 PM - 5:30 PM",
-      segment: "Synthesis of Day 2 - CHED Regional Office",
-      title: "",
-      subtitle: "",
-    },
-  ],
 };
 
 const MappedTimeline = () => {
@@ -171,13 +102,13 @@ const MappedTimeline = () => {
   //       {
   //         opacity: 0,
   //         y: 0,
-  //         ease: "power1.out", // Smooth easing for fade-out
-  //         duration: 1.5, // Set a duration to make fade-out gradual
+  //         ease: "power1.out", 
+  //         duration: 1.5,
   //         scrollTrigger: {
   //           trigger: element,
-  //           start: "top top+=30", // Start fading out when the element reaches 80% of the viewport height
-  //           end: "top", // Fully faded out when it reaches 20% of the viewport height
-  //           scrub: true, // Smoothly fade out based on scroll
+  //           start: "top top+=30", 
+  //           end: "top", 
+  //           scrub: true, 
   //         },
   //       }
   //     );
@@ -188,13 +119,13 @@ const MappedTimeline = () => {
   //       {
   //         opacity: 1,
   //         y: 0,
-  //         ease: "power1.out", // Smooth easing for fade-out
-  //         duration: 1.5, // Set a duration to make fade-out gradual
+  //         ease: "power1.out", 
+  //         duration: 1.5, 
   //         scrollTrigger: {
   //           trigger: element,
-  //           start: "top 95%", // Start fading out when the element reaches 80% of the viewport height
-  //           end: "top 90%", // Fully faded out when it reaches 20% of the viewport height
-  //           scrub: true, // Smoothly fade out based on scroll
+  //           start: "top 95%", 
+  //           end: "top 90%", 
+  //           scrub: true,
   //         },
   //       }
   //     );
@@ -205,7 +136,7 @@ const MappedTimeline = () => {
     <div className="flex w-full" key={day} ref={timelineRef} id={`#${day}`}>
       <div className="text-end flex justify-end w-[25%] pr-10">
         <div className="flex flex-col timeline-event">
-          <h2 className="text-blue leading-[25px] ">{day}</h2>
+          <h2 className="text-yellow leading-[25px] ">{day}</h2>
           <span>December 4, 2024</span>
         </div>
       </div>
@@ -213,27 +144,27 @@ const MappedTimeline = () => {
         {timeline[day].map((event, eventIndex) => (
           <div className=" w-full gap-3 flex flex-col relative" key={eventIndex}>
             {eventIndex === 0 && (
-              <div className="absolute -left-2 -ml-1.5 h-7 w-7 border-blue border bg-white z-10 rounded-full items-center justify-center flex">
-                <div className="h-4 w-4 rounded-full bg-blue z-20"></div>
+              <div className="absolute -left-2 -ml-1.5 h-7 w-7 border-yellow border bg-white z-10 rounded-full items-center justify-center flex">
+                <div className="h-4 w-4 rounded-full bg-yellow z-20"></div>
               </div>
             )}
-            <div className="flex flex-col min-h-40 border-l-[1.5px] border-blue  border-dashed pl-10 z-0 relative">
-              <div className="h-4 w-4 rounded-full bg-blue z-20 absolute -left-0.5 mt-1.5 -ml-1.5"></div>
+            <div className="flex flex-col min-h-40 border-l-[1.5px] border-yellow  border-dashed pl-10 z-0 relative">
+              <div className="h-4 w-4 rounded-full bg-yellow z-20 absolute -left-0.5 mt-1.5 -ml-1.5"></div>
               <div className="min-h-40 hover:pl-10 transition-all duration-300 justify-center flex flex-col w-full timeline-event">
-                <div className="border border-blue bg-none rounded-lg px-2 py-0.5 text-center max-w-max absolute top-0">
+                <div className="border border-yellow bg-none rounded-lg px-2 py-0.5 text-center max-w-max absolute top-0">
                   <span className="grow-0">{event.time}</span>
                 </div>
                 <div className="max-w-[568px]">
-                  <h3 className="text-blue">{event.segment}</h3>
+                  <h3 className="text-yellow">{event.segment}</h3>
                   <h3>{event.title}</h3>
                   <p>{event.subtitle}</p>
                 </div>
               </div>
               {dayIndex === days.length - 1 && eventIndex === timeline[day].length - 1 && (
-                <div className="absolute bottom-0 text-blue hover:cursor-pointer hover:scale-110 transition-all duration-300 flex gap-5 items-center">
+                <div className="absolute bottom-0 text-yellow hover:cursor-pointer hover:scale-110 transition-all duration-300 flex gap-5 items-center">
                   <span onClick={() => navigate("/programme")}>VIEW FULL AGENDA</span>
                   <svg
-                    fill="#38B6FF"
+                    fill="#FFA802"
                     height="25px"
                     width="25px"
                     version="1.1"
@@ -252,7 +183,7 @@ const MappedTimeline = () => {
               )}
             </div>
             {dayIndex === days.length - 1 && eventIndex === timeline[day].length - 1 && (
-              <div className="absolute -ml-1.5 bottom-0 h-4 w-4 rounded-full bg-blue -left-[1px]"></div>
+              <div className="absolute -ml-1.5 bottom-0 h-4 w-4 rounded-full bg-yellow -left-[1px]"></div>
             )}
           </div>
         ))}

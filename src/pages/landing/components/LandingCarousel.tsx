@@ -1,5 +1,6 @@
-import { useEffect, useRef, useMemo } from "react";
+import { useRef, useMemo } from "react";
 import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
 import landingIMG1 from "/landingIMG1.png";
 import landingIMG2 from "/landingIMG2.png";
 import landingIMG3 from "/landingIMG3.png";
@@ -9,7 +10,7 @@ export default function ImageCarousel() {
   const images = useMemo(() => [landingIMG1, landingIMG2, landingIMG3], []);
   const imagesWithDuplicates = useMemo(() => [...images, ...images], [images]);
 
-  useEffect(() => {
+  useGSAP(() => {
     if (!carouselRef.current) return;
 
     const carousel = carouselRef.current;

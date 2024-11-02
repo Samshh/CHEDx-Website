@@ -1,5 +1,6 @@
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
@@ -12,7 +13,7 @@ export default function ProgrammeSidebar() {
   const day2Ref = useRef<HTMLDivElement | null>(null);
   const nextRef = useRef<HTMLDivElement | null>(null);
 
-  useEffect(() => {
+  useGSAP(() => {
     const createScrollAnimation = (ref: React.RefObject<HTMLDivElement>, start: string, end: string) => {
       if (ref.current) {
         gsap.fromTo(
@@ -37,22 +38,22 @@ export default function ProgrammeSidebar() {
     createScrollAnimation(day1Ref, "top+=28%", "top+=55%");
     createScrollAnimation(day2Ref, "top+=55%", "top+=70%");
     createScrollAnimation(nextRef, "top+=70%", "bottom top+=100%");
-  }, []);
+  });
 
-  const scrollToPercentage = (percentage: number) => {
-    const targetScrollPosition = (document.body.scrollHeight - window.innerHeight) * (percentage / 100);
-    gsap.to(window, {
-      duration: 1,
-      scrollTo: targetScrollPosition,
-      ease: "power2.inOut",
-    });
-  };
+  // const scrollToPercentage = (percentage: number) => {
+  //   const targetScrollPosition = (document.body.scrollHeight - window.innerHeight) * (percentage / 100);
+  //   gsap.to(window, {
+  //     duration: 1,
+  //     scrollTo: targetScrollPosition,
+  //     ease: "power2.inOut",
+  //   });
+  // };
 
   return (
     <>
       <div
         className="flex justify-center items-center gap-[1rem] text-black hover:cursor-pointer"
-        onClick={() => scrollToPercentage(0)}
+        // onClick={() => scrollToPercentage(0)}
       >
         <p>PROGRAMME</p>
         <div className="h-[48px] w-[6px] bg-[#777] relative hover:cursor-pointer">
@@ -62,7 +63,7 @@ export default function ProgrammeSidebar() {
       </div>
       <div
         className="flex justify-center items-center gap-[1rem] text-[#777] hover:cursor-pointer"
-        onClick={() => scrollToPercentage(12)}
+        // onClick={() => scrollToPercentage(12)}
       >
         <p>THEME</p>
         <div className="h-[48px] w-[6px] bg-[#777] relative hover:cursor-pointer">
@@ -72,7 +73,7 @@ export default function ProgrammeSidebar() {
       </div>
       <div
         className="flex justify-center items-center gap-[1rem] text-[#777] hover:cursor-pointer"
-        onClick={() => scrollToPercentage(33)}
+        // onClick={() => scrollToPercentage(33)}
       >
         <p>DAY 1</p>
         <div className="h-[48px] w-[6px] bg-[#777] relative">
@@ -82,7 +83,7 @@ export default function ProgrammeSidebar() {
       </div>
       <div
         className="flex justify-center items-center gap-[1rem] text-[#777] hover:cursor-pointer"
-        onClick={() => scrollToPercentage(65)}
+        // onClick={() => scrollToPercentage(65)}
       >
         <p>DAY 2</p>
         <div className="h-[48px] w-[6px] bg-[#777] relative">
@@ -92,7 +93,7 @@ export default function ProgrammeSidebar() {
       </div>
       <div
         className="flex justify-center items-center gap-[1rem] text-[#777] hover:cursor-pointer"
-        onClick={() => scrollToPercentage(100)}
+        // onClick={() => scrollToPercentage(100)}
       >
         <p>NEXT</p>
         <div className="h-[48px] w-[6px] bg-[#777] relative">
