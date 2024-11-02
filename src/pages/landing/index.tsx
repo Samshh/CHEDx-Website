@@ -17,6 +17,9 @@ import CurvedUnderline from "/underlines/landing_underline.svg";
 import CurvedUnderline2 from "/underlines/landing2_underline.svg";
 import landingArrow from "/landingArrow.svg";
 import { useNavigate } from "react-router-dom";
+import landingIMG1 from "/landingIMG1.png";
+import landingIMG2 from "/landingIMG2.png";
+import landingIMG3 from "/landingIMG3.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -49,12 +52,15 @@ const timeline: Timeline = {
     {
       time: "9:00 AM - 9:30 AM",
       segment: "Welcome Remarks",
-      title: "Dr. Bonifacio G. Gabales, Jr. & Atty. Cinderella Filipina B. Jaro",
-      subtitle: "SUC President, University of Southeastern Philippines, CHED Executive Director",
+      title:
+        "Dr. Bonifacio G. Gabales, Jr. & Atty. Cinderella Filipina B. Jaro",
+      subtitle:
+        "SUC President, University of Southeastern Philippines, CHED Executive Director",
     },
     {
       time: "9:30 AM - 10:00 AM",
-      segment: "Keynote Speaker: The Role of Higher Education in Producing Futur-Ready IT Professionals",
+      segment:
+        "Keynote Speaker: The Role of Higher Education in Producing Futur-Ready IT Professionals",
       title: "Chairman J. Prospero E. De Vera III",
       subtitle: "Commission on Higher Education, Ribbon Cutting of Exhibit",
     },
@@ -66,7 +72,8 @@ const timeline: Timeline = {
     },
     {
       time: "10:30 AM - 11:00 AM",
-      segment: "Bringing the industry to the Academe: Conceive Design Implement Operate (CDIO) Framework",
+      segment:
+        "Bringing the industry to the Academe: Conceive Design Implement Operate (CDIO) Framework",
       title: "Prof Sin Moh Cheah",
       subtitle: "Singapore Polytechnic",
     },
@@ -79,7 +86,8 @@ const timeline: Timeline = {
     {
       time: "11:30 AM - 12:00 PM",
       segment: "Panel Discussion c/o CHED/IBPAP",
-      title: "Education and the World of Work: Boosting Education through Smart Technologies (Project BEST)",
+      title:
+        "Education and the World of Work: Boosting Education through Smart Technologies (Project BEST)",
       subtitle: "Calen Martin D. Legaspi, Leuther Mojica, Haidee Enriquez",
     },
     {
@@ -88,7 +96,7 @@ const timeline: Timeline = {
       title: "",
       subtitle: "",
     },
-  ]
+  ],
 };
 
 const MappedTimeline = () => {
@@ -105,7 +113,10 @@ const MappedTimeline = () => {
       </div>
       <div className="flex flex-col w-full">
         {timeline[day].map((event, eventIndex) => (
-          <div className={`w-full gap-3 flex flex-col relative`} key={eventIndex}>
+          <div
+            className={`w-full gap-3 flex flex-col relative`}
+            key={eventIndex}
+          >
             {eventIndex === 0 && (
               <div className="absolute -left-2 -ml-1.5 h-7 w-7 border-yellow border bg-white z-10 rounded-full items-center justify-center flex">
                 <div className="h-4 w-4 rounded-full bg-yellow z-20"></div>
@@ -123,15 +134,19 @@ const MappedTimeline = () => {
                   <p>{event.subtitle}</p>
                 </div>
               </div>
-              {dayIndex === days.length - 1 && eventIndex === timeline[day].length - 1 && (
-                <div className="absolute bottom-0 text-yellow hover:cursor-pointer hover:scale-110 transition-all duration-300">
-                  <span onClick={() => navigate("/programme")} className="">VIEW FULL AGENDA</span>
-                </div>
-              )}
+              {dayIndex === days.length - 1 &&
+                eventIndex === timeline[day].length - 1 && (
+                  <div className="absolute bottom-0 text-yellow hover:cursor-pointer hover:scale-110 transition-all duration-300">
+                    <span onClick={() => navigate("/programme")} className="">
+                      VIEW FULL AGENDA
+                    </span>
+                  </div>
+                )}
             </div>
-            {dayIndex === days.length - 1 && eventIndex === timeline[day].length - 1 && (
-              <div className="absolute -ml-1.5 bottom-0 h-4 w-4 rounded-full bg-yellow -left-[1px]"></div>
-            )}
+            {dayIndex === days.length - 1 &&
+              eventIndex === timeline[day].length - 1 && (
+                <div className="absolute -ml-1.5 bottom-0 h-4 w-4 rounded-full bg-yellow -left-[1px]"></div>
+              )}
           </div>
         ))}
       </div>
@@ -364,8 +379,15 @@ export default function Landing() {
               </span>
             </h2>
           </div>
-          <div></div>
         </section>
+        <div className="relative h-full w-full py-[5rem]">
+          <div className="h-full w-full max-w-[568px] max-h-[568px] rounded-full absolute bg-yellow opacity-15 blur-3xl top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none" />
+          <div className="flex justify-center items-center overflow-hidden z-10">
+            <img src={landingIMG1} alt="" />
+            <img src={landingIMG2} alt="" />
+            <img src={landingIMG3} alt="" />
+          </div>
+        </div>
       </div>
       <div className="py-[5rem]">
         <section className="gap-[4rem]">
