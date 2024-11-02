@@ -20,7 +20,7 @@ import LandingCard from "./components/LandingCard";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Landing() {
-  const partners = [IBAP, USEP, BagongPilipinas, PSITS, CHEDLogo, CDITE];
+  const partners = [IBAP, USEP, BagongPilipinas, CHEDLogo, PSITS, CDITE];
   const cardsTrigger = useRef(null);
   const card1 = useRef(null);
   const card2 = useRef(null);
