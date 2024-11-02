@@ -19,7 +19,7 @@ export default function Venue() {
             THE VENUE
           </h1>
         </div>
-        <section className="relative flex flex-col items-center gap-[5rem] py-[10rem]">
+        <section className="relative flex flex-col items-center gap-[5rem] py-[10rem]" id="venueMap">
           <div className="text-center flex flex-col gap-[2rem]">
             <div>
               <h2>
@@ -52,7 +52,7 @@ export default function Venue() {
           <div className="h-full w-full max-h-[568px] rounded-full absolute bottom-[3rem] bg-red opacity-10 blur-3xl" />
         </section>
       </section>
-      <div className="bg-red bg-opacity-20 w-full">
+      <div className="bg-red bg-opacity-20 w-full" id="venueNext">
         <section className="py-[5rem] flex-row justify-between">
           <div className="flex flex-col items-start justify-center gap-[2.5rem]">
             <h2>
