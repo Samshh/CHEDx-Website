@@ -41,40 +41,53 @@ const timeline: Timeline = {
     },
     {
       time: "8:45 AM - 9:00 AM",
-      segment: "Invocation and Introduction of Speakers",
-      title: "",
-      subtitle: "",
+      segment: "Pambansang Awit & Prayer",
+      title: "USepP Chorale",
+      subtitle: "CHED Hymn, VO Introductionof Speakers",
     },
     {
       time: "9:00 AM - 9:30 AM",
       segment: "Welcome Remarks",
-      title: "Dr. Bonifacio G. Gabales, Jr.",
-      subtitle: "SUC President, University of Southeastern Philippines",
-    },
-  ],
-  "DAY 2": [
-    {
-      time: "TIME - TIME",
-      segment: "SEGMENT",
-      segmentSpec: "Segment specifics (optional)",
-      title: "Person (add as many as needed, also optional)",
-      subtitle: "Person affiliations (optional)",
+      title: "Dr. Bonifacio G. Gabales, Jr. & Atty. Cinderella Filipina B. Jaro",
+      subtitle: "SUC President, University of Southeastern Philippines, CHED Executive Director",
     },
     {
-      time: "TIME - TIME",
-      segment: "SEGMENT",
-      segmentSpec: "Segment specifics (optional)",
-      title: "Person (add as many as needed, also optional)",
-      subtitle: "Person affiliations (optional)",
+      time: "9:30 AM - 10:00 AM",
+      segment: "Keynote Speaker: The Role of Higher Education in Producing Futur-Ready IT Professionals",
+      title: "Chairman J. Prospero E. De Vera III",
+      subtitle: "Commission on Higher Education, Ribbon Cutting of Exhibit",
     },
     {
-      time: "TIME - TIME",
-      segment: "SEGMENT",
-      segmentSpec: "Segment specifics (optional)",
-      title: "Person (add as many as needed, also optional)",
-      subtitle: "Person affiliations (optional)",
+      time: "10:00 AM - 10:30 AM",
+      segment: "X-plor Partnerships and Exhibits",
+      title: "Participants will make their way around the exhibit booths",
+      subtitle: "AM Snacks now available",
     },
-  ],
+    {
+      time: "10:30 AM - 11:00 AM",
+      segment: "Bringing the industry to the Academe: Conceive Design Implement Operate (CDIO) Framework",
+      title: "Prof Sin Moh Cheah",
+      subtitle: "Singapore Polytechnic",
+    },
+    {
+      time: "11:00 AM - 11:30 AM",
+      segment: "CHED FIRe Framework",
+      title: "Dr. Maricar S. Casquejo",
+      subtitle: "Regional Director, CHED Region XI",
+    },
+    {
+      time: "11:30 AM - 12:00 PM",
+      segment: "Panel Discussion c/o CHED/IBPAP",
+      title: "Education and the World of Work: Boosting Education through Smart Technologies (Project BEST)",
+      subtitle: "Calen Martin D. Legaspi, Leuther Mojica, Haidee Enriquez",
+    },
+    {
+      time: "12:00 PM - 13:30 PM",
+      segment: "Lunch Break & X-plor Partnerships and Exhibits",
+      title: "",
+      subtitle: "",
+    },
+  ]
 };
 
 const MappedTimeline = () => {
@@ -96,19 +109,16 @@ const MappedTimeline = () => {
                 <div className="h-4 w-4 rounded-full bg-yellow z-20"></div>
               </div>
             )}
-            {/* {eventIndex < timeline[day].length - 1 && (
-              <div className="absolute -ml-1.5 bottom-0 h-4 w-4 rounded-full bg-blue -left-[1px]"></div>
-            )} */}
             <div className="flex flex-col min-h-52 border-l-[1.5px] border-yellow border-dashed pl-10 z-0  relative ">
               <div className="h-4 w-4 rounded-full bg-yellow z-20 absolute -left-0.5 mt-1.5 -ml-1.5"></div>
-              <div className="hover:cursor-pointer min-h-52 hover:pl-10 transition-all duration-300 justify-center flex flex-col w-full">
+              <div className="min-h-52 hover:pl-10 transition-all duration-300 justify-center flex flex-col w-full">
                 <div className="border border-yellow bg-none rounded-lg px-2 py-0.5 text-center max-w-max absolute top-0">
                   <span className="grow-0">{event.time}</span>
                 </div>
-                <div>
-                  <h2>{event.segment}</h2>
-                  <sub>{event.segmentSpec}</sub>
-                  <sub>{event.subtitle}</sub>
+                <div className="max-w-[568px]">
+                  <h3 className="text-yellow">{event.segment}</h3>
+                  <h3>{event.title}</h3>
+                  <p>{event.subtitle}</p>
                 </div>
               </div>
               {dayIndex === days.length - 1 && eventIndex === timeline[day].length - 1 && (
