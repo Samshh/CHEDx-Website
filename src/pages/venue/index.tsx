@@ -1,6 +1,7 @@
 import Button from "@/components/ui/button";
 import HeroBG from "/CHEDx_Hero.png";
 import VenueSVG from "/Venue.svg";
+import CurvedUnderline from "/underlines/venue_underline.svg";
 
 export default function Venue() {
   return (
@@ -21,8 +22,18 @@ export default function Venue() {
         <section className="relative flex flex-col items-center gap-[5rem] py-[10rem]">
           <div className="text-center flex flex-col gap-[2rem]">
             <div>
-              <h2 className="text-red">We are taking CHEDx</h2>
-              <h2>to Davao City!</h2>
+              <h2>
+                <span className="text-red">We are taking CHEDx</span>
+                <br /> to{" "}
+                <span className="relative inline-block">
+                  Davao City!{" "}
+                  <img
+                    className="absolute -bottom-2 left-1/2 transform -translate-x-1/2"
+                    src={CurvedUnderline}
+                    alt="undeline"
+                  />
+                </span>
+              </h2>
             </div>
             <h3>
               The summit will be held at SMX Lanang Premier at JP Laurel Ave. at
@@ -44,7 +55,8 @@ export default function Venue() {
         <section className="py-[5rem] flex-row justify-between">
           <div className="flex flex-col items-start justify-center gap-[2.5rem]">
             <h2>
-              <span className="text-red">Secure your spot...</span><br /> Join us today!
+              <span className="text-red">Secure your spot...</span>
+              <br /> Join us today!
             </h2>
             <Button className="bg-red text-white">register now</Button>
           </div>
