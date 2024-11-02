@@ -25,11 +25,11 @@ export const Router = createBrowserRouter([
       {
         path: "/breakout-sessions",
         element: <BreakoutSessions />,
-      }
-    ]
+      },
+    ],
   },
   {
     path: "*",
-    element: <Navigate to="/" replace/>,
-  }
+    element: <Navigate to="/" replace />,
+  },
 ]);
