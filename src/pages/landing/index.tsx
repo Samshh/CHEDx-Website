@@ -8,7 +8,7 @@ import BagongPilipinas from "/landingLogos/BagongPilipinas.svg";
 import PSITS from "/landingLogos/PSITS.svg";
 import CHEDLogo from "/landingLogos/CHEDLogo.svg";
 import CDITE from "/landingLogos/CDITE.svg";
-import LandingCard from "./components/LandingCard";
+import LandingCard from "./components/landingCard";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useRef, useState } from "react";
