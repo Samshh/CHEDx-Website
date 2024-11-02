@@ -90,10 +90,11 @@ const MappedTimeline = () => {
                 <div className="h-4 w-4 rounded-full bg-blue z-20"></div>
               </div>
             )}
-            {eventIndex < timeline[day].length - 1 && (
+            {/* {eventIndex < timeline[day].length - 1 && (
               <div className="absolute -ml-1.5 bottom-0 h-4 w-4 rounded-full bg-blue -left-[1px]"></div>
-            )}
+            )} */}
             <div className="flex flex-col min-h-52 border-l-[1.5px] border-blue border-dashed pl-10 z-0  relative ">
+              <div className="h-4 w-4 rounded-full bg-blue z-20 absolute -left-0.5 mt-1.5 -ml-1.5"></div>
               <div className="hover:cursor-pointer min-h-52 hover:ml-10 transition-all duration-300 justify-center flex flex-col w-full">
                 <div className="border border-blue bg-none rounded-lg px-2 py-0.5 text-center max-w-max absolute top-0">
                   <span className="grow-0">{event.time}</span>
