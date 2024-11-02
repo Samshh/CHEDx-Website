@@ -1,6 +1,6 @@
 import { useNavigate, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
-import FooterLogo from "/FooterLogo.svg";
+import FooterLogo from "/CHEDxLogo.svg";
 import { Icon } from "@iconify/react";
 
 export default function Footer() {
@@ -26,17 +26,11 @@ export default function Footer() {
     <div className="flex-col">
       {location.pathname !== "/breakout-sessions" && (
         <div className="bg-white border-[#1e1e1e] border-y-[1px]">
-          <button
-            onClick={() => navigate(nextLocation)}
-            type="button"
-            className="w-full"
-          >
+          <button onClick={() => navigate(nextLocation)} type="button" className="w-full">
             <footer className="py-[4rem] px-[1rem] md:px-[2rem]">
               <div className="flex flex-col items-start justify-center">
                 <div className="flex items-center justify-center gap-[1rem]">
-                  <p className="uppercase text-[0.75rem]">
-                    next
-                  </p>
+                  <p className="uppercase text-[0.75rem]">next</p>
                   <div className="h-[1px] w-[120px] md:w-[200px] bg-black" />
                 </div>
                 <h2 className="uppercase">{currentLocation}</h2>
@@ -51,11 +45,7 @@ export default function Footer() {
       )}
       <footer className="flex-col-reverse gap-[2rem] md:flex-row">
         <div className="flex flex-col items-center justify-center gap-[0.5rem]">
-          <button
-            className="flex items-center justify-center"
-            type="button"
-            onClick={() => navigate("/")}
-          >
+          <button className="flex items-center justify-center" type="button" onClick={() => navigate("/")}>
             <img className="h-auto w-[186px]" src={FooterLogo} alt="NavLogo" />
           </button>
           <p className="text-[#777777]">© CHEDx. All rights reserved</p>
