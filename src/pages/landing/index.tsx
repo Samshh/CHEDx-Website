@@ -16,6 +16,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import CurvedUnderline from "/underlines/landing_underline.svg";
 import CurvedUnderline2 from "/underlines/landing2_underline.svg";
 import landingArrow from "/landingArrow.svg";
+import { useNavigate } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -91,6 +92,7 @@ const timeline: Timeline = {
 };
 
 const MappedTimeline = () => {
+  const navigate = useNavigate();
   const days = Object.keys(timeline);
 
   const res = days.flatMap((day, dayIndex) => (
@@ -123,7 +125,7 @@ const MappedTimeline = () => {
               </div>
               {dayIndex === days.length - 1 && eventIndex === timeline[day].length - 1 && (
                 <div className="absolute bottom-0 text-yellow hover:cursor-pointer hover:scale-110 transition-all duration-300">
-                  <span className="">DOWNLOAD FULL AGENDA</span>
+                  <span onClick={() => navigate("/programme")} className="">VIEW FULL AGENDA</span>
                 </div>
               )}
             </div>
