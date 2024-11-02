@@ -19,6 +19,116 @@ import landingArrow from "/landingArrow.svg";
 
 gsap.registerPlugin(ScrollTrigger);
 
+interface Timeline {
+  [day: string]: Event[];
+}
+
+interface Event {
+  time: string;
+  segment: string;
+  title: string;
+  subtitle: string;
+  segmentSpec?: string;
+}
+
+const timeline: Timeline = {
+  "DAY 1": [
+    {
+      time: "8:00 AM - 8:45 AM",
+      segment: "Registration & Welcome",
+      title: "",
+      subtitle: "",
+    },
+    {
+      time: "8:45 AM - 9:00 AM",
+      segment: "Invocation and Introduction of Speakers",
+      title: "",
+      subtitle: "",
+    },
+    {
+      time: "9:00 AM - 9:30 AM",
+      segment: "Welcome Remarks",
+      title: "Dr. Bonifacio G. Gabales, Jr.",
+      subtitle: "SUC President, University of Southeastern Philippines",
+    },
+  ],
+  "DAY 2": [
+    {
+      time: "TIME - TIME",
+      segment: "SEGMENT",
+      segmentSpec: "Segment specifics (optional)",
+      title: "Person (add as many as needed, also optional)",
+      subtitle: "Person affiliations (optional)",
+    },
+    {
+      time: "TIME - TIME",
+      segment: "SEGMENT",
+      segmentSpec: "Segment specifics (optional)",
+      title: "Person (add as many as needed, also optional)",
+      subtitle: "Person affiliations (optional)",
+    },
+    {
+      time: "TIME - TIME",
+      segment: "SEGMENT",
+      segmentSpec: "Segment specifics (optional)",
+      title: "Person (add as many as needed, also optional)",
+      subtitle: "Person affiliations (optional)",
+    },
+  ],
+};
+
+const MappedTimeline = () => {
+  const days = Object.keys(timeline);
+
+  const res = days.flatMap((day, dayIndex) => (
+    <div className="flex w-full" key={day}>
+      <div className="text-end flex justify-end w-[25%] pr-10">
+        <div className="flex flex-col">
+          <h2 className="text-yellow leading-[25px] ">{day}</h2>
+          <span>December 4, 2024</span>
+        </div>
+      </div>
+      <div className="flex flex-col w-full">
+        {timeline[day].map((event, eventIndex) => (
+          <div className={`w-full gap-3 flex flex-col relative`} key={eventIndex}>
+            {eventIndex === 0 && (
+              <div className="absolute -left-2 -ml-1.5 h-7 w-7 border-yellow border bg-white z-10 rounded-full items-center justify-center flex">
+                <div className="h-4 w-4 rounded-full bg-yellow z-20"></div>
+              </div>
+            )}
+            {/* {eventIndex < timeline[day].length - 1 && (
+              <div className="absolute -ml-1.5 bottom-0 h-4 w-4 rounded-full bg-blue -left-[1px]"></div>
+            )} */}
+            <div className="flex flex-col min-h-52 border-l-[1.5px] border-yellow border-dashed pl-10 z-0  relative ">
+              <div className="h-4 w-4 rounded-full bg-yellow z-20 absolute -left-0.5 mt-1.5 -ml-1.5"></div>
+              <div className="hover:cursor-pointer min-h-52 hover:pl-10 transition-all duration-300 justify-center flex flex-col w-full">
+                <div className="border border-yellow bg-none rounded-lg px-2 py-0.5 text-center max-w-max absolute top-0">
+                  <span className="grow-0">{event.time}</span>
+                </div>
+                <div>
+                  <h2>{event.segment}</h2>
+                  <sub>{event.segmentSpec}</sub>
+                  <sub>{event.subtitle}</sub>
+                </div>
+              </div>
+              {dayIndex === days.length - 1 && eventIndex === timeline[day].length - 1 && (
+                <div className="absolute bottom-0 text-yellow hover:cursor-pointer hover:scale-110 transition-all duration-300">
+                  <span className="">DOWNLOAD FULL AGENDA</span>
+                </div>
+              )}
+            </div>
+            {dayIndex === days.length - 1 && eventIndex === timeline[day].length - 1 && (
+              <div className="absolute -ml-1.5 bottom-0 h-4 w-4 rounded-full bg-yellow -left-[1px]"></div>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  ));
+
+  return <>{res}</>;
+};
+
 export default function Landing() {
   const partners = [IBAP, USEP, BagongPilipinas, CHEDLogo, PSITS, CDITE];
   const cardsTrigger = useRef(null);
@@ -290,7 +400,9 @@ export default function Landing() {
               the ever-evolving landscape of technology and education.
             </h3>
           </div>
-          <div></div>
+          <div className="w-full py-[3rem]">
+            <MappedTimeline />
+          </div>
         </section>
       </div>
       <div className="bg-yellow bg-opacity-20 w-full">
