@@ -339,7 +339,7 @@ export default function Landing() {
             </h2>
           </div>
         </section>
-        <div className="relative h-full w-full py-[5rem]">
+        <div className="relative h-full w-full pt-[5rem]">
           <div className="h-full w-full max-w-[568px] max-h-[568px] rounded-full absolute bg-yellow opacity-15 blur-3xl top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none" />
           <LanddingCarousel />
         </div>

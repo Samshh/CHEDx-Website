@@ -53,13 +53,12 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: #030303; 
-   
+    background-color: #030303;
   }
 
   ::-webkit-scrollbar-thumb:hover {
     background-color: #535353;
-  } 
+  }
 
   .vertical-text {
     writing-mode: vertical-rl;
