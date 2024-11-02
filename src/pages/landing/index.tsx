@@ -8,6 +8,7 @@ import BagongPilipinas from "/landingLogos/BagongPilipinas.svg";
 import PSITS from "/landingLogos/PSITS.svg";
 import CHEDLogo from "/landingLogos/CHEDLogo.svg";
 import CDITE from "/landingLogos/CDITE.svg";
+import LandingCard from "./components/LandingCard";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useRef, useState } from "react";
@@ -16,10 +17,7 @@ import CurvedUnderline from "/underlines/landing_underline.svg";
 import CurvedUnderline2 from "/underlines/landing2_underline.svg";
 import landingArrow from "/landingArrow.svg";
 import { useNavigate } from "react-router-dom";
-import landingIMG1 from "/landingIMG1.png";
-import landingIMG2 from "/landingIMG2.png";
-import landingIMG3 from "/landingIMG3.png";
-import LandingCard from "./components/LandingCard";
+import LanddingCarousel from "./components/LandingCarousel";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -343,12 +341,7 @@ export default function Landing() {
         </section>
         <div className="relative h-full w-full py-[5rem]">
           <div className="h-full w-full max-w-[568px] max-h-[568px] rounded-full absolute bg-yellow opacity-15 blur-3xl top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none" />
-          <div className="flex justify-center items-center overflow-hidden z-10 gap-[3rem]">
-            <img src={landingIMG1} alt="" />
-            <img src={landingIMG2} alt="" />
-            <img src={landingIMG3} alt="" />
-            
-          </div>
+          <LanddingCarousel />
         </div>
       </div>
       <div className="py-[5rem]">
