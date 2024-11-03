@@ -9,17 +9,14 @@ interface useAnimateTextProps {
   trigger: React.RefObject<HTMLDivElement>;
 }
 
-export default function useAnimateText({text, trigger}: useAnimateTextProps) {
+export default function useAnimateText({ text, trigger }: useAnimateTextProps) {
   useGSAP(() => {
     const textElement = text.current;
     if (!textElement) return;
 
     const words = textElement.textContent?.split(" ") || [];
     textElement.innerHTML = words
-      .map(
-        (word: string) =>
-          `<span style="display: inline-block;">${word} </span>`
-      )
+      .map((word: string) => `<span style="display: inline-block;">${word} </span>`)
       .join(" ");
 
     gsap.fromTo(
