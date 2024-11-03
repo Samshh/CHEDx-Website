@@ -21,16 +21,16 @@ export default function Navbar() {
         </button>
         <div className="hidden lg:flex items-center justify-center gap-[1.75rem]">
           <button onClick={() => navigate("/")} type="button">
-            <p className="uppercase">Home</p>
+            <p className="uppercase hover:text-yellow transition-all ease-linear">Home</p>
           </button>
           <button onClick={() => navigate("/venue")} type="button">
-            <p className="uppercase">Venue</p>
+            <p className="uppercase hover:text-red transition-all ease-linear">Venue</p>
           </button>
           <button onClick={() => navigate("/programme")} type="button">
-            <p className="uppercase">Programme</p>
+            <p className="uppercase hover:text-blue transition-all ease-linear">Programme</p>
           </button>
           <button onClick={() => navigate("/breakout-sessions")} type="button">
-            <p className="uppercase">Breakout Sessions</p>
+            <p className="uppercase hover:text-green transition-all ease-linear">Breakout Sessions</p>
           </button>
           <Button className="border-[1px] border-black">Register Now</Button>
         </div>

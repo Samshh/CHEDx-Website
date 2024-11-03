@@ -2,8 +2,14 @@ import Button from "@/components/ui/button";
 import HeroBG from "/CHEDx_Hero.png";
 import VenueSVG from "/Venue.svg";
 import CurvedUnderline from "/underlines/venue_underline.svg";
+import { useRef } from "react";
+import useAnimateText from "@/components/animations/useAnimateText";
 
 export default function Venue() {
+  const textTrigger = useRef(null);
+  const text = useRef(null);
+
+  useAnimateText({ text: text, trigger: textTrigger });
   return (
     <div>
       <section>
@@ -19,7 +25,11 @@ export default function Venue() {
             THE VENUE
           </h1>
         </div>
-        <section className="relative flex flex-col items-center gap-[5rem] py-[10rem]" id="venueMap">
+        <section
+          className="relative flex flex-col items-center gap-[5rem] py-[10rem]"
+          id="venueMap"
+          ref={textTrigger}
+        >
           <div className="text-center flex flex-col gap-[2rem]">
             <div>
               <h2>
@@ -35,7 +45,7 @@ export default function Venue() {
                 </span>
               </h2>
             </div>
-            <h3>
+            <h3 ref={text}>
               The summit will be held at SMX DAVAO 3rd Level, SM Lanang Premier,
               J.P. Laurel Avenue, Lanang, Davao City <br /> See the embedded map
               below!
