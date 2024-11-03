@@ -136,28 +136,28 @@ export default function BreakoutSessions() {
           <h1 className="text-primary text-center relative z-10 text-green">BREAKOUT SESSIONS</h1>
         </div>
 
-        <div id="breakoutDay1" className="flex flex-col gap-5 mb-7 my-20">
+        <div className="flex flex-col gap-5 mb-7 my-20">
           <div className="w-full flex justify-center">
             <div className="border border-green p-2 rounded-lg">
               <p>DAY 1</p>
             </div>
           </div>
           <h2 className="text-center my-3">DECEMBER 4, 2024</h2>
-          <div className="w-full">
+          <div id="breakoutDay1" className="w-full">
             <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-5">
               {cardDetails_day1.map(renderCard)}
             </div>
           </div>
         </div>
 
-        <div id="breakoutDay2" className="flex flex-col gap-5 mb-7 mt-10 my-20">
+        <div className="flex flex-col gap-5 mb-7 mt-10 my-20">
           <div className="w-full flex justify-center">
             <div className="border border-green p-2 rounded-lg">
               <p>DAY 2</p>
             </div>
           </div>
           <h2 className="text-center my-3">DECEMBER 5, 2024</h2>
-          <div className="w-full  mb-10">
+          <div id="breakoutDay2" className="w-full  mb-10">
             <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-5">
               {cardDetails_day2.map(renderCard)}
             </div>
