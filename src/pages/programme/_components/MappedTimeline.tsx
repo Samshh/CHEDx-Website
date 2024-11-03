@@ -1,9 +1,5 @@
 import { useRef } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useNavigate } from "react-router-dom";
-
-gsap.registerPlugin(ScrollTrigger);
 
 interface Event {
   time: string;
@@ -161,46 +157,6 @@ const MappedTimeline = () => {
   const days = Object.keys(timeline);
   const timelineRef = useRef(null);
 
-  // useEffect(() => {
-  //   const elements = gsap.utils.toArray<HTMLElement>(".timeline-event");
-
-  //   elements.forEach((element) => {
-  //     gsap.fromTo(
-  //       element,
-  //       { opacity: 1, y: 0 },
-  //       {
-  //         opacity: 0,
-  //         y: 0,
-  //         ease: "power1.out", // Smooth easing for fade-out
-  //         duration: 1.5, // Set a duration to make fade-out gradual
-  //         scrollTrigger: {
-  //           trigger: element,
-  //           start: "top top+=30", // Start fading out when the element reaches 80% of the viewport height
-  //           end: "top", // Fully faded out when it reaches 20% of the viewport height
-  //           scrub: true, // Smoothly fade out based on scroll
-  //         },
-  //       }
-  //     );
-
-  //     gsap.fromTo(
-  //       element,
-  //       { opacity: 0, y: 0 },
-  //       {
-  //         opacity: 1,
-  //         y: 0,
-  //         ease: "power1.out", // Smooth easing for fade-out
-  //         duration: 1.5, // Set a duration to make fade-out gradual
-  //         scrollTrigger: {
-  //           trigger: element,
-  //           start: "top 95%", // Start fading out when the element reaches 80% of the viewport height
-  //           end: "top 90%", // Fully faded out when it reaches 20% of the viewport height
-  //           scrub: true, // Smoothly fade out based on scroll
-  //         },
-  //       }
-  //     );
-  //   });
-  // }, []);
-
   const res = days.flatMap((day, dayIndex) => (
     <div className="flex w-full" key={day} ref={timelineRef} id={`#${day}`}>
       <div className="text-end flex justify-end w-[25%] pr-10">
@@ -230,24 +186,23 @@ const MappedTimeline = () => {
                 </div>
               </div>
               {dayIndex === days.length - 1 && eventIndex === timeline[day].length - 1 && (
-                <div className="absolute bottom-0 text-blue hover:cursor-pointer hover:scale-110 transition-all duration-300 flex gap-5 items-center">
-                  <span onClick={() => navigate("/programme")}>VIEW FULL AGENDA</span>
+                <div className="absolute bottom-0 text-blue hover:cursor-pointer hover:scale-110 transition-all duration-300 flex gap-3 items-center">
                   <svg
-                    fill="#38B6FF"
-                    height="25px"
-                    width="25px"
-                    version="1.1"
-                    id="Layer_1"
+                    width="20px"
+                    height="20px"
+                    viewBox="0 0 24 24"
+                    fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 330 330"
+                    style={{ stroke: "#38B6FF" }}
                   >
                     <path
-                      id="XMLID_27_"
-                      d="M15,180h263.787l-49.394,49.394c-5.858,5.857-5.858,15.355,0,21.213C232.322,253.535,236.161,255,240,255
-                  s7.678-1.465,10.606-4.394l75-75c5.858-5.857,5.858-15.355,0-21.213l-75-75c-5.857-5.857-15.355-5.857-21.213,0
-                  c-5.858,5.857-5.858,15.355,0,21.213L278.787,150H15c-8.284,0-15,6.716-15,15S6.716,180,15,180z"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12 3C12.5523 3 13 3.44772 13 4V17.5858L18.2929 12.2929C18.6834 11.9024 19.3166 11.9024 19.7071 12.2929C20.0976 12.6834 20.0976 13.3166 19.7071 13.7071L12.7071 20.7071C12.3166 21.0976 11.6834 21.0976 11.2929 20.7071L4.29289 13.7071C3.90237 13.3166 3.90237 12.6834 4.29289 12.2929C4.68342 11.9024 5.31658 11.9024 5.70711 12.2929L11 17.5858V4C11 3.44772 11.4477 3 12 3Z"
+                      fill="#38B6FF"
                     />
                   </svg>
+                  <span onClick={() => navigate("/programme")}>DOWNLOAD FULL AGENDA</span>
                 </div>
               )}
             </div>
