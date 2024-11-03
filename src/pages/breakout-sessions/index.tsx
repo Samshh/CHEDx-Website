@@ -19,19 +19,17 @@ export default function BreakoutSessions() {
   };
 
   const cardDetails_day1: CardDetails[] = [
-    // Cards for December 4, 2024
     {
-      title: "AI for Academic Purpose ",
+      title: "AI for Academic Purpose",
       subtitle: "Industry (Accenture) - c/o IBPAP",
       time: "1:30 PM - 2:15 PM",
     },
     {
       title:
         "Investigating Generative AI Mechanisms for the Academe in Improving Educational Engagement and Outcomes",
-      subtitle: "Academic Program Director, Asian Insitute of Management ",
+      subtitle: "Academic Program Director, Asian Institute of Management",
       time: "1:30 PM - 2:15 PM",
     },
-
     {
       title: "Topic on Future's Thinking / Digital Transformation",
       subtitle: "Panel Speakers (CHED, DepED, Industry)",
@@ -55,13 +53,6 @@ export default function BreakoutSessions() {
       time: "3:30 PM - 4:15 PM",
     },
     {
-      title:
-        "Futures Library, Futures Information: Uncover Sustainable Opportunity for Collaboration and Innovation",
-      subtitle:
-        "Program Head, Bachelor of Science and Information Science, West Visayas State University",
-      time: "3:30 PM - 4:15 PM",
-    },
-    {
       title: "Role of Certifications and Microcredentials in Education",
       subtitle: "Training Platform",
       time: "4:15 PM - 5:00 PM",
@@ -75,7 +66,6 @@ export default function BreakoutSessions() {
   ];
 
   const cardDetails_day2: CardDetails[] = [
-    // Cards for December 4, 2024
     {
       title:
         "Contact Center & Business Process PSF Emerging Tech Career Pathways",
@@ -87,7 +77,6 @@ export default function BreakoutSessions() {
       subtitle: "Sector Representative",
       time: "1:30 PM - 2:15 PM",
     },
-
     {
       title: "Animation PSF Emerging Tech Career Pathways",
       subtitle: "Sector Representative",
@@ -141,13 +130,12 @@ export default function BreakoutSessions() {
                 alt="Expanded Card Image"
                 className="w-full h-full object-cover rounded-lg"
               />
-              <div className="absolute top-2 left-2 text-sm text-white  bg-opacity-50 px-3 py-1 rounded-lg border-white border my-3 mx-3">
+              <div className="absolute top-2 left-2 text-sm text-white bg-opacity-50 px-3 py-1 rounded-lg border-white border my-3 mx-3">
                 {card.time}
               </div>
               <div className="absolute bottom-4 left-4 text-white">
                 <h3 className="text-xl font-semibold mb-1">{card.title}</h3>
                 <p className="text-sm">{card.subtitle}</p>
-                {/* <p className="text-sm">{card.speakers} Speakers</p> */}
               </div>
             </div>
           </div>
@@ -158,7 +146,7 @@ export default function BreakoutSessions() {
 
   return (
     <>
-      <section>
+      <section id="breakoutSession">
         <div className="relative bg-hero-bg bg-cover w-screen min-h-[80vh] flex items-center justify-center">
           <img
             src={HeroBG}
@@ -172,7 +160,7 @@ export default function BreakoutSessions() {
           </h1>
         </div>
 
-        <div className="flex flex-col gap-5 mb-7 my-20">
+        <div id="breakoutDay1" className="flex flex-col gap-5 mb-7 my-20">
           <div className="w-full flex justify-center">
             <div className="border border-green p-2 rounded-lg">
               <p>DAY 1</p>
@@ -186,7 +174,7 @@ export default function BreakoutSessions() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-5 mb-7 mt-10 my-20">
+        <div id="breakoutDay2" className="flex flex-col gap-5 mb-7 mt-10 my-20">
           <div className="w-full flex justify-center">
             <div className="border border-green p-2 rounded-lg">
               <p>DAY 2</p>
@@ -199,9 +187,8 @@ export default function BreakoutSessions() {
             </div>
           </div>
         </div>
-
-        {/* Register section */}
       </section>
+
       <div className="bg-green bg-opacity-20 w-full">
         <section className="py-[5rem] flex-row justify-between">
           <div className="flex flex-col items-start justify-center gap-[2.5rem]">
