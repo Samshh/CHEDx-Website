@@ -1,5 +1,5 @@
 import Button from "@/components/ui/button";
-import HeroBG from "/CHEDx_Hero.png";
+import HeroBG from "/venueBG.jpg";
 import VenueSVG from "/Venue.svg";
 import CurvedUnderline from "/underlines/venue_underline.svg";
 import { useRef } from "react";
@@ -17,7 +17,7 @@ export default function Venue() {
           <img
             src={HeroBG}
             alt="herobg"
-            className="absolute w-screen h-full object-cover"
+            className="absolute w-screen h-full object-cover opacity-15"
           />
           <div className="absolute inset-0 bg-center-transparent" />
           <div className="h-full w-full max-w-[568px] max-h-[568px] rounded-full absolute bg-red opacity-10 blur-3xl" />
