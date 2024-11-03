@@ -10,25 +10,26 @@ interface CardDetails {
 }
 
 export default function BreakoutSessions() {
-  const [expandedCardIndex, setExpandedCardIndex] = useState<number | null>(null);
+  const [expandedCardIndex, setExpandedCardIndex] = useState<number | null>(
+    null
+  );
 
   const handleCardClick = (index: number) => {
     setExpandedCardIndex(expandedCardIndex === index ? null : index);
   };
 
   const cardDetails_day1: CardDetails[] = [
-    // Cards for December 4, 2024
     {
-      title: "AI for Academic Purpose ",
+      title: "AI for Academic Purpose",
       subtitle: "Industry (Accenture) - c/o IBPAP",
       time: "1:30 PM - 2:15 PM",
     },
     {
-      title: "Investigating Generative AI Mechanisms for the Academe in Improving Educational Engagement and Outcomes",
-      subtitle: "Academic Program Director, Asian Insitute of Management ",
+      title:
+        "Investigating Generative AI Mechanisms for the Academe in Improving Educational Engagement and Outcomes",
+      subtitle: "Academic Program Director, Asian Institute of Management",
       time: "1:30 PM - 2:15 PM",
     },
-
     {
       title: "Topic on Future's Thinking / Digital Transformation",
       subtitle: "Panel Speakers (CHED, DepED, Industry)",
@@ -45,13 +46,10 @@ export default function BreakoutSessions() {
       time: "3:30 PM - 4:15 PM",
     },
     {
-      title: "Futures Library, Futures Information: Uncover Sustainable Opportunity for Collaboration and Innovation",
-      subtitle: "Program Head, Bachelor of Science and Information Science, West Visayas State University",
-      time: "3:30 PM - 4:15 PM",
-    },
-    {
-      title: "Futures Library, Futures Information: Uncover Sustainable Opportunity for Collaboration and Innovation",
-      subtitle: "Program Head, Bachelor of Science and Information Science, West Visayas State University",
+      title:
+        "Futures Library, Futures Information: Uncover Sustainable Opportunity for Collaboration and Innovation",
+      subtitle:
+        "Program Head, Bachelor of Science and Information Science, West Visayas State University",
       time: "3:30 PM - 4:15 PM",
     },
     {
@@ -68,9 +66,9 @@ export default function BreakoutSessions() {
   ];
 
   const cardDetails_day2: CardDetails[] = [
-    // Cards for December 4, 2024
     {
-      title: "Contact Center & Business Process PSF Emerging Tech Career Pathways",
+      title:
+        "Contact Center & Business Process PSF Emerging Tech Career Pathways",
       subtitle: "Sector Representative",
       time: "10:45 PM - 11:45 PM",
     },
@@ -79,7 +77,6 @@ export default function BreakoutSessions() {
       subtitle: "Sector Representative",
       time: "1:30 PM - 2:15 PM",
     },
-
     {
       title: "Animation PSF Emerging Tech Career Pathways",
       subtitle: "Sector Representative",
@@ -107,27 +104,38 @@ export default function BreakoutSessions() {
       key={index}
       onClick={() => handleCardClick(index)}
       className={`relative cursor-pointer transition-transform duration-300 ease-in-out ${
-        expandedCardIndex === index ? "" : "hover:scale-105 hover:shadow-xl relative"
+        expandedCardIndex === index
+          ? ""
+          : "hover:scale-105 hover:shadow-xl relative"
       }`}
     >
-      <img src={CardImage} alt={`Card Image ${index + 1}`} className="w-full h-full object-cover rounded-lg" />
+      <img
+        src={CardImage}
+        alt={`Card Image ${index + 1}`}
+        className="w-full h-full object-cover rounded-lg"
+      />
       <div className="border border-white bg-none rounded-lg px-2 py-0.5 mt-3 ml-3 text-white text-center max-w-max absolute top-0">
         <span className="grow-0">{card.time}</span>
       </div>
-      <span className="absolute bottom-2 left-2 text-white px-2 py-1 rounded">{card.title}</span>
+      <span className="absolute bottom-2 left-2 text-white px-2 py-1 rounded">
+        {card.title}
+      </span>
 
       {expandedCardIndex === index && (
         <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-55 z-50">
           <div className="relative bg-white p-0 rounded-full shadow-2xl transform transition-transform duration-300 max-w-2xl w-full">
             <div className="relative">
-              <img src={CardImage} alt="Expanded Card Image" className="w-full h-full object-cover rounded-lg" />
-              <div className="absolute top-2 left-2 text-sm text-white  bg-opacity-50 px-3 py-1 rounded-lg border-white border my-3 mx-3">
+              <img
+                src={CardImage}
+                alt="Expanded Card Image"
+                className="w-full h-full object-cover rounded-lg"
+              />
+              <div className="absolute top-2 left-2 text-sm text-white bg-opacity-50 px-3 py-1 rounded-lg border-white border my-3 mx-3">
                 {card.time}
               </div>
               <div className="absolute bottom-4 left-4 text-white">
                 <h3 className="text-xl font-semibold mb-1">{card.title}</h3>
                 <p className="text-sm">{card.subtitle}</p>
-                {/* <p className="text-sm">{card.speakers} Speakers</p> */}
               </div>
             </div>
           </div>
@@ -138,15 +146,21 @@ export default function BreakoutSessions() {
 
   return (
     <>
-      <section>
+      <section id="breakoutSession">
         <div className="relative bg-hero-bg bg-cover w-screen min-h-[80vh] flex items-center justify-center">
-          <img src={HeroBG} alt="herobg" className="absolute w-screen h-full object-cover" />
+          <img
+            src={HeroBG}
+            alt="herobg"
+            className="absolute w-screen h-full object-cover"
+          />
           <div className="absolute inset-0 bg-center-transparent" />
           <div className="h-full w-full max-w-[568px] max-h-[568px] rounded-full absolute bg-green opacity-10 blur-3xl" />
-          <h1 className="text-primary text-center relative z-10 text-green">BREAKOUT SESSIONS</h1>
+          <h1 className="text-primary text-center relative z-10 text-green">
+            BREAKOUT SESSIONS
+          </h1>
         </div>
 
-        <div className="flex flex-col gap-5 mb-7 my-20">
+        <div id="breakoutDay1" className="flex flex-col gap-5 mb-7 my-20">
           <div className="w-full flex justify-center">
             <div className="border border-green p-2 rounded-lg">
               <p>DAY 1</p>
@@ -154,11 +168,13 @@ export default function BreakoutSessions() {
           </div>
           <h2 className="text-center my-3">DECEMBER 4, 2024</h2>
           <div className="w-full">
-            <div className="grid grid-cols-2 gap-5">{cardDetails_day1.map(renderCard)}</div>
+            <div className="grid grid-cols-2 gap-5">
+              {cardDetails_day1.map(renderCard)}
+            </div>
           </div>
         </div>
 
-        <div className="flex flex-col gap-5 mb-7 mt-10 my-20">
+        <div id="breakoutDay2" className="flex flex-col gap-5 mb-7 mt-10 my-20">
           <div className="w-full flex justify-center">
             <div className="border border-green p-2 rounded-lg">
               <p>DAY 2</p>
@@ -166,10 +182,13 @@ export default function BreakoutSessions() {
           </div>
           <h2 className="text-center my-3">DECEMBER 5, 2024</h2>
           <div className="w-full mb-10">
-            <div className="grid grid-cols-2 gap-5">{cardDetails_day2.map(renderCard)}</div>
+            <div className="grid grid-cols-2 gap-5">
+              {cardDetails_day2.map(renderCard)}
+            </div>
           </div>
         </div>
       </section>
+
       <div className="bg-green bg-opacity-20 w-full">
         <section className="py-[5rem] flex-row justify-between">
           <div className="flex flex-col items-start justify-center gap-[2.5rem]">
