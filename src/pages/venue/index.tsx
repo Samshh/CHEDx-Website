@@ -2,8 +2,14 @@ import Button from "@/components/ui/button";
 import HeroBG from "/CHEDx_Hero.png";
 import VenueSVG from "/Venue.svg";
 import CurvedUnderline from "/underlines/venue_underline.svg";
+import { useRef } from "react";
+import useAnimateText from "@/components/animations/useAnimateText";
 
 export default function Venue() {
+  const textTrigger = useRef(null);
+  const text = useRef(null);
+
+  useAnimateText({ text: text, trigger: textTrigger });
   return (
     <div>
       <section>
@@ -13,8 +19,11 @@ export default function Venue() {
           <div className="h-full w-full max-w-[568px] max-h-[568px] rounded-full absolute bg-red opacity-10 blur-3xl" />
           <h1 className="text-primary text-center relative z-10 text-red">THE VENUE</h1>
         </div>
-        <section className="relative flex flex-col items-center gap-[5rem] py-[10rem]" id="venueMap">
-          <div className="text-center flex flex-col gap-[2rem]">
+        <section
+          className="relative flex flex-col items-center gap-[5rem] py-[10rem]"
+          id="venueMap"
+        >
+          <div className="text-center flex flex-col gap-[2rem]" ref={textTrigger}>
             <div>
               <h2>
                 <span className="text-red">We are taking CHEDx</span>
@@ -29,7 +38,7 @@ export default function Venue() {
                 </span>
               </h2>
             </div>
-            <h3>
+            <h3 ref={text}>
               The summit will be held at SMX DAVAO 3rd Level, SM Lanang Premier,
               J.P. Laurel Avenue, Lanang, Davao City <br /> See the embedded map
               below!

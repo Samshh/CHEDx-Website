@@ -16,10 +16,8 @@ export default function MainLayout() {
       <ReactLenis root key={pathname}>
         <Navbar />
         <Sidebar />
-        <div className="z-10">
-          <Outlet />
-          <Footer />
-        </div>
+        <Outlet />
+        <Footer />
       </ReactLenis>
     </main>
   );
