@@ -161,8 +161,8 @@ export default function Landing() {
         </section>
       </div>
       {/* section2 */}
-      <div className="py-[5rem]" id="whyJoin" ref={textTrigger1}>
-        <section className="relative gap-[5rem]">
+      <div className="py-[5rem]" id="whyJoin">
+        <section className="relative gap-[5rem]" ref={textTrigger1}>
           <div className="h-full w-full max-w-[568px] max-h-[568px] rounded-full absolute bg-yellow opacity-15 blur-3xl" />
           <div className="max-w-[751px] w-full flex justify-center items-center gap-[3.36rem] flex-wrap">
             {partners.map((partner, index) => (
@@ -267,8 +267,8 @@ export default function Landing() {
         </div>
       </div>
       {/* section5 */}
-      <div className="py-[5rem]" id="theSpeaker" ref={textTrigger2}>
-        <section className="gap-[4rem]">
+      <div className="py-[5rem]" id="theSpeaker">
+        <section className="gap-[4rem]" ref={textTrigger2}>
           <div className="flex flex-col gap-[2rem] text-center">
             <h2>
               <span className="text-yellow">Meet the</span>{" "}
@@ -292,8 +292,8 @@ export default function Landing() {
         </section>
       </div>
       {/* section6 */}
-      <div className="py-[5rem]" id="progSched" ref={textTrigger3}>
-        <section className="gap-[4rem]">
+      <div className="py-[5rem]" id="progSched">
+        <section className="gap-[4rem]" ref={textTrigger3}>
           <div className="flex flex-col gap-[2rem] text-center">
             <h2>
               <span className="text-yellow">CHEDx 2024</span>

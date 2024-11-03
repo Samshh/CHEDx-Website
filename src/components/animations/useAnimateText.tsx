@@ -36,6 +36,7 @@ export default function useAnimateText({text, trigger}: useAnimateTextProps) {
           start: "top center",
           end: "bottom center",
           toggleActions: "play none none reverse",
+          // markers: true,
         },
       }
     );

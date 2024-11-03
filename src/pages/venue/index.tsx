@@ -28,9 +28,8 @@ export default function Venue() {
         <section
           className="relative flex flex-col items-center gap-[5rem] py-[10rem]"
           id="venueMap"
-          ref={textTrigger}
         >
-          <div className="text-center flex flex-col gap-[2rem]">
+          <div className="text-center flex flex-col gap-[2rem]" ref={textTrigger}>
             <div>
               <h2>
                 <span className="text-red">We are taking CHEDx</span>
