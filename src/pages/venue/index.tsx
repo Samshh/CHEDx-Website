@@ -11,13 +11,13 @@ export default function Venue() {
 
   useAnimateText({ text: text, trigger: textTrigger });
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <section>
         <div className="relative bg-hero-bg bg-cover w-screen min-h-[80vh] flex items-center justify-center">
           <img
             src={HeroBG}
             alt="herobg"
-            className="absolute w-screen h-full object-cover opacity-15"
+            className="absolute w-full h-full object-cover opacity-15"
           />
           <div className="absolute inset-0 bg-center-transparent" />
           <div className="h-full w-full max-w-[568px] max-h-[568px] rounded-full absolute bg-red opacity-10 blur-3xl" />
