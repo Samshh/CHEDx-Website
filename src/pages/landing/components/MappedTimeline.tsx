@@ -33,12 +33,15 @@ const timeline: Timeline = {
     {
       time: "9:00 AM - 9:30 AM",
       segment: "Welcome Remarks",
-      title: "Dr. Bonifacio G. Gabales, Jr. & Atty. Cinderella Filipina B. Jaro",
-      subtitle: "SUC President, University of Southeastern Philippines, CHED Executive Director",
+      title:
+        "Dr. Bonifacio G. Gabales, Jr. & Atty. Cinderella Filipina B. Jaro",
+      subtitle:
+        "SUC President, University of Southeastern Philippines, CHED Executive Director",
     },
     {
       time: "9:30 AM - 10:00 AM",
-      segment: "Keynote Speaker: The Role of Higher Education in Producing Futur-Ready IT Professionals",
+      segment:
+        "Keynote Speaker: The Role of Higher Education in Producing Futur-Ready IT Professionals",
       title: "Chairman J. Prospero E. De Vera III",
       subtitle: "Commission on Higher Education, Ribbon Cutting of Exhibit",
     },
@@ -50,7 +53,8 @@ const timeline: Timeline = {
     },
     {
       time: "10:30 AM - 11:00 AM",
-      segment: "Bringing the industry to the Academe: Conceive Design Implement Operate (CDIO) Framework",
+      segment:
+        "Bringing the industry to the Academe: Conceive Design Implement Operate (CDIO) Framework",
       title: "Prof Sin Moh Cheah",
       subtitle: "Singapore Polytechnic",
     },
@@ -63,7 +67,8 @@ const timeline: Timeline = {
     {
       time: "11:30 AM - 12:00 PM",
       segment: "Panel Discussion c/o CHED/IBPAP",
-      title: "Education and the World of Work: Boosting Education through Smart Technologies (Project BEST)",
+      title:
+        "Education and the World of Work: Boosting Education through Smart Technologies (Project BEST)",
       subtitle: "Calen Martin D. Legaspi, Leuther Mojica, Haidee Enriquez",
     },
     {
@@ -102,13 +107,13 @@ const MappedTimeline = () => {
   //       {
   //         opacity: 0,
   //         y: 0,
-  //         ease: "power1.out", 
+  //         ease: "power1.out",
   //         duration: 1.5,
   //         scrollTrigger: {
   //           trigger: element,
-  //           start: "top top+=30", 
-  //           end: "top", 
-  //           scrub: true, 
+  //           start: "top top+=30",
+  //           end: "top",
+  //           scrub: true,
   //         },
   //       }
   //     );
@@ -119,12 +124,12 @@ const MappedTimeline = () => {
   //       {
   //         opacity: 1,
   //         y: 0,
-  //         ease: "power1.out", 
-  //         duration: 1.5, 
+  //         ease: "power1.out",
+  //         duration: 1.5,
   //         scrollTrigger: {
   //           trigger: element,
-  //           start: "top 95%", 
-  //           end: "top 90%", 
+  //           start: "top 95%",
+  //           end: "top 90%",
   //           scrub: true,
   //         },
   //       }
@@ -137,12 +142,15 @@ const MappedTimeline = () => {
       <div className="text-end flex justify-end w-[25%] pr-10">
         <div className="flex flex-col timeline-event">
           <h2 className="text-yellow leading-[25px] ">{day}</h2>
-          <span>December 4, 2024</span>
+          <h3>December 4, 2024</h3>
         </div>
       </div>
       <div className="flex flex-col w-full">
         {timeline[day].map((event, eventIndex) => (
-          <div className=" w-full gap-3 flex flex-col relative" key={eventIndex}>
+          <div
+            className=" w-full gap-3 flex flex-col relative"
+            key={eventIndex}
+          >
             {eventIndex === 0 && (
               <div className="absolute -left-2 -ml-1.5 h-7 w-7 border-yellow border bg-white z-10 rounded-full items-center justify-center flex">
                 <div className="h-4 w-4 rounded-full bg-yellow z-20"></div>
@@ -160,31 +168,35 @@ const MappedTimeline = () => {
                   <p>{event.subtitle}</p>
                 </div>
               </div>
-              {dayIndex === days.length - 1 && eventIndex === timeline[day].length - 1 && (
-                <div className="absolute bottom-0 text-yellow hover:cursor-pointer hover:scale-110 transition-all duration-300 flex gap-5 items-center">
-                  <span onClick={() => navigate("/programme")}>VIEW FULL AGENDA</span>
-                  <svg
-                    fill="#FFA802"
-                    height="25px"
-                    width="25px"
-                    version="1.1"
-                    id="Layer_1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 330 330"
-                  >
-                    <path
-                      id="XMLID_27_"
-                      d="M15,180h263.787l-49.394,49.394c-5.858,5.857-5.858,15.355,0,21.213C232.322,253.535,236.161,255,240,255
+              {dayIndex === days.length - 1 &&
+                eventIndex === timeline[day].length - 1 && (
+                  <div className="absolute bottom-0 text-yellow hover:cursor-pointer hover:scale-110 transition-all duration-300 flex gap-5 items-center">
+                    <span onClick={() => navigate("/programme")}>
+                      VIEW FULL AGENDA
+                    </span>
+                    <svg
+                      fill="#FFA802"
+                      height="25px"
+                      width="25px"
+                      version="1.1"
+                      id="Layer_1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 330 330"
+                    >
+                      <path
+                        id="XMLID_27_"
+                        d="M15,180h263.787l-49.394,49.394c-5.858,5.857-5.858,15.355,0,21.213C232.322,253.535,236.161,255,240,255
                   s7.678-1.465,10.606-4.394l75-75c5.858-5.857,5.858-15.355,0-21.213l-75-75c-5.857-5.857-15.355-5.857-21.213,0
                   c-5.858,5.857-5.858,15.355,0,21.213L278.787,150H15c-8.284,0-15,6.716-15,15S6.716,180,15,180z"
-                    />
-                  </svg>
-                </div>
-              )}
+                      />
+                    </svg>
+                  </div>
+                )}
             </div>
-            {dayIndex === days.length - 1 && eventIndex === timeline[day].length - 1 && (
-              <div className="absolute -ml-1.5 bottom-0 h-4 w-4 rounded-full bg-yellow -left-[1px]"></div>
-            )}
+            {dayIndex === days.length - 1 &&
+              eventIndex === timeline[day].length - 1 && (
+                <div className="absolute -ml-1.5 bottom-0 h-4 w-4 rounded-full bg-yellow -left-[1px]"></div>
+              )}
           </div>
         ))}
       </div>
