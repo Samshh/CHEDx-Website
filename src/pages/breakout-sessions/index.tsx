@@ -5,10 +5,8 @@ import HeroBG from "/HeroBG.svg";
 
 interface CardDetails {
   title: string;
-  date: string;
+  subtitle: string;
   time: string;
-  moderator: string;
-  speakers: number;
 }
 
 export default function BreakoutSessions() {
@@ -20,93 +18,95 @@ export default function BreakoutSessions() {
     setExpandedCardIndex(expandedCardIndex === index ? null : index);
   };
 
-  const cardDetails: CardDetails[] = [
+  const cardDetails_day1: CardDetails[] = [
     // Cards for December 4, 2024
     {
-      title: "Breakout Room 1",
-      date: "DECEMBER 4, 2024",
-      time: "00:00 PM - 00:00 PM",
-      moderator: "kuan",
-      speakers: 3,
+      title: "AI for Academic Purpose ",
+      subtitle: "Industry (Accenture) - c/o IBPAP",
+      time: "1:30 PM - 2:15 PM",
     },
     {
-      title: "Breakout Room 2",
-      date: "DECEMBER 4, 2024",
-      time: "00:00 PM - 00:00 PM",
-      moderator: "kuan",
-      speakers: 4,
-    },
-    {
-      title: "Breakout Room 3",
-      date: "DECEMBER 4, 2024",
-      time: "00:00 PM - 00:00 PM",
-      moderator: "kuan",
-      speakers: 5,
-    },
-    {
-      title: "Breakout Room 4",
-      date: "DECEMBER 4, 2024",
-      time: "00:00 PM - 00:00 PM",
-      moderator: "Grace Hopper",
-      speakers: 2,
-    },
-    {
-      title: "Breakout Room 5",
-      date: "DECEMBER 4, 2024",
-      time: "00:00 PM - 00:00 PM",
-      moderator: "kuan",
-      speakers: 3,
-    },
-    {
-      title: "Breakout Room 6",
-      date: "DECEMBER 4, 2024",
-      time: "00:00 PM - 00:00 PM",
-      moderator: "kuan",
-      speakers: 1,
+      title:
+        "Investigating Generative AI Mechanisms for the Academe in Improving Educational Engagement and Outcomes",
+      subtitle: "Academic Program Director, Asian Insitute of Management ",
+      time: "1:30 PM - 2:15 PM",
     },
 
-    // Cards for December 5, 2024
     {
-      title: "Breakout Room 7",
-      date: "DECEMBER 5, 2024",
-      time: "00:00 PM - 00:00 PM",
-      moderator: "kuan",
-      speakers: 3,
+      title: "Topic on Future's Thinking / Digital Transformation",
+      subtitle: "Panel Speakers (CHED, DepED, Industry)",
+      time: "2:15 PM - 3:00 PM",
     },
     {
-      title: "Breakout Room 8",
-      date: "DECEMBER 5, 2024",
-      time: "00:00 PM - 00:00 PM",
-      moderator: "kuan",
-      speakers: 4,
+      title: "Women in STEM",
+      subtitle: "President, Analytics Association of the Philippines",
+      time: "2:15 PM - 3:00 PM",
     },
     {
-      title: "Breakout Room 9",
-      date: "DECEMBER 5, 2024",
-      time: "00:00 PM - 00:00 PM",
-      moderator: "kuan",
-      speakers: 5,
+      title: "Soft Skills for IT Professionals c/o IBPAP",
+      subtitle: "Industry (iQor)",
+      time: "3:30 PM - 4:15 PM",
     },
     {
-      title: "Breakout Room 10",
-      date: "DECEMBER 5, 2024",
-      time: "00:00 PM - 00:00 PM",
-      moderator: "kuan",
-      speakers: 2,
+      title:
+        "Futures Library, Futures Information: Uncover Sustainable Opportunity for Collaboration and Innovation",
+      subtitle:
+        "Program Head, Bachelor of Science and Information Science, West Visayas State University",
+      time: "3:30 PM - 4:15 PM",
     },
     {
-      title: "Breakout Room 11",
-      date: "DECEMBER 5, 2024",
-      time: "00:00 PM - 00:00 PM",
-      moderator: "kuan",
-      speakers: 3,
+      title:
+        "Futures Library, Futures Information: Uncover Sustainable Opportunity for Collaboration and Innovation",
+      subtitle:
+        "Program Head, Bachelor of Science and Information Science, West Visayas State University",
+      time: "3:30 PM - 4:15 PM",
     },
     {
-      title: "Breakout Room 12",
-      date: "DECEMBER 5, 2024",
-      time: "00:00 PM - 00:00 PM",
-      moderator: "kuan",
-      speakers: 1,
+      title: "Role of Certifications and Microcredentials in Education",
+      subtitle: "Training Platform",
+      time: "4:15 PM - 5:00 PM",
+    },
+    {
+      title:
+        "Cybersecurity Synergy: Collaborative Strategies for Academia and Industry in the Evolving Digital Landscape",
+      subtitle: "Regional Director, GFCE Southeast Asia Hub",
+      time: "4:15 PM - 5:00 PM",
+    },
+  ];
+
+  const cardDetails_day2: CardDetails[] = [
+    // Cards for December 4, 2024
+    {
+      title:
+        "Contact Center & Business Process PSF Emerging Tech Career Pathways",
+      subtitle: "Sector Representative",
+      time: "10:45 PM - 11:45 PM",
+    },
+    {
+      title: "Shared Services PSF Emerging Tech Career Pathway",
+      subtitle: "Sector Representative",
+      time: "1:30 PM - 2:15 PM",
+    },
+
+    {
+      title: "Animation PSF Emerging Tech Career Pathways",
+      subtitle: "Sector Representative",
+      time: "1:30 PM - 2:15 PM",
+    },
+    {
+      title: "Game Development PSF Emerging Tech Career Pathways",
+      subtitle: "Sector Representative",
+      time: "1:30 PM - 2:15 PM",
+    },
+    {
+      title: "Healthcare PSF Emerging Tech Career Pathways c/o IBPAP",
+      subtitle: "Sector Representative",
+      time: "2:15 PM - 3:00 PM",
+    },
+    {
+      title: "IT & Software PSF Emerging Tech Career Pathways",
+      subtitle: "Sector Representative",
+      time: "2:15 PM - 3:00 PM",
     },
   ];
 
@@ -115,7 +115,9 @@ export default function BreakoutSessions() {
       key={index}
       onClick={() => handleCardClick(index)}
       className={`relative cursor-pointer transition-transform duration-300 ease-in-out ${
-        expandedCardIndex === index ? "" : "hover:scale-105 hover:shadow-xl"
+        expandedCardIndex === index
+          ? ""
+          : "hover:scale-105 hover:shadow-xl relative"
       }`}
     >
       <img
@@ -123,28 +125,29 @@ export default function BreakoutSessions() {
         alt={`Card Image ${index + 1}`}
         className="w-full h-full object-cover rounded-lg"
       />
-      <p className="absolute bottom-2 left-2 text-white bg-black px-2 py-1 rounded">
+      <div className="border border-white bg-none rounded-lg px-2 py-0.5 mt-3 ml-3 text-white text-center max-w-max absolute top-0">
+        <span className="grow-0">{card.time}</span>
+      </div>
+      <span className="absolute bottom-2 left-2 text-white px-2 py-1 rounded">
         {card.title}
-      </p>
+      </span>
 
-      {/* Expanded floating view */}
       {expandedCardIndex === index && (
-        <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-75 z-50">
-          <div className="relative bg-white p-0 rounded-lg shadow-2xl transform transition-transform duration-300 max-w-2xl w-full">
-            {/* Floating Card Content */}
+        <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-55 z-50">
+          <div className="relative bg-white p-0 rounded-full shadow-2xl transform transition-transform duration-300 max-w-2xl w-full">
             <div className="relative">
               <img
                 src={CardImage}
                 alt="Expanded Card Image"
                 className="w-full h-full object-cover rounded-lg"
               />
-              <div className="absolute top-2 left-2 text-sm text-white bg-black bg-opacity-50 px-3 py-1 rounded-full">
+              <div className="absolute top-2 left-2 text-sm text-white  bg-opacity-50 px-3 py-1 rounded-lg border-white border my-3 mx-3">
                 {card.time}
               </div>
               <div className="absolute bottom-4 left-4 text-white">
                 <h3 className="text-xl font-semibold mb-1">{card.title}</h3>
-                <p className="text-sm">{card.moderator}</p>
-                <p className="text-sm">{card.speakers} Speakers</p>
+                <p className="text-sm">{card.subtitle}</p>
+                {/* <p className="text-sm">{card.speakers} Speakers</p> */}
               </div>
             </div>
           </div>
@@ -169,33 +172,31 @@ export default function BreakoutSessions() {
           </h1>
         </div>
 
-        <div className="flex flex-col gap-5 mb-7">
+        <div className="flex flex-col gap-5 mb-7 my-20">
           <div className="w-full flex justify-center">
             <div className="border border-green p-2 rounded-lg">
               <p>DAY 1</p>
             </div>
           </div>
           <h2 className="text-center my-3">DECEMBER 4, 2024</h2>
-        </div>
-
-        <div className="w-full">
-          <div className="grid grid-cols-2 gap-5">
-            {cardDetails.slice(0, 6).map(renderCard)}
+          <div className="w-full">
+            <div className="grid grid-cols-2 gap-5">
+              {cardDetails_day1.map(renderCard)}
+            </div>
           </div>
         </div>
 
-        <div className="flex flex-col gap-5 mb-7 mt-10">
+        <div className="flex flex-col gap-5 mb-7 mt-10 my-20">
           <div className="w-full flex justify-center">
             <div className="border border-green p-2 rounded-lg">
               <p>DAY 2</p>
             </div>
           </div>
           <h2 className="text-center my-3">DECEMBER 5, 2024</h2>
-        </div>
-
-        <div className="w-full mb-10">
-          <div className="grid grid-cols-2 gap-5">
-            {cardDetails.slice(6).map(renderCard)}
+          <div className="w-full mb-10">
+            <div className="grid grid-cols-2 gap-5">
+              {cardDetails_day2.map(renderCard)}
+            </div>
           </div>
         </div>
 

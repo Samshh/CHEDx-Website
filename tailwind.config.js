@@ -20,7 +20,8 @@ module.exports = {
       black: "#030303",
     },
     backgroundImage: {
-      "center-transparent": "linear-gradient(to bottom, #F2F2F2, transparent, #F2F2F2)",
+      "center-transparent":
+        "linear-gradient(to bottom, rgba(242, 242, 242, .25), rgba(242, 242, 242, 0), rgba(242, 242, 242, 1))",
     },
   },
   plugins: [require("tailwindcss-animate")],

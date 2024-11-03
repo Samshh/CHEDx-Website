@@ -2,139 +2,50 @@ import { ReactNode } from "react";
 import quoteOpen from "/quote_open.svg";
 import quoteClose from "/quote_close.svg";
 import Button from "@/components/ui/button";
-import HeroBG from "/CHEDx_Hero.png";
+import HeroBG from "/Programme_Hero.png";
 import CurvedUnderline from "/underlines/programme_underline.svg";
+import MappedTimeline from "./_components/MappedTimeline";
 
 interface ContainerProps {
   children: ReactNode;
-}
-
-interface Event {
-  time: string;
-  segment: string;
-  title: string;
-  subtitle: string;
-  segmentSpec?: string;
-}
-
-interface Timeline {
-  [day: string]: Event[];
 }
 
 const Container: React.FC<ContainerProps> = ({ children }) => {
   return <div className="w-full py-20 flex flex-col">{children}</div>;
 };
 
-const timeline: Timeline = {
-  "DAY 1": [
-    {
-      time: "8:00 AM - 8:45 AM",
-      segment: "Registration & Welcome",
-      title: "",
-      subtitle: "",
-    },
-    {
-      time: "8:45 AM - 9:00 AM",
-      segment: "Invocation and Introduction of Speakers",
-      title: "",
-      subtitle: "",
-    },
-    {
-      time: "9:00 AM - 9:30 AM",
-      segment: "Welcome Remarks",
-      title: "Dr. Bonifacio G. Gabales, Jr.",
-      subtitle: "SUC President, University of Southeastern Philippines",
-    },
-  ],
-  "DAY 2": [
-    {
-      time: "TIME - TIME",
-      segment: "SEGMENT",
-      segmentSpec: "Segment specifics (optional)",
-      title: "Person (add as many as needed, also optional)",
-      subtitle: "Person affiliations (optional)",
-    },
-    {
-      time: "TIME - TIME",
-      segment: "SEGMENT",
-      segmentSpec: "Segment specifics (optional)",
-      title: "Person (add as many as needed, also optional)",
-      subtitle: "Person affiliations (optional)",
-    },
-    {
-      time: "TIME - TIME",
-      segment: "SEGMENT",
-      segmentSpec: "Segment specifics (optional)",
-      title: "Person (add as many as needed, also optional)",
-      subtitle: "Person affiliations (optional)",
-    },
-  ],
-};
-
-const MappedTimeline = () => {
-  const days = Object.keys(timeline);
-
-  const res = days.flatMap((day, dayIndex) => (
-    <div className="flex w-full" key={day}>
-      <div className="text-end flex justify-end w-[25%] pr-10">
-        <div className="flex flex-col">
-          <h2 className="text-blue leading-[25px] ">{day}</h2>
-          <span>December 4, 2024</span>
-        </div>
-      </div>
-      <div className="flex flex-col w-full">
-        {timeline[day].map((event, eventIndex) => (
-          <div className={`w-full gap-3 flex flex-col relative`} key={eventIndex}>
-            {eventIndex === 0 && (
-              <div className="absolute -left-2 -ml-1.5 h-7 w-7 border-blue border bg-white z-10 rounded-full items-center justify-center flex">
-                <div className="h-4 w-4 rounded-full bg-blue z-20"></div>
-              </div>
-            )}
-            {/* {eventIndex < timeline[day].length - 1 && (
-              <div className="absolute -ml-1.5 bottom-0 h-4 w-4 rounded-full bg-blue -left-[1px]"></div>
-            )} */}
-            <div className="flex flex-col min-h-52 border-l-[1.5px] border-blue border-dashed pl-10 z-0  relative ">
-              <div className="h-4 w-4 rounded-full bg-blue z-20 absolute -left-0.5 mt-1.5 -ml-1.5"></div>
-              <div className="hover:cursor-pointer min-h-52 hover:ml-10 transition-all duration-300 justify-center flex flex-col w-full">
-                <div className="border border-blue bg-none rounded-lg px-2 py-0.5 text-center max-w-max absolute top-0">
-                  <span className="grow-0">{event.time}</span>
-                </div>
-                <div>
-                  <h2>{event.segment}</h2>
-                  <sub>{event.segmentSpec}</sub>
-                  <sub>{event.subtitle}</sub>
-                </div>
-              </div>
-              {dayIndex === days.length - 1 && eventIndex === timeline[day].length - 1 && (
-                <div className="absolute bottom-0 text-blue hover:cursor-pointer hover:scale-110 transition-all duration-300">
-                  <span className="">DOWNLOAD FULL AGENDA</span>
-                </div>
-              )}
-            </div>
-            {dayIndex === days.length - 1 && eventIndex === timeline[day].length - 1 && (
-              <div className="absolute -ml-1.5 bottom-0 h-4 w-4 rounded-full bg-blue -left-[1px]"></div>
-            )}
-          </div>
-        ))}
-      </div>
-    </div>
-  ));
-
-  return <>{res}</>;
-};
-
 export default function Programme() {
   return (
     <>
       <section>
-        <div className="relative bg-hero-bg bg-cover w-screen min-h-[80vh] flex items-center justify-center">
-          <img src={HeroBG} alt="herobg" className="absolute w-screen h-full object-cover" />
+        <div
+          className="relative bg-hero-bg bg-cover w-screen min-h-[80vh] flex items-center justify-center flex-col"
+          id="#programme"
+        >
+          <img
+            src={HeroBG}
+            alt="herobg"
+            className="absolute w-screen h-full object-cover"
+          />
           <div className="absolute inset-0 bg-center-transparent"></div>
           <div className="h-full w-full max-w-[568px] max-h-[568px] rounded-full absolute bg-blue opacity-10 blur-3xl" />
-          <h1 className="text-blue text-center relative z-10">THE PROGRAMME</h1>
+          <div className="z-10">
+            <h1 className="text-blue text-center relative z-10">
+              THE PROGRAMME
+            </h1>
+            <p className="max-w-3xl text-center text-lg">
+              Embark on a dynamic two-day journey at CHEDx 2023, where
+              innovation meets education. From compelling keynotes to
+              interactive X-change sessions, explore the forefront of IT skills
+              development, delve into the ethical dimensions of AI, and gain
+              sector-specific insights. Join us for a transformative experience
+              shaping the future of technology in education. Let the exploration
+              begin!{" "}
+            </p>
+          </div>
         </div>
         <Container>
-          <div className="w-full">
+          <div className="w-full" id="#theme">
             <img
               src={quoteOpen}
               alt="Quote Open"
@@ -146,7 +57,9 @@ export default function Programme() {
               PROGRAMME THEME
             </Button>
             <h1 className="text-blue">Building Synergy</h1>
-            <h2 className="max-w-lg">Aligning IT Education with Industry Demands</h2>
+            <h2 className="max-w-lg">
+              Aligning IT Education with Industry Demands
+            </h2>
           </div>
           <div className="w-full justify-end flex">
             <img
@@ -157,16 +70,26 @@ export default function Programme() {
           </div>
         </Container>
         <Container>
-          <div className="text-center flex flex-col items-center h-full">
-            <h1 className="text-blue">CHEDx 2024</h1>
-            <div className="relative">
-              <h2 className="text-secondary relative z-10">Programme Schedule</h2>
-              <img src={CurvedUnderline} alt="" className="absolute lg:top-10 left-0 z-0 sm:bottom-0 bottom-0" />
+          <div className="text-center flex flex-col items-center h-full gap-[2rem]">
+            <div>
+              <h1 className="text-blue">CHEDx 2024</h1>
+              <div className="relative">
+                <h2 className="text-secondary relative z-10">
+                  Programme Schedule
+                </h2>
+                <img
+                  src={CurvedUnderline}
+                  alt=""
+                  className="absolute lg:top-10 left-0 z-0 sm:bottom-0 bottom-0"
+                />
+              </div>
             </div>
-            <p className="text-secondary max-w-2xl">
-              Join us at CHEDx 2024 for two days of innovation in education! Discover cutting-edge IT skills, explore AI
-              ethics, and gain targeted industry insights through keynotes and interactive sessions.
-            </p>
+            <h3 className="text-secondary max-w-2xl">
+              Join us at CHEDx 2024 for two days of innovation in education!
+              Discover cutting-edge IT skills, explore AI ethics, and gain
+              targeted industry insights through keynotes and interactive
+              sessions.
+            </h3>
           </div>
         </Container>
         <Container>
@@ -174,7 +97,7 @@ export default function Programme() {
         </Container>
       </section>
       <div className="bg-blue bg-opacity-20 w-full">
-        <section className="py-[5rem] flex-row justify-between">
+        <section className="py-[5rem] flex-row justify-between" id="#next">
           <div className="flex flex-col items-start justify-center gap-[2.5rem]">
             <h2>
               <span className="text-blue">Secure your spot...</span>
