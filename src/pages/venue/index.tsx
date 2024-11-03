@@ -1,5 +1,5 @@
 import Button from "@/components/ui/button";
-import HeroBG from "/CHEDx_Hero.png";
+import HeroBG from "/venueBG.jpg";
 import VenueSVG from "/Venue.svg";
 import CurvedUnderline from "/underlines/venue_underline.svg";
 import { useRef } from "react";
@@ -11,18 +11,15 @@ export default function Venue() {
 
   useAnimateText({ text: text, trigger: textTrigger });
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <section>
         <div className="relative bg-hero-bg bg-cover w-screen min-h-[80vh] flex items-center justify-center">
-          <img src={HeroBG} alt="herobg" className="absolute w-screen h-full object-cover" />
+          <img src={HeroBG} alt="herobg" className="absolute w-full h-full object-cover opacity-15" />
           <div className="absolute inset-0 bg-center-transparent" />
           <div className="h-full w-full max-w-[568px] max-h-[568px] rounded-full absolute bg-red opacity-10 blur-3xl" />
           <h1 className="text-primary text-center relative z-10 text-red">THE VENUE</h1>
         </div>
-        <section
-          className="relative flex flex-col items-center gap-[5rem] py-[10rem]"
-          id="venueMap"
-        >
+        <section className="relative flex flex-col items-center gap-[5rem] py-[10rem]" id="venueMap">
           <div className="text-center flex flex-col gap-[2rem]" ref={textTrigger}>
             <div>
               <h2>
@@ -39,9 +36,8 @@ export default function Venue() {
               </h2>
             </div>
             <h3 ref={text}>
-              The summit will be held at SMX DAVAO 3rd Level, SM Lanang Premier,
-              J.P. Laurel Avenue, Lanang, Davao City <br /> See the embedded map
-              below!
+              The summit will be held at SMX DAVAO 3rd Level, SM Lanang Premier, J.P. Laurel Avenue, Lanang, Davao City{" "}
+              <br /> See the embedded map below!
             </h3>
           </div>
           <div className="w-full lg:w-[60vw] h-[50vh] rounded-2xl overflow-hidden select-all z-10">

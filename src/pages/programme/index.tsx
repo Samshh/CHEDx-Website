@@ -18,10 +18,10 @@ const Container: React.FC<ContainerProps> = ({ children }) => {
 export default function Programme() {
   const textTrigger1 = useRef(null);
   const textTrigger2 = useRef(null);
-  const text1 = useRef(null);
+  // const text1 = useRef(null);
   const text2 = useRef(null);
 
-  useAnimateText({ text: text1, trigger: textTrigger1 });
+  // useAnimateText({ text: text1, trigger: textTrigger1 });
   useAnimateText({ text: text2, trigger: textTrigger2 });
 
   return (
@@ -32,17 +32,17 @@ export default function Programme() {
           id="programme"
           ref={textTrigger1}
         >
-          <img src={HeroBG} alt="herobg" className="absolute w-screen h-full object-cover" />
+          <img src={HeroBG} alt="herobg" className="absolute w-screen h-full object-cover opacity-60" />
           <div className="absolute inset-0 bg-center-transparent"></div>
           <div className="h-full w-full max-w-[568px] max-h-[568px] rounded-full absolute bg-blue opacity-10 blur-3xl" />
           <div className="z-10">
             <h1 className="text-blue text-center relative z-10">THE PROGRAMME</h1>
-            <p className="max-w-3xl text-center text-lg" ref={text1}>
+            {/* <p className="max-w-3xl text-center text-lg px-[1rem]" ref={text1}>
               Embark on a dynamic two-day journey at CHEDx 2023, where innovation meets education. From compelling
               keynotes to interactive X-change sessions, explore the forefront of IT skills development, delve into the
               ethical dimensions of AI, and gain sector-specific insights. Join us for a transformative experience
               shaping the future of technology in education. Let the exploration begin!{" "}
-            </p>
+            </p> */}
           </div>
         </div>
         <Container>
@@ -57,7 +57,7 @@ export default function Programme() {
             <Button className="border border-blue rounded-lg hover:scale-110 transition-all duration-300 cursor-default">
               PROGRAMME THEME
             </Button>
-            <h1 className="text-blue">Building Synergy</h1>
+            <h2 className="text-blue">Building Synergy:</h2>
             <h2 className="max-w-lg">Aligning IT Education with Industry Demands</h2>
           </div>
           <div className="w-full justify-end flex">
@@ -71,7 +71,7 @@ export default function Programme() {
         <Container>
           <div className="text-center flex flex-col items-center h-full gap-[2rem]" ref={textTrigger2}>
             <div>
-              <h1 className="text-blue">CHEDx 2024</h1>
+              <h2 className="text-blue">CHEDx 2024</h2>
               <div className="relative">
                 <h2 className="text-secondary relative z-10">Programme Schedule</h2>
                 <img src={CurvedUnderline} alt="" className="absolute lg:top-10 left-0 z-0 sm:bottom-0 bottom-0" />

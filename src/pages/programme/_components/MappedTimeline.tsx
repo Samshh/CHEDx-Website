@@ -162,7 +162,7 @@ const MappedTimeline = () => {
       <div className="text-end flex justify-end w-[25%] pr-10">
         <div className="flex flex-col timeline-event">
           <h2 className="text-blue leading-[25px] ">{day}</h2>
-          <span>December 4, 2024</span>
+          <h3>December 4, 2024</h3>
         </div>
       </div>
       <div className="flex flex-col w-full">
