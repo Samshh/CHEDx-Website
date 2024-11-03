@@ -3,7 +3,7 @@ import quoteOpen from "/quote_open.svg";
 import quoteClose from "/quote_close.svg";
 import Button from "@/components/ui/button";
 import HeroBG from "/CHEDx_Hero.png";
-import CurvedUnderline from "/curve_underline.svg";
+import CurvedUnderline from "/underlines/programme_underline.svg";
 
 interface ContainerProps {
   children: ReactNode;
@@ -90,10 +90,11 @@ const MappedTimeline = () => {
                 <div className="h-4 w-4 rounded-full bg-blue z-20"></div>
               </div>
             )}
-            {eventIndex < timeline[day].length - 1 && (
+            {/* {eventIndex < timeline[day].length - 1 && (
               <div className="absolute -ml-1.5 bottom-0 h-4 w-4 rounded-full bg-blue -left-[1px]"></div>
-            )}
+            )} */}
             <div className="flex flex-col min-h-52 border-l-[1.5px] border-blue border-dashed pl-10 z-0  relative ">
+              <div className="h-4 w-4 rounded-full bg-blue z-20 absolute -left-0.5 mt-1.5 -ml-1.5"></div>
               <div className="hover:cursor-pointer min-h-52 hover:ml-10 transition-all duration-300 justify-center flex flex-col w-full">
                 <div className="border border-blue bg-none rounded-lg px-2 py-0.5 text-center max-w-max absolute top-0">
                   <span className="grow-0">{event.time}</span>
@@ -141,7 +142,7 @@ export default function Programme() {
             />
           </div>
           <div className="flex flex-col items-center text-center text-secondary p-5">
-            <Button className="border border-blue rounded-lg hover:scale-110 transition-all duration-300">
+            <Button className="border border-blue rounded-lg hover:scale-110 transition-all duration-300 cursor-default">
               PROGRAMME THEME
             </Button>
             <h1 className="text-blue">Building Synergy</h1>

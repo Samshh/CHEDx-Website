@@ -35,33 +35,33 @@ export default function Navbar() {
             <SheetContent className="w-2/3">
               <SheetHeader>
                 <SheetTitle className="flex-end text-end">
-                  <p>MENU</p>
+                  <h3>MENU</h3>
                 </SheetTitle>
               </SheetHeader>
               <div className="flex flex-col gap-[1.25rem] md:gap-[1.75rem] mt-[3rem] md:mt-[3.5rem]">
                 <SheetClose className="flex-end text-end">
                   <button type="button" onClick={() => navigate("/")}>
-                    <p>HOME</p>
+                    <h3>HOME</h3>
                   </button>
                 </SheetClose>
                 <SheetClose className="flex-end text-end">
                   <button type="button" onClick={() => navigate("/venue")}>
-                    <p>VENUE</p>
+                    <h3>VENUE</h3>
                   </button>
                 </SheetClose>
                 <SheetClose className="flex-end text-end">
                   <button type="button" onClick={() => navigate("/programme")}>
-                    <p>PROGRAMME</p>
+                    <h3>PROGRAMME</h3>
                   </button>
                 </SheetClose>
                 <SheetClose className="flex-end text-end">
                   <button type="button" onClick={() => navigate("/breakout-sessions")}>
-                    <p>BREAKOUT SESSIONS</p>
+                    <h3>BREAKOUT SESSIONS</h3>
                   </button>
                 </SheetClose>
                 <SheetClose className="flex-end text-end">
                   <button type="button">
-                    <p className="text-yellow">REGISTER NOW</p>
+                    <h3 className="text-yellow">REGISTER NOW</h3>
                   </button>
                 </SheetClose>
               </div>
