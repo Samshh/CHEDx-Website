@@ -32,7 +32,7 @@ export default function Programme() {
           id="programme"
           ref={textTrigger1}
         >
-          <img src={HeroBG} alt="herobg" className="absolute w-screen h-full object-cover" />
+          <img src={HeroBG} alt="herobg" className="absolute w-screen h-full object-cover opacity-60" />
           <div className="absolute inset-0 bg-center-transparent"></div>
           <div className="h-full w-full max-w-[568px] max-h-[568px] rounded-full absolute bg-blue opacity-10 blur-3xl" />
           <div className="z-10">

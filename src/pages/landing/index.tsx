@@ -150,7 +150,7 @@ export default function Landing() {
               <img src={CHEDxLogo} alt="CHEDx" />
             </div>
             <div className="flex flex-col justify-center items-center gap-[2rem]">
-              <p className="uppercase text-center">
+              <p className="uppercase text-center font-normal">
                 december 4 - 5, 2024
                 <br />
                 @davao city
