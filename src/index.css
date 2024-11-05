@@ -9,6 +9,9 @@
     @apply text-black bg-white;
   }
 
+  /* * {
+    @apply bg-green bg-opacity-5;
+  } */
   /* layout */
   section,
   footer {

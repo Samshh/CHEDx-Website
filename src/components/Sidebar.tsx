@@ -12,7 +12,7 @@ export default function Sidebar() {
     <div className="fixed w-full left-0 top-[30%] pointer-events-none z-10">
       <div className="mx-auto max-w-[1920px] hidden xl:flex justify-between items-center">
         <div className="ml-[2rem] flex flex-col gap-[2rem]">
-          {["explore", "exchange", "experience"].map((text, idx) => (
+          {["exemplify", "exceed", "expand"].map((text, idx) => (
             <div key={idx} className="uppercase">
               <span className="close-up vertical-text font-light">{text}</span>
             </div>

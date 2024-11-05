@@ -25,26 +25,22 @@ export default function Programme() {
   useAnimateText({ text: text2, trigger: textTrigger2 });
 
   return (
-    <>
+    <div className="relative">
+      <img
+        src={HeroBG}
+        alt="herobg"
+        className="absolute w-full h-auto object-cover opacity-60"
+      />
+      <div
+        className="relative bg-hero-bg bg-cover w-full h-screen flex items-center justify-center flex-col"
+        id="programme"
+        ref={textTrigger1}
+      >
+        <div className="absolute inset-0 bg-center-transparent"/>
+        <div className="h-full w-full max-w-[568px] max-h-[568px] rounded-full absolute bg-blue opacity-10 blur-3xl" />
+        <h1 className="text-blue text-center relative z-10">THE PROGRAMME</h1>
+      </div>
       <section>
-        <div
-          className="relative bg-hero-bg bg-cover w-screen min-h-[80vh] flex items-center justify-center flex-col"
-          id="programme"
-          ref={textTrigger1}
-        >
-          <img src={HeroBG} alt="herobg" className="absolute w-screen h-full object-cover opacity-60" />
-          <div className="absolute inset-0 bg-center-transparent"></div>
-          <div className="h-full w-full max-w-[568px] max-h-[568px] rounded-full absolute bg-blue opacity-10 blur-3xl" />
-          <div className="z-10">
-            <h1 className="text-blue text-center relative z-10">THE PROGRAMME</h1>
-            {/* <p className="max-w-3xl text-center text-lg px-[1rem]" ref={text1}>
-              Embark on a dynamic two-day journey at CHEDx 2023, where innovation meets education. From compelling
-              keynotes to interactive X-change sessions, explore the forefront of IT skills development, delve into the
-              ethical dimensions of AI, and gain sector-specific insights. Join us for a transformative experience
-              shaping the future of technology in education. Let the exploration begin!{" "}
-            </p> */}
-          </div>
-        </div>
         <Container>
           <div className="w-full" id="theme">
             <img
@@ -58,7 +54,9 @@ export default function Programme() {
               PROGRAMME THEME
             </Button>
             <h2 className="text-blue">Building Synergy:</h2>
-            <h2 className="max-w-lg">Aligning IT Education with Industry Demands</h2>
+            <h2 className="max-w-lg">
+              Aligning IT Education with Industry Demands
+            </h2>
           </div>
           <div className="w-full justify-end flex">
             <img
@@ -69,17 +67,28 @@ export default function Programme() {
           </div>
         </Container>
         <Container>
-          <div className="text-center flex flex-col items-center h-full gap-[2rem]" ref={textTrigger2}>
+          <div
+            className="text-center flex flex-col items-center h-full gap-[2rem]"
+            ref={textTrigger2}
+          >
             <div>
               <h2 className="text-blue">CHEDx 2024</h2>
               <div className="relative">
-                <h2 className="text-secondary relative z-10">Programme Schedule</h2>
-                <img src={CurvedUnderline} alt="" className="absolute lg:top-10 left-0 z-0 sm:bottom-0 bottom-0" />
+                <h2 className="text-secondary relative z-10">
+                  Programme Schedule
+                </h2>
+                <img
+                  src={CurvedUnderline}
+                  alt=""
+                  className="absolute lg:top-10 left-0 z-0 sm:bottom-0 bottom-0"
+                />
               </div>
             </div>
             <h3 className="text-secondary max-w-2xl" ref={text2}>
-              Join us at CHEDx 2024 for two days of innovation in education! Discover cutting-edge IT skills, explore AI
-              ethics, and gain targeted industry insights through keynotes and interactive sessions.
+              Join us at CHEDx 2024 for two days of innovation in education!
+              Discover cutting-edge IT skills, explore AI ethics, and gain
+              targeted industry insights through keynotes and interactive
+              sessions.
             </h3>
           </div>
         </Container>
@@ -116,6 +125,6 @@ export default function Programme() {
           </svg>
         </section>
       </div>
-    </>
+    </div>
   );
 }

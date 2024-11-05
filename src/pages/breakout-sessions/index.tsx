@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Button from "@/components/ui/button";
 import CardImage from "/Cybersecurity_BG.png";
-import HeroBG from "/HeroBG.svg";
+import HeroBG from "/CHEDx_Hero.png";
 
 interface CardDetails {
   title: string;
@@ -10,7 +10,9 @@ interface CardDetails {
 }
 
 export default function BreakoutSessions() {
-  const [expandedCardIndex, setExpandedCardIndex] = useState<number | null>(null);
+  const [expandedCardIndex, setExpandedCardIndex] = useState<number | null>(
+    null
+  );
 
   const handleCardClick = (index: number) => {
     setExpandedCardIndex(expandedCardIndex === index ? null : index);
@@ -23,7 +25,8 @@ export default function BreakoutSessions() {
       time: "1:30 PM - 2:15 PM",
     },
     {
-      title: "Investigating Generative AI Mechanisms for the Academe in Improving Educational Engagement and Outcomes",
+      title:
+        "Investigating Generative AI Mechanisms for the Academe in Improving Educational Engagement and Outcomes",
       subtitle: "Academic Program Director, Asian Institute of Management",
       time: "1:30 PM - 2:15 PM",
     },
@@ -43,8 +46,10 @@ export default function BreakoutSessions() {
       time: "3:30 PM - 4:15 PM",
     },
     {
-      title: "Futures Library, Futures Information: Uncover Sustainable Opportunity for Collaboration and Innovation",
-      subtitle: "Program Head, Bachelor of Science and Information Science, West Visayas State University",
+      title:
+        "Futures Library, Futures Information: Uncover Sustainable Opportunity for Collaboration and Innovation",
+      subtitle:
+        "Program Head, Bachelor of Science and Information Science, West Visayas State University",
       time: "3:30 PM - 4:15 PM",
     },
     {
@@ -62,7 +67,8 @@ export default function BreakoutSessions() {
 
   const cardDetails_day2: CardDetails[] = [
     {
-      title: "Contact Center & Business Process PSF Emerging Tech Career Pathways",
+      title:
+        "Contact Center & Business Process PSF Emerging Tech Career Pathways",
       subtitle: "Sector Representative",
       time: "10:45 PM - 11:45 PM",
     },
@@ -98,20 +104,32 @@ export default function BreakoutSessions() {
       key={index}
       onClick={() => handleCardClick(index)}
       className={`relative cursor-pointer transition-transform duration-300 ease-in-out ${
-        expandedCardIndex === index ? "" : "hover:scale-105 hover:shadow-xl relative"
+        expandedCardIndex === index
+          ? ""
+          : "hover:scale-105 hover:shadow-xl relative"
       }`}
     >
-      <img src={CardImage} alt={`Card Image ${index + 1}`} className="w-full h-full object-cover rounded-lg" />
+      <img
+        src={CardImage}
+        alt={`Card Image ${index + 1}`}
+        className="w-full h-full object-cover rounded-lg"
+      />
       <div className="border border-white bg-none rounded-lg px-2 py-0.5 mt-3 ml-3 text-white text-center max-w-max absolute top-0">
         <span className="grow-0">{card.time}</span>
       </div>
-      <span className="absolute bottom-2 left-2 text-white px-2 py-1 rounded">{card.title}</span>
+      <span className="absolute bottom-2 left-2 text-white px-2 py-1 rounded">
+        {card.title}
+      </span>
 
       {expandedCardIndex === index && (
         <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-55 z-50">
           <div className="relative bg-white p-0 rounded-full shadow-2xl transform transition-transform duration-300 max-w-2xl w-full">
             <div className="relative">
-              <img src={CardImage} alt="Expanded Card Image" className="w-full h-full object-cover rounded-lg" />
+              <img
+                src={CardImage}
+                alt="Expanded Card Image"
+                className="w-full h-full object-cover rounded-lg"
+              />
               <div className="absolute top-2 left-2 text-sm text-white bg-opacity-50 px-3 py-1 rounded-lg border-white border my-3 mx-3">
                 {card.time}
               </div>
@@ -127,15 +145,20 @@ export default function BreakoutSessions() {
   );
 
   return (
-    <>
+    <div className="relative">
+      <div className="relative bg-hero-bg bg-cover w-full h-screen flex items-center justify-center">
+        <img
+          src={HeroBG}
+          alt="herobg"
+          className="absolute w-full h-screen object-cover"
+        />
+        <div className="absolute inset-0 bg-center-transparent" />
+        <div className="h-full w-full max-w-[568px] max-h-[568px] rounded-full absolute bg-green opacity-10 blur-3xl" />
+        <h1 className="text-primary text-center relative z-10 text-green">
+          BREAKOUT SESSIONS
+        </h1>
+      </div>
       <section id="breakoutSession">
-        <div className="relative bg-hero-bg bg-cover w-screen min-h-[80vh] flex items-center justify-center">
-          <img src={HeroBG} alt="herobg" className="absolute w-screen h-full object-cover" />
-          <div className="absolute inset-0 bg-center-transparent" />
-          <div className="h-full w-full max-w-[568px] max-h-[568px] rounded-full absolute bg-green opacity-10 blur-3xl" />
-          <h1 className="text-primary text-center relative z-10 text-green">BREAKOUT SESSIONS</h1>
-        </div>
-
         <div className="flex flex-col gap-5 mb-7 my-20">
           <div className="w-full flex justify-center">
             <div className="border border-green p-2 rounded-lg">
@@ -193,6 +216,6 @@ export default function BreakoutSessions() {
           </svg>
         </section>
       </div>
-    </>
+    </div>
   );
 }
