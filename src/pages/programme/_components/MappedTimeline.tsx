@@ -1,5 +1,5 @@
+import Button from "@/components/ui/button";
 import { useRef } from "react";
-import { useNavigate } from "react-router-dom";
 
 interface Event {
   time: string;
@@ -29,12 +29,15 @@ const timeline: Timeline = {
     {
       time: "9:00 AM - 9:30 AM",
       segment: "Welcome Remarks",
-      title: "Dr. Bonifacio G. Gabales, Jr. & Atty. Cinderella Filipina B. Jaro",
-      subtitle: "SUC President, University of Southeastern Philippines, CHED Executive Director",
+      title:
+        "Dr. Bonifacio G. Gabales, Jr. & Atty. Cinderella Filipina B. Jaro",
+      subtitle:
+        "SUC President, University of Southeastern Philippines, CHED Executive Director",
     },
     {
       time: "9:30 AM - 10:00 AM",
-      segment: "Keynote Speaker: The Role of Higher Education in Producing Futur-Ready IT Professionals",
+      segment:
+        "Keynote Speaker: The Role of Higher Education in Producing Futur-Ready IT Professionals",
       title: "Chairman J. Prospero E. De Vera III",
       subtitle: "Commission on Higher Education, Ribbon Cutting of Exhibit",
     },
@@ -46,7 +49,8 @@ const timeline: Timeline = {
     },
     {
       time: "10:30 AM - 11:00 AM",
-      segment: "Bringing the industry to the Academe: Conceive Design Implement Operate (CDIO) Framework",
+      segment:
+        "Bringing the industry to the Academe: Conceive Design Implement Operate (CDIO) Framework",
       title: "Prof Sin Moh Cheah",
       subtitle: "Singapore Polytechnic",
     },
@@ -59,7 +63,8 @@ const timeline: Timeline = {
     {
       time: "11:30 AM - 12:00 PM",
       segment: "Panel Discussion c/o CHED/IBPAP",
-      title: "Education and the World of Work: Boosting Education through Smart Technologies (Project BEST)",
+      title:
+        "Education and the World of Work: Boosting Education through Smart Technologies (Project BEST)",
       subtitle: "Calen Martin D. Legaspi, Leuther Mojica, Haidee Enriquez",
     },
     {
@@ -103,7 +108,8 @@ const timeline: Timeline = {
     },
     {
       time: "10:00 AM - 10:15 AM",
-      segment: "Turnover Ceremony of PSF from DICT to Industry Associations c/o IBPAP",
+      segment:
+        "Turnover Ceremony of PSF from DICT to Industry Associations c/o IBPAP",
       title: "USec Jocelle Batapa-Sique",
       subtitle: "DICT",
     },
@@ -133,7 +139,8 @@ const timeline: Timeline = {
     },
     {
       time: "3:15 PM - 5:00 PM",
-      segment: "Building Synergy: Aligning IT Education with Industry Demands (panel discussion with audience Q & A)",
+      segment:
+        "Building Synergy: Aligning IT Education with Industry Demands (panel discussion with audience Q & A)",
       title: "representing the SUCs & the Industry",
       subtitle: "",
     },
@@ -153,7 +160,6 @@ const timeline: Timeline = {
 };
 
 const MappedTimeline = () => {
-  const navigate = useNavigate();
   const days = Object.keys(timeline);
   const timelineRef = useRef(null);
 
@@ -167,7 +173,10 @@ const MappedTimeline = () => {
       </div>
       <div className="flex flex-col w-full">
         {timeline[day].map((event, eventIndex) => (
-          <div className=" w-full gap-3 flex flex-col relative" key={eventIndex}>
+          <div
+            className=" w-full gap-3 flex flex-col relative"
+            key={eventIndex}
+          >
             {eventIndex === 0 && (
               <div className="absolute -left-2 -ml-1.5 h-7 w-7 border-blue border bg-white z-10 rounded-full items-center justify-center flex">
                 <div className="h-4 w-4 rounded-full bg-blue z-20"></div>
@@ -185,30 +194,20 @@ const MappedTimeline = () => {
                   <p>{event.subtitle}</p>
                 </div>
               </div>
-              {dayIndex === days.length - 1 && eventIndex === timeline[day].length - 1 && (
-                <div className="absolute bottom-0 text-blue hover:cursor-pointer hover:scale-110 transition-all duration-300 flex gap-3 items-center">
-                  <svg
-                    width="20px"
-                    height="20px"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    style={{ stroke: "#38B6FF" }}
+              {dayIndex === days.length - 1 &&
+                eventIndex === timeline[day].length - 1 && (
+                  <Button
+                    onClick={() => console.log("Download Agenda")}
+                    className="absolute -bottom-2 md:-bottom-3 bg-blue text-white flex flex-row"
                   >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M12 3C12.5523 3 13 3.44772 13 4V17.5858L18.2929 12.2929C18.6834 11.9024 19.3166 11.9024 19.7071 12.2929C20.0976 12.6834 20.0976 13.3166 19.7071 13.7071L12.7071 20.7071C12.3166 21.0976 11.6834 21.0976 11.2929 20.7071L4.29289 13.7071C3.90237 13.3166 3.90237 12.6834 4.29289 12.2929C4.68342 11.9024 5.31658 11.9024 5.70711 12.2929L11 17.5858V4C11 3.44772 11.4477 3 12 3Z"
-                      fill="#38B6FF"
-                    />
-                  </svg>
-                  <span onClick={() => navigate("/programme")}>DOWNLOAD FULL AGENDA</span>
-                </div>
-              )}
+                    DOWNLOAD AGENDA
+                  </Button>
+                )}
             </div>
-            {dayIndex === days.length - 1 && eventIndex === timeline[day].length - 1 && (
-              <div className="absolute -ml-1.5 bottom-0 h-4 w-4 rounded-full bg-blue -left-[1px]"></div>
-            )}
+            {dayIndex === days.length - 1 &&
+              eventIndex === timeline[day].length - 1 && (
+                <div className="absolute -ml-1.5 bottom-0 h-4 w-4 rounded-full bg-blue -left-[1px]"></div>
+              )}
           </div>
         ))}
       </div>

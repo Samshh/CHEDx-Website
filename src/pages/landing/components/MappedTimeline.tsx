@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useNavigate } from "react-router-dom";
+import Button from "@/components/ui/button";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -97,46 +98,6 @@ const MappedTimeline = () => {
   const days = Object.keys(timeline);
   const timelineRef = useRef(null);
 
-  // useEffect(() => {
-  //   const elements = gsap.utils.toArray<HTMLElement>(".timeline-event");
-
-  //   elements.forEach((element) => {
-  //     gsap.fromTo(
-  //       element,
-  //       { opacity: 1, y: 0 },
-  //       {
-  //         opacity: 0,
-  //         y: 0,
-  //         ease: "power1.out",
-  //         duration: 1.5,
-  //         scrollTrigger: {
-  //           trigger: element,
-  //           start: "top top+=30",
-  //           end: "top",
-  //           scrub: true,
-  //         },
-  //       }
-  //     );
-
-  //     gsap.fromTo(
-  //       element,
-  //       { opacity: 0, y: 0 },
-  //       {
-  //         opacity: 1,
-  //         y: 0,
-  //         ease: "power1.out",
-  //         duration: 1.5,
-  //         scrollTrigger: {
-  //           trigger: element,
-  //           start: "top 95%",
-  //           end: "top 90%",
-  //           scrub: true,
-  //         },
-  //       }
-  //     );
-  //   });
-  // }, []);
-
   const res = days.flatMap((day, dayIndex) => (
     <div className="flex w-full" key={day} ref={timelineRef} id={`#${day}`}>
       <div className="text-end flex justify-end w-[25%] pr-10">
@@ -170,32 +131,17 @@ const MappedTimeline = () => {
               </div>
               {dayIndex === days.length - 1 &&
                 eventIndex === timeline[day].length - 1 && (
-                  <div className="absolute bottom-0 text-yellow hover:cursor-pointer hover:scale-110 transition-all duration-300 flex gap-5 items-center">
-                    <span onClick={() => navigate("/programme")}>
-                      VIEW FULL AGENDA
-                    </span>
-                    <svg
-                      fill="#FFA802"
-                      height="25px"
-                      width="25px"
-                      version="1.1"
-                      id="Layer_1"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 330 330"
-                    >
-                      <path
-                        id="XMLID_27_"
-                        d="M15,180h263.787l-49.394,49.394c-5.858,5.857-5.858,15.355,0,21.213C232.322,253.535,236.161,255,240,255
-                  s7.678-1.465,10.606-4.394l75-75c5.858-5.857,5.858-15.355,0-21.213l-75-75c-5.857-5.857-15.355-5.857-21.213,0
-                  c-5.858,5.857-5.858,15.355,0,21.213L278.787,150H15c-8.284,0-15,6.716-15,15S6.716,180,15,180z"
-                      />
-                    </svg>
-                  </div>
+                  <Button
+                    onClick={() => navigate("/programme")}
+                    className="absolute -bottom-2 md:-bottom-3 bg-yellow text-white flex flex-row"
+                  >
+                    VIEW FULL AGENDA
+                  </Button>
                 )}
             </div>
             {dayIndex === days.length - 1 &&
               eventIndex === timeline[day].length - 1 && (
-                <div className="absolute -ml-1.5 bottom-0 h-4 w-4 rounded-full bg-yellow -left-[1px]"></div>
+                <div className="absolute -ml-1.5 bottom-0 h-4 w-4 rounded-full bg-yellow -left-[1px]" />
               )}
           </div>
         ))}

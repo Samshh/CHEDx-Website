@@ -48,7 +48,7 @@ export default function Footer() {
           <button className="flex items-center justify-center" type="button" onClick={() => navigate("/")}>
             <img className="h-auto w-[186px]" src={FooterLogo} alt="NavLogo" />
           </button>
-          <p className="text-[#777777]">©2024 CHED<sup>x</sup>2.0 All rights reserved</p>
+          <p className="text-[#777777]">© CHED<sup>x</sup>2.0 All rights reserved</p>
         </div>
         <div className="flex items-center justify-center gap-[1.75rem]">
           <button className="hover:text-yellow transition-all ease-linear" onClick={() => navigate("/")} type="button">
