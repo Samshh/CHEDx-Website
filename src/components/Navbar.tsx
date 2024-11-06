@@ -17,7 +17,7 @@ export default function Navbar() {
 
   const navigate = useNavigate();
   return (
-    <div className="fixed top-0 w-full bg-white backdrop-blur-sm bg-opacity-55 z-40">
+    <div className="fixed top-0 w-full bg-white shadow-sm backdrop-blur-sm bg-opacity-55 z-40">
       <nav>
         <button type="button" onClick={() => navigate("/")}>
           <img className="h-full w-auto" src={NavLogo} alt="NavLogo" />

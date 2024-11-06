@@ -9,7 +9,6 @@ module.exports = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
-      colors: {},
     },
     colors: {
       yellow: "#FFA802",
@@ -22,6 +21,7 @@ module.exports = {
     backgroundImage: {
       "center-transparent":
         "linear-gradient(to bottom, rgba(242, 242, 242, .25), rgba(242, 242, 242, 0), rgba(242, 242, 242, 1))",
+      "black-to-white": "linear-gradient(to right, #B9B9B9, #F2F2F2)",
     },
   },
   plugins: [require("tailwindcss-animate")],

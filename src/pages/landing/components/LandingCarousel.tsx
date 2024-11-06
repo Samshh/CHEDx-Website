@@ -34,7 +34,7 @@ export default function ImageCarousel() {
   }, [images]);
 
   return (
-    <div className="overflow-hidden relative h-auto w-full max-w-[960px] mx-auto">
+    <div className="overflow-hidden relative h-auto w-full max-w-[960px] mx-auto rounded-xl">
       <div className="flex" ref={carouselRef}>
         {imagesWithDuplicates.map((image, index) => (
           <div
