@@ -48,19 +48,19 @@ export default function Footer() {
           <button className="flex items-center justify-center" type="button" onClick={() => navigate("/")}>
             <img className="h-auto w-[186px]" src={FooterLogo} alt="NavLogo" />
           </button>
-          <p className="text-[#777777]">© CHEDx. All rights reserved</p>
+          <p className="text-[#777777]">©2024 CHED<sup>x</sup>2.0 All rights reserved</p>
         </div>
         <div className="flex items-center justify-center gap-[1.75rem]">
-          <button onClick={() => navigate("/")} type="button">
+          <button className="hover:text-yellow transition-all ease-linear" onClick={() => navigate("/")} type="button">
             <p className="uppercase">Home</p>
           </button>
-          <button onClick={() => navigate("/venue")} type="button">
+          <button className="hover:text-red transition-all ease-linear" onClick={() => navigate("/venue")} type="button">
             <p className="uppercase">Venue</p>
           </button>
-          <button onClick={() => navigate("/programme")} type="button">
+          <button className="hover:text-blue transition-all ease-linear" onClick={() => navigate("/programme")} type="button">
             <p className="uppercase">Programme</p>
           </button>
-          <button onClick={() => navigate("/breakout-sessions")} type="button">
+          <button className="hover:text-green transition-all ease-linear" onClick={() => navigate("/breakout-sessions")} type="button">
             <p className="uppercase">Breakout Sessions</p>
           </button>
         </div>

@@ -29,7 +29,7 @@ export default function Programme() {
       <img
         src={HeroBG}
         alt="herobg"
-        className="absolute w-full h-auto object-cover opacity-60"
+        className="absolute w-full h-screen object-cover opacity-60"
       />
       <div
         className="relative bg-hero-bg bg-cover w-full h-screen flex items-center justify-center flex-col"
@@ -72,7 +72,7 @@ export default function Programme() {
             ref={textTrigger2}
           >
             <div>
-              <h2 className="text-blue">CHEDx 2024</h2>
+              <h2 className="text-blue">CHED<sup>x</sup>2.0</h2>
               <div className="relative">
                 <h2 className="text-secondary relative z-10">
                   Programme Schedule
@@ -85,7 +85,7 @@ export default function Programme() {
               </div>
             </div>
             <h3 className="text-secondary max-w-2xl" ref={text2}>
-              Join us at CHEDx 2024 for two days of innovation in education!
+              Join us at CHED<sup>x</sup>2.0 for two days of innovation in education!
               Discover cutting-edge IT skills, explore AI ethics, and gain
               targeted industry insights through keynotes and interactive
               sessions.

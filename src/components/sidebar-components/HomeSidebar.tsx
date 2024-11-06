@@ -30,7 +30,7 @@ export default function HomeSidebar() {
   return (
     <>
       <div className="flex justify-center items-center gap-[1rem] text-black">
-        <p>THIS IS CHEDx</p>
+        <p>THIS IS CHED<sup>x</sup>2.0</p>
         <div className="h-[48px] w-[6px] bg-black" />
       </div>
       <div

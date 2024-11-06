@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Button from "@/components/ui/button";
 import CardImage from "/Cybersecurity_BG.png";
-import HeroBG from "/CHEDx_Hero.png";
+import HeroBG from "/CHEDx_Hero.jpg";
 
 interface CardDetails {
   title: string;

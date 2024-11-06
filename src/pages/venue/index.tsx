@@ -23,7 +23,7 @@ export default function Venue() {
           <div className="text-center flex flex-col gap-[2rem]" ref={textTrigger}>
             <div>
               <h2>
-                <span className="text-red">We are taking CHEDx</span>
+                <span className="text-red">We are taking CHED<sup>x</sup>2.0</span>
                 <br /> to{" "}
                 <span className="relative inline-block">
                   Davao City!{" "}

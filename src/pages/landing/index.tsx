@@ -1,6 +1,5 @@
-import Tag from "@/components/ui/tag";
 import CHEDxLogo from "/CHEDxLogo.svg";
-import HeroBG from "/CHEDx_Hero.png";
+import HeroBG from "/CHEDx_Hero.jpg";
 import Button from "@/components/ui/button";
 import IBAP from "/landingLogos/IBAP.svg";
 import USEP from "/landingLogos/USEP.svg";
@@ -23,7 +22,7 @@ import useAnimateText from "@/components/animations/useAnimateText";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Landing() {
-  const partners = [IBAP, USEP, BagongPilipinas, CHEDLogo, PSITS, CDITE];
+  const partners = [BagongPilipinas, CHEDLogo, USEP, PSITS, IBAP, CDITE];
   const cardsTrigger = useRef(null);
   const card1 = useRef(null);
   const card2 = useRef(null);
@@ -146,14 +145,13 @@ export default function Landing() {
           <div className="h-full w-full max-w-[568px] max-h-[568px] rounded-full absolute bg-yellow opacity-15 blur-3xl" />
           <div className="flex flex-col items-center justify-center gap-[3rem] mb-[4rem] z-10">
             <div className="flex flex-col items-center justify-center">
-              <Tag className="border-yellow">V 2024</Tag>
               <img src={CHEDxLogo} alt="CHEDx" />
             </div>
             <div className="flex flex-col justify-center items-center gap-[2rem]">
-              <p className="uppercase text-center font-normal">
-                december 4 - 5, 2024
+              <p className="text-center font-normal max-w-[568px]">
+                December 4 - 5, 2024
                 <br />
-                @davao city
+                SMX Convention Center, SM Lanang Premier, JP Laurel Ave., Davao City
               </p>
               <Button className="bg-yellow text-white">Register now</Button>
             </div>
@@ -179,7 +177,7 @@ export default function Landing() {
             ref={cardsTrigger}
           >
             <h2>
-              <span className="text-yellow">What is CHEDx,</span>
+              <span className="text-yellow">What is CHED<sup>x</sup>2.0,</span>
               <br /> and why should{" "}
               <span className="inline-block relative">
                 <span>you join?</span>
@@ -191,7 +189,7 @@ export default function Landing() {
               </span>
             </h2>
             <h3 className="max-w-[768px]" ref={text1}>
-              In today’s fast-evolving tech landscape, CHEDx keeps you informed
+              In today’s fast-evolving tech landscape, CHED<sup>x</sup>2.0 keeps you informed
               on ethical implications, promotes responsible use, and fosters
               collaboration to make technology impactful, bridging gaps and
               strengthening human connections.
@@ -296,7 +294,7 @@ export default function Landing() {
         <section className="gap-[4rem]" ref={textTrigger3}>
           <div className="flex flex-col gap-[2rem] text-center">
             <h2>
-              <span className="text-yellow">CHEDx 2024</span>
+              <span className="text-yellow">CHED<sup>x</sup>2.0</span>
               <br />
               <span className="inline-block relative">
                 Programme Schedule
@@ -324,13 +322,10 @@ export default function Landing() {
           <div className="flex flex-col items-center md:items-start justify-center gap-[2.5rem]">
             <h2 className="text-center md:text-start">
               <span className="text-yellow">
-                Exciting things are comming...
+                Exciting things are coming...
               </span>
               <br /> Be the first to know what's next
             </h2>
-            <Button className="bg-yellow text-white">
-              Join the mailing list
-            </Button>
           </div>
           <img src={landingArrow} alt="venue" />
         </section>
