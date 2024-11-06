@@ -13,12 +13,12 @@ const textToBlack = (
     targetTextRef.current,
     {
       color: "#030303",
+      duration: 0.5,
       scrollTrigger: {
         trigger: triggerElement,
         start: "top center",
         end: "bottom center",
         toggleActions: "play none none reverse",
-        scrub: true,
       },
     }
   );
@@ -35,12 +35,12 @@ const barToBlack = (
     targetBarRef.current,
     {
       backgroundColor: "#030303",
+      duration: 0.5,
       scrollTrigger: {
         trigger: triggerElement,
         start: "top center",
         end: "bottom center",
         toggleActions: "play none none reverse",
-        scrub: true,
       },
     }
   );
