@@ -103,7 +103,7 @@ export default function BreakoutSessions() {
     <div
       key={index}
       onClick={() => handleCardClick(index)}
-      className={`relative cursor-pointer transition-transform duration-300 ease-in-out ${
+      className={`relative cursor-pointer transition-transform duration-300 ease-in-out rounded-2xl border-[2px] border-green ${
         expandedCardIndex === index
           ? ""
           : "hover:scale-105 hover:shadow-xl relative"

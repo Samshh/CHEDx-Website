@@ -149,11 +149,15 @@ export default function Landing() {
               <img src={CHEDxLogo} alt="CHEDx" />
             </div>
             <div className="flex flex-col justify-center items-center gap-[2rem]">
-              <p className="text-center font-normal max-w-[568px]">
-                December 4 - 5, 2024
-                <br />
-                SMX Convention Center, SM Lanang Premier, JP Laurel Ave., Davao City
-              </p>
+              <div>
+                <h3 className="text-center font-normal max-w-[568px] uppercase">
+                  December 4 - 5, 2024
+                </h3>
+                <p className="text-center font-normal max-w-[568px]">
+                  SMX Convention Center, SM Lanang Premier, JP Laurel Ave.,
+                  Davao City
+                </p>
+              </div>
               <Button className="bg-yellow text-white">Register now</Button>
             </div>
           </div>
@@ -178,7 +182,9 @@ export default function Landing() {
             ref={cardsTrigger}
           >
             <h2>
-              <span className="text-yellow">What is CHED<sup>x</sup>2.0,</span>
+              <span className="text-yellow">
+                What is CHED<sup>x</sup>2.0,
+              </span>
               <br /> and why should{" "}
               <span className="inline-block relative">
                 <span>you join?</span>
@@ -190,10 +196,10 @@ export default function Landing() {
               </span>
             </h2>
             <h3 className="max-w-[768px]" ref={text1}>
-              In today’s fast-evolving tech landscape, CHED<sup>x</sup>2.0 keeps you informed
-              on ethical implications, promotes responsible use, and fosters
-              collaboration to make technology impactful, bridging gaps and
-              strengthening human connections.
+              In today’s fast-evolving tech landscape, CHED<sup>x</sup>2.0 keeps
+              you informed on ethical implications, promotes responsible use,
+              and fosters collaboration to make technology impactful, bridging
+              gaps and strengthening human connections.
             </h3>
           </div>
           <div className="grid max-w-[471px] grid-rows-2 grid-cols-2 lg:grid-rows-1 lg:grid-cols-4 gap-[2rem] w-full lg:max-w-[985px]">
@@ -234,7 +240,7 @@ export default function Landing() {
           <div className="h-full w-full rounded-full absolute bg-yellow opacity-30 blur-3xl" />
           <div className="z-10 h-full w-full overflow-hidden">
             <iframe
-              className="w-full h-[50vh] lg:h-[60vh] rounded-2xl"
+              className="w-full h-[50vh] lg:h-[60vh] rounded-2xl border-[2px] border-yellow"
               src="https://www.youtube.com/embed/cVQJtz2JwRA?si=9i5FxneXHyOhZplv"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -295,7 +301,9 @@ export default function Landing() {
         <section className="gap-[4rem]" ref={textTrigger3}>
           <div className="flex flex-col gap-[2rem] text-center">
             <h2>
-              <span className="text-yellow">CHED<sup>x</sup>2.0</span>
+              <span className="text-yellow">
+                CHED<sup>x</sup>2.0
+              </span>
               <br />
               <span className="inline-block relative">
                 Programme Schedule
@@ -322,9 +330,7 @@ export default function Landing() {
         <section className="py-[5rem] gap-[2rem] flex-col-reverse md:flex-row justify-between">
           <div className="flex flex-col items-center md:items-start justify-center gap-[2.5rem]">
             <h2 className="text-center md:text-start">
-              <span className="text-yellow">
-                Exciting things are coming...
-              </span>
+              <span className="text-yellow">Exciting things are coming...</span>
               <br /> Be the first to know what's next
             </h2>
           </div>

@@ -39,7 +39,7 @@ export default function SpeakersCarousel() {
           <div
             key={index}
             ref={(el) => (speakersRef.current[index] = el!)}
-            className="rounded-xl overflow-hidden shadow-md max-w-[222px] border-[1px] border-yellow"
+            className="rounded-xl overflow-hidden shadow-md max-w-[222px] border-[2px] border-yellow"
           >
             <img
               src={speaker.img}
