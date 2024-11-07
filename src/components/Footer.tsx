@@ -32,9 +32,13 @@ export default function Footer() {
           <footer className="cursor-pointer py-[4rem] px-[1rem] md:px-[2rem] md:hover:px-[68px] transition-all duration-300 ease-in-out">
             <div className="flex flex-col items-start justify-center">
               <div className="flex items-center justify-center gap-[1rem]">
-                {location.pathname !== "/breakout-sessions" && (
-                  <p className="uppercase text-[0.75rem] text-black">next</p>
-                )}
+                <p className="uppercase text-[0.75rem] text-black">
+                  {location.pathname !== "/breakout-sessions" ? (
+                    <>next</>
+                  ) : (
+                    <>back</>
+                  )}
+                </p>
                 <div className="p-[0.5px] w-[120px] md:w-[200px] bg-black" />
               </div>
               <h2 className="uppercase text-black">{currentLocation}</h2>

@@ -18,6 +18,7 @@ import landingArrow from "/landingArrow.svg";
 import LanddingCarousel from "./components/LandingCarousel";
 import MappedTimeline from "./components/MappedTimeline";
 import useAnimateText from "@/components/animations/useAnimateText";
+import SpeakersCarousel from "./components/SpeakersCarousel";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -52,12 +53,12 @@ export default function Landing() {
         start: "top center",
         end: "bottom center",
         toggleActions: "play none none reverse",
-        onEnter: () => {
-          setCard1Number(0);
-          setCard2Number(0);
-          setCard3Number(0);
-          setCard4Number(0);
-        },
+        // onEnter: () => {
+        //   setCard1Number(0);
+        //   setCard2Number(0);
+        //   setCard3Number(0);
+        //   setCard4Number(0);
+        // },
       },
     });
 
@@ -68,14 +69,14 @@ export default function Landing() {
       onComplete: () => {
         const car1Interval = setInterval(() => {
           setCard1Number((prev: number) => {
-            const next = prev + 2;
-            if (next > 52) {
+            const next = prev + 1;
+            if (next > 6) {
               clearInterval(car1Interval);
-              return 52;
+              return 6;
             }
             return next;
           });
-        }, 50);
+        }, 100);
       },
     })
       .from(card2.current, {
@@ -86,9 +87,9 @@ export default function Landing() {
           const car2Interval = setInterval(() => {
             setCard2Number((prev: number) => {
               const next = prev + 2;
-              if (next > 22) {
+              if (next > 0) {
                 clearInterval(car2Interval);
-                return 22;
+                return 0;
               }
               return next;
             });
@@ -286,7 +287,7 @@ export default function Landing() {
               the evolving workplace.
             </h3>
           </div>
-          <div></div>
+          <SpeakersCarousel />
         </section>
       </div>
       {/* section6 */}

@@ -23,7 +23,7 @@ const timeline: Timeline = {
     {
       time: "8:45 AM - 9:00 AM",
       segment: "Pambansang Awit & Prayer",
-      title: "USepP Chorale",
+      title: "USeP Chorale",
       subtitle: "CHED Hymn, VO Introduction of Speakers",
     },
     {
