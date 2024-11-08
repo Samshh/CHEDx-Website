@@ -39,11 +39,11 @@ export default function SpeakersCarousel() {
         {imagesWithDuplicates.map((image, index) => {
           const speaker = speakersData[index % speakersData.length];
           return (
-            <div key={index} className="flex-shrink-0 w-[222px] mr-[20px]">
+            <div key={index} className="flex-shrink-0 w-[222px] mr-[20px]  border-[2px] border-yellow rounded-3xl overflow-hidden">
               <img
                 src={image}
                 alt={speaker.name}
-                className="object-cover w-full h-[200px] border-[2px] border-yellow rounded-3xl"
+                className="object-cover w-full h-[200px]"
               />
               <div className="p-4">
                 <p className="font-semibold">{speaker.name}</p>
