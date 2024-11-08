@@ -1,5 +1,5 @@
 import CHEDxLogo from "/CHEDxLogo.svg";
-import HeroBG from "/CHEDx_Hero.jpg";
+import HeroBG from "/Programme_Hero.png";
 import Button from "@/components/ui/button";
 import IBAP from "/landingLogos/IBAP.svg";
 import USEP from "/landingLogos/USEP.svg";
