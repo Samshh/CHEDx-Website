@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Button from "@/components/ui/button";
 import CardImage from "/Cybersecurity_BG.png";
-import HeroBG from "/CHEDx_Hero.jpg";
+import HeroBG from "/BreakoutBG.png";
 
 interface CardDetails {
   title: string;
@@ -150,7 +150,7 @@ export default function BreakoutSessions() {
         <img
           src={HeroBG}
           alt="herobg"
-          className="absolute w-full h-screen object-cover"
+          className="absolute w-full h-screen object-cover opacity-20"
         />
         <div className="absolute inset-0 bg-center-transparent" />
         <div className="h-full w-full max-w-[568px] max-h-[568px] rounded-full absolute bg-green opacity-10 blur-3xl" />

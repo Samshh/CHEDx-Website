@@ -3,7 +3,7 @@ import { Icon } from "@iconify/react";
 interface LandingCardProps {
   title: string;
   icon: string;
-  number: number;
+  number: number | string;
   className?: string;
 }
 

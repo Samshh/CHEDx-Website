@@ -15,7 +15,7 @@ export default function SpeakersCarousel() {
 
     const carousel = carouselRef.current;
     const totalImages = images.length;
-    const imageWidth = 222;
+    const imageWidth = 240;
     const gap = 20;
     const totalWidth = (imageWidth + gap) * totalImages;
 
@@ -39,7 +39,7 @@ export default function SpeakersCarousel() {
         {imagesWithDuplicates.map((image, index) => {
           const speaker = speakersData[index % speakersData.length];
           return (
-            <div key={index} className="flex-shrink-0 w-[222px] mr-[20px]  border-[2px] border-yellow rounded-3xl overflow-hidden">
+            <div key={index} className="flex-shrink-0 w-[240px] mr-[20px]  border-[2px] border-yellow rounded-3xl overflow-hidden">
               <img
                 src={image}
                 alt={speaker.name}
@@ -47,7 +47,7 @@ export default function SpeakersCarousel() {
               />
               <div className="p-4">
                 <p className="font-semibold">{speaker.name}</p>
-                <p>{speaker.affil}</p>
+                <p className="text-yellow">{speaker.affil}</p>
               </div>
             </div>
           );

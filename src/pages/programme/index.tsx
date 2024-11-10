@@ -2,7 +2,7 @@ import { ReactNode, useRef } from "react";
 import quoteOpen from "/quote_open.svg";
 import quoteClose from "/quote_close.svg";
 import Button from "@/components/ui/button";
-import HeroBG from "/Programme_Hero.png";
+import HeroBG from "/ProgrammeBG.png";
 import CurvedUnderline from "/underlines/programme_underline.svg";
 import MappedTimeline from "./_components/MappedTimeline";
 import useAnimateText from "@/components/animations/useAnimateText";
@@ -29,7 +29,7 @@ export default function Programme() {
       <img
         src={HeroBG}
         alt="herobg"
-        className="absolute w-full h-screen object-cover opacity-60"
+        className="absolute w-full h-screen object-cover opacity-20"
       />
       <div
         className="relative bg-hero-bg bg-cover w-full h-screen flex items-center justify-center flex-col"

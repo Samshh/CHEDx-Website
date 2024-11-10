@@ -30,7 +30,7 @@ export default function Landing() {
   const card3 = useRef(null);
   const card4 = useRef(null);
   const [card1number, setCard1Number] = useState(0);
-  const [card2number, setCard2Number] = useState(0);
+  const [card2number, setCard2Number] = useState("");
   const [card3number, setCard3Number] = useState(0);
   const [card4number, setCard4Number] = useState(0);
 
@@ -46,6 +46,7 @@ export default function Landing() {
   useAnimateText({ text: text3, trigger: textTrigger3 });
 
   useGSAP(() => {
+    setCard2Number("TBA");
     const tl = gsap.timeline({
       ease: "power2.inOut",
       scrollTrigger: {
@@ -83,18 +84,18 @@ export default function Landing() {
         opacity: 0,
         y: 50,
         duration: 0.25,
-        onComplete: () => {
-          const car2Interval = setInterval(() => {
-            setCard2Number((prev: number) => {
-              const next = prev + 2;
-              if (next > 0) {
-                clearInterval(car2Interval);
-                return 0;
-              }
-              return next;
-            });
-          }, 50);
-        },
+        // onComplete: () => {
+        //   const car2Interval = setInterval(() => {
+        //     setCard2Number((prev: number) => {
+        //       const next = prev + 2;
+        //       if (next > 0) {
+        //         clearInterval(car2Interval);
+        //         return 0;
+        //       }
+        //       return next;
+        //     });
+        //   }, 50);
+        // },
       })
       .from(card3.current, {
         opacity: 0,
