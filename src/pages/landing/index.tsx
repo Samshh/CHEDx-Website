@@ -71,9 +71,9 @@ export default function Landing() {
         const car1Interval = setInterval(() => {
           setCard1Number((prev: number) => {
             const next = prev + 1;
-            if (next > 6) {
+            if (next > 7) {
               clearInterval(car1Interval);
-              return 6;
+              return 7;
             }
             return next;
           });
