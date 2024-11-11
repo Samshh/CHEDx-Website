@@ -23,7 +23,9 @@ export default function Venue() {
           <div className="text-center flex flex-col gap-[2rem]" ref={textTrigger}>
             <div>
               <h2>
-                <span className="text-red">We are taking CHED<sup>x</sup>2.0</span>
+                <span className="text-red">
+                  We are taking CHED<sup>x</sup>2.0
+                </span>
                 <br /> to{" "}
                 <span className="relative inline-block">
                   Davao City!{" "}
@@ -58,7 +60,9 @@ export default function Venue() {
               <span className="text-red">Secure your spot...</span>
               <br /> Join us today!
             </h2>
-            <Button className="bg-red text-white">register now</Button>
+            <Button className="bg-red text-white" onClick={() => (window.location.href = "https://lu.ma/sslgryut")}>
+              register now
+            </Button>
           </div>
           <img src={VenueSVG} alt="venue" />
         </section>
