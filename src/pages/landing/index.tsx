@@ -154,8 +154,9 @@ export default function Landing() {
                   December 4 - 5, 2024
                 </h3>
                 <p className="text-center font-normal max-w-[568px]">
-                  SMX Convention Center, SM Lanang Premier, JP Laurel Ave.,
-                  Davao City
+                  SMX Convention Center Davao 3rd Level, SM Lanang Premier, J.P.
+                  Laurel Ave, Lanang, Davao City, 8000 Davao del Sur,
+                  Philippines
                 </p>
               </div>
               <a

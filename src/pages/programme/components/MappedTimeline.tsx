@@ -316,7 +316,7 @@ const MappedTimeline = () => {
                   onClick={() => console.log("Download Agenda")}
                   className="absolute -bottom-2 md:-bottom-3 bg-blue text-white flex flex-row"
                 >
-                  DOWNLOAD AGENDA
+                  DOWNLOAD PROGRAMME
                 </Button>
               )}
             </div>

@@ -229,7 +229,7 @@ const MappedTimeline = () => {
                     onClick={() => navigate("/programme")}
                     className="absolute -bottom-2 md:-bottom-3 bg-yellow text-white flex flex-row"
                   >
-                    VIEW FULL AGENDA
+                    VIEW FULL PROGRAMME
                   </Button>
                 )}
             </div>
