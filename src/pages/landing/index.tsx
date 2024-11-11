@@ -243,7 +243,7 @@ export default function Landing() {
         </section>
       </div>
       {/* section3 */}
-      <div className="py-[5rem]">
+      {/* <div className="py-[5rem]">
         <section className="relative">
           <div className="h-full w-full rounded-full absolute bg-yellow opacity-30 blur-3xl" />
           <div className="z-10 h-full w-full overflow-hidden">
@@ -255,7 +255,7 @@ export default function Landing() {
             ></iframe>
           </div>
         </section>
-      </div>
+      </div> */}
       {/* section4 */}
       <div className="py-[5rem]">
         <section className="gap-[4rem]">
