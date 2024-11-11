@@ -108,7 +108,7 @@ export default function Programme() {
               title="registration"
             >
               <Button
-                className="bg-blue text-white hover:scale-110 hover:cursor-pointer transition-all duration-300"
+                className="bg-blue text-white"
               >
                 register now
               </Button>

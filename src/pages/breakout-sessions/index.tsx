@@ -207,7 +207,7 @@ export default function BreakoutSessions() {
               rel="noopener noreferrer"
               title="registration"
             >
-              <Button className="bg-green text-white hover:scale-110 hover:cursor-pointer transition-all duration-300">
+              <Button className="bg-green text-white">
                 register now
               </Button>
             </a>
