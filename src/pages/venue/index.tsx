@@ -54,8 +54,7 @@ export default function Venue() {
             <div className="text-center flex flex-col gap-[1rem] max-w-[768px]">
               <h3 ref={text}>
                 The summit will be held at SMX Convention Center Davao 3rd
-                Level, SM Lanang Premier, J.P. Laurel Ave, Lanang, Davao City,
-                8000 Davao del Sur, Philippines
+                Level, SM Lanang Premier, J.P. Laurel Ave, Lanang, Davao City.
               </h3>
               <h3 ref={text2}>See the embedded map below!</h3>
             </div>

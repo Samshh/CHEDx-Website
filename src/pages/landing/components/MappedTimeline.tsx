@@ -105,8 +105,15 @@ const timeline: Timeline = {
       segment:
         "Panel Discussion: Education and the World of Work: Boosting Education through Smart Technologies (Project BEST)",
       title: "Moderator: Calen Martin D. Legaspi, IBPAP TADCOM",
+      subtitle: "",
+    },
+    {
+      time: "",
+      segment:
+        "",
+      title: "Panel Members:",
       subtitle:
-        "Panel Members: CHED OPSD, SKIPP Proponents - Leuther Mojica, Business Head, Orange & Bronze (IBPAP), PSF - Haidee Enriquez (IBPAP), ADDU as Beneficiary",
+        "CHED OPSD, SKIPP Proponents - Leuther Mojica, Business Head, Orange & Bronze (IBPAP), PSF - Haidee Enriquez (IBPAP), ADDU as Beneficiary",
     },
     {
       time: "2:15 PM - 3:00 PM",
@@ -208,9 +215,9 @@ const MappedTimeline = () => {
                 <div className="h-4 w-4 rounded-full bg-yellow z-20"></div>
               </div>
             )}
-            <div className="flex flex-col min-h-40 border-l-[1.5px] border-yellow border-dashed pl-10 z-0 relative">
+            <div className="flex flex-col min-h-fit border-l-[1.5px] border-yellow border-dashed pl-10 z-0 relative">
               <div className="h-4 w-4 rounded-full bg-yellow z-20 absolute -left-0.5 mt-1.5 -ml-1.5"></div>
-              <div className="min-h-40 md:hover:pl-10 transition-all duration-300 gap-3 flex flex-col w-full timeline-event">
+              <div className="min-h-fit pb-[2rem] md:hover:pl-10 transition-all duration-300 gap-3 flex flex-col w-full timeline-event">
                 {event.time && (
                   <div className="border border-yellow bg-none rounded-lg px-2 py-0.5 text-center max-w-max top-0">
                     <span className="grow-0">{event.time}</span>

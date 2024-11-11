@@ -40,13 +40,15 @@ const timeline: Timeline = {
     },
     {
       time: "9:30 AM - 10:00 AM",
-      segment: "Keynote Speaker: Building Synergy, Aligning with Industry, Leveraging IT Expertise",
+      segment:
+        "Keynote Speaker: Building Synergy, Aligning with Industry, Leveraging IT Expertise",
       title: "Secretary J. Prospero E. de Vera III",
       subtitle: "Commission on Higher Education",
     },
     {
       time: "10:00 AM - 10:30 AM",
-      segment: "Private Sector Advisory Council (PSAC) Jobs for IT Human Resource Development",
+      segment:
+        "Private Sector Advisory Council (PSAC) Jobs for IT Human Resource Development",
       title: "Mr. Fred Ayala",
       subtitle: "",
     },
@@ -88,7 +90,8 @@ const timeline: Timeline = {
     },
     {
       time: "1:00 PM - 1:30 PM",
-      segment: "Bringing the Industry to the Academe: Conceive Design Implement Operate (CDIO) Framework",
+      segment:
+        "Bringing the Industry to the Academe: Conceive Design Implement Operate (CDIO) Framework",
       title: "Prof Sin Moh Cheah",
       subtitle: "Singapore Polytechnic",
     },
@@ -97,8 +100,14 @@ const timeline: Timeline = {
       segment:
         "Panel Discussion: Education and the World of Work: Boosting Education through Smart Technologies (Project BEST)",
       title: "Moderator: Calen Martin D. Legaspi, IBPAP TADCOM",
+      subtitle: "",
+    },
+    {
+      time: "",
+      segment: "",
+      title: "Panel Members:",
       subtitle:
-        "Panel Members: CHED OPSD, SKIPP Proponents - Leuther Mojica, Business Head, Orange & Bronze (IBPAP), PSF - Haidee Enriquez (IBPAP), ADDU as Beneficiary",
+        "CHED OPSD, SKIPP Proponents - Leuther Mojica, Business Head, Orange & Bronze (IBPAP), PSF - Haidee Enriquez (IBPAP), ADDU as Beneficiary",
     },
     {
       time: "2:15 PM - 3:00 PM",
@@ -134,15 +143,18 @@ const timeline: Timeline = {
     },
     {
       time: "4:00 PM - 4:45 PM",
-      segment: "BREAKOUT 5: Integrating Soft Skills with Domain Expertise for IT Professionals c/o IBPAP",
+      segment:
+        "BREAKOUT 5: Integrating Soft Skills with Domain Expertise for IT Professionals c/o IBPAP",
       title: "c/o IBPAP",
       subtitle: "Industry (iQor)",
     },
     {
       time: "",
-      segment: "BREAKOUT 6: Futures Learning Commons and Creative Spaces, Futures Information",
+      segment:
+        "BREAKOUT 6: Futures Learning Commons and Creative Spaces, Futures Information",
       title: "Asso. Prof. Stephen B. Alayon",
-      subtitle: "Program Head, Bachelor of Science and Information Science, West Visayas State University",
+      subtitle:
+        "Program Head, Bachelor of Science and Information Science, West Visayas State University",
     },
     {
       time: "4:45 PM - 5:30 PM",
@@ -199,13 +211,16 @@ const timeline: Timeline = {
     },
     {
       time: "10:45 AM - 11:45 PM",
-      segment: "BREAKOUT 9: Contact Center & Business Process Management PSF: Emerging Tech Career Pathways c/o IBPAP",
+      segment:
+        "BREAKOUT 9: Contact Center & Business Process Management PSF: Emerging Tech Career Pathways c/o IBPAP",
       title: "Jay Santisteban - TBD c/o IBPAP",
-      subtitle: "Contact Center Association of the Philippines (CCAP), Operations Director",
+      subtitle:
+        "Contact Center Association of the Philippines (CCAP), Operations Director",
     },
     {
       time: "",
-      segment: "BREAKOUT 10: Global In-House Center PSF: Emerging Tech Career Pathway c/o IBPAP",
+      segment:
+        "BREAKOUT 10: Global In-House Center PSF: Emerging Tech Career Pathway c/o IBPAP",
       title: "Christine Bata",
       subtitle: "Global In-House Center Council (GICC), Executive Director",
     },
@@ -217,27 +232,34 @@ const timeline: Timeline = {
     },
     {
       time: "1:00 PM - 1:45 PM",
-      segment: "BREAKOUT 11: Digital Arts and Animation PSF: Emerging Tech Career Pathways c/o IBPAP",
+      segment:
+        "BREAKOUT 11: Digital Arts and Animation PSF: Emerging Tech Career Pathways c/o IBPAP",
       title: "Daniel Enriquez ",
-      subtitle: "Animation Council of the Philippines (ACPI), Executive Director",
+      subtitle:
+        "Animation Council of the Philippines (ACPI), Executive Director",
     },
     {
       time: "",
-      segment: "BREAKOUT 12: Game Development PSF: Emerging Tech Career Pathways c/o IBPAP",
+      segment:
+        "BREAKOUT 12: Game Development PSF: Emerging Tech Career Pathways c/o IBPAP",
       title: "Amierose Ramos",
       subtitle: "Game Developers Association of the Philippines (GDAP)",
     },
     {
       time: "1:45 PM - 2:30 PM",
-      segment: "BREAKOUT 13: Health Information Management PSF: Emerging Tech Career Pathways c/o IBPAP",
+      segment:
+        "BREAKOUT 13: Health Information Management PSF: Emerging Tech Career Pathways c/o IBPAP",
       title: "Nei Bumanglag - TBD c/o IBPAP",
-      subtitle: "Healthcare Information Management Association of the Philippines, Inc.. (HIMAP), Executive Director",
+      subtitle:
+        "Healthcare Information Management Association of the Philippines, Inc.. (HIMAP), Executive Director",
     },
     {
       time: "",
-      segment: "BREAKOUT 14: Software Development and Security: PSF Emerging Tech Career Pathways c/o IBPAP",
+      segment:
+        "BREAKOUT 14: Software Development and Security: PSF Emerging Tech Career Pathways c/o IBPAP",
       title: "Allan Tan",
-      subtitle: "Philippine Software Industry Association (PSIA), Board Trustee",
+      subtitle:
+        "Philippine Software Industry Association (PSIA), Board Trustee",
     },
     {
       time: "2:30 PM - 2:45 PM",
@@ -247,10 +269,12 @@ const timeline: Timeline = {
     },
     {
       time: "2:45 PM - 4:00 PM",
-      segment: "Building Synergy: Aligning IT Education with Industry Demands (panel discussion with audience Q & A)",
+      segment:
+        "Building Synergy: Aligning IT Education with Industry Demands (panel discussion with audience Q & A)",
       title:
         "Dr. Rolyn Daguil, PhD, President, Caraga State University\nDr. Bobby D. Gerardo, D. Eng, President, Northern Iloilo State University",
-      subtitle: "representing the Industry: \nIBPAP\nPSIA\nISACAA\nModerator: Dr. Gregg Victor Gabison",
+      subtitle:
+        "representing the Industry: \nIBPAP\nPSIA\nISACAA\nModerator: Dr. Gregg Victor Gabison",
     },
     {
       time: "4:00 PM - 4:15 PM",
@@ -296,9 +320,9 @@ const MappedTimeline = () => {
                 <div className="h-4 w-4 rounded-full bg-blue z-20"></div>
               </div>
             )}
-            <div className="flex flex-col min-h-40 border-l-[1.5px] border-blue border-dashed pl-10 z-0 relative">
+            <div className="flex flex-col min-h-fit border-l-[1.5px] border-blue border-dashed pl-10 z-0 relative">
               <div className="h-4 w-4 rounded-full bg-blue z-20 absolute -left-0.5 mt-1.5 -ml-1.5"></div>
-              <div className="min-h-40 md:hover:pl-10 transition-all duration-300 gap-3 flex flex-col w-full timeline-event">
+              <div className="min-h-fit pb-[2rem] md:hover:pl-10 transition-all duration-300 gap-3 flex flex-col w-full timeline-event">
                 {event.time && (
                   <div className="border border-blue bg-none rounded-lg px-2 py-0.5 text-center max-w-max top-0">
                     <span className="grow-0">{event.time}</span>
@@ -311,18 +335,20 @@ const MappedTimeline = () => {
                   <p>{formatText(event.subtitle)}</p>
                 </div>
               </div>
-              {dayIndex === days.length - 1 && eventIndex === timeline[day].length - 1 && (
-                <Button
-                  onClick={() => console.log("Download Agenda")}
-                  className="absolute -bottom-2 md:-bottom-3 bg-blue text-white flex flex-row"
-                >
-                  DOWNLOAD PROGRAMME
-                </Button>
-              )}
+              {dayIndex === days.length - 1 &&
+                eventIndex === timeline[day].length - 1 && (
+                  <Button
+                    onClick={() => console.log("Download Agenda")}
+                    className="absolute -bottom-2 md:-bottom-3 bg-blue text-white flex flex-row"
+                  >
+                    DOWNLOAD PROGRAMME
+                  </Button>
+                )}
             </div>
-            {dayIndex === days.length - 1 && eventIndex === timeline[day].length - 1 && (
-              <div className="absolute -ml-1.5 bottom-0 h-4 w-4 rounded-full bg-blue -left-[1px]"></div>
-            )}
+            {dayIndex === days.length - 1 &&
+              eventIndex === timeline[day].length - 1 && (
+                <div className="absolute -ml-1.5 bottom-0 h-4 w-4 rounded-full bg-blue -left-[1px]"></div>
+              )}
           </div>
         ))}
       </div>
