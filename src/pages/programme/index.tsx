@@ -4,7 +4,7 @@ import quoteClose from "/quote_close.svg";
 import Button from "@/components/ui/button";
 import HeroBG from "/ProgrammeBG.png";
 import CurvedUnderline from "/underlines/programme_underline.svg";
-import MappedTimeline from "./_components/MappedTimeline";
+import MappedTimeline from "./components/MappedTimeline";
 import useAnimateText from "@/components/animations/useAnimateText";
 
 interface ContainerProps {

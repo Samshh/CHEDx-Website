@@ -5,6 +5,7 @@ import Venue from "./pages/venue";
 import Programme from "./pages/programme";
 import BreakoutSessions from "./pages/breakout-sessions";
 import PageNotFound from "./components/PageNotFound";
+import Organizers from "./pages/organizers";
 
 export const Router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ export const Router = createBrowserRouter([
       {
         path: "/breakout-sessions",
         element: <BreakoutSessions />,
+      },
+      {
+        path: "/organizers",
+        element: <Organizers />,
       },
     ],
   },

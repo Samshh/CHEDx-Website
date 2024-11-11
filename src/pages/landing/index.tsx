@@ -14,7 +14,6 @@ import { useRef, useState } from "react";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import CurvedUnderline from "/underlines/landing_underline.svg";
 import CurvedUnderline2 from "/underlines/landing2_underline.svg";
-import landingArrow from "/landingArrow.svg";
 import LanddingCarousel from "./components/LandingCarousel";
 import MappedTimeline from "./components/MappedTimeline";
 import useAnimateText from "@/components/animations/useAnimateText";
@@ -335,14 +334,36 @@ export default function Landing() {
       </div>
       {/* section7 */}
       <div className="bg-yellow bg-opacity-20 w-full" id="nextPage">
-        <section className="py-[5rem] gap-[2rem] flex-col-reverse md:flex-row justify-between">
-          <div className="flex flex-col items-center md:items-start justify-center gap-[2.5rem]">
-            <h2 className="text-center md:text-start">
-              <span className="text-yellow">Exciting things are coming...</span>
-              <br /> Be the first to know what's next
+        <section className="py-[5rem] flex-row justify-between">
+          <div className="flex flex-col items-start justify-center gap-[2.5rem]">
+            <h2>
+              <span className="text-yellow">Secure your spot...</span>
+              <br /> Join us today!
             </h2>
+            <a
+              href="https://lu.ma/sslgryut"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="registration"
+            >
+              <Button className="bg-yellow text-white">register now</Button>
+            </a>
           </div>
-          <img src={landingArrow} alt="venue" />
+          <svg
+            width="178"
+            height="199"
+            viewBox="0 0 178 199"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            style={{ stroke: "#FFA802" }}
+          >
+            <path
+              d="M88.7778 110.222C118.386 110.222 142.389 86.2197 142.389 56.6111C142.389 27.0025 118.386 3 88.7778 3C59.1692 3 35.1667 27.0025 35.1667 56.6111C35.1667 86.2197 59.1692 110.222 88.7778 110.222ZM88.7778 110.222C111.527 110.222 133.345 119.259 149.432 135.346C165.518 151.432 174.556 173.25 174.556 196M88.7778 110.222C66.0281 110.222 44.2102 119.259 28.1237 135.346C12.0373 151.432 3 173.25 3 196"
+              stroke-width="6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
         </section>
       </div>
     </div>

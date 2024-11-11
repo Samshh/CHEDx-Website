@@ -210,7 +210,7 @@ const MappedTimeline = () => {
             )}
             <div className="flex flex-col min-h-40 border-l-[1.5px] border-yellow border-dashed pl-10 z-0 relative">
               <div className="h-4 w-4 rounded-full bg-yellow z-20 absolute -left-0.5 mt-1.5 -ml-1.5"></div>
-              <div className="min-h-40 hover:pl-10 transition-all duration-300 gap-3 flex flex-col w-full timeline-event">
+              <div className="min-h-40 md:hover:pl-10 transition-all duration-300 gap-3 flex flex-col w-full timeline-event">
                 {event.time && (
                   <div className="border border-yellow bg-none rounded-lg px-2 py-0.5 text-center max-w-max top-0">
                     <span className="grow-0">{event.time}</span>
