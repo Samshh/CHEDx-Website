@@ -2,7 +2,6 @@ import { useState } from "react";
 import Button from "@/components/ui/button";
 import CardImage from "/Cybersecurity_BG.png";
 import HeroBG from "/BreakoutBG.png";
-import { useNavigate } from "react-router-dom";
 
 interface CardDetails {
   title: string;
@@ -11,7 +10,6 @@ interface CardDetails {
 }
 
 export default function BreakoutSessions() {
-  const navigate = useNavigate();
   const [expandedCardIndex, setExpandedCardIndex] = useState<number | null>(null);
 
   const handleCardClick = (index: number) => {
