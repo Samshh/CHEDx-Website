@@ -6,7 +6,6 @@ import HeroBG from "/ProgrammeBG.png";
 import CurvedUnderline from "/underlines/programme_underline.svg";
 import MappedTimeline from "./_components/MappedTimeline";
 import useAnimateText from "@/components/animations/useAnimateText";
-import { useNavigate } from "react-router-dom";
 
 interface ContainerProps {
   children: ReactNode;
@@ -20,13 +19,16 @@ export default function Programme() {
   const textTrigger1 = useRef(null);
   const textTrigger2 = useRef(null);
   const text2 = useRef(null);
-  const navigate = useNavigate();
 
   useAnimateText({ text: text2, trigger: textTrigger2 });
 
   return (
     <div className="relative">
-      <img src={HeroBG} alt="herobg" className="absolute w-full h-screen object-cover opacity-20" />
+      <img
+        src={HeroBG}
+        alt="herobg"
+        className="absolute w-full h-screen object-cover opacity-20"
+      />
       <div
         className="relative bg-hero-bg bg-cover w-full h-screen flex items-center justify-center flex-col"
         id="programme"
@@ -61,19 +63,30 @@ export default function Programme() {
           </div>
         </Container>
         <Container>
-          <div className="text-center flex flex-col items-center h-full gap-[2rem]" ref={textTrigger2}>
+          <div
+            className="text-center flex flex-col items-center h-full gap-[2rem]"
+            ref={textTrigger2}
+          >
             <div>
               <h2 className="text-blue">
                 CHED<sup>x</sup>2.0
               </h2>
               <div className="relative">
-                <h2 className="text-secondary relative z-10">Programme Schedule</h2>
-                <img src={CurvedUnderline} alt="" className="absolute lg:top-10 left-0 z-0 sm:bottom-0 bottom-0" />
+                <h2 className="text-secondary relative z-10">
+                  Programme Schedule
+                </h2>
+                <img
+                  src={CurvedUnderline}
+                  alt=""
+                  className="absolute lg:top-10 left-0 z-0 sm:bottom-0 bottom-0"
+                />
               </div>
             </div>
             <h3 className="text-secondary max-w-2xl" ref={text2}>
-              Join us at CHEDˣ2.0 for two days of innovation in education! Discover cutting-edge IT skills, explore AI
-              ethics, and gain targeted industry insights through keynotes and interactive sessions.
+              Join us at CHEDˣ2.0 for two days of innovation in education!
+              Discover cutting-edge IT skills, explore AI ethics, and gain
+              targeted industry insights through keynotes and interactive
+              sessions.
             </h3>
           </div>
         </Container>
@@ -88,14 +101,19 @@ export default function Programme() {
               <span className="text-blue">Secure your spot...</span>
               <br /> Join us today!
             </h2>
-            <Button
-              className="bg-blue text-white hover:scale-110 hover:cursor-pointer transition-all duration-300"
-              onClick={() => navigate("https://lu.ma/sslgryut")}
+            <a
+              href="https://lu.ma/sslgryut"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="registration"
             >
-              register now
-            </Button>
+              <Button
+                className="bg-blue text-white hover:scale-110 hover:cursor-pointer transition-all duration-300"
+              >
+                register now
+              </Button>
+            </a>
           </div>
-
           <svg
             width="178"
             height="199"

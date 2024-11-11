@@ -137,7 +137,11 @@ export default function Landing() {
     <div className="flex flex-col">
       {/* section1 */}
       <div className="relative">
-        <img src={HeroBG} alt="herobg" className="absolute w-screen h-full object-cover" />
+        <img
+          src={HeroBG}
+          alt="herobg"
+          className="absolute w-screen h-full object-cover"
+        />
         <div className="absolute inset-0 bg-center-transparent" />
         <section className="relative h-screen">
           <div className="h-full w-full max-w-[568px] max-h-[568px] rounded-full absolute bg-yellow opacity-15 blur-3xl" />
@@ -147,17 +151,22 @@ export default function Landing() {
             </div>
             <div className="flex flex-col justify-center items-center gap-[2rem]">
               <div>
-                <h3 className="text-center font-normal max-w-[568px] uppercase">December 4 - 5, 2024</h3>
+                <h3 className="text-center font-normal max-w-[568px] uppercase">
+                  December 4 - 5, 2024
+                </h3>
                 <p className="text-center font-normal max-w-[568px]">
-                  SMX Convention Center, SM Lanang Premier, JP Laurel Ave., Davao City
+                  SMX Convention Center, SM Lanang Premier, JP Laurel Ave.,
+                  Davao City
                 </p>
               </div>
-              <Button
-                className="bg-yellow text-white"
-                onClick={() => (window.location.href = "https://lu.ma/sslgryut")}
+              <a
+                href="https://lu.ma/sslgryut"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="registration"
               >
-                Register now
-              </Button>
+                <Button className="bg-yellow text-white">Register now</Button>
+              </a>
             </div>
           </div>
         </section>
@@ -168,10 +177,18 @@ export default function Landing() {
           <div className="h-full w-full max-w-[568px] max-h-[568px] rounded-full absolute bg-yellow opacity-15 blur-3xl" />
           <div className="max-w-[751px] w-full flex justify-center items-center gap-[3.36rem] flex-wrap">
             {partners.map((partner, index) => (
-              <img className="h-[65px] w-auto" key={index} src={partner} alt={`partner-${index}`} />
+              <img
+                className="h-[65px] w-auto"
+                key={index}
+                src={partner}
+                alt={`partner-${index}`}
+              />
             ))}
           </div>
-          <div className="text-center flex flex-col gap-[2rem]" ref={cardsTrigger}>
+          <div
+            className="text-center flex flex-col gap-[2rem]"
+            ref={cardsTrigger}
+          >
             <h2>
               <span className="text-yellow">
                 What is CHED<sup>x</sup>2.0,
@@ -187,23 +204,40 @@ export default function Landing() {
               </span>
             </h2>
             <h3 className="max-w-[768px]" ref={text1}>
-              In today’s fast-evolving tech landscape, CHEDˣ2.0 keeps you informed on ethical implications,
-              promotes responsible use, and fosters collaboration to make technology impactful, bridging gaps and
-              strengthening human connections.
+              In today’s fast-evolving tech landscape, CHEDˣ2.0 keeps you
+              informed on ethical implications, promotes responsible use, and
+              fosters collaboration to make technology impactful, bridging gaps
+              and strengthening human connections.
             </h3>
           </div>
           <div className="grid max-w-[471px] grid-rows-2 grid-cols-2 lg:grid-rows-1 lg:grid-cols-4 gap-[2rem] w-full lg:max-w-[985px]">
             <div ref={card1}>
-              <LandingCard title="speakers" icon="pepicons-pencil:microphone-handheld" number={card1number} />
+              <LandingCard
+                title="speakers"
+                icon="pepicons-pencil:microphone-handheld"
+                number={card1number}
+              />
             </div>
             <div ref={card2}>
-              <LandingCard title="booths" icon="clarity:store-line" number={card2number} />
+              <LandingCard
+                title="booths"
+                icon="clarity:store-line"
+                number={card2number}
+              />
             </div>
             <div ref={card3}>
-              <LandingCard title="breakout sessions" icon="ph:users" number={card3number} />
+              <LandingCard
+                title="breakout sessions"
+                icon="ph:users"
+                number={card3number}
+              />
             </div>
             <div ref={card4}>
-              <LandingCard title="big event" icon="proicons:calendar" number={card4number} />
+              <LandingCard
+                title="big event"
+                icon="proicons:calendar"
+                number={card4number}
+              />
             </div>
           </div>
         </section>
@@ -261,9 +295,10 @@ export default function Landing() {
               </span>
             </h2>
             <h3 className="max-w-[768px]" ref={text2}>
-              The summit brings together top experts to foster collaboration, open dialogue, and forward thinking,
-              equipping delegates and industries with the insights and networks to confidently navigate the evolving
-              workplace.
+              The summit brings together top experts to foster collaboration,
+              open dialogue, and forward thinking, equipping delegates and
+              industries with the insights and networks to confidently navigate
+              the evolving workplace.
             </h3>
           </div>
           <SpeakersCarousel />
@@ -288,8 +323,9 @@ export default function Landing() {
               </span>
             </h2>
             <h3 className="max-w-[652px]" ref={text3}>
-              From insightful keynotes to engaging breakouts, each session is designed to inspire, educate, and propel
-              you into the forefront of the ever-evolving landscape of technology and education.
+              From insightful keynotes to engaging breakouts, each session is
+              designed to inspire, educate, and propel you into the forefront of
+              the ever-evolving landscape of technology and education.
             </h3>
           </div>
           <div className="w-full py-[3rem]">

@@ -64,7 +64,7 @@ export default function MainLayout() {
       >
         <img ref={imageRef} src={logo} alt="logo" className="w-[468px]" />
         <h3 ref={messageRef} className="uppercase">
-          Expand Exceed Exemplify
+          Expand, Exceed, Exemplify
         </h3>
         <div
           ref={spinnerRef}

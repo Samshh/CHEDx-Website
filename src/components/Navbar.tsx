@@ -1,7 +1,14 @@
 import { useNavigate, useLocation } from "react-router-dom";
 import NavLogo from "/CHEDxLogo.svg";
 import Button from "@/components/ui/button";
-import { Sheet, SheetClose, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 import Burger from "/Burger.svg";
 
 export default function Navbar() {
@@ -17,12 +24,20 @@ export default function Navbar() {
         </button>
         <div className="hidden lg:flex items-center justify-center gap-[1.75rem]">
           <button onClick={() => navigate("/")} type="button">
-            <p className={`uppercase transition-all ease-linear ${path === "/" ? "text-yellow" : "hover:text-yellow"}`}>
+            <p
+              className={`uppercase transition-all ease-linear ${
+                path === "/" ? "text-yellow" : "hover:text-yellow"
+              }`}
+            >
               Home
             </p>
           </button>
           <button onClick={() => navigate("/venue")} type="button">
-            <p className={`uppercase transition-all ease-linear ${path === "/venue" ? "text-red" : "hover:text-red"}`}>
+            <p
+              className={`uppercase transition-all ease-linear ${
+                path === "/venue" ? "text-red" : "hover:text-red"
+              }`}
+            >
               Venue
             </p>
           </button>
@@ -38,18 +53,22 @@ export default function Navbar() {
           <button onClick={() => navigate("/breakout-sessions")} type="button">
             <p
               className={`uppercase transition-all ease-linear ${
-                path === "/breakout-sessions" ? "text-green" : "hover:text-green"
+                path === "/breakout-sessions"
+                  ? "text-green"
+                  : "hover:text-green"
               }`}
             >
               Breakout Sessions
             </p>
           </button>
-          <Button
-            className="border-[1px] border-black"
-            onClick={() => (window.location.href = "https://lu.ma/sslgryut")}
+          <a
+            href="https://lu.ma/sslgryut"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="registration"
           >
-            Register Now
-          </Button>
+            <Button className="border-[1px] border-black">Register Now</Button>
+          </a>
         </div>
         <div className="flex lg:hidden lg:opacity-0">
           <Sheet>
@@ -79,7 +98,10 @@ export default function Navbar() {
                   </button>
                 </SheetClose>
                 <SheetClose className="flex-end text-end">
-                  <button type="button" onClick={() => navigate("/breakout-sessions")}>
+                  <button
+                    type="button"
+                    onClick={() => navigate("/breakout-sessions")}
+                  >
                     <h3>BREAKOUT SESSIONS</h3>
                   </button>
                 </SheetClose>
