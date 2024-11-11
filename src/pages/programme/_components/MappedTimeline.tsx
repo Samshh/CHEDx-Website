@@ -93,7 +93,7 @@ const timeline: Timeline = {
       subtitle: "Singapore Polytechnic",
     },
     {
-      time: "1300 PM - 2:15 PM",
+      time: "1:30 PM - 2:15 PM",
       segment:
         "Panel Discussion: Education and the World of Work: Boosting Education through Smart Technologies (Project BEST)",
       title: "Moderator: Calen Martin D. Legaspi, IBPAP TADCOM",

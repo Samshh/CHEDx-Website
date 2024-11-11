@@ -50,7 +50,7 @@ export default function Programme() {
               PROGRAMME THEME
             </Button>
             <h2 className="text-blue">Building Synergy:</h2>
-            <h2 className="max-w-lg">Aligning IT Education with Industry Demands</h2>
+            <h2 className="max-w-lg">Aligning IT Education with Industry</h2>
           </div>
           <div className="w-full justify-end flex">
             <img
@@ -72,8 +72,7 @@ export default function Programme() {
               </div>
             </div>
             <h3 className="text-secondary max-w-2xl" ref={text2}>
-              Join us at CHED<sup>x</sup>
-              <sup>2.0</sup> for two days of innovation in education! Discover cutting-edge IT skills, explore AI
+              Join us at CHEDˣ2.0 for two days of innovation in education! Discover cutting-edge IT skills, explore AI
               ethics, and gain targeted industry insights through keynotes and interactive sessions.
             </h3>
           </div>

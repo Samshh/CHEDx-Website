@@ -19,7 +19,6 @@ import LanddingCarousel from "./components/LandingCarousel";
 import MappedTimeline from "./components/MappedTimeline";
 import useAnimateText from "@/components/animations/useAnimateText";
 import SpeakersCarousel from "./components/SpeakersCarousel";
-import { useNavigate } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -134,8 +133,6 @@ export default function Landing() {
       });
   });
 
-  const navigate = useNavigate();
-
   return (
     <div className="flex flex-col">
       {/* section1 */}
@@ -190,7 +187,7 @@ export default function Landing() {
               </span>
             </h2>
             <h3 className="max-w-[768px]" ref={text1}>
-              In today’s fast-evolving tech landscape, CHED<sup>x</sup>2.0 keeps you informed on ethical implications,
+              In today’s fast-evolving tech landscape, CHEDˣ2.0 keeps you informed on ethical implications,
               promotes responsible use, and fosters collaboration to make technology impactful, bridging gaps and
               strengthening human connections.
             </h3>
