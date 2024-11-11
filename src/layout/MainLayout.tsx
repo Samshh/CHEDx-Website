@@ -60,7 +60,7 @@ export default function MainLayout() {
     <>
       <div
         ref={loadingRef}
-        className="h-screen w-full fixed flex-col gap-[2rem] justify-center items-center flex z-50 select-none bg-white"
+        className="h-screen w-full fixed flex-col gap-[2rem] justify-center items-center flex z-50 select-none bg-white p-[2rem]"
       >
         <img ref={imageRef} src={logo} alt="logo" className="w-[468px]" />
         <h3 ref={messageRef} className="uppercase">

@@ -8,8 +8,10 @@ import useAnimateText from "@/components/animations/useAnimateText";
 export default function Venue() {
   const textTrigger = useRef(null);
   const text = useRef(null);
+  const text2 = useRef(null);
 
   useAnimateText({ text: text, trigger: textTrigger });
+  useAnimateText({ text: text2, trigger: textTrigger });
   return (
     <div className="overflow-x-hidden">
       <section>
@@ -49,11 +51,13 @@ export default function Venue() {
                 </span>
               </h2>
             </div>
-            <h3 ref={text}>
-              The summit will be held at SMX DAVAO 3rd Level, SM Lanang Premier,
-              J.P. Laurel Avenue, Lanang, Davao City <br /> See the embedded map
-              below!
-            </h3>
+            <div className="text-center flex flex-col gap-[1rem] max-w-[560px]">
+              <h3 ref={text}>
+                The summit will be held at SMX DAVAO 3rd Level, SM Lanang
+                Premier, J.P. Laurel Avenue, Lanang, Davao City
+              </h3>
+              <h3 ref={text2}>See the embedded map below!</h3>
+            </div>
           </div>
           <div className="w-full lg:w-[60vw] h-[50vh] overflow-hidden select-all z-10">
             <iframe
@@ -79,11 +83,7 @@ export default function Venue() {
               rel="noopener noreferrer"
               title="registration"
             >
-              <Button
-                className="bg-red text-white"
-              >
-                register now
-              </Button>
+              <Button className="bg-red text-white">register now</Button>
             </a>
           </div>
           <img src={VenueSVG} alt="venue" />
