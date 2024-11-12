@@ -20,12 +20,13 @@ export default function Footer() {
       setNextLocation("/breakout-sessions");
       setCurrentLocation("breakout sessions");
     } else if (location.pathname === "/breakout-sessions") {
-      setNextLocation("/organizers");
-      setCurrentLocation("organizers");
-    } else if (location.pathname === "/organizers") {
       setNextLocation("/");
       setCurrentLocation("home");
-    }
+    } 
+    // else if (location.pathname === "/organizers") {
+    //   setNextLocation("/");
+    //   setCurrentLocation("home");
+    // }
   }, [location.pathname]);
 
   return (
@@ -36,7 +37,7 @@ export default function Footer() {
             <div className="flex flex-col items-start justify-center">
               <div className="flex items-center justify-center gap-[1rem]">
                 <p className="uppercase text-[0.75rem] text-black">
-                  {location.pathname !== "/organizers" ? <>next</> : <>back to</>}
+                  {location.pathname !== "/breakout-sessions" ? <>next</> : <>back to</>}
                 </p>
                 <div className="p-[0.5px] w-[120px] md:w-[200px] bg-black" />
               </div>
@@ -91,13 +92,13 @@ export default function Footer() {
           >
             <p className="uppercase">Breakout Sessions</p>
           </button>
-          <button
+          {/* <button
             className="hover:text-yellow transition-all ease-linear"
             onClick={() => navigate("/organizers")}
             type="button"
           >
             <p className="uppercase">Organizers</p>
-          </button>
+          </button> */}
         </div>
       </footer>
     </div>

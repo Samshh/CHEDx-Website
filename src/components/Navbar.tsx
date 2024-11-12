@@ -61,7 +61,7 @@ export default function Navbar() {
               Breakout Sessions
             </p>
           </button>
-          <button onClick={() => navigate("/organizers")} type="button">
+          {/* <button onClick={() => navigate("/organizers")} type="button">
             <p
               className={`uppercase transition-all ease-linear ${
                 path === "/organizers"
@@ -71,7 +71,7 @@ export default function Navbar() {
             >
               organizers
             </p>
-          </button>
+          </button> */}
           <a
             href="https://lu.ma/sslgryut"
             target="_blank"
@@ -116,18 +116,25 @@ export default function Navbar() {
                     <h3>BREAKOUT SESSIONS</h3>
                   </button>
                 </SheetClose>
-                <SheetClose className="flex-end text-end">
+                {/* <SheetClose className="flex-end text-end">
                   <button
                     type="button"
                     onClick={() => navigate("/organizers")}
                   >
                     <h3>ORGANIZERS</h3>
                   </button>
-                </SheetClose>
+                </SheetClose> */}
                 <SheetClose className="flex-end text-end">
-                  <button type="button">
-                    <h3 className="text-yellow">REGISTER NOW</h3>
-                  </button>
+                  <a
+                    href="https://lu.ma/sslgryut"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="registration"
+                  >
+                    <button type="button">
+                      <h3 className="text-yellow">REGISTER NOW</h3>
+                    </button>
+                  </a>
                 </SheetClose>
               </div>
             </SheetContent>
