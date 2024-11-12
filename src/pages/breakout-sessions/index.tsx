@@ -1,5 +1,19 @@
 import { useState } from "react";
 import Button from "@/components/ui/button";
+import BreakoutRoom1 from "/BreakoutImages/Breakoutroom1.png";
+import BreakoutRoom2 from "/BreakoutImages/Breakoutroom2.png";
+import BreakoutRoom3 from "/BreakoutImages/Breakoutroom3.png";
+import BreakoutRoom4 from "/BreakoutImages/Breakoutroom4.jpg";
+import BreakoutRoom5 from "/BreakoutImages/Breakoutroom5.png";
+import BreakoutRoom6 from "/BreakoutImages/Breakoutroom6.png";
+import BreakoutRoom7 from "/BreakoutImages/Breakoutroom7.png";
+import BreakoutRoom8 from "/BreakoutImages/Breakoutroom8.png";
+import BreakoutRoom9 from "/BreakoutImages/Breakoutroom9.jpg";
+import BreakoutRoom10 from "/BreakoutImages/Breakoutroom10.png";
+import BreakoutRoom11 from "/BreakoutImages/Breakoutroom11.png";
+import BreakoutRoom12 from "/BreakoutImages/Breakoutroom12.png";
+import BreakoutRoom13 from "/BreakoutImages/Breakoutroom13.png";
+import BreakoutRoom14 from "/BreakoutImages/Breakoutroom14.png";
 import CardImage from "/Cybersecurity_BG.png";
 import HeroBG from "/BreakoutBG.png";
 
@@ -7,110 +21,200 @@ interface CardDetails {
   title: string;
   subtitle: string;
   time: string;
+  room: string;
+  speaker: string;
+  company: string;
 }
 
 export default function BreakoutSessions() {
   const [expandedCardIndex, setExpandedCardIndex] = useState<number | null>(
     null
   );
+  const [activeDay, setActiveDay] = useState<1 | 2 | null>(null);
 
-  const handleCardClick = (index: number) => {
-    setExpandedCardIndex(expandedCardIndex === index ? null : index);
+  const handleCardClick = (index: number, day: 1 | 2) => {
+    setExpandedCardIndex(
+      expandedCardIndex === index && activeDay === day ? null : index
+    );
+    setActiveDay(expandedCardIndex === index && activeDay === day ? null : day);
   };
 
   const cardDetails_day1: CardDetails[] = [
     {
       title: "AI for Academic Purpose",
       subtitle: "Industry (Accenture) - c/o IBPAP",
-      time: "1:30 PM - 2:15 PM",
+      time: "2:16 - 3:00 PM",
+      room: "Room A",
+      speaker: "c/o IBPAP",
+      company: "Accenture",
     },
     {
       title:
         "Investigating Generative AI Mechanisms for the Academe in Improving Educational Engagement and Outcomes",
       subtitle: "Academic Program Director, Asian Institute of Management",
-      time: "1:30 PM - 2:15 PM",
+      time: "2:16 - 3:00 PM",
+      room: "Room B",
+      speaker: "Michelle Banawan, PhD",
+      company: "Asian Institute of Management",
     },
     {
-      title: "Topic on Future's Thinking / Digital Transformation",
-      subtitle: "Panel Speakers (CHED, DepED, Industry)",
-      time: "2:15 PM - 3:00 PM",
+      title:
+        "The Future of Work: How Digital Transformation Is Changing Workforce Requirements and Skills",
+      subtitle: "President, Mapua University",
+      time: "3:16 PM - 4:00 PM",
+      room: "Room A",
+      speaker: "Dr. Dodgie Maestrecampo",
+      company: "Mapua University",
     },
     {
       title: "Women in STEM",
       subtitle: "President, Analytics Association of the Philippines",
-      time: "2:15 PM - 3:00 PM",
+      time: "3:16 PM - 4:00 PM",
+      room: "Room B",
+      speaker: "Michelle Alarcon c/o IBPAP",
+      company: "Analytics Association of the Philippines",
     },
     {
-      title: "Soft Skills for IT Professionals c/o IBPAP",
+      title:
+        "Integrating Soft Skills with Domain Expertise for IT Professionals",
       subtitle: "Industry (iQor)",
-      time: "3:30 PM - 4:15 PM",
+      time: "4:01 PM - 4:45 PM",
+      room: "Room A",
+      speaker: "c/o IBPAP",
+      company: "iQor",
     },
     {
       title:
-        "Futures Library, Futures Information: Uncover Sustainable Opportunity for Collaboration and Innovation",
-      subtitle:
-        "Program Head, Bachelor of Science and Information Science, West Visayas State University",
-      time: "3:30 PM - 4:15 PM",
-    },
-    {
-      title: "Role of Certifications and Microcredentials in Education",
-      subtitle: "Training Platform",
-      time: "4:15 PM - 5:00 PM",
+        "Futures Learning Commons and Creative Spaces, Futures Information",
+      subtitle: "Program Head, Bachelor of Science and Information Science",
+      time: "4:01 PM - 4:45 PM",
+      room: "Room B",
+      speaker: "Asso. Prof. Stephen B. Alayon",
+      company: "West Visayas State University",
     },
     {
       title:
-        "Cybersecurity Synergy: Collaborative Strategies for Academia and Industry in the Evolving Digital Landscape",
+        "Creating Seamless Pathways for Higher Education: Certifications and Microcredentials",
+      subtitle: "Corporate Social Responsibility Leader",
+      time: "4:46 PM - 5:30 PM",
+      room: "Room A",
+      speaker: "Ms. Yean Feng Yue",
+      company: "IBM APAC",
+    },
+    {
+      title:
+        "Cybersecurity Synergy: Collaborative Strategies for Academia and Industry",
       subtitle: "Regional Director, GFCE Southeast Asia Hub",
-      time: "4:15 PM - 5:00 PM",
+      time: "4:46 PM - 5:30 PM",
+      room: "Room B",
+      speaker: "Allan S. Cabanlong, ASEAN Eng",
+      company: "GFCE Southeast Asia Hub",
     },
   ];
 
   const cardDetails_day2: CardDetails[] = [
     {
       title:
-        "Contact Center & Business Process PSF Emerging Tech Career Pathways",
-      subtitle: "Sector Representative",
-      time: "10:45 PM - 11:45 PM",
+        "Contact Center & Business Process PSF: Emerging Tech Career Pathways",
+      subtitle:
+        "Operations Director, Contact Center Association of the Philippines",
+      time: "10:46 - 11:45 AM",
+      room: "Room A",
+      speaker: "Jay Santisteban",
+      company: "Contact Center Association of the Philippines (CCAP)",
     },
     {
-      title: "Shared Services PSF Emerging Tech Career Pathway",
-      subtitle: "Sector Representative",
-      time: "1:30 PM - 2:15 PM",
+      title: "Global In-House Center PSF: Emerging Tech Career Pathway",
+      subtitle: "Executive Director, Global In-House Center Council",
+      time: "10:46 - 11:45 AM",
+      room: "Room B",
+      speaker: "Christine Bata",
+      company: "Global In-House Center Council (GICC)",
     },
     {
-      title: "Animation PSF Emerging Tech Career Pathways",
-      subtitle: "Sector Representative",
-      time: "1:30 PM - 2:15 PM",
+      title: "Digital Arts and Animation PSF: Emerging Tech Career Pathways",
+      subtitle: "Executive Director, Animation Council of the Philippines",
+      time: "1:01 - 1:45 PM",
+      room: "Room A",
+      speaker: "Daniel Enriquez",
+      company: "Animation Council of the Philippines (ACPI)",
     },
     {
-      title: "Game Development PSF Emerging Tech Career Pathways",
-      subtitle: "Sector Representative",
-      time: "1:30 PM - 2:15 PM",
+      title: "Game Development PSF: Emerging Tech Career Pathways",
+      subtitle: "Game Developers Association of the Philippines",
+      time: "1:01 - 1:45 PM",
+      room: "Room B",
+      speaker: "Amierose Ramos",
+      company: "Game Developers Association of the Philippines (GDAP)",
     },
     {
-      title: "Healthcare PSF Emerging Tech Career Pathways c/o IBPAP",
-      subtitle: "Sector Representative",
-      time: "2:15 PM - 3:00 PM",
+      title: "Health Information Management PSF: Emerging Tech Career Pathways",
+      subtitle:
+        "Executive Director, Healthcare Information Management Association",
+      time: "1:46 - 2:30 PM",
+      room: "Room A",
+      speaker: "Nei Bumanglag",
+      company:
+        "Healthcare Information Management Association of the Philippines (HIMAP)",
     },
     {
-      title: "IT & Software PSF Emerging Tech Career Pathways",
-      subtitle: "Sector Representative",
-      time: "2:15 PM - 3:00 PM",
+      title:
+        "Software Development and Security: PSF Emerging Tech Career Pathways",
+      subtitle: "Board Trustee, Philippine Software Industry Association",
+      time: "1:46 - 2:30 PM",
+      room: "Room B",
+      speaker: "Allan Tan",
+      company: "Philippine Software Industry Association (PSIA)",
     },
   ];
 
-  const renderCard = (card: CardDetails, index: number) => (
+  const getImageForCard = (title: string) => {
+    switch (title) {
+      case "AI for Academic Purpose":
+        return BreakoutRoom1;
+      case "Investigating Generative AI Mechanisms for the Academe in Improving Educational Engagement and Outcomes":
+        return BreakoutRoom2;
+      case "The Future of Work: How Digital Transformation Is Changing Workforce Requirements and Skills":
+        return BreakoutRoom3;
+      case "Women in STEM":
+        return BreakoutRoom4;
+      case "Integrating Soft Skills with Domain Expertise for IT Professionals":
+        return BreakoutRoom5;
+      case "Futures Learning Commons and Creative Spaces, Futures Information":
+        return BreakoutRoom6;
+      case "Creating Seamless Pathways for Higher Education: Certifications and Microcredentials":
+        return BreakoutRoom7;
+      case "Cybersecurity Synergy: Collaborative Strategies for Academia and Industry":
+        return BreakoutRoom8;
+      case "Contact Center & Business Process PSF: Emerging Tech Career Pathways":
+        return BreakoutRoom9;
+      case "Global In-House Center PSF: Emerging Tech Career Pathway":
+        return BreakoutRoom10;
+      case "Digital Arts and Animation PSF: Emerging Tech Career Pathways":
+        return BreakoutRoom11;
+      case "Game Development PSF: Emerging Tech Career Pathways":
+        return BreakoutRoom12;
+      case "Health Information Management PSF: Emerging Tech Career Pathways":
+        return BreakoutRoom13;
+      case "Software Development and Security: PSF Emerging Tech Career Pathways":
+        return BreakoutRoom14;
+      default:
+        return CardImage;
+    }
+  };
+
+  const renderCard = (card: CardDetails, index: number, day: 1 | 2) => (
     <div
-      key={index}
-      onClick={() => handleCardClick(index)}
+      key={`${day}-${index}`}
+      onClick={() => handleCardClick(index, day)}
       className={`relative cursor-pointer transition-transform duration-300 ease-in-out rounded-2xl border-[2px] border-green ${
-        expandedCardIndex === index
+        expandedCardIndex === index && activeDay === day
           ? ""
           : "hover:scale-105 hover:shadow-xl relative"
       }`}
     >
       <img
-        src={CardImage}
+        src={getImageForCard(card.title)}
         alt={`Card Image ${index + 1}`}
         className="w-full h-full object-cover rounded-lg"
       />
@@ -121,12 +225,12 @@ export default function BreakoutSessions() {
         {card.title}
       </span>
 
-      {expandedCardIndex === index && (
+      {expandedCardIndex === index && activeDay === day && (
         <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-55 z-50">
-          <div className="relative bg-white p-0 rounded-full shadow-2xl transform transition-transform duration-300 max-w-2xl w-full">
+          <div className="relative bg-transparent p-4 rounded-lg shadow-2xl max-w-2xl w-full">
             <div className="relative">
               <img
-                src={CardImage}
+                src={getImageForCard(card.title)} // Expanded view image
                 alt="Expanded Card Image"
                 className="w-full h-full object-cover rounded-lg"
               />
@@ -135,7 +239,9 @@ export default function BreakoutSessions() {
               </div>
               <div className="absolute bottom-4 left-4 text-white">
                 <h3 className="text-xl font-semibold mb-1">{card.title}</h3>
-                <p className="text-sm">{card.subtitle}</p>
+                <p className="text-sm mb-1">{card.room}</p>
+                <p className="text-sm mb-1">{card.speaker}</p>
+                <p className="text-sm">{card.company}</p>
               </div>
             </div>
           </div>
@@ -171,7 +277,9 @@ export default function BreakoutSessions() {
               id="breakoutDay1"
               className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-5"
             >
-              {cardDetails_day1.map(renderCard)}
+              {cardDetails_day1.map((card, index) =>
+                renderCard(card, index, 1)
+              )}
             </div>
           </div>
         </div>
@@ -188,7 +296,9 @@ export default function BreakoutSessions() {
               id="breakoutDay2"
               className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-5"
             >
-              {cardDetails_day2.map(renderCard)}
+              {cardDetails_day2.map((card, index) =>
+                renderCard(card, index, 2)
+              )}
             </div>
           </div>
         </div>
@@ -207,9 +317,7 @@ export default function BreakoutSessions() {
               rel="noopener noreferrer"
               title="registration"
             >
-              <Button className="bg-green text-white">
-                register now
-              </Button>
+              <Button className="bg-green text-white">register now</Button>
             </a>
           </div>
           <svg

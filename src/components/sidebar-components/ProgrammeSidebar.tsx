@@ -66,14 +66,20 @@ export default function ProgrammeSidebar() {
           <div className="absolute top-0 left-0 w-full bg-black" />
         </div>
       </div>
-      <div className="flex justify-center items-center gap-[1rem] text-[#777]" ref={themeTextRef}>
+      <div
+        className="flex justify-center items-center gap-[1rem] text-[#777]"
+        ref={themeTextRef}
+      >
         <p>THEME</p>
         <div className=" h-[48px] w-[6px] bg-[#B9B9B9]" ref={themeRef} />
         {/* <div className="h-[48px] w-[6px] bg-[#777] relative hover:cursor-pointer">
           <div ref={themeRef} className="absolute top-0 left-0 w-full bg-black" />
         </div> */}
       </div>
-      <div className="flex justify-center items-center gap-[1rem] text-[#777]" ref={day1TextRef}>
+      <div
+        className="flex justify-center items-center gap-[1rem] text-[#777]"
+        ref={day1TextRef}
+      >
         <p>DAY 1</p>
         <div className=" h-[48px] w-[6px] bg-[#B9B9B9]" ref={day1Ref} />
         {/* <div className="h-[48px] w-[6px] bg-[#777] relative">
@@ -81,7 +87,10 @@ export default function ProgrammeSidebar() {
           <div ref={day1Ref} className="absolute top-0 left-0 w-full bg-black" />
         </div> */}
       </div>
-      <div className="flex justify-center items-center gap-[1rem] text-[#777]" ref={day2TextRef}>
+      <div
+        className="flex justify-center items-center gap-[1rem] text-[#777]"
+        ref={day2TextRef}
+      >
         <p>DAY 2</p>
         <div className=" h-[48px] w-[6px] bg-[#B9B9B9]" ref={day2Ref} />
         {/* <div className="h-[48px] w-[6px] bg-[#777] relative">
@@ -89,7 +98,10 @@ export default function ProgrammeSidebar() {
           <div ref={day2Ref} className="absolute top-0 left-0 w-full bg-black" />
         </div> */}
       </div>
-      <div className="flex justify-center items-center gap-[1rem] text-[#777]" ref={nextTextRef}>
+      <div
+        className="flex justify-center items-center gap-[1rem] text-[#777]"
+        ref={nextTextRef}
+      >
         <p>NEXT</p>
         <div className=" h-[48px] w-[6px] bg-[#B9B9B9]" ref={nextRef} />
         {/* <div className="h-[48px] w-[6px] bg-[#777] relative">
