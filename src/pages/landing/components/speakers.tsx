@@ -6,7 +6,7 @@ const speakersData = [
   },
   {
     name: "Allan Cabanlong",
-    img: "/speakers/allan-cabanlong.png",
+    img: "/speakers/allan-canbanlong.jpg",
     affil: "GFCE Southeast Asia Hub",
   },
   {
@@ -31,7 +31,7 @@ const speakersData = [
   },
   {
     name: "Michelle Banawan, PhD",
-    img: "/speakers/michelle-banawan.png",
+    img: "/speakers/michelle-banawan.jpg",
     affil: "Asian Institute of Management",
   },
 ];

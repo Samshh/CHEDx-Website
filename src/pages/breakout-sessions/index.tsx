@@ -207,7 +207,7 @@ export default function BreakoutSessions() {
     <div
       key={`${day}-${index}`}
       onClick={() => handleCardClick(index, day)}
-      className={`relative cursor-pointer transition-transform duration-300 ease-in-out rounded-2xl border-[2px] border-green overflow-hidden ${
+      className={`relative cursor-pointer transition-transform duration-300 ease-in-out rounded-2xl border-[2px] border-green overflow-hidden bg-black bg-black-to-white-up ${
         expandedCardIndex === index && activeDay === day
           ? ""
           : "hover:scale-105 hover:shadow-xl relative"
@@ -216,8 +216,9 @@ export default function BreakoutSessions() {
       <img
         src={getImageForCard(card.title)}
         alt={`Card Image ${index + 1}`}
-        className="w-full h-full object-cover"
+        className="w-full h-full object-cover opacity-80"
       />
+      <div className="bg-black-to-white-up w-full h-full top-0 left-0 absolute" />
       <div className="border border-white bg-none rounded-lg px-2 py-0.5 mt-3 ml-3 text-white text-center max-w-max absolute top-0">
         <span className="grow-0">{card.time}</span>
       </div>
@@ -226,13 +227,14 @@ export default function BreakoutSessions() {
       </span>
 
       {expandedCardIndex === index && activeDay === day && (
-        <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-55 z-50 bg-black-to-white-up">
+        <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-55 z-50">
           <div className="relative bg-transparent rounded-lg shadow-2xl max-w-2xl w-full">
-            <div className="relative bg-black rounded-lg">
+            <div className="relative rounded-lg overflow-hidden">
+              <div className="w-full h-full top-0 left-0 absolute bg-black bg-black-to-white-up" />
               <img
-                src={getImageForCard(card.title)} // Expanded view image
+                src={getImageForCard(card.title)}
                 alt="Expanded Card Image"
-                className="w-full h-full object-cover rounded-lg opacity-60"
+                className="w-full h-full object-cover rounded-lg opacity-50"
               />
               <div className="absolute top-2 left-2 text-sm text-white bg-opacity-50 px-3 py-1 rounded-lg border-white border my-3 mx-3">
                 {card.time}
@@ -275,7 +277,7 @@ export default function BreakoutSessions() {
           <div className="w-full">
             <div
               id="breakoutDay1"
-              className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-5"
+              className="grid sm:grid-rows-8 md:grid-rows-4 md:grid-cols-2 sm:grid-cols-1 gap-5"
             >
               {cardDetails_day1.map((card, index) =>
                 renderCard(card, index, 1)
@@ -294,7 +296,7 @@ export default function BreakoutSessions() {
           <div className="w-full  mb-10">
             <div
               id="breakoutDay2"
-              className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-5"
+              className="grid sm:grid-rows-6 md:grid-rows-3 md:grid-cols-2 sm:grid-cols-1 gap-5"
             >
               {cardDetails_day2.map((card, index) =>
                 renderCard(card, index, 2)
