@@ -207,7 +207,7 @@ export default function BreakoutSessions() {
     <div
       key={`${day}-${index}`}
       onClick={() => handleCardClick(index, day)}
-      className={`relative cursor-pointer transition-transform duration-300 ease-in-out rounded-2xl border-[2px] border-green ${
+      className={`relative cursor-pointer transition-transform duration-300 ease-in-out rounded-2xl border-[2px] border-green overflow-hidden ${
         expandedCardIndex === index && activeDay === day
           ? ""
           : "hover:scale-105 hover:shadow-xl relative"
@@ -216,7 +216,7 @@ export default function BreakoutSessions() {
       <img
         src={getImageForCard(card.title)}
         alt={`Card Image ${index + 1}`}
-        className="w-full h-full object-cover rounded-lg"
+        className="w-full h-full object-cover"
       />
       <div className="border border-white bg-none rounded-lg px-2 py-0.5 mt-3 ml-3 text-white text-center max-w-max absolute top-0">
         <span className="grow-0">{card.time}</span>
@@ -226,13 +226,13 @@ export default function BreakoutSessions() {
       </span>
 
       {expandedCardIndex === index && activeDay === day && (
-        <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-55 z-50">
-          <div className="relative bg-transparent p-4 rounded-lg shadow-2xl max-w-2xl w-full">
-            <div className="relative">
+        <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-55 z-50 bg-black-to-white-up">
+          <div className="relative bg-transparent rounded-lg shadow-2xl max-w-2xl w-full">
+            <div className="relative bg-black rounded-lg">
               <img
                 src={getImageForCard(card.title)} // Expanded view image
                 alt="Expanded Card Image"
-                className="w-full h-full object-cover rounded-lg"
+                className="w-full h-full object-cover rounded-lg opacity-60"
               />
               <div className="absolute top-2 left-2 text-sm text-white bg-opacity-50 px-3 py-1 rounded-lg border-white border my-3 mx-3">
                 {card.time}
