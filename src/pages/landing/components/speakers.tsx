@@ -21,8 +21,8 @@ const speakersData = [
   },
   {
     name: "Dr. Gregg Victor Gabison",
-    img: "/speakers/gregg-victor-gabison.png",
-    affil: "Moderator",
+    img: "/speakers/gregg-gabison.jpg",
+    affil: "Ray Business Technologies PVT LTD",
   },
   {
     name: "Dr. Rolyn Daguil",
