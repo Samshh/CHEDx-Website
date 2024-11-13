@@ -70,9 +70,9 @@ export default function Landing() {
         const car1Interval = setInterval(() => {
           setCard1Number((prev: number) => {
             const next = prev + 1;
-            if (next > 7) {
+            if (next > 23) {
               clearInterval(car1Interval);
-              return 7;
+              return 23;
             }
             return next;
           });
@@ -202,14 +202,14 @@ export default function Landing() {
                 />
               </span>
             </h2>
-            <h3 className="max-w-[768px]" ref={text1}>
-              CHEDx2.0 is a nationwide IT Education Summit that promotes
+            <h3 className="max-w-[1080px]" ref={text1}>
+              CHEDˣ2.0 is a nationwide IT Education Summit that promotes
               impactful and inclusive discussions, partnerships, and networking.
               This year’s theme, “Building Synergy: Aligning IT Education with
               Industry,” emphasizes collaboration among academia, industry, and
               government to keep pace with technological advancements and
               workforce needs. Join us to connect, learn, and help shape the
-              future of IT education.”
+              future of IT education!
             </h3>
           </div>
           <div className="grid max-w-[471px] grid-rows-2 grid-cols-2 lg:grid-rows-1 lg:grid-cols-4 gap-[2rem] w-full lg:max-w-[985px]">
