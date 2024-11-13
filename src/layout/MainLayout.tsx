@@ -14,11 +14,10 @@ export default function MainLayout() {
   const spinnerRef = useRef(null);
   const contentRef = useRef(null);
   const imageRef = useRef(null);
-  const messageRef = useRef(null);
   const { pathname } = useLocation();
 
   useGSAP(() => {
-    const tl = gsap.timeline();
+    const tl = gsap.timeline({ ease: "power2.inOut" });
     tl.to(spinnerRef.current, {
       rotate: 360,
       duration: 0.5,
@@ -30,24 +29,23 @@ export default function MainLayout() {
         delay: 0.5,
         y: -50,
         duration: 0.5,
-        ease: "power2.inOut",
-      })
-      .from(messageRef.current, {
-        opacity: 0,
-        y: 50,
-        duration: 0.5,
-        ease: "power2.inOut",
       })
       .to(contentRef.current, {
         delay: 0.5,
         opacity: 0,
         duration: 0.5,
-        ease: "power2.inOut",
+      })
+      .to(imageRef.current, {
+        opacity: 0,
+        duration: 0.5,
+      })
+      .to(spinnerRef.current, {
+        opacity: 0,
+        duration: 0.5,
       })
       .to(loadingRef.current, {
         opacity: 0,
         duration: 0.5,
-        ease: "power2.inOut",
       })
       .set(loadingRef.current, { display: "none" });
   });
@@ -63,9 +61,6 @@ export default function MainLayout() {
         className="h-screen w-full fixed flex-col gap-[2rem] justify-center items-center flex z-50 select-none bg-white p-[2rem]"
       >
         <img ref={imageRef} src={logo} alt="logo" className="w-[468px]" />
-        <h3 ref={messageRef} className="uppercase">
-          Expand, Exceed, Exemplify
-        </h3>
         <div
           ref={spinnerRef}
           className={`w-12 h-12 border-4 border-solid border-white ${

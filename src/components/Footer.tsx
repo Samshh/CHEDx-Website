@@ -57,7 +57,7 @@ export default function Footer() {
             type="button"
             onClick={() => navigate("/")}
           >
-            <img className="h-auto w-[186px]" src={FooterLogo} alt="NavLogo" />
+            <img className="h-[4rem] w-auto" src={FooterLogo} alt="NavLogo" />
           </button>
           <p className="text-[#777777]">
             © CHED<sup>x</sup>2.0 All rights reserved

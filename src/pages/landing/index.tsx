@@ -76,7 +76,7 @@ export default function Landing() {
             }
             return next;
           });
-        }, 100);
+        }, 50);
       },
     })
       .from(card2.current, {

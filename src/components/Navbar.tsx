@@ -20,7 +20,7 @@ export default function Navbar() {
     <div className="fixed top-0 w-full bg-white shadow-sm backdrop-blur-sm bg-opacity-55 z-40">
       <nav>
         <button type="button" onClick={() => navigate("/")}>
-          <img className="h-[2.5rem] w-auto" src={NavLogo} alt="NavLogo" />
+          <img className="h-[4rem] w-auto" src={NavLogo} alt="NavLogo" />
         </button>
         <div className="hidden lg:flex items-center justify-center gap-[1.75rem]">
           <button onClick={() => navigate("/")} type="button">
