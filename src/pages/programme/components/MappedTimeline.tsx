@@ -322,14 +322,14 @@ const MappedTimeline = () => {
               {dayIndex === days.length - 1 && eventIndex === timeline[day].length - 1 && (
                 <Button
                   onClick={() => console.log("Download Agenda")}
-                  className="absolute -bottom-2 md:-bottom-3 bg-blue text-white flex flex-row"
+                  className="absolute -bottom-[1.70rem] md:-bottom-[1.85rem] bg-blue text-white flex flex-row"
                 >
                   DOWNLOAD PROGRAMME
                 </Button>
               )}
             </div>
             {dayIndex === days.length - 1 && eventIndex === timeline[day].length - 1 && (
-              <div className="absolute -ml-1.5 bottom-0 h-4 w-4 rounded-full bg-blue -left-[1px]"></div>
+              <div className="absolute -ml-1.5 -bottom-[1.15rem] h-4 w-4 rounded-full bg-blue -left-[1px]"></div>
             )}
           </div>
         ))}
