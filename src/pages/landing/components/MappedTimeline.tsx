@@ -135,13 +135,13 @@ const timeline: Timeline = {
     {
       time: "",
       segment: "BREAKOUT 4: Women in STEM",
-      title: "Michelle Alarcon c/o IBPAP",
+      title: "Michelle Alarcon",
       subtitle: "President, Analytics Association of the Philippines",
     },
     {
       time: "4:00 PM - 4:45 PM",
-      segment: "BREAKOUT 5: Integrating Soft Skills with Domain Expertise for IT Professionals c/o IBPAP",
-      title: "c/o IBPAP",
+      segment: "BREAKOUT 5: Integrating Soft Skills with Domain Expertise for IT Professionals",
+      title: "IBPAP",
       subtitle: "Industry (iQor)",
     },
     {
@@ -153,7 +153,7 @@ const timeline: Timeline = {
     {
       time: "4:45 PM - 5:30 PM",
       segment:
-        "BREAKOUT 7: Creating Seamless Pathways for Higher Education: Certifications and Microcredentials c/o IBPAP",
+        "BREAKOUT 7: Creating Seamless Pathways for Higher Education: Certifications and Microcredentials",
       title: "Ms. Yean Feng Yue",
       subtitle: "IBM Corporate Social Responsibility Leader - APAC",
     },

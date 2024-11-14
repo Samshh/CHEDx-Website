@@ -130,13 +130,13 @@ const timeline: Timeline = {
     {
       time: "",
       segment: "BREAKOUT 4: Women in STEM",
-      title: "Michelle Alarcon c/o IBPAP",
+      title: "Michelle Alarcon",
       subtitle: "President, Analytics Association of the Philippines",
     },
     {
       time: "4:00 PM - 4:45 PM",
-      segment: "BREAKOUT 5: Integrating Soft Skills with Domain Expertise for IT Professionals c/o IBPAP",
-      title: "c/o IBPAP",
+      segment: "BREAKOUT 5: Integrating Soft Skills with Domain Expertise for IT Professionals",
+      title: "IBPAP",
       subtitle: "Industry (iQor)",
     },
     {
@@ -148,7 +148,7 @@ const timeline: Timeline = {
     {
       time: "4:45 PM - 5:30 PM",
       segment:
-        "BREAKOUT 7: Creating Seamless Pathways for Higher Education: Certifications and Microcredentials c/o IBPAP",
+        "BREAKOUT 7: Creating Seamless Pathways for Higher Education: Certifications and Microcredentials",
       title: "Ms. Yean Feng Yue",
       subtitle: "IBM Corporate Social Responsibility Leader - APAC",
     },
@@ -182,14 +182,14 @@ const timeline: Timeline = {
     },
     {
       time: "9:15 AM - 10:00 AM",
-      segment: "PSF Foundational Overview c/o IBPAP",
-      title: "c/o IBPAP",
+      segment: "PSF Foundational Overview",
+      title: "IBPAP",
       subtitle: "DTI PTTC",
     },
     {
       time: "10:00 AM - 10:30 AM",
       segment: "PSG Development Based on PSF: The GDA Experience",
-      title: "c/o IBPAP",
+      title: "IBPAP",
       subtitle: "GDAP",
     },
     {
@@ -200,13 +200,13 @@ const timeline: Timeline = {
     },
     {
       time: "10:45 AM - 11:45 PM",
-      segment: "BREAKOUT 9: Contact Center & Business Process Management PSF: Emerging Tech Career Pathways c/o IBPAP",
-      title: "Jay Santisteban - TBD c/o IBPAP",
+      segment: "BREAKOUT 9: Contact Center & Business Process Management PSF: Emerging Tech Career Pathways",
+      title: "Jay Santisteban",
       subtitle: "Contact Center Association of the Philippines (CCAP), Operations Director",
     },
     {
       time: "",
-      segment: "BREAKOUT 10: Global In-House Center PSF: Emerging Tech Career Pathway c/o IBPAP",
+      segment: "BREAKOUT 10: Global In-House Center PSF: Emerging Tech Career Pathway",
       title: "Christine Bata",
       subtitle: "Global In-House Center Council (GICC), Executive Director",
     },
@@ -218,26 +218,26 @@ const timeline: Timeline = {
     },
     {
       time: "1:00 PM - 1:45 PM",
-      segment: "BREAKOUT 11: Digital Arts and Animation PSF: Emerging Tech Career Pathways c/o IBPAP",
+      segment: "BREAKOUT 11: Digital Arts and Animation PSF: Emerging Tech Career Pathways",
       title: "Daniel Enriquez",
       subtitle: "Animation Council of the Philippines (ACPI), Executive Director",
     },
     {
       time: "",
-      segment: "BREAKOUT 12: Game Development PSF: Emerging Tech Career Pathways c/o IBPAP",
+      segment: "BREAKOUT 12: Game Development PSF: Emerging Tech Career Pathways",
       title: "Rafael Cabredo",
       subtitle: "Game Developers Association of the Philippines (GDAP), Board Trustee",
     },
     {
       time: "1:45 PM - 2:30 PM",
-      segment: "BREAKOUT 13: Health Information Management PSF: Emerging Tech Career Pathways c/o IBPAP",
+      segment: "BREAKOUT 13: Health Information Management PSF: Emerging Tech Career Pathways",
       title: "Dr Carlos Ongaco",
       subtitle:
         "Co-Founder and President, MedCode, Inc. for Healthcare Information Management Association of the Philippines, Inc.. (HIMAP)",
     },
     {
       time: "",
-      segment: "BREAKOUT 14: Software Development and Security: PSF Emerging Tech Career Pathways c/o IBPAP",
+      segment: "BREAKOUT 14: Software Development and Security: PSF Emerging Tech Career Pathways",
       title: "Allan Tan",
       subtitle: "Philippine Software Industry Association (PSIA), Board Trustee",
     },

@@ -42,10 +42,10 @@ export default function BreakoutSessions() {
   const cardDetails_day1: CardDetails[] = [
     {
       title: "AI for Academic Purpose",
-      subtitle: "Industry (Accenture) - c/o IBPAP",
+      subtitle: "Industry (Accenture)",
       time: "2:16 - 3:00 PM",
       room: "Room A",
-      speaker: "c/o IBPAP",
+      speaker: "IBPAP",
       company: "Accenture",
     },
     {
@@ -71,7 +71,7 @@ export default function BreakoutSessions() {
       subtitle: "President, Analytics Association of the Philippines",
       time: "3:16 PM - 4:00 PM",
       room: "Room B",
-      speaker: "Michelle Alarcon c/o IBPAP",
+      speaker: "Michelle Alarcon",
       company: "Analytics Association of the Philippines",
     },
     {
@@ -80,7 +80,7 @@ export default function BreakoutSessions() {
       subtitle: "Industry (iQor)",
       time: "4:01 PM - 4:45 PM",
       room: "Room A",
-      speaker: "c/o IBPAP",
+      speaker: "IBPAP",
       company: "iQor",
     },
     {
