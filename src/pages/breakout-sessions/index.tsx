@@ -16,6 +16,7 @@ import BreakoutRoom13 from "/BreakoutImages/Breakoutroom13.png";
 import BreakoutRoom14 from "/BreakoutImages/Breakoutroom14.png";
 import CardImage from "/Cybersecurity_BG.png";
 import HeroBG from "/BreakoutBG.png";
+import Tag from "@/components/ui/tag";
 
 interface CardDetails {
   title: string;
@@ -116,8 +117,7 @@ export default function BreakoutSessions() {
     {
       title:
         "Contact Center & Business Process PSF: Emerging Tech Career Pathways",
-      subtitle:
-        "Operations Director",
+      subtitle: "Operations Director",
       time: "10:46 - 11:45 AM",
       room: "Room A",
       speaker: "Jay Santisteban",
@@ -149,8 +149,7 @@ export default function BreakoutSessions() {
     },
     {
       title: "Health Information Management PSF: Emerging Tech Career Pathways",
-      subtitle:
-        "Co-founder and President",
+      subtitle: "Co-founder and President",
       time: "1:46 - 2:30 PM",
       room: "Room A",
       speaker: "Dr Carlos Ongaco",
@@ -207,7 +206,7 @@ export default function BreakoutSessions() {
     <div
       key={`${day}-${index}`}
       onClick={() => handleCardClick(index, day)}
-      className={`relative cursor-pointer transition-transform duration-300 ease-in-out rounded-2xl border-[2px] border-green overflow-hidden bg-black bg-black-to-white-up ${
+      className={`relative cursor-pointer transition-transform duration-300 ease-in-out rounded-xl border-[2px] border-green overflow-hidden bg-black bg-black-to-white-up ${
         expandedCardIndex === index && activeDay === day
           ? ""
           : "hover:scale-105 hover:shadow-xl"
@@ -217,31 +216,37 @@ export default function BreakoutSessions() {
         src={getImageForCard(card.title)}
         alt={`Card Image ${index + 1}`}
         className="w-full h-full object-cover opacity-80"
+        loading="lazy"
       />
       <div className="bg-black-to-white-up w-full h-full top-0 left-0 absolute" />
       <div className="border border-white bg-none rounded-lg px-2 py-0.5 mt-3 ml-3 text-white text-center max-w-max absolute top-0">
         <span className="grow-0">{card.time}</span>
       </div>
-
-      {/* Expanded Card Modal */}
+      <div className="absolute bottom-4 left-4 text-white">
+        <h3 className="font-semibold mb-1 text-green">{card.title}</h3>
+        <p className="mb-1">{card.room}</p>
+        <p className="mb-1">{card.speaker}</p>
+        <p>{card.company}</p>
+      </div>
       {expandedCardIndex === index && activeDay === day && (
-        <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-55 z-50">
-          <div className="relative bg-transparent rounded-lg shadow-2xl max-w-2xl w-full">
-            <div className="relative rounded-lg overflow-hidden">
+        <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-55 z-50 px-[1rem]">
+          <div className="relative bg-transparent rounded-xl shadow-2xl max-w-2xl w-full">
+            <div className="relative rounded-xl overflow-hidden">
               <div className="w-full h-full top-0 left-0 absolute bg-black bg-black-to-white-up" />
               <img
                 src={getImageForCard(card.title)}
                 alt="Expanded Card Image"
-                className="w-full h-full object-cover rounded-lg opacity-50"
+                className="w-full h-full object-cover rounded-xl opacity-50"
+                loading="lazy"
               />
               <div className="absolute top-2 left-2 text-sm text-white bg-opacity-50 px-3 py-1 rounded-lg border-white border my-3 mx-3">
                 {card.time}
               </div>
               <div className="absolute bottom-4 left-4 text-white">
-                <h3 className="text-xl font-semibold mb-1">{card.title}</h3>
-                <p className="text-sm mb-1">{card.room}</p>
-                <p className="text-sm mb-1">{card.speaker}</p>
-                <p className="text-sm">{card.company}</p>
+                <h3 className="font-semibold mb-1 text-green">{card.title}</h3>
+                <p className="mb-1">{card.room}</p>
+                <p className="mb-1">{card.speaker}</p>
+                <p>{card.company}</p>
               </div>
             </div>
           </div>
@@ -257,6 +262,7 @@ export default function BreakoutSessions() {
           src={HeroBG}
           alt="herobg"
           className="absolute w-full h-screen object-cover opacity-20"
+          loading="lazy"
         />
         <div className="absolute inset-0 bg-center-transparent" />
         <div className="h-full w-full max-w-[568px] max-h-[568px] rounded-full absolute bg-green opacity-10 blur-3xl" />
@@ -267,9 +273,9 @@ export default function BreakoutSessions() {
       <section id="breakoutSession">
         <div className="flex flex-col gap-5 mb-7 my-20">
           <div className="w-full flex justify-center">
-            <div className="border border-green p-2 rounded-lg">
+            <Tag className="border-green">
               <p>DAY 1</p>
-            </div>
+            </Tag>
           </div>
           <h2 className="text-center my-3">DECEMBER 4, 2024</h2>
           <div className="w-full">
@@ -286,9 +292,9 @@ export default function BreakoutSessions() {
 
         <div className="flex flex-col gap-5 mb-7 mt-10 my-20">
           <div className="w-full flex justify-center">
-            <div className="border border-green p-2 rounded-lg">
+            <Tag className="border-green">
               <p>DAY 2</p>
-            </div>
+            </Tag>
           </div>
           <h2 className="text-center my-3">DECEMBER 5, 2024</h2>
           <div className="w-full  mb-10">

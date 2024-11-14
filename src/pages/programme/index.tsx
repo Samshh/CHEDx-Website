@@ -6,6 +6,7 @@ import HeroBG from "/ProgrammeBG.png";
 import CurvedUnderline from "/underlines/programme_underline.svg";
 import MappedTimeline from "./components/MappedTimeline";
 import useAnimateText from "@/components/animations/useAnimateText";
+import Tag from "@/components/ui/tag";
 
 interface ContainerProps {
   children: ReactNode;
@@ -28,6 +29,7 @@ export default function Programme() {
         src={HeroBG}
         alt="herobg"
         className="absolute w-full h-screen object-cover opacity-20"
+        loading="lazy"
       />
       <div
         className="relative bg-hero-bg bg-cover w-full h-screen flex items-center justify-center flex-col"
@@ -48,9 +50,7 @@ export default function Programme() {
             />
           </div>
           <div className="flex flex-col items-center text-center text-secondary p-5">
-            <Button className="border border-blue rounded-lg hover:scale-110 transition-all duration-300 cursor-default">
-              PROGRAMME THEME
-            </Button>
+            <Tag className="border-blue">PROGRAMME THEME</Tag>
             <h2 className="text-blue">Building Synergy:</h2>
             <h2 className="max-w-lg">Aligning IT Education with Industry</h2>
           </div>
@@ -71,16 +71,16 @@ export default function Programme() {
               <h2 className="text-blue">
                 CHED<sup>x</sup>2.0
               </h2>
-              <div className="relative">
-                <h2 className="text-secondary relative z-10">
-                  Programme Schedule
-                </h2>
-                <img
-                  src={CurvedUnderline}
-                  alt=""
-                  className="absolute lg:top-10 left-0 z-0 sm:bottom-0 bottom-0"
-                />
-              </div>
+              <h2>
+                <span className="relative inline-block">
+                  Programme Schedule{" "}
+                  <img
+                    className="absolute -bottom-2 left-1/2 transform -translate-x-1/2"
+                    src={CurvedUnderline}
+                    alt="undeline"
+                  />
+                </span>
+              </h2>
             </div>
             <h3 className="text-secondary max-w-2xl" ref={text2}>
               Join us at CHEDˣ2.0 for two days of innovation in education!
@@ -107,11 +107,7 @@ export default function Programme() {
               rel="noopener noreferrer"
               title="registration"
             >
-              <Button
-                className="bg-blue text-white"
-              >
-                register now
-              </Button>
+              <Button className="bg-blue text-white">register now</Button>
             </a>
           </div>
           <svg

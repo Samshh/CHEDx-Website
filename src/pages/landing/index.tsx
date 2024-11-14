@@ -140,6 +140,7 @@ export default function Landing() {
           src={HeroBG}
           alt="herobg"
           className="absolute w-screen h-full object-cover"
+          loading="eager"
         />
         <div className="absolute inset-0 bg-center-transparent" />
         <section className="relative h-screen">

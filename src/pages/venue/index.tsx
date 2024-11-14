@@ -20,6 +20,7 @@ export default function Venue() {
             src={HeroBG}
             alt="herobg"
             className="absolute w-full h-full object-cover opacity-15"
+            loading="lazy"
           />
           <div className="absolute inset-0 bg-center-transparent" />
           <div className="h-full w-full max-w-[568px] max-h-[568px] rounded-full absolute bg-red opacity-10 blur-3xl" />
@@ -56,7 +57,7 @@ export default function Venue() {
                 The summit will be held at SMX Convention Center Davao 3rd
                 Level, SM Lanang Premier, J.P. Laurel Ave, Lanang, Davao City.
               </h3>
-              <h3 ref={text2}>See the embedded map below!</h3>
+              <h3 ref={text2} className="text-red">See the embedded map below!</h3>
             </div>
           </div>
           <div className="w-full lg:w-[60vw] h-[50vh] overflow-hidden select-all z-10">
