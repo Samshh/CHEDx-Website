@@ -42,16 +42,16 @@ export default function BreakoutSessions() {
   const cardDetails_day1: CardDetails[] = [
     {
       title: "AI for Academic Purpose",
-      subtitle: "Industry (Accenture)",
+      subtitle: "Associate Director",
       time: "2:16 - 3:00 PM",
       room: "Room A",
-      speaker: "IBPAP",
-      company: "Accenture",
+      speaker: "Virgilio Villarico",
+      company: "Accenture Operations in the Philippines",
     },
     {
       title:
         "Investigating Generative AI Mechanisms for the Academe in Improving Educational Engagement and Outcomes",
-      subtitle: "Academic Program Director, Asian Institute of Management",
+      subtitle: "Academic Program Director",
       time: "2:16 - 3:00 PM",
       room: "Room B",
       speaker: "Michelle Banawan, PhD",
@@ -60,7 +60,7 @@ export default function BreakoutSessions() {
     {
       title:
         "The Future of Work: How Digital Transformation Is Changing Workforce Requirements and Skills",
-      subtitle: "President, Mapua University",
+      subtitle: "President",
       time: "3:16 PM - 4:00 PM",
       room: "Room A",
       speaker: "Dr. Dodgie Maestrecampo",
@@ -68,7 +68,7 @@ export default function BreakoutSessions() {
     },
     {
       title: "Women in STEM",
-      subtitle: "President, Analytics Association of the Philippines",
+      subtitle: "President",
       time: "3:16 PM - 4:00 PM",
       room: "Room B",
       speaker: "Michelle Alarcon",
@@ -80,7 +80,7 @@ export default function BreakoutSessions() {
       subtitle: "Industry (iQor)",
       time: "4:01 PM - 4:45 PM",
       room: "Room A",
-      speaker: "IBPAP",
+      speaker: "Ralf Ian Gallegos",
       company: "iQor",
     },
     {
@@ -117,7 +117,7 @@ export default function BreakoutSessions() {
       title:
         "Contact Center & Business Process PSF: Emerging Tech Career Pathways",
       subtitle:
-        "Operations Director, Contact Center Association of the Philippines",
+        "Operations Director",
       time: "10:46 - 11:45 AM",
       room: "Room A",
       speaker: "Jay Santisteban",
@@ -125,7 +125,7 @@ export default function BreakoutSessions() {
     },
     {
       title: "Global In-House Center PSF: Emerging Tech Career Pathway",
-      subtitle: "Executive Director, Global In-House Center Council",
+      subtitle: "Executive Director",
       time: "10:46 - 11:45 AM",
       room: "Room B",
       speaker: "Christine Bata",
@@ -133,7 +133,7 @@ export default function BreakoutSessions() {
     },
     {
       title: "Digital Arts and Animation PSF: Emerging Tech Career Pathways",
-      subtitle: "Executive Director, Animation Council of the Philippines",
+      subtitle: "Executive Director",
       time: "1:01 - 1:45 PM",
       room: "Room A",
       speaker: "Daniel Enriquez",
@@ -141,7 +141,7 @@ export default function BreakoutSessions() {
     },
     {
       title: "Game Development PSF: Emerging Tech Career Pathways",
-      subtitle: "Game Developers Association of the Philippines",
+      subtitle: "Board Trustee",
       time: "1:01 - 1:45 PM",
       room: "Room B",
       speaker: "Amierose Ramos",
@@ -150,17 +150,17 @@ export default function BreakoutSessions() {
     {
       title: "Health Information Management PSF: Emerging Tech Career Pathways",
       subtitle:
-        "Executive Director, Healthcare Information Management Association",
+        "Co-founder and President",
       time: "1:46 - 2:30 PM",
       room: "Room A",
-      speaker: "Nei Bumanglag",
+      speaker: "Dr Carlos Ongaco",
       company:
         "Healthcare Information Management Association of the Philippines (HIMAP)",
     },
     {
       title:
         "Software Development and Security: PSF Emerging Tech Career Pathways",
-      subtitle: "Board Trustee, Philippine Software Industry Association",
+      subtitle: "Board Trustee",
       time: "1:46 - 2:30 PM",
       room: "Room B",
       speaker: "Allan Tan",
