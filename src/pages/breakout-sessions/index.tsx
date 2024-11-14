@@ -5,7 +5,7 @@ import BreakoutRoom2 from "/BreakoutImages/Breakoutroom2.png";
 import BreakoutRoom3 from "/BreakoutImages/Breakoutroom3.png";
 import BreakoutRoom4 from "/BreakoutImages/Breakoutroom4.jpg";
 import BreakoutRoom5 from "/BreakoutImages/Breakoutroom5.png";
-import BreakoutRoom6 from "/BreakoutImages/Breakoutroom6.png";
+import BreakoutRoom6 from "/BreakoutImages/Breakoutroom6.jpg";
 import BreakoutRoom7 from "/BreakoutImages/Breakoutroom7.png";
 import BreakoutRoom8 from "/BreakoutImages/Breakoutroom8.png";
 import BreakoutRoom9 from "/BreakoutImages/Breakoutroom9.jpg";
@@ -210,39 +210,55 @@ export default function BreakoutSessions() {
       className={`relative cursor-pointer transition-transform duration-300 ease-in-out rounded-2xl border-[2px] border-green ${
         expandedCardIndex === index && activeDay === day
           ? ""
-          : "hover:scale-105 hover:shadow-xl relative"
+          : "hover:scale-105 hover:shadow-xl"
       }`}
     >
       <img
         src={getImageForCard(card.title)}
         alt={`Card Image ${index + 1}`}
-        className="w-full h-full object-cover rounded-lg"
+        className="w-full h-full object-cover rounded-2xl"
       />
-      <div className="border border-white bg-none rounded-lg px-2 py-0.5 mt-3 ml-3 text-white text-center max-w-max absolute top-0">
-        <span className="grow-0">{card.time}</span>
-      </div>
-      <span className="absolute bottom-2 left-2 text-white px-2 py-1 rounded">
-        {card.title}
-      </span>
 
+      {/* Compact Time Badge */}
+      <div className="absolute top-2 left-2 border border-white rounded-lg px-2 py-0.5 text-center">
+        <span className="text-[#F5F5F5] font-semibold">{card.time}</span>
+      </div>
+
+      {/* Overlay Title */}
+      <div className="absolute bottom-0 left-0 right-0 px-3 py-2 rounded-b-2xl">
+        <span className="text-[#F5F5F5] font-extrabold">{card.title}</span>
+      </div>
+
+      {/* Expanded Card Modal */}
       {expandedCardIndex === index && activeDay === day && (
-        <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-55 z-50">
-          <div className="relative bg-transparent p-4 rounded-lg shadow-2xl max-w-2xl w-full">
-            <div className="relative">
-              <img
-                src={getImageForCard(card.title)} // Expanded view image
-                alt="Expanded Card Image"
-                className="w-full h-full object-cover rounded-lg"
-              />
-              <div className="absolute top-2 left-2 text-sm text-white bg-opacity-50 px-3 py-1 rounded-lg border-white border my-3 mx-3">
-                {card.time}
-              </div>
-              <div className="absolute bottom-4 left-4 text-white">
-                <h3 className="text-xl font-semibold mb-1">{card.title}</h3>
-                <p className="text-sm mb-1">{card.room}</p>
-                <p className="text-sm mb-1">{card.speaker}</p>
-                <p className="text-sm">{card.company}</p>
-              </div>
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-60 z-50">
+          <div className="relative bg-white rounded-2xl shadow-2xl max-w-3xl w-[90%] overflow-hidden">
+            {/* Expanded Card Image */}
+            <img
+              src={getImageForCard(card.title)}
+              alt="Expanded Card Image"
+              className="w-full h-[60vh] object-cover rounded-lg"
+            />
+
+            {/* Expanded Time Badge (Compact) */}
+            <div className="absolute top-4 left-4 border border-white rounded-lg px-3 py-1 text-sm">
+              <span className="text-[#F5F5F5] font-semibold">{card.time}</span>
+            </div>
+
+            {/* Expanded Overlay Content (Full-width) */}
+            <div className="absolute bottom-0 left-0 right-0 px-4 py-3 rounded-b-2xl">
+              <h3 className="text-xl font-extrabold text-[#F5F5F5] mb-1">
+                {card.title}
+              </h3>
+              <p className="text-sm font-extrabold text-[#F5F5F5] mb-1">
+                {card.room}
+              </p>
+              <p className="text-sm font-extrabold text-[#F5F5F5] mb-1">
+                {card.speaker}
+              </p>
+              <p className="text-sm font-extrabold text-[#F5F5F5]">
+                {card.company}
+              </p>
             </div>
           </div>
         </div>
