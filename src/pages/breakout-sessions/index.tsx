@@ -5,7 +5,7 @@ import BreakoutRoom2 from "/BreakoutImages/Breakoutroom2.png";
 import BreakoutRoom3 from "/BreakoutImages/Breakoutroom3.png";
 import BreakoutRoom4 from "/BreakoutImages/Breakoutroom4.jpg";
 import BreakoutRoom5 from "/BreakoutImages/Breakoutroom5.png";
-import BreakoutRoom6 from "/BreakoutImages/Breakoutroom6.png";
+import BreakoutRoom6 from "/BreakoutImages/Breakoutroom6.jpg";
 import BreakoutRoom7 from "/BreakoutImages/Breakoutroom7.png";
 import BreakoutRoom8 from "/BreakoutImages/Breakoutroom8.png";
 import BreakoutRoom9 from "/BreakoutImages/Breakoutroom9.jpg";
@@ -210,7 +210,7 @@ export default function BreakoutSessions() {
       className={`relative cursor-pointer transition-transform duration-300 ease-in-out rounded-2xl border-[2px] border-green overflow-hidden bg-black bg-black-to-white-up ${
         expandedCardIndex === index && activeDay === day
           ? ""
-          : "hover:scale-105 hover:shadow-xl relative"
+          : "hover:scale-105 hover:shadow-xl"
       }`}
     >
       <img
@@ -222,10 +222,8 @@ export default function BreakoutSessions() {
       <div className="border border-white bg-none rounded-lg px-2 py-0.5 mt-3 ml-3 text-white text-center max-w-max absolute top-0">
         <span className="grow-0">{card.time}</span>
       </div>
-      <span className="absolute bottom-2 left-2 text-white px-2 py-1 rounded">
-        {card.title}
-      </span>
 
+      {/* Expanded Card Modal */}
       {expandedCardIndex === index && activeDay === day && (
         <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-55 z-50">
           <div className="relative bg-transparent rounded-lg shadow-2xl max-w-2xl w-full">
