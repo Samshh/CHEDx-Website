@@ -22,6 +22,7 @@ module.exports = {
       "center-transparent":
         "linear-gradient(to bottom, rgba(242, 242, 242, .25), rgba(242, 242, 242, 0), rgba(242, 242, 242, 1))",
       "black-to-white": "linear-gradient(to right, #B9B9B9, #F2F2F2)",
+      "black-to-white-up": "linear-gradient(to top, #030303, #00000000)",
     },
   },
   plugins: [require("tailwindcss-animate")],

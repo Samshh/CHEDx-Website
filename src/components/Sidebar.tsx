@@ -9,7 +9,7 @@ export default function Sidebar() {
   const path = location.pathname;
 
   return (
-    <div className="fixed w-full left-0 top-[30%] pointer-events-none z-10">
+    <div className="fixed w-full left-0 top-[35%] pointer-events-none z-10">
       <div className="mx-auto max-w-[1920px] hidden xl:flex justify-between items-center">
         <div className="ml-[2rem] flex flex-col gap-[2rem]">
           {["exemplify", "exceed", "expand"].map((text, idx) => (
