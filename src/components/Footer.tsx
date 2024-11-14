@@ -22,7 +22,7 @@ export default function Footer() {
     } else if (location.pathname === "/breakout-sessions") {
       setNextLocation("/");
       setCurrentLocation("home");
-    } 
+    }
     // else if (location.pathname === "/organizers") {
     //   setNextLocation("/");
     //   setCurrentLocation("home");
@@ -37,7 +37,11 @@ export default function Footer() {
             <div className="flex flex-col items-start justify-center">
               <div className="flex items-center justify-center gap-[1rem]">
                 <p className="uppercase text-[0.75rem] text-black">
-                  {location.pathname !== "/breakout-sessions" ? <>next</> : <>back to</>}
+                  {location.pathname !== "/breakout-sessions" ? (
+                    <>next</>
+                  ) : (
+                    <>back to</>
+                  )}
                 </p>
                 <div className="p-[0.5px] w-[120px] md:w-[200px] bg-black" />
               </div>
@@ -57,7 +61,12 @@ export default function Footer() {
             type="button"
             onClick={() => navigate("/")}
           >
-            <img className="h-[4rem] w-auto" src={FooterLogo} alt="NavLogo" />
+            <img
+              className="h-[4rem] w-auto"
+              src={FooterLogo}
+              alt="NavLogo"
+              loading="lazy"
+            />
           </button>
           <p className="text-[#777777]">
             © CHED<sup>x</sup>2.0 All rights reserved

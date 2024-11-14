@@ -20,7 +20,12 @@ export default function Navbar() {
     <div className="fixed top-0 w-full bg-white shadow-sm backdrop-blur-sm bg-opacity-55 z-40">
       <nav>
         <button type="button" onClick={() => navigate("/")}>
-          <img className="h-[4rem] w-auto" src={NavLogo} alt="NavLogo" />
+          <img
+            className="h-[4rem] w-auto"
+            src={NavLogo}
+            alt="NavLogo"
+            loading="eager"
+          />
         </button>
         <div className="hidden lg:flex items-center justify-center gap-[1.75rem]">
           <button onClick={() => navigate("/")} type="button">
@@ -84,7 +89,7 @@ export default function Navbar() {
         <div className="flex lg:hidden lg:opacity-0">
           <Sheet>
             <SheetTrigger>
-              <img src={Burger} alt="burger" />
+              <img src={Burger} alt="burger" loading="eager" />
             </SheetTrigger>
             <SheetContent className="w-2/3">
               <SheetHeader>

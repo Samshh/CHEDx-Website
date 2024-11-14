@@ -147,7 +147,7 @@ export default function Landing() {
           <div className="h-full w-full max-w-[568px] max-h-[568px] rounded-full absolute bg-yellow opacity-15 blur-3xl" />
           <div className="flex flex-col items-center justify-center gap-[3rem] mb-[4rem] z-10">
             <div className="flex flex-col items-center justify-center">
-              <img src={CHEDxLogo} alt="CHEDx" />
+              <img src={CHEDxLogo} alt="CHEDx" loading="eager" />
             </div>
             <div className="flex flex-col justify-center items-center gap-[2rem]">
               <div>
@@ -182,6 +182,7 @@ export default function Landing() {
                 key={index}
                 src={partner}
                 alt={`partner-${index}`}
+                loading="lazy"
               />
             ))}
           </div>
@@ -200,6 +201,7 @@ export default function Landing() {
                   className="absolute -bottom-2 left-1/2 transform -translate-x-1/2"
                   src={CurvedUnderline}
                   alt="underline"
+                  loading="lazy"
                 />
               </span>
             </h2>
@@ -294,6 +296,7 @@ export default function Landing() {
                   className="absolute -bottom-2 left-1/2 transform -translate-x-1/2"
                   src={CurvedUnderline}
                   alt="underline"
+                  loading="lazy"
                 />
               </span>
             </h2>
@@ -322,6 +325,7 @@ export default function Landing() {
                   className="absolute -bottom-2 left-1/2 transform -translate-x-1/2"
                   src={CurvedUnderline2}
                   alt="underline"
+                  loading="lazy"
                 />
               </span>
             </h2>

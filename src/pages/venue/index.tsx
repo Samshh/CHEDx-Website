@@ -20,7 +20,7 @@ export default function Venue() {
             src={HeroBG}
             alt="herobg"
             className="absolute w-full h-full object-cover opacity-15"
-            loading="lazy"
+            loading="eager"
           />
           <div className="absolute inset-0 bg-center-transparent" />
           <div className="h-full w-full max-w-[568px] max-h-[568px] rounded-full absolute bg-red opacity-10 blur-3xl" />
@@ -48,6 +48,7 @@ export default function Venue() {
                     className="absolute -bottom-2 left-1/2 transform -translate-x-1/2"
                     src={CurvedUnderline}
                     alt="undeline"
+                    loading="lazy"
                   />
                 </span>
               </h2>

@@ -29,7 +29,7 @@ export default function Programme() {
         src={HeroBG}
         alt="herobg"
         className="absolute w-full h-screen object-cover opacity-20"
-        loading="lazy"
+        loading="eager"
       />
       <div
         className="relative bg-hero-bg bg-cover w-full h-screen flex items-center justify-center flex-col"
@@ -47,6 +47,7 @@ export default function Programme() {
               src={quoteOpen}
               alt="Quote Open"
               className="w-full h-auto max-w-[5rem] lg:max-w-[8.75rem] md:max-w-[7rem]"
+              loading="eager"
             />
           </div>
           <div className="flex flex-col items-center text-center text-secondary p-5">
@@ -78,6 +79,7 @@ export default function Programme() {
                     className="absolute -bottom-2 left-1/2 transform -translate-x-1/2"
                     src={CurvedUnderline}
                     alt="undeline"
+                    loading="lazy"
                   />
                 </span>
               </h2>

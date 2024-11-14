@@ -17,6 +17,7 @@ export default function Organizers() {
             key={index}
             src={partner}
             alt={`partner-${index}`}
+            loading="lazy"
           />
         ))}
       </div>

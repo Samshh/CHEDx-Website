@@ -47,6 +47,7 @@ export default function SpeakersCarousel() {
                 src={image}
                 alt={speaker.name}
                 className="object-cover w-full h-[200px]"
+                loading="lazy"
               />
               <div className="p-4">
                 <p className="font-semibold">{speaker.name}</p>

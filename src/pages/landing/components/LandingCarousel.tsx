@@ -45,6 +45,7 @@ export default function ImageCarousel() {
               src={image}
               alt={`carousel-image-${index}`}
               className="object-cover w-full h-full border-[2px] border-yellow rounded-3xl"
+              loading="lazy"
             />
           </div>
         ))}

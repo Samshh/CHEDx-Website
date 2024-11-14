@@ -60,7 +60,13 @@ export default function MainLayout() {
         ref={loadingRef}
         className="h-screen w-full fixed flex-col gap-[2rem] justify-center items-center flex z-50 select-none bg-white p-[2rem]"
       >
-        <img ref={imageRef} src={logo} alt="logo" className="w-[468px]" />
+        <img
+          ref={imageRef}
+          src={logo}
+          alt="logo"
+          className="w-[468px]"
+          loading="eager"
+        />
         <div
           ref={spinnerRef}
           className={`w-12 h-12 border-4 border-solid border-white ${
