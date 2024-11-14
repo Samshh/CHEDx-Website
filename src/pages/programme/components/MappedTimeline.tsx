@@ -161,7 +161,7 @@ const timeline: Timeline = {
     },
     {
       time: "5:30 PM - 5:45 PM",
-      segment: "Synthesis of Day 1",
+      segment: "Highlights of Day 1",
       title: "",
       subtitle: "",
     },
@@ -262,9 +262,15 @@ const timeline: Timeline = {
     },
     {
       time: "4:15 PM - 4:30 PM",
-      segment: "Synthesis of Day 2 - CHED Regional Office",
+      segment: "Highlights of Day 2",
       title: "",
       subtitle: "",
+    },
+    {
+      time: "4:31 PM - 5:00 PM",
+      segment: "Closing Remarks",
+      title: "Dr. Cherri Melanie Ancheta-Diego",
+      subtitle: "Director IV, OPSD",
     },
   ],
 };

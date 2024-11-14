@@ -166,7 +166,7 @@ const timeline: Timeline = {
     },
     {
       time: "5:30 PM - 5:45 PM",
-      segment: "Synthesis of Day 1",
+      segment: "Highlights of Day 1",
       title: "",
       subtitle: "",
     },
