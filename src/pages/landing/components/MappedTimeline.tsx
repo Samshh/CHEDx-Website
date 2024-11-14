@@ -29,7 +29,7 @@ const timeline: Timeline = {
       time: "8:45 AM - 9:00 AM",
       segment: "Pambansang Awit & Prayer",
       title: "USeP Chorale",
-      subtitle: "CHED Hymn, VO Introduction of Speakers",
+      subtitle: "CHED Hymn",
     },
     {
       time: "9:00 AM - 9:15 AM",
@@ -45,28 +45,26 @@ const timeline: Timeline = {
     },
     {
       time: "9:30 AM - 10:00 AM",
-      segment:
-        "Keynote Speaker: Building Synergy, Aligning with Industry, Leveraging IT Expertise",
+      segment: "Keynote Speaker: Building Synergy, Aligning with Industry, Leveraging IT Expertise",
       title: "Secretary J. Prospero E. de Vera III",
       subtitle: "Commission on Higher Education",
     },
     {
       time: "10:00 AM - 10:30 AM",
-      segment:
-        "Private Sector Advisory Council (PSAC) Jobs for IT Human Resource Development",
+      segment: "Private Sector Advisory Council (PSAC) Jobs for IT Human Resource Development",
       title: "Mr. Fred Ayala",
       subtitle: "",
     },
     {
       time: "10:30 AM - 10:45 AM",
       segment: "PSF Overview by IBPAP",
-      title: "",
-      subtitle: "",
+      title: "Frankie Antolin",
+      subtitle: "IT & Business Porcess Association, \nED for Talent Attraction and Development",
     },
     {
       time: "10:45 AM - 11:00 AM",
       segment: "Government-Industry-Academe PSF Commitment Ceremony ",
-      title: "CHED, DICT, IBPAP",
+      title: "CHED, \nDICT, \nIBPAP",
       subtitle: "",
     },
     {
@@ -95,8 +93,7 @@ const timeline: Timeline = {
     },
     {
       time: "1:00 PM - 1:30 PM",
-      segment:
-        "Bringing the Industry to the Academe: Conceive Design Implement Operate (CDIO) Framework",
+      segment: "Bringing the Industry to the Academe: Conceive Design Implement Operate (CDIO) Framework",
       title: "Prof Sin Moh Cheah",
       subtitle: "Singapore Polytechnic",
     },
@@ -104,22 +101,16 @@ const timeline: Timeline = {
       time: "1:30 PM - 2:15 PM",
       segment:
         "Panel Discussion: Education and the World of Work: Boosting Education through Smart Technologies (Project BEST)",
-      title: "Moderator: Calen Martin D. Legaspi, IBPAP TADCOM",
-      subtitle: "",
-    },
-    {
-      time: "",
-      segment:
-        "",
-      title: "Panel Members:",
+      title:
+        "Moderator: Calen Martin D. Legaspi, CHED Technical Committee on Computer Science and Board Trustee, Philippine Software Industry Association (PSIA)",
       subtitle:
-        "CHED OPSD, SKIPP Proponents - Leuther Mojica, Business Head, Orange & Bronze (IBPAP), PSF - Haidee Enriquez (IBPAP), ADDU as Beneficiary",
+        "Panel Members: CHED OPSD, SKIPP Proponents - Leuther Mojica, \nBusiness Head, Orange & Bronze (IBPAP), PSF - Haidee Enriquez (CEO Microsourcing),  \nOneil Victoriano, AdDU-CHED-SKiPP Project Lead, \n Dr. Gregg Victor Gabison , CHED Technical Panel",
     },
     {
       time: "2:15 PM - 3:00 PM",
       segment: "BREAKOUT 1: AI for Academic Purpose",
-      title: "c/o IBPAP",
-      subtitle: "Accenture",
+      title: "Virgilio Villarico",
+      subtitle: "Accenture Operations in the Philippines, Associate Director: Innovation and Gen AI Lead",
     },
     {
       time: "",
@@ -144,30 +135,27 @@ const timeline: Timeline = {
     {
       time: "",
       segment: "BREAKOUT 4: Women in STEM",
-      title: "Michelle Alarcon c/o IBPAP",
+      title: "Michelle Alarcon",
       subtitle: "President, Analytics Association of the Philippines",
     },
     {
       time: "4:00 PM - 4:45 PM",
-      segment:
-        "BREAKOUT 5: Integrating Soft Skills with Domain Expertise for IT Professionals c/o IBPAP",
-      title: "c/o IBPAP",
+      segment: "BREAKOUT 5: Integrating Soft Skills with Domain Expertise for IT Professionals",
+      title: "IBPAP",
       subtitle: "Industry (iQor)",
     },
     {
       time: "",
-      segment:
-        "BREAKOUT 6: Futures Learning Commons and Creative Spaces, Futures Information",
+      segment: "BREAKOUT 6: Futures Learning Commons and Creative Spaces, Futures Information",
       title: "Asso. Prof. Stephen B. Alayon",
-      subtitle:
-        "Program Head, Bachelor of Science and Information Science, West Visayas State University",
+      subtitle: "Program Head, Bachelor of Science and Information Science, West Visayas State University",
     },
     {
       time: "4:45 PM - 5:30 PM",
       segment:
-        "BREAKOUT 7: Creating Seamless Pathways for Higher Education: Certifications and Microcredentials c/o IBPAP",
+        "BREAKOUT 7: Creating Seamless Pathways for Higher Education: Certifications and Microcredentials",
       title: "Ms. Yean Feng Yue",
-      subtitle: "IBM Corporate Social Responsibility Leader – APAC",
+      subtitle: "IBM Corporate Social Responsibility Leader - APAC",
     },
     {
       time: "",

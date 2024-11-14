@@ -24,7 +24,7 @@ const timeline: Timeline = {
       time: "8:45 AM - 9:00 AM",
       segment: "Pambansang Awit & Prayer",
       title: "USeP Chorale",
-      subtitle: "CHED Hymn, VO Introduction of Speakers",
+      subtitle: "CHED Hymn",
     },
     {
       time: "9:00 AM - 9:15 AM",
@@ -40,28 +40,26 @@ const timeline: Timeline = {
     },
     {
       time: "9:30 AM - 10:00 AM",
-      segment:
-        "Keynote Speaker: Building Synergy, Aligning with Industry, Leveraging IT Expertise",
+      segment: "Keynote Speaker: Building Synergy, Aligning with Industry, Leveraging IT Expertise",
       title: "Secretary J. Prospero E. de Vera III",
       subtitle: "Commission on Higher Education",
     },
     {
       time: "10:00 AM - 10:30 AM",
-      segment:
-        "Private Sector Advisory Council (PSAC) Jobs for IT Human Resource Development",
+      segment: "Private Sector Advisory Council (PSAC) Jobs for IT Human Resource Development",
       title: "Mr. Fred Ayala",
       subtitle: "",
     },
     {
       time: "10:30 AM - 10:45 AM",
       segment: "PSF Overview by IBPAP",
-      title: "",
-      subtitle: "",
+      title: "Frankie Antolin",
+      subtitle: "IT & Business Porcess Association, \nED for Talent Attraction and Development",
     },
     {
       time: "10:45 AM - 11:00 AM",
       segment: "Government-Industry-Academe PSF Commitment Ceremony ",
-      title: "CHED, DICT, IBPAP",
+      title: "CHED, \nDICT, \nIBPAP",
       subtitle: "",
     },
     {
@@ -90,8 +88,7 @@ const timeline: Timeline = {
     },
     {
       time: "1:00 PM - 1:30 PM",
-      segment:
-        "Bringing the Industry to the Academe: Conceive Design Implement Operate (CDIO) Framework",
+      segment: "Bringing the Industry to the Academe: Conceive Design Implement Operate (CDIO) Framework",
       title: "Prof Sin Moh Cheah",
       subtitle: "Singapore Polytechnic",
     },
@@ -99,21 +96,16 @@ const timeline: Timeline = {
       time: "1:30 PM - 2:15 PM",
       segment:
         "Panel Discussion: Education and the World of Work: Boosting Education through Smart Technologies (Project BEST)",
-      title: "Moderator: Calen Martin D. Legaspi, IBPAP TADCOM",
-      subtitle: "",
-    },
-    {
-      time: "",
-      segment: "",
-      title: "Panel Members:",
+      title:
+        "Moderator: Calen Martin D. Legaspi, CHED Technical Committee on Computer Science and Board Trustee, Philippine Software Industry Association (PSIA)",
       subtitle:
-        "CHED OPSD, SKIPP Proponents - Leuther Mojica, Business Head, Orange & Bronze (IBPAP), PSF - Haidee Enriquez (IBPAP), ADDU as Beneficiary",
+        "Panel Members: CHED OPSD, SKIPP Proponents - Leuther Mojica, \nBusiness Head, Orange & Bronze (IBPAP), PSF - Haidee Enriquez (CEO Microsourcing),  \nOneil Victoriano, AdDU-CHED-SKiPP Project Lead, \n Dr. Gregg Victor Gabison , CHED Technical Panel",
     },
     {
       time: "2:15 PM - 3:00 PM",
       segment: "BREAKOUT 1: AI for Academic Purpose",
-      title: "c/o IBPAP",
-      subtitle: "Accenture",
+      title: "Virgilio Villarico",
+      subtitle: "Accenture Operations in the Philippines, Associate Director: Innovation and Gen AI Lead",
     },
     {
       time: "",
@@ -138,30 +130,27 @@ const timeline: Timeline = {
     {
       time: "",
       segment: "BREAKOUT 4: Women in STEM",
-      title: "Michelle Alarcon c/o IBPAP",
+      title: "Michelle Alarcon",
       subtitle: "President, Analytics Association of the Philippines",
     },
     {
       time: "4:00 PM - 4:45 PM",
-      segment:
-        "BREAKOUT 5: Integrating Soft Skills with Domain Expertise for IT Professionals c/o IBPAP",
-      title: "c/o IBPAP",
+      segment: "BREAKOUT 5: Integrating Soft Skills with Domain Expertise for IT Professionals",
+      title: "IBPAP",
       subtitle: "Industry (iQor)",
     },
     {
       time: "",
-      segment:
-        "BREAKOUT 6: Futures Learning Commons and Creative Spaces, Futures Information",
+      segment: "BREAKOUT 6: Futures Learning Commons and Creative Spaces, Futures Information",
       title: "Asso. Prof. Stephen B. Alayon",
-      subtitle:
-        "Program Head, Bachelor of Science and Information Science, West Visayas State University",
+      subtitle: "Program Head, Bachelor of Science and Information Science, West Visayas State University",
     },
     {
       time: "4:45 PM - 5:30 PM",
       segment:
-        "BREAKOUT 7: Creating Seamless Pathways for Higher Education: Certifications and Microcredentials c/o IBPAP",
+        "BREAKOUT 7: Creating Seamless Pathways for Higher Education: Certifications and Microcredentials",
       title: "Ms. Yean Feng Yue",
-      subtitle: "IBM Corporate Social Responsibility Leader – APAC",
+      subtitle: "IBM Corporate Social Responsibility Leader - APAC",
     },
     {
       time: "",
@@ -193,14 +182,14 @@ const timeline: Timeline = {
     },
     {
       time: "9:15 AM - 10:00 AM",
-      segment: "PSF Foundational Overview c/o IBPAP",
-      title: "c/o IBPAP",
+      segment: "PSF Foundational Overview",
+      title: "IBPAP",
       subtitle: "DTI PTTC",
     },
     {
       time: "10:00 AM - 10:30 AM",
       segment: "PSG Development Based on PSF: The GDA Experience",
-      title: "c/o IBPAP",
+      title: "IBPAP",
       subtitle: "GDAP",
     },
     {
@@ -211,16 +200,13 @@ const timeline: Timeline = {
     },
     {
       time: "10:45 AM - 11:45 PM",
-      segment:
-        "BREAKOUT 9: Contact Center & Business Process Management PSF: Emerging Tech Career Pathways c/o IBPAP",
-      title: "Jay Santisteban - TBD c/o IBPAP",
-      subtitle:
-        "Contact Center Association of the Philippines (CCAP), Operations Director",
+      segment: "BREAKOUT 9: Contact Center & Business Process Management PSF: Emerging Tech Career Pathways",
+      title: "Jay Santisteban",
+      subtitle: "Contact Center Association of the Philippines (CCAP), Operations Director",
     },
     {
       time: "",
-      segment:
-        "BREAKOUT 10: Global In-House Center PSF: Emerging Tech Career Pathway c/o IBPAP",
+      segment: "BREAKOUT 10: Global In-House Center PSF: Emerging Tech Career Pathway",
       title: "Christine Bata",
       subtitle: "Global In-House Center Council (GICC), Executive Director",
     },
@@ -232,34 +218,28 @@ const timeline: Timeline = {
     },
     {
       time: "1:00 PM - 1:45 PM",
-      segment:
-        "BREAKOUT 11: Digital Arts and Animation PSF: Emerging Tech Career Pathways c/o IBPAP",
-      title: "Daniel Enriquez ",
-      subtitle:
-        "Animation Council of the Philippines (ACPI), Executive Director",
+      segment: "BREAKOUT 11: Digital Arts and Animation PSF: Emerging Tech Career Pathways",
+      title: "Daniel Enriquez",
+      subtitle: "Animation Council of the Philippines (ACPI), Executive Director",
     },
     {
       time: "",
-      segment:
-        "BREAKOUT 12: Game Development PSF: Emerging Tech Career Pathways c/o IBPAP",
-      title: "Amierose Ramos",
-      subtitle: "Game Developers Association of the Philippines (GDAP)",
+      segment: "BREAKOUT 12: Game Development PSF: Emerging Tech Career Pathways",
+      title: "Rafael Cabredo",
+      subtitle: "Game Developers Association of the Philippines (GDAP), Board Trustee",
     },
     {
       time: "1:45 PM - 2:30 PM",
-      segment:
-        "BREAKOUT 13: Health Information Management PSF: Emerging Tech Career Pathways c/o IBPAP",
-      title: "Nei Bumanglag - TBD c/o IBPAP",
+      segment: "BREAKOUT 13: Health Information Management PSF: Emerging Tech Career Pathways",
+      title: "Dr Carlos Ongaco",
       subtitle:
-        "Healthcare Information Management Association of the Philippines, Inc.. (HIMAP), Executive Director",
+        "Co-Founder and President, MedCode, Inc. for Healthcare Information Management Association of the Philippines, Inc.. (HIMAP)",
     },
     {
       time: "",
-      segment:
-        "BREAKOUT 14: Software Development and Security: PSF Emerging Tech Career Pathways c/o IBPAP",
+      segment: "BREAKOUT 14: Software Development and Security: PSF Emerging Tech Career Pathways",
       title: "Allan Tan",
-      subtitle:
-        "Philippine Software Industry Association (PSIA), Board Trustee",
+      subtitle: "Philippine Software Industry Association (PSIA), Board Trustee",
     },
     {
       time: "2:30 PM - 2:45 PM",
@@ -269,12 +249,10 @@ const timeline: Timeline = {
     },
     {
       time: "2:45 PM - 4:00 PM",
-      segment:
-        "Building Synergy: Aligning IT Education with Industry Demands (panel discussion with audience Q & A)",
+      segment: "Building Synergy: Aligning IT Education with Industry Demands (panel discussion with audience Q & A)",
       title:
         "Dr. Rolyn Daguil, PhD, President, Caraga State University\nDr. Bobby D. Gerardo, D. Eng, President, Northern Iloilo State University",
-      subtitle:
-        "representing the Industry: \nIBPAP\nPSIA\nISACAA\nModerator: Dr. Gregg Victor Gabison",
+      subtitle: "representing the Industry: \nIBPAP\nPSIA\nISACAA\nModerator: Dr. Gregg Victor Gabison",
     },
     {
       time: "4:00 PM - 4:15 PM",
@@ -335,20 +313,18 @@ const MappedTimeline = () => {
                   <p>{formatText(event.subtitle)}</p>
                 </div>
               </div>
-              {dayIndex === days.length - 1 &&
-                eventIndex === timeline[day].length - 1 && (
-                  <Button
-                    onClick={() => console.log("Download Agenda")}
-                    className="absolute -bottom-2 md:-bottom-3 bg-blue text-white flex flex-row"
-                  >
-                    DOWNLOAD PROGRAMME
-                  </Button>
-                )}
-            </div>
-            {dayIndex === days.length - 1 &&
-              eventIndex === timeline[day].length - 1 && (
-                <div className="absolute -ml-1.5 bottom-0 h-4 w-4 rounded-full bg-blue -left-[1px]"></div>
+              {dayIndex === days.length - 1 && eventIndex === timeline[day].length - 1 && (
+                <Button
+                  onClick={() => console.log("Download Agenda")}
+                  className="absolute -bottom-2 md:-bottom-3 bg-blue text-white flex flex-row"
+                >
+                  DOWNLOAD PROGRAMME
+                </Button>
               )}
+            </div>
+            {dayIndex === days.length - 1 && eventIndex === timeline[day].length - 1 && (
+              <div className="absolute -ml-1.5 bottom-0 h-4 w-4 rounded-full bg-blue -left-[1px]"></div>
+            )}
           </div>
         ))}
       </div>

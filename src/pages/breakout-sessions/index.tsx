@@ -42,16 +42,16 @@ export default function BreakoutSessions() {
   const cardDetails_day1: CardDetails[] = [
     {
       title: "AI for Academic Purpose",
-      subtitle: "Industry (Accenture) - c/o IBPAP",
+      subtitle: "Associate Director",
       time: "2:16 - 3:00 PM",
       room: "Room A",
-      speaker: "c/o IBPAP",
-      company: "Accenture",
+      speaker: "Virgilio Villarico",
+      company: "Accenture Operations in the Philippines",
     },
     {
       title:
         "Investigating Generative AI Mechanisms for the Academe in Improving Educational Engagement and Outcomes",
-      subtitle: "Academic Program Director, Asian Institute of Management",
+      subtitle: "Academic Program Director",
       time: "2:16 - 3:00 PM",
       room: "Room B",
       speaker: "Michelle Banawan, PhD",
@@ -60,7 +60,7 @@ export default function BreakoutSessions() {
     {
       title:
         "The Future of Work: How Digital Transformation Is Changing Workforce Requirements and Skills",
-      subtitle: "President, Mapua University",
+      subtitle: "President",
       time: "3:16 PM - 4:00 PM",
       room: "Room A",
       speaker: "Dr. Dodgie Maestrecampo",
@@ -68,10 +68,10 @@ export default function BreakoutSessions() {
     },
     {
       title: "Women in STEM",
-      subtitle: "President, Analytics Association of the Philippines",
+      subtitle: "President",
       time: "3:16 PM - 4:00 PM",
       room: "Room B",
-      speaker: "Michelle Alarcon c/o IBPAP",
+      speaker: "Michelle Alarcon",
       company: "Analytics Association of the Philippines",
     },
     {
@@ -80,7 +80,7 @@ export default function BreakoutSessions() {
       subtitle: "Industry (iQor)",
       time: "4:01 PM - 4:45 PM",
       room: "Room A",
-      speaker: "c/o IBPAP",
+      speaker: "Ralf Ian Gallegos",
       company: "iQor",
     },
     {
@@ -117,7 +117,7 @@ export default function BreakoutSessions() {
       title:
         "Contact Center & Business Process PSF: Emerging Tech Career Pathways",
       subtitle:
-        "Operations Director, Contact Center Association of the Philippines",
+        "Operations Director",
       time: "10:46 - 11:45 AM",
       room: "Room A",
       speaker: "Jay Santisteban",
@@ -125,7 +125,7 @@ export default function BreakoutSessions() {
     },
     {
       title: "Global In-House Center PSF: Emerging Tech Career Pathway",
-      subtitle: "Executive Director, Global In-House Center Council",
+      subtitle: "Executive Director",
       time: "10:46 - 11:45 AM",
       room: "Room B",
       speaker: "Christine Bata",
@@ -133,7 +133,7 @@ export default function BreakoutSessions() {
     },
     {
       title: "Digital Arts and Animation PSF: Emerging Tech Career Pathways",
-      subtitle: "Executive Director, Animation Council of the Philippines",
+      subtitle: "Executive Director",
       time: "1:01 - 1:45 PM",
       room: "Room A",
       speaker: "Daniel Enriquez",
@@ -141,7 +141,7 @@ export default function BreakoutSessions() {
     },
     {
       title: "Game Development PSF: Emerging Tech Career Pathways",
-      subtitle: "Game Developers Association of the Philippines",
+      subtitle: "Board Trustee",
       time: "1:01 - 1:45 PM",
       room: "Room B",
       speaker: "Amierose Ramos",
@@ -150,17 +150,17 @@ export default function BreakoutSessions() {
     {
       title: "Health Information Management PSF: Emerging Tech Career Pathways",
       subtitle:
-        "Executive Director, Healthcare Information Management Association",
+        "Co-founder and President",
       time: "1:46 - 2:30 PM",
       room: "Room A",
-      speaker: "Nei Bumanglag",
+      speaker: "Dr Carlos Ongaco",
       company:
         "Healthcare Information Management Association of the Philippines (HIMAP)",
     },
     {
       title:
         "Software Development and Security: PSF Emerging Tech Career Pathways",
-      subtitle: "Board Trustee, Philippine Software Industry Association",
+      subtitle: "Board Trustee",
       time: "1:46 - 2:30 PM",
       room: "Room B",
       speaker: "Allan Tan",
@@ -207,7 +207,7 @@ export default function BreakoutSessions() {
     <div
       key={`${day}-${index}`}
       onClick={() => handleCardClick(index, day)}
-      className={`relative cursor-pointer transition-transform duration-300 ease-in-out rounded-2xl border-[2px] border-green ${
+      className={`relative cursor-pointer transition-transform duration-300 ease-in-out rounded-2xl border-[2px] border-green overflow-hidden bg-black bg-black-to-white-up ${
         expandedCardIndex === index && activeDay === day
           ? ""
           : "hover:scale-105 hover:shadow-xl"
@@ -216,49 +216,33 @@ export default function BreakoutSessions() {
       <img
         src={getImageForCard(card.title)}
         alt={`Card Image ${index + 1}`}
-        className="w-full h-full object-cover rounded-2xl"
+        className="w-full h-full object-cover opacity-80"
       />
-
-      {/* Compact Time Badge */}
-      <div className="absolute top-2 left-2 border border-white rounded-lg px-2 py-0.5 text-center">
-        <span className="text-[#F5F5F5] font-semibold">{card.time}</span>
-      </div>
-
-      {/* Overlay Title */}
-      <div className="absolute bottom-0 left-0 right-0 px-3 py-2 rounded-b-2xl">
-        <span className="text-[#F5F5F5] font-extrabold">{card.title}</span>
+      <div className="bg-black-to-white-up w-full h-full top-0 left-0 absolute" />
+      <div className="border border-white bg-none rounded-lg px-2 py-0.5 mt-3 ml-3 text-white text-center max-w-max absolute top-0">
+        <span className="grow-0">{card.time}</span>
       </div>
 
       {/* Expanded Card Modal */}
       {expandedCardIndex === index && activeDay === day && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-60 z-50">
-          <div className="relative bg-white rounded-2xl shadow-2xl max-w-3xl w-[90%] overflow-hidden">
-            {/* Expanded Card Image */}
-            <img
-              src={getImageForCard(card.title)}
-              alt="Expanded Card Image"
-              className="w-full h-[60vh] object-cover rounded-lg"
-            />
-
-            {/* Expanded Time Badge (Compact) */}
-            <div className="absolute top-4 left-4 border border-white rounded-lg px-3 py-1 text-sm">
-              <span className="text-[#F5F5F5] font-semibold">{card.time}</span>
-            </div>
-
-            {/* Expanded Overlay Content (Full-width) */}
-            <div className="absolute bottom-0 left-0 right-0 px-4 py-3 rounded-b-2xl">
-              <h3 className="text-xl font-extrabold text-[#F5F5F5] mb-1">
-                {card.title}
-              </h3>
-              <p className="text-sm font-extrabold text-[#F5F5F5] mb-1">
-                {card.room}
-              </p>
-              <p className="text-sm font-extrabold text-[#F5F5F5] mb-1">
-                {card.speaker}
-              </p>
-              <p className="text-sm font-extrabold text-[#F5F5F5]">
-                {card.company}
-              </p>
+        <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-55 z-50">
+          <div className="relative bg-transparent rounded-lg shadow-2xl max-w-2xl w-full">
+            <div className="relative rounded-lg overflow-hidden">
+              <div className="w-full h-full top-0 left-0 absolute bg-black bg-black-to-white-up" />
+              <img
+                src={getImageForCard(card.title)}
+                alt="Expanded Card Image"
+                className="w-full h-full object-cover rounded-lg opacity-50"
+              />
+              <div className="absolute top-2 left-2 text-sm text-white bg-opacity-50 px-3 py-1 rounded-lg border-white border my-3 mx-3">
+                {card.time}
+              </div>
+              <div className="absolute bottom-4 left-4 text-white">
+                <h3 className="text-xl font-semibold mb-1">{card.title}</h3>
+                <p className="text-sm mb-1">{card.room}</p>
+                <p className="text-sm mb-1">{card.speaker}</p>
+                <p className="text-sm">{card.company}</p>
+              </div>
             </div>
           </div>
         </div>
@@ -291,7 +275,7 @@ export default function BreakoutSessions() {
           <div className="w-full">
             <div
               id="breakoutDay1"
-              className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-5"
+              className="grid sm:grid-rows-8 md:grid-rows-4 md:grid-cols-2 sm:grid-cols-1 gap-5"
             >
               {cardDetails_day1.map((card, index) =>
                 renderCard(card, index, 1)
@@ -310,7 +294,7 @@ export default function BreakoutSessions() {
           <div className="w-full  mb-10">
             <div
               id="breakoutDay2"
-              className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-5"
+              className="grid sm:grid-rows-6 md:grid-rows-3 md:grid-cols-2 sm:grid-cols-1 gap-5"
             >
               {cardDetails_day2.map((card, index) =>
                 renderCard(card, index, 2)
