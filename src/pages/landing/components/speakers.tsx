@@ -56,7 +56,7 @@ const speakersData = [
   },
   {
     name: "Asso. Prof. Stephen Alayon",
-    img: "/speakers/stephen-alayon.png",
+    img: "/speakers/stephen-alayon.jpg",
     tittle: "Program Head - BSIS",
     affil: "West Visayas State University",
   },
@@ -67,13 +67,19 @@ const speakersData = [
     affil: "Northern Iloilo State University",
   },
   {
+    name: "Allan Tan",
+    img: "/speakers/allan-tan.jpg",
+    tittle: "Board Trustee",
+    affil: "Philippine Software Industry Association",
+  },
+  {
     name: "Dr. Gregg Victor Gabison",
     img: "/speakers/gregg-gabison.jpg",
     affil: "Ray Business Technologies PVT LTD",
   },
   {
     name: "Dr. Rolyn Daguil",
-    img: "/speakers/rolyn-daguil.png",
+    img: "/speakers/rolyn-daguil.jpg",
     tittle: "President",
     affil: "Caraga State University",
   },
@@ -82,6 +88,12 @@ const speakersData = [
     img: "/speakers/michelle-banawan.jpg",
     tittle: "Academic Program Director",
     affil: "Asian Institute of Management",
+  },
+  {
+    name: "Jonathan Defensor De Luzuriaga",
+    img: "/speakers/jonathan-luzuriaga.jpg",
+    tittle: "President",
+    affil: "Philippine Software Industry Association",
   },
 ];
 
