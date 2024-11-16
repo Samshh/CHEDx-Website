@@ -74,6 +74,7 @@ const speakersData = [
   {
     name: "Dr. Gregg Victor Gabison",
     img: "/speakers/gregg-gabison.jpg",
+    tittle: "Country Manager",
     affil: "Ray Business Technologies PVT LTD",
   },
   {
