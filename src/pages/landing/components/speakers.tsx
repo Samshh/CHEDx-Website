@@ -98,7 +98,7 @@ const speakersData = [
   {
     name: "Cherry Sta. Romana",
     img: "/speakers/cherry-sta-romana.jpg",
-    tittle: "Dean. College of Cumpter Studies",
+    tittle: "Dean. College of Computer Studies",
     affil: "Cebu Institute of Technology - University",
   },
   {

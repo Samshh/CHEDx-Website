@@ -250,7 +250,7 @@ const timeline: Timeline = {
       time: "2:45 PM - 4:00 PM",
       segment: "Building Synergy: Aligning IT Education with Industry Demands (panel discussion with audience Q & A)",
       title:
-        "Dr. Rolyn Daguil, PhD, President, Caraga State University\nDr. Bobby D. Gerardo, D. Eng, President, Northern Iloilo State University \nDr. Cherry Lyn Sta. Romana, Dean. College of Cumpter Studies, Cebu Institute of Technology - University \nDr. Dave E. Marcial, Director, Dr. Mariano C. Lao Global Studied Center, Siliman University",
+        "Dr. Rolyn Daguil, PhD, President, Caraga State University\nDr. Bobby D. Gerardo, D. Eng, President, Northern Iloilo State University \nDr. Cherry Lyn Sta. Romana, Dean. College of Computer Studies, Cebu Institute of Technology - University \nDr. Dave E. Marcial, Director, Dr. Mariano C. Lao Global Studied Center, Siliman University",
       subtitle: "representing the Industry: \nIBPAP\nPSIA\nISACAA\nModerator: Dr. Gregg Victor Gabison",
     },
     {
