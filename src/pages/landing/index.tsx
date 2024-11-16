@@ -1,5 +1,5 @@
 import CHEDxLogo from "/CHEDxLogo.svg";
-import HeroBG from "/Programme_Hero.png";
+import HeroBG from "/Programme_Hero.png"; // CHANGE ME
 import Button from "@/components/ui/button";
 import IBAP from "/landingLogos/IBAP.svg";
 import USEP from "/landingLogos/USEP.svg";
@@ -136,35 +136,22 @@ export default function Landing() {
     <div className="flex flex-col">
       {/* section1 */}
       <div className="relative">
-        <img
-          src={HeroBG}
-          alt="herobg"
-          className="absolute w-screen h-full object-cover"
-          loading="eager"
-        />
+        <img src={HeroBG} alt="herobg" className="absolute w-screen h-full object-cover" />
         <div className="absolute inset-0 bg-center-transparent" />
         <section className="relative h-screen">
           <div className="h-full w-full max-w-[568px] max-h-[568px] rounded-full absolute bg-yellow opacity-15 blur-3xl" />
           <div className="flex flex-col items-center justify-center gap-[3rem] mb-[4rem] z-10">
             <div className="flex flex-col items-center justify-center">
-              <img src={CHEDxLogo} alt="CHEDx" loading="eager" />
+              <img src={CHEDxLogo} alt="CHEDx" />
             </div>
             <div className="flex flex-col justify-center items-center gap-[2rem]">
               <div>
-                <h3 className="text-center font-normal max-w-[568px] uppercase">
-                  December 4 - 5, 2024
-                </h3>
+                <h3 className="text-center font-normal max-w-[568px] uppercase">December 4 - 5, 2024</h3>
                 <p className="text-center font-normal max-w-[568px]">
-                  SMX Convention Center Davao <br /> 3rd Level, SM Lanang
-                  Premier, J.P. Laurel Ave, Lanang, Davao City.
+                  SMX Convention Center Davao <br /> 3rd Level, SM Lanang Premier, J.P. Laurel Ave, Lanang, Davao City.
                 </p>
               </div>
-              <a
-                href="https://lu.ma/sslgryut"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="registration"
-              >
+              <a href="https://lu.ma/sslgryut" target="_blank" rel="noopener noreferrer" title="registration">
                 <Button className="bg-yellow text-white">Register now</Button>
               </a>
             </div>
@@ -177,19 +164,10 @@ export default function Landing() {
           <div className="h-full w-full max-w-[568px] max-h-[568px] rounded-full absolute bg-yellow opacity-15 blur-3xl" />
           <div className="max-w-[751px] w-full flex justify-center items-center gap-[3.36rem] flex-wrap">
             {partners.map((partner, index) => (
-              <img
-                className="h-[65px] w-auto"
-                key={index}
-                src={partner}
-                alt={`partner-${index}`}
-                loading="lazy"
-              />
+              <img className="h-[65px] w-auto" key={index} src={partner} alt={`partner-${index}`} />
             ))}
           </div>
-          <div
-            className="text-center flex flex-col gap-[2rem]"
-            ref={cardsTrigger}
-          >
+          <div className="text-center flex flex-col gap-[2rem]" ref={cardsTrigger}>
             <h2>
               <span className="text-yellow">
                 What is CHED<sup>x</sup>2.0,
@@ -201,48 +179,28 @@ export default function Landing() {
                   className="absolute -bottom-2 left-1/2 transform -translate-x-1/2"
                   src={CurvedUnderline}
                   alt="underline"
-                  loading="lazy"
                 />
               </span>
             </h2>
             <h3 className="max-w-[1080px]" ref={text1}>
-              CHEDˣ2.0 is a nationwide IT Education Summit that promotes
-              impactful and inclusive discussions, partnerships, and networking.
-              This year’s theme, “Building Synergy: Aligning IT Education with
-              Industry,” emphasizes collaboration among academia, industry, and
-              government to keep pace with technological advancements and
-              workforce needs. Join us to connect, learn, and help shape the
-              future of IT education!
+              CHEDˣ2.0 is a nationwide IT Education Summit that promotes impactful and inclusive discussions,
+              partnerships, and networking. This year’s theme, “Building Synergy: Aligning IT Education with Industry,”
+              emphasizes collaboration among academia, industry, and government to keep pace with technological
+              advancements and workforce needs. Join us to connect, learn, and help shape the future of IT education!
             </h3>
           </div>
           <div className="grid max-w-[471px] grid-rows-2 grid-cols-2 lg:grid-rows-1 lg:grid-cols-4 gap-[2rem] w-full lg:max-w-[985px]">
             <div ref={card1}>
-              <LandingCard
-                title="speakers"
-                icon="pepicons-pencil:microphone-handheld"
-                number={card1number}
-              />
+              <LandingCard title="speakers" icon="pepicons-pencil:microphone-handheld" number={card1number} />
             </div>
             <div ref={card2}>
-              <LandingCard
-                title="booths"
-                icon="clarity:store-line"
-                number={card2number}
-              />
+              <LandingCard title="booths" icon="clarity:store-line" number={card2number} />
             </div>
             <div ref={card3}>
-              <LandingCard
-                title="breakout sessions"
-                icon="ph:users"
-                number={card3number}
-              />
+              <LandingCard title="breakout sessions" icon="ph:users" number={card3number} />
             </div>
             <div ref={card4}>
-              <LandingCard
-                title="big event"
-                icon="proicons:calendar"
-                number={card4number}
-              />
+              <LandingCard title="big event" icon="proicons:calendar" number={card4number} />
             </div>
           </div>
         </section>
@@ -296,15 +254,13 @@ export default function Landing() {
                   className="absolute -bottom-2 left-1/2 transform -translate-x-1/2"
                   src={CurvedUnderline}
                   alt="underline"
-                  loading="lazy"
                 />
               </span>
             </h2>
             <h3 className="max-w-[768px]" ref={text2}>
-              The summit brings together top experts to foster collaboration,
-              open dialogue, and forward thinking, equipping delegates and
-              industries with the insights and networks to confidently navigate
-              the evolving workplace.
+              The summit brings together top experts to foster collaboration, open dialogue, and forward thinking,
+              equipping delegates and industries with the insights and networks to confidently navigate the evolving
+              workplace.
             </h3>
           </div>
           <SpeakersCarousel />
@@ -325,14 +281,12 @@ export default function Landing() {
                   className="absolute -bottom-2 left-1/2 transform -translate-x-1/2"
                   src={CurvedUnderline2}
                   alt="underline"
-                  loading="lazy"
                 />
               </span>
             </h2>
             <h3 className="max-w-[652px]" ref={text3}>
-              From insightful keynotes to engaging breakouts, each session is
-              designed to inspire, educate, and propel you into the forefront of
-              the ever-evolving landscape of technology and education.
+              From insightful keynotes to engaging breakouts, each session is designed to inspire, educate, and propel
+              you into the forefront of the ever-evolving landscape of technology and education.
             </h3>
           </div>
           <div className="w-full py-[3rem]">
@@ -348,12 +302,7 @@ export default function Landing() {
               <span className="text-yellow">Secure your spot...</span>
               <br /> Join us today!
             </h2>
-            <a
-              href="https://lu.ma/sslgryut"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="registration"
-            >
+            <a href="https://lu.ma/sslgryut" target="_blank" rel="noopener noreferrer" title="registration">
               <Button className="bg-yellow text-white">register now</Button>
             </a>
           </div>

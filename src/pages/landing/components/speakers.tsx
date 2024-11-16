@@ -95,6 +95,18 @@ const speakersData = [
     tittle: "President",
     affil: "Philippine Software Industry Association",
   },
+  {
+    name: "Cherry Sta. Romana",
+    img: "/speakers/cherry-sta-romana.jpg",
+    tittle: "Dean. College of Cumpter Studies",
+    affil: "Cebu Institute of Technology - University",
+  },
+  {
+    name: "Bonifacio Gabales",
+    img: "/speakers/bonifacio-gabales.jpg",
+    tittle: "SUC IV President",
+    affil: "University of Southeastern Philippines",
+  },
 ];
 
 export { speakersData };
