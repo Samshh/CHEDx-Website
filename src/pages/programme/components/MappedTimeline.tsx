@@ -147,8 +147,7 @@ const timeline: Timeline = {
     },
     {
       time: "4:45 PM - 5:30 PM",
-      segment:
-        "BREAKOUT 7: Creating Seamless Pathways for Higher Education: Certifications and Microcredentials",
+      segment: "BREAKOUT 7: Creating Seamless Pathways for Higher Education: Certifications and Microcredentials",
       title: "Ms. Yean Feng Yue",
       subtitle: "IBM Corporate Social Responsibility Leader - APAC",
     },
@@ -251,7 +250,7 @@ const timeline: Timeline = {
       time: "2:45 PM - 4:00 PM",
       segment: "Building Synergy: Aligning IT Education with Industry Demands (panel discussion with audience Q & A)",
       title:
-        "Dr. Rolyn Daguil, PhD, President, Caraga State University\nDr. Bobby D. Gerardo, D. Eng, President, Northern Iloilo State University",
+        "Dr. Rolyn Daguil, PhD, President, Caraga State University\nDr. Bobby D. Gerardo, D. Eng, President, Northern Iloilo State University \nDr. Cherry Lyn Sta. Romana, Dead. College of Cumpter Studies, Cebu Institute of Technology - University \nDr. Dave E. Marcial, Director, Dr. Mariano C. Lao Global Studied Center, Siliman University",
       subtitle: "representing the Industry: \nIBPAP\nPSIA\nISACAA\nModerator: Dr. Gregg Victor Gabison",
     },
     {

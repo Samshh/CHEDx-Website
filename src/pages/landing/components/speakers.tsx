@@ -1,4 +1,3 @@
-
 const speakersData = [
   {
     name: "J. Prospero E. de Vera III",
