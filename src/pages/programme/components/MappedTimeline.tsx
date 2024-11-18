@@ -1,5 +1,5 @@
 import Button from "@/components/ui/button";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 interface Event {
   time: string;
@@ -249,9 +249,16 @@ const timeline: Timeline = {
     {
       time: "2:45 PM - 4:00 PM",
       segment: "Building Synergy: Aligning IT Education with Industry Demands (panel discussion with audience Q & A)",
-      title:
-        "Dr. Rolyn Daguil, PhD, President, Caraga State University, \nDr. Bobby D. Gerardo, D. Eng, President, Northern Iloilo State University, \nDr. Cherry Lyn Sta. Romana, Dean. College of Computer Studies, Cebu Institute of Technology- University, \nDr. Dave E. Marcial, Director, Dr. Mariano C. Lao Global Studies Center, Siliman University, \nFrankie Antolin, Executive Director  for Talent Attraction and Development, IT & Business Porcess Association of the Philippines, \nJonathan Defensor De Luzuriaga, President, Philippine Software Industry Association",
-      subtitle: "Moderator: Dr. Gregg Victor Gabison",
+      title: `
+              Dr. Rolyn Daguil, PhD, <p>President, Caraga State University</p>
+              Dr. Bobby D. Gerardo, D. Eng,<p>President, Northern Iloilo State University</p>
+              Dr. Cherry Lyn Sta. Romana, <p>Dean, College of Computer Studies, Cebu Institute of Technology-University</p>
+              Dr. Dave E. Marcial, <p>Director, Dr. Mariano C. Lao Global Studies Center, Siliman University</p>
+              Frankie Antolin, <p>Executive Director for Talent Attraction and Development, IT & Business Process Association of the Philippines</p>
+              Jonathan Defensor De Luzuriaga, <p>President, Philippine Software Industry Association</p>
+            `,
+
+      subtitle: "\nModerator: Dr. Gregg Victor Gabison",
     },
     {
       time: "4:00 PM - 4:15 PM",
@@ -277,6 +284,7 @@ const timeline: Timeline = {
 const MappedTimeline = () => {
   const days = Object.keys(timeline);
   const timelineRef = useRef(null);
+  const [isCooldown, setIsCooldown] = useState(false);
 
   const formatText = (text: string) => {
     return text.split("\n").map((line, index) => (
@@ -314,15 +322,12 @@ const MappedTimeline = () => {
 
                 <div className="max-w-[568px]">
                   <h3 className="text-blue">{event.segment}</h3>
-                  <h3>{formatText(event.title)}</h3>
+                  <h3 dangerouslySetInnerHTML={{ __html: event.title }} />
                   <p>{formatText(event.subtitle)}</p>
                 </div>
               </div>
               {dayIndex === days.length - 1 && eventIndex === timeline[day].length - 1 && (
-                <Button
-                  onClick={() => console.log("Download Agenda")}
-                  className="absolute -bottom-[1.70rem] md:-bottom-[1.85rem] bg-blue text-white flex flex-row"
-                >
+                <Button className="absolute -bottom-[1.70rem] md:-bottom-[1.85rem] bg-blue text-white flex flex-row">
                   DOWNLOAD PROGRAMME
                 </Button>
               )}
