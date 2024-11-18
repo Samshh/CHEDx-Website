@@ -28,15 +28,11 @@ interface CardDetails {
 }
 
 export default function BreakoutSessions() {
-  const [expandedCardIndex, setExpandedCardIndex] = useState<number | null>(
-    null
-  );
+  const [expandedCardIndex, setExpandedCardIndex] = useState<number | null>(null);
   const [activeDay, setActiveDay] = useState<1 | 2 | null>(null);
 
   const handleCardClick = (index: number, day: 1 | 2) => {
-    setExpandedCardIndex(
-      expandedCardIndex === index && activeDay === day ? null : index
-    );
+    setExpandedCardIndex(expandedCardIndex === index && activeDay === day ? null : index);
     setActiveDay(expandedCardIndex === index && activeDay === day ? null : day);
   };
 
@@ -47,25 +43,23 @@ export default function BreakoutSessions() {
       time: "2:16 - 3:00 PM",
       room: "Room A",
       speaker: "Virgilio Villarico",
-      company: "Accenture Operations in the Philippines",
+      company: "Associate Director: Innovation and Gen AI Lead - Accenture Operations in the Philippines",
     },
     {
-      title:
-        "Investigating Generative AI Mechanisms for the Academe in Improving Educational Engagement and Outcomes",
+      title: "Investigating Generative AI Mechanisms for the Academe in Improving Educational Engagement and Outcomes",
       subtitle: "Academic Program Director",
       time: "2:16 - 3:00 PM",
       room: "Room B",
       speaker: "Michelle Banawan, PhD",
-      company: "Asian Institute of Management",
+      company: "Academic Program Director - Asian Institute of Management",
     },
     {
-      title:
-        "The Future of Work: How Digital Transformation Is Changing Workforce Requirements and Skills",
+      title: "The Future of Work: How Digital Transformation Is Changing Workforce Requirements and Skills",
       subtitle: "President",
       time: "3:16 PM - 4:00 PM",
       room: "Room A",
-      speaker: "Dr. Dodgie Maestrecampo",
-      company: "Mapua University",
+      speaker: "Dr. Dodjie Maestrecampo",
+      company: "President - Mapua University",
     },
     {
       title: "Women in STEM",
@@ -73,55 +67,50 @@ export default function BreakoutSessions() {
       time: "3:16 PM - 4:00 PM",
       room: "Room B",
       speaker: "Michelle Alarcon",
-      company: "Analytics Association of the Philippines",
+      company: "President - Analytics Association of the Philippines",
     },
     {
-      title:
-        "Integrating Soft Skills with Domain Expertise for IT Professionals",
+      title: "Integrating Soft Skills with Domain Expertise for IT Professionals",
       subtitle: "Industry (iQor)",
       time: "4:01 PM - 4:45 PM",
       room: "Room A",
       speaker: "Ralf Ian Gallegos",
-      company: "iQor",
+      company: "Manager, Recruiting - iQor",
     },
     {
-      title:
-        "Futures Learning Commons and Creative Spaces, Futures Information",
+      title: "Futures Learning Commons and Creative Spaces, Futures Information",
       subtitle: "Program Head, Bachelor of Science and Information Science",
       time: "4:01 PM - 4:45 PM",
       room: "Room B",
       speaker: "Asso. Prof. Stephen B. Alayon",
-      company: "West Visayas State University",
+      company: "Program Head, Bachelor of Science and Information Science - West Visayas State University",
     },
     {
-      title:
-        "Creating Seamless Pathways for Higher Education: Certifications and Microcredentials",
+      title: "Creating Seamless Pathways for Higher Education: Certifications and Microcredentials",
       subtitle: "Corporate Social Responsibility Leader",
       time: "4:46 PM - 5:30 PM",
       room: "Room A",
       speaker: "Ms. Yean Feng Yue",
-      company: "IBM APAC",
+      company: "Corporate Social Responsibility Leader - IBM APAC",
     },
     {
-      title:
-        "Cybersecurity Synergy: Collaborative Strategies for Academia and Industry",
+      title: "Cybersecurity Synergy: Collaborative Strategies for Academia and Industry",
       subtitle: "Regional Director, GFCE Southeast Asia Hub",
       time: "4:46 PM - 5:30 PM",
       room: "Room B",
       speaker: "Allan S. Cabanlong, ASEAN Eng",
-      company: "GFCE Southeast Asia Hub",
+      company: "Regional Director - GFCE Southeast Asia Hub",
     },
   ];
 
   const cardDetails_day2: CardDetails[] = [
     {
-      title:
-        "Contact Center & Business Process PSF: Emerging Tech Career Pathways",
+      title: "Contact Center & Business Process PSF: Emerging Tech Career Pathways",
       subtitle: "Operations Director",
       time: "10:46 - 11:45 AM",
       room: "Room A",
       speaker: "Jay Santisteban",
-      company: "Contact Center Association of the Philippines (CCAP)",
+      company: "Operations Director - Contact Center Association of the Philippines (CCAP)",
     },
     {
       title: "Global In-House Center PSF: Emerging Tech Career Pathway",
@@ -129,7 +118,7 @@ export default function BreakoutSessions() {
       time: "10:46 - 11:45 AM",
       room: "Room B",
       speaker: "Christine Bata",
-      company: "Global In-House Center Council (GICC)",
+      company: "Executive Director - Global In-House Center Council (GICC)",
     },
     {
       title: "Digital Arts and Animation PSF: Emerging Tech Career Pathways",
@@ -137,15 +126,15 @@ export default function BreakoutSessions() {
       time: "1:01 - 1:45 PM",
       room: "Room A",
       speaker: "Daniel Enriquez",
-      company: "Animation Council of the Philippines (ACPI)",
+      company: "Executive Director - Animation Council of the Philippines (ACPI)",
     },
     {
       title: "Game Development PSF: Emerging Tech Career Pathways",
       subtitle: "Board Trustee",
       time: "1:01 - 1:45 PM",
       room: "Room B",
-      speaker: "Amierose Ramos",
-      company: "Game Developers Association of the Philippines (GDAP)",
+      speaker: "Norman Lee",
+      company: "Board Trustee - Game Developers Association of the Philippines (GDAP)",
     },
     {
       title: "Health Information Management PSF: Emerging Tech Career Pathways",
@@ -153,17 +142,15 @@ export default function BreakoutSessions() {
       time: "1:46 - 2:30 PM",
       room: "Room A",
       speaker: "Dr Carlos Ongaco",
-      company:
-        "Healthcare Information Management Association of the Philippines (HIMAP)",
+      company: "Co-Founder and President - Healthcare Information Management Association of the Philippines (HIMAP)",
     },
     {
-      title:
-        "Software Development and Security: PSF Emerging Tech Career Pathways",
+      title: "Software Development and Security: PSF Emerging Tech Career Pathways",
       subtitle: "Board Trustee",
       time: "1:46 - 2:30 PM",
       room: "Room B",
       speaker: "Allan Tan",
-      company: "Philippine Software Industry Association (PSIA)",
+      company: "Board Trustee - Philippine Software Industry Association (PSIA)",
     },
   ];
 
@@ -207,9 +194,7 @@ export default function BreakoutSessions() {
       key={`${day}-${index}`}
       onClick={() => handleCardClick(index, day)}
       className={`relative cursor-pointer transition-transform duration-300 ease-in-out rounded-xl border-[2px] border-green overflow-hidden bg-black bg-black-to-white-up ${
-        expandedCardIndex === index && activeDay === day
-          ? ""
-          : "hover:scale-105 hover:shadow-xl"
+        expandedCardIndex === index && activeDay === day ? "" : "hover:scale-105 hover:shadow-xl"
       }`}
     >
       <img
@@ -258,17 +243,10 @@ export default function BreakoutSessions() {
   return (
     <div className="relative">
       <div className="relative bg-hero-bg bg-cover w-full h-screen flex items-center justify-center">
-        <img
-          src={HeroBG}
-          alt="herobg"
-          className="absolute w-full h-screen object-cover opacity-20"
-          loading="eager"
-        />
+        <img src={HeroBG} alt="herobg" className="absolute w-full h-screen object-cover opacity-20" loading="eager" />
         <div className="absolute inset-0 bg-center-transparent" />
         <div className="h-full w-full max-w-[568px] max-h-[568px] rounded-full absolute bg-green opacity-10 blur-3xl" />
-        <h1 className="text-primary text-center relative z-10 text-green">
-          BREAKOUT SESSIONS
-        </h1>
+        <h1 className="text-primary text-center relative z-10 text-green">BREAKOUT SESSIONS</h1>
       </div>
       <section id="breakoutSession">
         <div className="flex flex-col gap-5 mb-7 my-20">
@@ -279,13 +257,8 @@ export default function BreakoutSessions() {
           </div>
           <h2 className="text-center my-3">DECEMBER 4, 2024</h2>
           <div className="w-full">
-            <div
-              id="breakoutDay1"
-              className="grid sm:grid-rows-8 md:grid-rows-4 md:grid-cols-2 sm:grid-cols-1 gap-5"
-            >
-              {cardDetails_day1.map((card, index) =>
-                renderCard(card, index, 1)
-              )}
+            <div id="breakoutDay1" className="grid sm:grid-rows-8 md:grid-rows-4 md:grid-cols-2 sm:grid-cols-1 gap-5">
+              {cardDetails_day1.map((card, index) => renderCard(card, index, 1))}
             </div>
           </div>
         </div>
@@ -298,13 +271,8 @@ export default function BreakoutSessions() {
           </div>
           <h2 className="text-center my-3">DECEMBER 5, 2024</h2>
           <div className="w-full  mb-10">
-            <div
-              id="breakoutDay2"
-              className="grid sm:grid-rows-6 md:grid-rows-3 md:grid-cols-2 sm:grid-cols-1 gap-5"
-            >
-              {cardDetails_day2.map((card, index) =>
-                renderCard(card, index, 2)
-              )}
+            <div id="breakoutDay2" className="grid sm:grid-rows-6 md:grid-rows-3 md:grid-cols-2 sm:grid-cols-1 gap-5">
+              {cardDetails_day2.map((card, index) => renderCard(card, index, 2))}
             </div>
           </div>
         </div>
@@ -317,12 +285,7 @@ export default function BreakoutSessions() {
               <span className="text-green">Secure your spot...</span>
               <br /> Join us today!
             </h2>
-            <a
-              href="https://lu.ma/sslgryut"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="registration"
-            >
+            <a href="https://lu.ma/sslgryut" target="_blank" rel="noopener noreferrer" title="registration">
               <Button className="bg-green text-white">register now</Button>
             </a>
           </div>
