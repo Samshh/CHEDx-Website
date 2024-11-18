@@ -36,6 +36,12 @@ const speakersData = [
     affil: "Animation Council of the Philippines",
   },
   {
+    name: "Dr. Dave Marcial",
+    img: "/speakers/dave-marcial.jpg",
+    tittle: "President",
+    affil: "Philippine Society of IT Educators",
+  },
+  {
     name: "Christine Bata",
     img: "/speakers/christine-bata.jpg",
     tittle: "Executive Director",
