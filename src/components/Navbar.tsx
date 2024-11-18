@@ -10,12 +10,15 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import Burger from "/Burger.svg";
+import { useState } from "react";
 
 export default function Navbar() {
   const location = useLocation();
   const path = location.pathname;
 
   const navigate = useNavigate();
+  const [isCooldown, setIsCooldown] = useState(false);
+
   return (
     <div className="fixed top-0 w-full bg-white shadow-sm backdrop-blur-sm bg-opacity-55 z-40">
       <nav>
@@ -64,6 +67,25 @@ export default function Navbar() {
               }`}
             >
               Breakout Sessions
+            </p>
+          </button>
+          <button
+            onClick={() => {
+              if (isCooldown) {
+                alert("Rate limit exceeded. Please try again later.");
+                return;
+              }
+              setIsCooldown(true);
+              const link = document.createElement("a");
+              link.href = "/downloads/CHED-MEMO.pdf";
+              link.download = "CHED-MEMO.pdf";
+              link.click();
+              setTimeout(() => setIsCooldown(false), 3000);
+            }}
+            type="button"
+          >
+            <p className="uppercase transition-all ease-linear hover:text-yellow">
+              Download Memo
             </p>
           </button>
           {/* <button onClick={() => navigate("/organizers")} type="button">
@@ -119,6 +141,25 @@ export default function Navbar() {
                     onClick={() => navigate("/breakout-sessions")}
                   >
                     <h3>BREAKOUT SESSIONS</h3>
+                  </button>
+                </SheetClose>
+                <SheetClose className="flex-end text-end">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      if (isCooldown) {
+                        alert("Rate limit exceeded. Please try again later.");
+                        return;
+                      }
+                      setIsCooldown(true);
+                      const link = document.createElement("a");
+                      link.href = "/downloads/CHED-MEMO.pdf";
+                      link.download = "CHED-MEMO.pdf";
+                      link.click();
+                      setTimeout(() => setIsCooldown(false), 3000);
+                    }}
+                  >
+                    <h3>DOWNLOAD MEMO</h3>
                   </button>
                 </SheetClose>
                 {/* <SheetClose className="flex-end text-end">
