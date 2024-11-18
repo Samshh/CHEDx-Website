@@ -327,7 +327,21 @@ const MappedTimeline = () => {
                 </div>
               </div>
               {dayIndex === days.length - 1 && eventIndex === timeline[day].length - 1 && (
-                <Button className="absolute -bottom-[1.70rem] md:-bottom-[1.85rem] bg-blue text-white flex flex-row">
+                <Button
+                  onClick={() => {
+                    if (isCooldown) {
+                      alert("Rate limit exceeded. Please try again later.");
+                      return;
+                    }
+                    setIsCooldown(true);
+                    const link = document.createElement("a");
+                    link.href = "/downloads/PROGRAMME.pdf";
+                    link.download = "PROGRAMME.pdf";
+                    link.click();
+                    setTimeout(() => setIsCooldown(false), 3000);
+                  }}
+                  className="absolute -bottom-[1.70rem] md:-bottom-[1.85rem] bg-blue text-white flex flex-row"
+                >
                   DOWNLOAD PROGRAMME
                 </Button>
               )}
