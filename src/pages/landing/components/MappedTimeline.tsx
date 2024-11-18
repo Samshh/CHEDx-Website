@@ -101,10 +101,9 @@ const timeline: Timeline = {
       time: "1:30 PM - 2:15 PM",
       segment:
         "Panel Discussion: Education and the World of Work: Boosting Education through Smart Technologies (Project BEST)",
-      title:
-        "Moderator: Calen Martin D. Legaspi, CHED Technical Committee on Computer Science and Board Trustee, Philippine Software Industry Association (PSIA)",
+      title: `Moderator: Calen Martin D. Legaspi, <p>CHED Technical Committee on Computer Science and Board Trustee, Philippine Software Industry Association (PSIA)</p>Panel Members:`,
       subtitle:
-        "Panel Members: CHED OPSD, SKIPP Proponents - Leuther Mojica, \nBusiness Head, Orange & Bronze (IBPAP), PSF - Haidee Enriquez (CEO Microsourcing),  \nOneil Victoriano, AdDU-CHED-SKiPP Project Lead, \n Dr. Gregg Victor Gabison , CHED Technical Panel",
+        "CHED OPSD, SKIPP Proponents - Leuther Mojica, \nBusiness Head, Orange & Bronze (IBPAP), PSF - Haidee Enriquez (CEO Microsourcing),  \nOneil Victoriano, AdDU-CHED-SKiPP Project Lead, \n Dr. Gregg Victor Gabison , CHED Technical Panel",
     },
     {
       time: "2:15 PM - 3:00 PM",
@@ -211,10 +210,12 @@ const MappedTimeline = () => {
                   </div>
                 )}
 
-                <div className="max-w-[568px]">
-                  <h3 className="text-yellow">{event.segment}</h3>
-                  <h3>{formatText(event.title)}</h3>
-                  <p>{formatText(event.subtitle)}</p>
+                <div className="max-w-[568px] flex flex-col gap-3">
+                  <h3 className="text-blue">{event.segment}</h3>
+                  <div className="flex flex-col">
+                    <h3 dangerouslySetInnerHTML={{ __html: event.title }} />
+                    <p>{formatText(event.subtitle)}</p>
+                  </div>
                 </div>
               </div>
               {dayIndex === days.length - 1 && eventIndex === timeline[day].length - 1 && (
