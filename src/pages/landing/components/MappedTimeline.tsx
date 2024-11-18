@@ -211,7 +211,7 @@ const MappedTimeline = () => {
                 )}
 
                 <div className="max-w-[568px] flex flex-col gap-3">
-                  <h3 className="text-blue">{event.segment}</h3>
+                  <h3 className="text-yellow">{event.segment}</h3>
                   <div className="flex flex-col">
                     <h3 dangerouslySetInnerHTML={{ __html: event.title }} />
                     <p>{formatText(event.subtitle)}</p>
