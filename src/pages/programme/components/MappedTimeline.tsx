@@ -53,8 +53,8 @@ const timeline: Timeline = {
     {
       time: "10:30 AM - 10:45 AM",
       segment: "PSF Overview by IBPAP",
-      title: "Frankie Antolin",
-      subtitle: "IT & Business Porcess Association, \nED for Talent Attraction and Development",
+      title: "Jonathan Defensor De Luzuriaga",
+      subtitle: "IT & Business Porcess Association,Board of Trustee",
     },
     {
       time: "10:45 AM - 11:00 AM",
@@ -89,8 +89,8 @@ const timeline: Timeline = {
     {
       time: "1:00 PM - 1:30 PM",
       segment: "Bringing the Industry to the Academe: Conceive Design Implement Operate (CDIO) Framework",
-      title: "Prof Sin Moh Cheah",
-      subtitle: "Singapore Polytechnic",
+      title: "Mr Kim Fai SOH",
+      subtitle: "Deputy  Director, School of Mechanical and  Aeronautical Engineering, Singapore Polytechnic",
     },
     {
       time: "1:30 PM - 2:15 PM",
@@ -125,7 +125,7 @@ const timeline: Timeline = {
       segment:
         "BREAKOUT 3: The Future of Work: How Digital Transformation Is Changing Workforce Requirements and Skills",
       title: "Dr. Dodgie Maestrecampo",
-      subtitle: "Mapua University, President",
+      subtitle: "President, Mapua University",
     },
     {
       time: "",
@@ -136,8 +136,8 @@ const timeline: Timeline = {
     {
       time: "4:00 PM - 4:45 PM",
       segment: "BREAKOUT 5: Integrating Soft Skills with Domain Expertise for IT Professionals",
-      title: "IBPAP",
-      subtitle: "Industry (iQor)",
+      title: "Ralf Ian Gallegos",
+      subtitle: "Manager, Recruiting, iQor",
     },
     {
       time: "",
@@ -224,7 +224,7 @@ const timeline: Timeline = {
     {
       time: "",
       segment: "BREAKOUT 12: Game Development PSF: Emerging Tech Career Pathways",
-      title: "Rafael Cabredo",
+      title: "Norman Lee",
       subtitle: "Game Developers Association of the Philippines (GDAP), Board Trustee",
     },
     {
@@ -250,8 +250,8 @@ const timeline: Timeline = {
       time: "2:45 PM - 4:00 PM",
       segment: "Building Synergy: Aligning IT Education with Industry Demands (panel discussion with audience Q & A)",
       title:
-        "Dr. Rolyn Daguil, PhD, President, Caraga State University\nDr. Bobby D. Gerardo, D. Eng, President, Northern Iloilo State University \nDr. Cherry Lyn Sta. Romana, Dean. College of Computer Studies, Cebu Institute of Technology - University \nDr. Dave E. Marcial, Director, Dr. Mariano C. Lao Global Studied Center, Siliman University",
-      subtitle: "representing the Industry: \nIBPAP\nPSIA\nISACAA\nModerator: Dr. Gregg Victor Gabison",
+        "Dr. Rolyn Daguil, PhD, President, Caraga State University, \nDr. Bobby D. Gerardo, D. Eng, President, Northern Iloilo State University, \nDr. Cherry Lyn Sta. Romana, Dean. College of Computer Studies, Cebu Institute of Technology- University, \nDr. Dave E. Marcial, Director, Dr. Mariano C. Lao Global Studies Center, Siliman University, \nFrankie Antolin, Executive Director  for Talent Attraction and Development, IT & Business Porcess Association of the Philippines, \nJonathan Defensor De Luzuriaga, President, Philippine Software Industry Association",
+      subtitle: "Moderator: Dr. Gregg Victor Gabison",
     },
     {
       time: "4:00 PM - 4:15 PM",
