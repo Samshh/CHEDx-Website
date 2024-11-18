@@ -124,7 +124,7 @@ const timeline: Timeline = {
       time: "3:15 PM - 4:00 PM",
       segment:
         "BREAKOUT 3: The Future of Work: How Digital Transformation Is Changing Workforce Requirements and Skills",
-      title: "Dr. Dodgie Maestrecampo",
+      title: "Dr. Dodjie Maestrecampo",
       subtitle: "President, Mapua University",
     },
     {

@@ -58,8 +58,8 @@ const timeline: Timeline = {
     {
       time: "10:30 AM - 10:45 AM",
       segment: "PSF Overview by IBPAP",
-      title: "Frankie Antolin",
-      subtitle: "IT & Business Porcess Association, \nED for Talent Attraction and Development",
+      title: "Jonathan Defensor De Luzuriaga",
+      subtitle: "IT & Business Porcess Association,Board of Trustee",
     },
     {
       time: "10:45 AM - 11:00 AM",
@@ -94,8 +94,8 @@ const timeline: Timeline = {
     {
       time: "1:00 PM - 1:30 PM",
       segment: "Bringing the Industry to the Academe: Conceive Design Implement Operate (CDIO) Framework",
-      title: "Prof Sin Moh Cheah",
-      subtitle: "Singapore Polytechnic",
+      title: "Mr Kim Fai SOH",
+      subtitle: "Deputy  Director, School of Mechanical and  Aeronautical Engineering, Singapore Polytechnic",
     },
     {
       time: "1:30 PM - 2:15 PM",
@@ -129,8 +129,8 @@ const timeline: Timeline = {
       time: "3:15 PM - 4:00 PM",
       segment:
         "BREAKOUT 3: The Future of Work: How Digital Transformation Is Changing Workforce Requirements and Skills",
-      title: "Dr. Dodgie Maestrecampo",
-      subtitle: "Mapua University, President",
+      title: "Dr. Dodjie Maestrecampo",
+      subtitle: "President, Mapua University",
     },
     {
       time: "",
@@ -141,8 +141,8 @@ const timeline: Timeline = {
     {
       time: "4:00 PM - 4:45 PM",
       segment: "BREAKOUT 5: Integrating Soft Skills with Domain Expertise for IT Professionals",
-      title: "IBPAP",
-      subtitle: "Industry (iQor)",
+      title: "Ralf Ian Gallegos",
+      subtitle: "Manager, Recruiting, iQor",
     },
     {
       time: "",
@@ -152,8 +152,7 @@ const timeline: Timeline = {
     },
     {
       time: "4:45 PM - 5:30 PM",
-      segment:
-        "BREAKOUT 7: Creating Seamless Pathways for Higher Education: Certifications and Microcredentials",
+      segment: "BREAKOUT 7: Creating Seamless Pathways for Higher Education: Certifications and Microcredentials",
       title: "Ms. Yean Feng Yue",
       subtitle: "IBM Corporate Social Responsibility Leader - APAC",
     },
@@ -218,20 +217,18 @@ const MappedTimeline = () => {
                   <p>{formatText(event.subtitle)}</p>
                 </div>
               </div>
-              {dayIndex === days.length - 1 &&
-                eventIndex === timeline[day].length - 1 && (
-                  <Button
-                    onClick={() => navigate("/programme")}
-                    className="absolute -bottom-2 md:-bottom-3 bg-yellow text-white flex flex-row"
-                  >
-                    VIEW FULL PROGRAMME
-                  </Button>
-                )}
-            </div>
-            {dayIndex === days.length - 1 &&
-              eventIndex === timeline[day].length - 1 && (
-                <div className="absolute -ml-1.5 bottom-0 h-4 w-4 rounded-full bg-yellow -left-[1px]"></div>
+              {dayIndex === days.length - 1 && eventIndex === timeline[day].length - 1 && (
+                <Button
+                  onClick={() => navigate("/programme")}
+                  className="absolute -bottom-2 md:-bottom-3 bg-yellow text-white flex flex-row"
+                >
+                  VIEW FULL PROGRAMME
+                </Button>
               )}
+            </div>
+            {dayIndex === days.length - 1 && eventIndex === timeline[day].length - 1 && (
+              <div className="absolute -ml-1.5 bottom-0 h-4 w-4 rounded-full bg-yellow -left-[1px]"></div>
+            )}
           </div>
         ))}
       </div>
