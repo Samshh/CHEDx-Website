@@ -40,13 +40,15 @@ const timeline: Timeline = {
     },
     {
       time: "9:30 AM - 10:00 AM",
-      segment: "Keynote Speaker: Building Synergy, Aligning with Industry, Leveraging IT Expertise",
+      segment:
+        "Keynote Speaker: Building Synergy, Aligning with Industry, Leveraging IT Expertise",
       title: "Secretary J. Prospero E. de Vera III",
       subtitle: "Commission on Higher Education",
     },
     {
       time: "10:00 AM - 10:30 AM",
-      segment: "Private Sector Advisory Council (PSAC) Jobs for IT Human Resource Development",
+      segment:
+        "Private Sector Advisory Council (PSAC) Jobs for IT Human Resource Development",
       title: "Mr. Fred Ayala",
       subtitle: "",
     },
@@ -88,9 +90,11 @@ const timeline: Timeline = {
     },
     {
       time: "1:00 PM - 1:30 PM",
-      segment: "Bringing the Industry to the Academe: Conceive Design Implement Operate (CDIO) Framework",
+      segment:
+        "Bringing the Industry to the Academe: Conceive Design Implement Operate (CDIO) Framework",
       title: "Mr Kim Fai SOH",
-      subtitle: "Deputy  Director, School of Mechanical and  Aeronautical Engineering, Singapore Polytechnic",
+      subtitle:
+        "Deputy  Director, School of Mechanical and  Aeronautical Engineering, Singapore Polytechnic",
     },
     {
       time: "1:30 PM - 2:15 PM",
@@ -104,7 +108,8 @@ const timeline: Timeline = {
       time: "2:15 PM - 3:00 PM",
       segment: "BREAKOUT 1: AI for Academic Purpose",
       title: "Virgilio Villarico",
-      subtitle: "Accenture Operations in the Philippines, Associate Director: Innovation and Gen AI Lead",
+      subtitle:
+        "Accenture Operations in the Philippines, Associate Director: Innovation and Gen AI Lead",
     },
     {
       time: "",
@@ -134,19 +139,23 @@ const timeline: Timeline = {
     },
     {
       time: "4:00 PM - 4:45 PM",
-      segment: "BREAKOUT 5: Integrating Soft Skills with Domain Expertise for IT Professionals",
+      segment:
+        "BREAKOUT 5: Integrating Soft Skills with Domain Expertise for IT Professionals",
       title: "Ralf Ian Gallegos",
       subtitle: "Manager, Recruiting, iQor",
     },
     {
       time: "",
-      segment: "BREAKOUT 6: Futures Learning Commons and Creative Spaces, Futures Information",
+      segment:
+        "BREAKOUT 6: Futures Learning Commons and Creative Spaces, Futures Information",
       title: "Asso. Prof. Stephen B. Alayon",
-      subtitle: "Program Head, Bachelor of Science and Information Science, West Visayas State University",
+      subtitle:
+        "Program Head, Bachelor of Science and Information Science, West Visayas State University",
     },
     {
       time: "4:45 PM - 5:30 PM",
-      segment: "BREAKOUT 7: Creating Seamless Pathways for Higher Education: Certifications and Microcredentials",
+      segment:
+        "BREAKOUT 7: Creating Seamless Pathways for Higher Education: Certifications and Microcredentials",
       title: "Ms. Yean Feng Yue",
       subtitle: "IBM Corporate Social Responsibility Leader - APAC",
     },
@@ -198,13 +207,16 @@ const timeline: Timeline = {
     },
     {
       time: "10:45 AM - 11:45 PM",
-      segment: "BREAKOUT 9: Contact Center & Business Process Management PSF: Emerging Tech Career Pathways",
+      segment:
+        "BREAKOUT 9: Contact Center & Business Process Management PSF: Emerging Tech Career Pathways",
       title: "Jay Santisteban",
-      subtitle: "Contact Center Association of the Philippines (CCAP), Operations Director",
+      subtitle:
+        "Contact Center Association of the Philippines (CCAP), Operations Director",
     },
     {
       time: "",
-      segment: "BREAKOUT 10: Global In-House Center PSF: Emerging Tech Career Pathway",
+      segment:
+        "BREAKOUT 10: Global In-House Center PSF: Emerging Tech Career Pathway",
       title: "Christine Bata",
       subtitle: "Global In-House Center Council (GICC), Executive Director",
     },
@@ -216,28 +228,35 @@ const timeline: Timeline = {
     },
     {
       time: "1:00 PM - 1:45 PM",
-      segment: "BREAKOUT 11: Digital Arts and Animation PSF: Emerging Tech Career Pathways",
+      segment:
+        "BREAKOUT 11: Digital Arts and Animation PSF: Emerging Tech Career Pathways",
       title: "Daniel Enriquez",
-      subtitle: "Animation Council of the Philippines (ACPI), Executive Director",
+      subtitle:
+        "Animation Council of the Philippines (ACPI), Executive Director",
     },
     {
       time: "",
-      segment: "BREAKOUT 12: Game Development PSF: Emerging Tech Career Pathways",
+      segment:
+        "BREAKOUT 12: Game Development PSF: Emerging Tech Career Pathways",
       title: "Norman Lee",
-      subtitle: "Game Developers Association of the Philippines (GDAP), Board Trustee",
+      subtitle:
+        "Game Developers Association of the Philippines (GDAP), Board Trustee",
     },
     {
       time: "1:45 PM - 2:30 PM",
-      segment: "BREAKOUT 13: Health Information Management PSF: Emerging Tech Career Pathways",
+      segment:
+        "BREAKOUT 13: Health Information Management PSF: Emerging Tech Career Pathways",
       title: "Dr Carlos Ongaco",
       subtitle:
         "Co-Founder and President, MedCode, Inc. for Healthcare Information Management Association of the Philippines, Inc.. (HIMAP)",
     },
     {
       time: "",
-      segment: "BREAKOUT 14: Software Development and Security: PSF Emerging Tech Career Pathways",
+      segment:
+        "BREAKOUT 14: Software Development and Security: PSF Emerging Tech Career Pathways",
       title: "Allan Tan",
-      subtitle: "Philippine Software Industry Association (PSIA), Board Trustee",
+      subtitle:
+        "Philippine Software Industry Association (PSIA), Board Trustee",
     },
     {
       time: "2:30 PM - 2:45 PM",
@@ -247,7 +266,8 @@ const timeline: Timeline = {
     },
     {
       time: "2:45 PM - 4:00 PM",
-      segment: "Building Synergy: Aligning IT Education with Industry Demands (panel discussion with audience Q & A)",
+      segment:
+        "Building Synergy: Aligning IT Education with Industry Demands (panel discussion with audience Q & A)",
       title: `
               Dr. Rolyn Daguil, PhD, <p>President, Caraga State University</p>
               Dr. Bobby D. Gerardo, D. Eng,<p>President, Northern Iloilo State University</p>
@@ -327,29 +347,31 @@ const MappedTimeline = () => {
                   </div>
                 </div>
               </div>
-              {dayIndex === days.length - 1 && eventIndex === timeline[day].length - 1 && (
-                <Button
-                  onClick={() => {
-                    if (isCooldown) {
-                      alert("Rate limit exceeded. Please try again later.");
-                      return;
-                    }
-                    setIsCooldown(true);
-                    const link = document.createElement("a");
-                    link.href = "/downloads/PROGRAMME.pdf";
-                    link.download = "PROGRAMME.pdf";
-                    link.click();
-                    setTimeout(() => setIsCooldown(false), 3000);
-                  }}
-                  className="absolute -bottom-[1.70rem] md:-bottom-[1.85rem] bg-blue text-white flex flex-row"
-                >
-                  DOWNLOAD PROGRAMME
-                </Button>
-              )}
+              {dayIndex === days.length - 1 &&
+                eventIndex === timeline[day].length - 1 && (
+                  <Button
+                    onClick={() => {
+                      if (isCooldown) {
+                        alert("Rate limit exceeded. Please try again later.");
+                        return;
+                      }
+                      setIsCooldown(true);
+                      const link = document.createElement("a");
+                      link.href = "/downloads/CHED-MEMO.pdf";
+                      link.download = "CHED-MEMO.pdf";
+                      link.click();
+                      setTimeout(() => setIsCooldown(false), 3000);
+                    }}
+                    className="absolute -bottom-[1.70rem] md:-bottom-[1.85rem] bg-blue text-white flex flex-row"
+                  >
+                    DOWNLOAD PROGRAMME
+                  </Button>
+                )}
             </div>
-            {dayIndex === days.length - 1 && eventIndex === timeline[day].length - 1 && (
-              <div className="absolute -ml-1.5 -bottom-[1.15rem] h-4 w-4 rounded-full bg-blue -left-[1px]"></div>
-            )}
+            {dayIndex === days.length - 1 &&
+              eventIndex === timeline[day].length - 1 && (
+                <div className="absolute -ml-1.5 -bottom-[1.15rem] h-4 w-4 rounded-full bg-blue -left-[1px]"></div>
+              )}
           </div>
         ))}
       </div>
