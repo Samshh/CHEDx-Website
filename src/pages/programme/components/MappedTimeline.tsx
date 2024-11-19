@@ -357,8 +357,8 @@ const MappedTimeline = () => {
                       }
                       setIsCooldown(true);
                       const link = document.createElement("a");
-                      link.href = "/downloads/CHED-MEMO.pdf";
-                      link.download = "CHED-MEMO.pdf";
+                      link.href = "/downloads/PROGRAMME.pdf";
+                      link.download = "PROGRAMME.pdf";
                       link.click();
                       setTimeout(() => setIsCooldown(false), 3000);
                     }}
