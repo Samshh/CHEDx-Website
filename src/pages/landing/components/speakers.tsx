@@ -18,12 +18,6 @@ const speakersData = [
     affil: "Accenture Operations in the Philippines",
   },
   {
-    name: "Rafael Cabredo",
-    img: "/speakers/rafael-cabredo.jpg",
-    tittle: "Board Trustee",
-    affil: "Game Developers Association of the Philippines",
-  },
-  {
     name: "Haidee Enriquez",
     img: "/speakers/haidee-enriquez.jpg",
     tittle: "Chief Executive Officer",

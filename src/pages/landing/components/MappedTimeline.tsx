@@ -59,7 +59,7 @@ const timeline: Timeline = {
       time: "10:30 AM - 10:45 AM",
       segment: "PSF Overview by IBPAP",
       title: "Jonathan Defensor De Luzuriaga",
-      subtitle: "IT & Business Porcess Association,Board of Trustee",
+      subtitle: "Board of Trustee, IT & Business Process Association",
     },
     {
       time: "10:45 AM - 11:00 AM",
@@ -103,7 +103,7 @@ const timeline: Timeline = {
         "Panel Discussion: Education and the World of Work: Boosting Education through Smart Technologies (Project BEST)",
       title: `Moderator: Calen Martin D. Legaspi, <p>CHED Technical Committee on Computer Science and Board Trustee, Philippine Software Industry Association (PSIA)</p>Panel Members:`,
       subtitle:
-        "CHED OPSD, SKIPP Proponents - Leuther Mojica, \nBusiness Head, Orange & Bronze (IBPAP), PSF - Haidee Enriquez (CEO Microsourcing),  \nOneil Victoriano, AdDU-CHED-SKiPP Project Lead, \n Dr. Gregg Victor Gabison , CHED Technical Panel",
+        "CHED OPSD, SKIPP Proponents - Leuther Mojica, \nBusiness Head, Orange & Bronze (IBPAP), PSF - Haidee Enriquez (CEO Microsourcing), \nOneil Victoriano, AdDU-CHED-SKiPP Project Lead, \nDr. Gregg Victor Gabison , PH Country Manager, Ray Business Technologies, CHED TCIS Member",
     },
     {
       time: "2:15 PM - 3:00 PM",
