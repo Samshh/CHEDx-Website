@@ -327,6 +327,7 @@ const MappedTimeline = () => {
                   </div>
                 </div>
               </div>
+
               {/* {dayIndex === days.length - 1 && eventIndex === timeline[day].length - 1 && (
                 <Button
                   onClick={() => {
