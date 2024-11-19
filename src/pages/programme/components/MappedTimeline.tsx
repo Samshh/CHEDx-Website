@@ -1,5 +1,5 @@
-import Button from "@/components/ui/button";
-import { useRef, useState } from "react";
+// import Button from "@/components/ui/button";
+import { useRef } from "react";
 
 interface Event {
   time: string;
@@ -283,7 +283,7 @@ const timeline: Timeline = {
 const MappedTimeline = () => {
   const days = Object.keys(timeline);
   const timelineRef = useRef(null);
-  const [isCooldown, setIsCooldown] = useState(false);
+  // const [isCooldown, setIsCooldown] = useState(false);
 
   const formatText = (text: string) => {
     return text.split("\n").map((line, index) => (
