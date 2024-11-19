@@ -246,7 +246,7 @@ const timeline: Timeline = {
       subtitle: "",
     },
     {
-      time: "2:45 PM - 4:00 PM",
+      time: "2:45 PM - 4:15 PM",
       segment: "Building Synergy: Aligning IT Education with Industry Demands (panel discussion with audience Q & A)",
       title: `
               Dr. Rolyn Daguil, PhD, <p>President, Caraga State University</p>
@@ -260,13 +260,13 @@ const timeline: Timeline = {
       subtitle: "\nModerator: Dr. Gregg Victor Gabison",
     },
     {
-      time: "4:00 PM - 4:15 PM",
+      time: "4:15 PM - 4:25 PM",
       segment: "Covenant Signing",
       title: "",
       subtitle: "",
     },
     {
-      time: "4:15 PM - 4:30 PM",
+      time: "4:25 PM - 4:30 PM",
       segment: "Highlights of Day 2",
       title: "",
       subtitle: "",
