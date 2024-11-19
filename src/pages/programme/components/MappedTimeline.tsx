@@ -327,7 +327,7 @@ const MappedTimeline = () => {
                   </div>
                 </div>
               </div>
-              {dayIndex === days.length - 1 && eventIndex === timeline[day].length - 1 && (
+              {/* {dayIndex === days.length - 1 && eventIndex === timeline[day].length - 1 && (
                 <Button
                   onClick={() => {
                     if (isCooldown) {
@@ -345,7 +345,7 @@ const MappedTimeline = () => {
                 >
                   DOWNLOAD PROGRAMME
                 </Button>
-              )}
+              )} */}
             </div>
             {dayIndex === days.length - 1 && eventIndex === timeline[day].length - 1 && (
               <div className="absolute -ml-1.5 -bottom-[1.15rem] h-4 w-4 rounded-full bg-blue -left-[1px]"></div>
