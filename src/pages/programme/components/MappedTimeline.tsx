@@ -199,7 +199,7 @@ const timeline: Timeline = {
     {
       time: "10:45 AM - 11:45 PM",
       segment: "BREAKOUT 9: Contact Center & Business Process Management PSF: Emerging Tech Career Pathways",
-      title: "Jay Santisteban",
+      title: "IBPAP",
       subtitle: "Operations Director, Contact Center Association of the Philippines (CCAP)",
     },
     {
