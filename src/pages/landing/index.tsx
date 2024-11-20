@@ -22,7 +22,7 @@ import SpeakersCarousel from "./components/SpeakersCarousel";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Landing() {
-  const partners = [BagongPilipinas, CHEDLogo, USEP, IBAP, CDITE, PSITS];
+  const partners = [CHEDLogo, IBAP, USEP, CDITE, PSITS, BagongPilipinas];
   const cardsTrigger = useRef(null);
   const card1 = useRef(null);
   const card2 = useRef(null);
