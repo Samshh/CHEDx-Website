@@ -257,7 +257,8 @@ const timeline: Timeline = {
               Jonathan Defensor De Luzuriaga, <p>President, Philippine Software Industry Association</p>
             `,
 
-      subtitle: "\nModerator: Dr. Gregg Victor Gabison",
+      subtitle:
+        "\nModerator: Dr. Gregg Victor Gabison , PH Country Manager, Ray Business Technologies, CHED TCIS Member",
     },
     {
       time: "4:16 PM - 4:25 PM",
