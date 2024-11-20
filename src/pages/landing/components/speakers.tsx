@@ -30,12 +30,6 @@ const speakersData = [
     affil: "Animation Council of the Philippines",
   },
   {
-    name: "Dr. Dave E. Marcial",
-    img: "/speakers/dave-marcial.jpg",
-    tittle: "Director",
-    affil: "Dr. Mariano C. Lao Global Studies Center, Siliman University",
-  },
-  {
     name: "Christine Bata",
     img: "/speakers/christine-bata.jpg",
     tittle: "Executive Director",
