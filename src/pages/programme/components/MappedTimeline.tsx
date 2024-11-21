@@ -252,7 +252,6 @@ const timeline: Timeline = {
               Dr. Rolyn Daguil, PhD, <p>President, Caraga State University</p>
               Dr. Bobby D. Gerardo, D. Eng,<p>President, Northern Iloilo State University</p>
               Dr. Cherry Lyn Sta. Romana, <p>Dean, College of Computer Studies, Cebu Institute of Technology-University</p>
-              Dr. Dave E. Marcial, <p>Director, Dr. Mariano C. Lao Global Studies Center, Siliman University</p>
               Frankie Antolin, <p>Executive Director for Talent Attraction and Development, IT & Business Process Association of the Philippines</p>
               Jonathan Defensor De Luzuriaga, <p>President, Philippine Software Industry Association</p>
             `,
