@@ -48,13 +48,13 @@ const timeline: Timeline = {
       time: "10:01 AM - 10:30 AM",
       segment: "Private Sector Advisory Council (PSAC) Jobs for IT Human Resource Development",
       title: "Mr. Fred Ayala",
-      subtitle: "",
+      subtitle: "Head, Private Sector Advisory Council (PSAC) Jobs Sector",
     },
     {
       time: "10:31 AM - 10:45 AM",
       segment: "PSF Overview by IBPAP",
       title: "Jonathan Defensor De Luzuriaga",
-      subtitle: "Board of Trustee, IT & Business Process Association",
+      subtitle: "Board of Trustee, IT & Business Process Association of the Philippines",
     },
     {
       time: "10:46 AM - 11:00 AM",
@@ -104,7 +104,7 @@ const timeline: Timeline = {
       time: "2:16 PM - 3:00 PM",
       segment: "BREAKOUT 1: AI for Academic Purpose",
       title: "Virgilio Villarico",
-      subtitle: "Accenture Operations in the Philippines, Associate Director: Innovation and Gen AI Lead",
+      subtitle: "Associate Director, Innovation and Gen AI Lead, Accenture Operations in the Philippines",
     },
     {
       time: "",
@@ -182,13 +182,13 @@ const timeline: Timeline = {
       time: "9:16 AM - 10:00 AM",
       segment: "PSF Foundational Overview",
       title: "Raymond S Cardino",
-      subtitle: "DTI PTTC,  Program Developer and PSF Advocate",
+      subtitle: "Program Developer and PSF Advocate, DTI PTTC",
     },
     {
       time: "10:01 AM - 10:30 AM",
       segment: "PSG Development Based on PSF: The GDA Experience",
-      title: "IBPAP",
-      subtitle: "GDAP",
+      title: "GDAP",
+      subtitle: "",
     },
     {
       time: "10:31 AM - 10:45 AM",
@@ -206,7 +206,7 @@ const timeline: Timeline = {
       time: "",
       segment: "BREAKOUT 10: Global In-House Center PSF: Emerging Tech Career Pathway",
       title: "Christine Bata",
-      subtitle: "Global In-House Center Council (GICC), Executive Director",
+      subtitle: "Executive Director, Global In-House Center Council (GICC)",
     },
     {
       time: "11:46 PM - 1:00 PM",
@@ -218,13 +218,13 @@ const timeline: Timeline = {
       time: "1:01 PM - 1:45 PM",
       segment: "BREAKOUT 11: Digital Arts and Animation PSF: Emerging Tech Career Pathways",
       title: "Daniel Enriquez",
-      subtitle: "Animation Council of the Philippines (ACPI), Executive Director",
+      subtitle: "Executive Director, Animation Council of the Philippines (ACPI)",
     },
     {
       time: "",
       segment: "BREAKOUT 12: Game Development PSF: Emerging Tech Career Pathways",
       title: "Norman Lee",
-      subtitle: "Game Developers Association of the Philippines (GDAP), Board Trustee",
+      subtitle: "Board Trustee, Game Developers Association of the Philippines (GDAP)",
     },
     {
       time: "1:46 PM - 2:30 PM",
@@ -237,7 +237,7 @@ const timeline: Timeline = {
       time: "",
       segment: "BREAKOUT 14: Software Development and Security: PSF Emerging Tech Career Pathways",
       title: "Allan Tan",
-      subtitle: "Philippine Software Industry Association (PSIA), Board Trustee",
+      subtitle: "Board Trustee, Philippine Software Industry Association (PSIA)",
     },
     {
       time: "2:31 PM - 2:45 PM",

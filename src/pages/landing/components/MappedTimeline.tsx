@@ -53,13 +53,13 @@ const timeline: Timeline = {
       time: "10:01 AM - 10:30 AM",
       segment: "Private Sector Advisory Council (PSAC) Jobs for IT Human Resource Development",
       title: "Mr. Fred Ayala",
-      subtitle: "",
+      subtitle: "Head, Private Sector Advisory Council (PSAC) Jobs Sector",
     },
     {
       time: "10:31 AM - 10:45 AM",
       segment: "PSF Overview by IBPAP",
       title: "Jonathan Defensor De Luzuriaga",
-      subtitle: "Board of Trustee, IT & Business Process Association",
+      subtitle: "Board of Trustee, IT & Business Process Association of the Philippines",
     },
     {
       time: "10:46 AM - 11:00 AM",
@@ -109,7 +109,7 @@ const timeline: Timeline = {
       time: "2:16 PM - 3:00 PM",
       segment: "BREAKOUT 1: AI for Academic Purpose",
       title: "Virgilio Villarico",
-      subtitle: "Accenture Operations in the Philippines, Associate Director: Innovation and Gen AI Lead",
+      subtitle: "Associate Director, Innovation and Gen AI Lead, Accenture Operations in the Philippines",
     },
     {
       time: "",
