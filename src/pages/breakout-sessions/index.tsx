@@ -106,11 +106,11 @@ export default function BreakoutSessions() {
   const cardDetails_day2: CardDetails[] = [
     {
       title: "Contact Center & Business Process PSF: Emerging Tech Career Pathways",
-      subtitle: "Operations Director",
+      subtitle: "Board of Director",
       time: "10:46 - 11:45 AM",
       room: "Room A",
-      speaker: "Jay Santisteban",
-      company: "Operations Director - Contact Center Association of the Philippines (CCAP)",
+      speaker: "Atty Jamea Garcia",
+      company: "Board of Director - Contact Center Association of the Philippines (CCAP)",
     },
     {
       title: "Global In-House Center PSF: Emerging Tech Career Pathway",

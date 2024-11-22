@@ -199,8 +199,8 @@ const timeline: Timeline = {
     {
       time: "10:46 AM - 11:45 PM",
       segment: "BREAKOUT 9: Contact Center & Business Process Management PSF: Emerging Tech Career Pathways",
-      title: "IBPAP",
-      subtitle: "Operations Director, Contact Center Association of the Philippines (CCAP)",
+      title: "Atty Jamea Garcia",
+      subtitle: "Board of Director, Contact Center Association of the Philippines (CCAP)",
     },
     {
       time: "",
