@@ -101,6 +101,13 @@ const speakersData = [
     tittle: "SUC IV President",
     affil: "University of Southeastern Philippines",
   },
+  {
+    name: "Kim Fai Soh",
+    img: "/speakers/kim-fai.jpg",
+    tittle: "Deputy Director",
+    affil:
+      "School of Mechanical and Aeronautical Engineering, Singapore Polytechnic",
+  },
 ];
 
 export { speakersData };
