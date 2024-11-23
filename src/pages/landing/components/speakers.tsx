@@ -6,6 +6,12 @@ const speakersData = [
     affil: "Commission on Higher Education",
   },
   {
+    name: "Dr. Dodjie Maestrecampo",
+    img: "/speakers/dodjie-maestrecampo.jpg",
+    tittle: "President",
+    affil: "Mapúa University",
+  },
+  {
     name: "Allan Cabanlong",
     img: "/speakers/allan-canbanlong.jpg",
     tittle: "Regional Director",
