@@ -48,10 +48,22 @@ const speakersData = [
     affil: "MedCode, Inc. (HIMAP)",
   },
   {
+    name: "Raymond Cardino",
+    img: "/speakers/raymond-cardino.jpg",
+    tittle: "Program Developer and PSF Advocate",
+    affil: "DTI PTTC",
+  },
+  {
     name: "Calen Legaspi",
     img: "/speakers/calen-legaspi.png",
     tittle: "Board Trustee",
     affil: "Commission on Higher Education",
+  },
+  {
+    name: "Michell Alarcon",
+    img: "/speakers/michelle-alarcon.png",
+    tittle: "President",
+    affil: "Analytics Association of the Philippines",
   },
   {
     name: "Asso. Prof. Stephen Alayon",
