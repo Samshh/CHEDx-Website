@@ -36,6 +36,12 @@ const speakersData = [
     affil: "Animation Council of the Philippines",
   },
   {
+    name: "Atty. Ma. Jamea Garcia",
+    img: "/speakers/jamea-garcia.jpg",
+    tittle: "Board of Director",
+    affil: "Contact Center Association of the Philippines (CCAP)",
+  },
+  {
     name: "Christine Bata",
     img: "/speakers/christine-bata.jpg",
     tittle: "Executive Director",
