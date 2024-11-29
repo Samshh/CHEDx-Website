@@ -56,10 +56,11 @@ const timeline: Timeline = {
       subtitle: "Head, Private Sector Advisory Council (PSAC) Jobs Sector",
     },
     {
-      time: "10:31 AM - 10:45 AM",
-      segment: "PSF Overview by IBPAP",
-      title: "Jonathan Defensor De Luzuriaga",
-      subtitle: "Board of Trustee, IT & Business Process Association of the Philippines",
+      time: "10:31 AM - 11:00 AM",
+      segment: "Government-Industry-Academe: Sealing the Synergy for IT Education Skills and Competencies",
+      title: "Sealing Synergy for IT Education \na. Presentation of the PSF to CHED \nb. Launch of the ojt.ph platform",
+      subtitle:
+        "Jonathan Defensor De Luzuriaga\n Board of Trustee, IT & Business Process Association of the Philippines",
     },
     {
       time: "10:46 AM - 11:00 AM",
@@ -92,13 +93,19 @@ const timeline: Timeline = {
       subtitle: "",
     },
     {
-      time: "1:01 PM - 1:30 PM",
+      time: "1:00 PM - 1:30 PM",
+      segment: "Embracing Digital Transformation in Higher Education",
+      title: "Commissioner Shirely C. Agrupis",
+      subtitle: "Commission on Higher Education",
+    },
+    {
+      time: "1:301 PM - 2:00 PM",
       segment: "Bringing the Industry to the Academe: Conceive Design Implement Operate (CDIO) Framework",
       title: "Mr Kim Fai SOH",
       subtitle: "Deputy  Director, School of Mechanical and  Aeronautical Engineering, Singapore Polytechnic",
     },
     {
-      time: "1:31 PM - 2:15 PM",
+      time: "2:01 PM - 2:45 PM",
       segment:
         "Panel Discussion: Education and the World of Work: Boosting Education through Smart Technologies (Project BEST)",
       title: `Moderator: Calen Martin D. Legaspi, <p>CHED Technical Committee on Computer Science and Board Trustee, Philippine Software Industry Association (PSIA)</p>Panel Members:`,
@@ -106,7 +113,7 @@ const timeline: Timeline = {
         "CHED OPSD, SKIPP Proponents - Leuther Mojica, \nBusiness Head, Orange & Bronze (IBPAP), PSF - Haidee Enriquez (CEO Microsourcing), \nOneil Victoriano, AdDU-CHED-SKiPP Project Lead, \nDr. Gregg Victor Gabison , PH Country Manager, Ray Business Technologies, CHED TCIS Member",
     },
     {
-      time: "2:16 PM - 3:00 PM",
+      time: "2:46 PM - 3:30 PM",
       segment: "BREAKOUT 1: AI for Academic Purpose",
       title: "Virgilio Villarico",
       subtitle: "Associate Director, Innovation and Gen AI Lead, Accenture Operations in the Philippines",
@@ -119,13 +126,13 @@ const timeline: Timeline = {
       subtitle: "Academic Program Director, Asian Institute of Management",
     },
     {
-      time: "3:01 PM - 3:15 PM",
+      time: "3:31 PM - 3:40 PM",
       segment: "Tech Bite",
       title: "",
       subtitle: "",
     },
     {
-      time: "3:16 PM - 4:00 PM",
+      time: "3:41 PM - 4:10 PM",
       segment:
         "BREAKOUT 3: The Future of Work: How Digital Transformation Is Changing Workforce Requirements and Skills",
       title: "Dr. Dodjie Maestrecampo",
@@ -138,7 +145,7 @@ const timeline: Timeline = {
       subtitle: "President, Analytics Association of the Philippines",
     },
     {
-      time: "4:01 PM - 4:45 PM",
+      time: "4:11 PM - 4:45 PM",
       segment: "BREAKOUT 5: Integrating Soft Skills with Domain Expertise for IT Professionals",
       title: "Ralf Ian Gallegos",
       subtitle: "Manager, Recruiting, iQor",
@@ -150,7 +157,7 @@ const timeline: Timeline = {
       subtitle: "Program Head, Bachelor of Science and Information Science, West Visayas State University",
     },
     {
-      time: "4:46 PM - 5:30 PM",
+      time: "4:46 PM - 5:15 PM",
       segment: "BREAKOUT 7: Creating Seamless Pathways for Higher Education: Certifications and Microcredentials",
       title: "Ms. Yean Feng Yue",
       subtitle: "IBM Corporate Social Responsibility Leader - APAC",
@@ -163,7 +170,7 @@ const timeline: Timeline = {
       subtitle: "Regional Director, GFCE Southeast Asia Hub",
     },
     {
-      time: "5:31 PM - 5:45 PM",
+      time: "5:16 PM - 5:30 PM",
       segment: "Highlights of Day 1",
       title: "",
       subtitle: "",
