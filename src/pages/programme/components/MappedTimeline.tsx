@@ -94,7 +94,7 @@ const timeline: Timeline = {
       subtitle: "Commission on Higher Education",
     },
     {
-      time: "1:301 PM - 2:00 PM",
+      time: "1:31 PM - 2:00 PM",
       segment: "Bringing the Industry to the Academe: Conceive Design Implement Operate (CDIO) Framework",
       title: "Mr Kim Fai SOH",
       subtitle: "Deputy  Director, School of Mechanical and  Aeronautical Engineering, Singapore Polytechnic",
