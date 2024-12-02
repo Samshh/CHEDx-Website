@@ -1,5 +1,5 @@
-// import Button from "@/components/ui/button";
-import { useRef } from "react";
+import Button from "@/components/ui/button";
+import { useRef, useState } from "react";
 
 interface Event {
   time: string;
@@ -292,7 +292,7 @@ const timeline: Timeline = {
 const MappedTimeline = () => {
   const days = Object.keys(timeline);
   const timelineRef = useRef(null);
-  // const [isCooldown, setIsCooldown] = useState(false);
+  const [isCooldown, setIsCooldown] = useState(false);
 
   const formatText = (text: string) => {
     return text.split("\n").map((line, index) => (
@@ -337,7 +337,7 @@ const MappedTimeline = () => {
                 </div>
               </div>
 
-              {/* {dayIndex === days.length - 1 && eventIndex === timeline[day].length - 1 && (
+              {dayIndex === days.length - 1 && eventIndex === timeline[day].length - 1 && (
                 <Button
                   onClick={() => {
                     if (isCooldown) {
@@ -355,7 +355,7 @@ const MappedTimeline = () => {
                 >
                   DOWNLOAD PROGRAMME
                 </Button>
-              )} */}
+              )}
             </div>
             {dayIndex === days.length - 1 && eventIndex === timeline[day].length - 1 && (
               <div className="absolute -ml-1.5 -bottom-[1.15rem] h-4 w-4 rounded-full bg-blue -left-[1px]"></div>
