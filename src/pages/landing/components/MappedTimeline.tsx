@@ -44,44 +44,41 @@ const timeline: Timeline = {
       subtitle: "CHED Executive Director IV",
     },
     {
-      time: "9:31 AM - 10:00 AM",
-      segment: "Keynote Speaker: Building Synergy, Aligning with Industry, Leveraging IT Expertise",
+      time: "9:31 AM - 9:45 AM",
+      segment: "Presentation of the CHEDx2023 Coffee Table Book to CHED",
+      title: "Dr. Ma. Teresita Medado",
+      subtitle: "President, Asia Pacific College",
+    },
+    {
+      time: "9:46 AM - 10:15 AM",
+      segment:
+        "Keynote Speaker: Building Synergy, Aligning with Industry, Leveraging IT Expertise",
       title: "Secretary J. Prospero E. de Vera III",
       subtitle: "Commission on Higher Education",
     },
     {
-      time: "10:01 AM - 10:30 AM",
-      segment: "Private Sector Advisory Council (PSAC) Jobs for IT Human Resource Development",
-      title: "Mr. Fred Ayala",
-      subtitle: "Head, Private Sector Advisory Council (PSAC) Jobs Sector",
-    },
-    {
-      time: "10:31 AM - 11:00 AM",
-      segment: "Government-Industry-Academe: Sealing the Synergy for IT Education Skills and Competencies",
-      title: "Sealing Synergy for IT Education \na. Presentation of the PSF to CHED \nb. Launch of the ojt.ph platform",
+      time: "10:16 AM - 10:45 AM",
+      segment:
+        "Government-Industry-Academe: Sealing the Synergy for IT Education Skills and Competencies",
+      title:
+        "Sealing Synergy for IT Education \na. Presentation of the PSF to CHED \nb. Launch of the ojt.ph platform",
       subtitle:
         "Jonathan Defensor De Luzuriaga\n Board of Trustee, IT & Business Process Association of the Philippines",
     },
     {
       time: "10:46 AM - 11:00 AM",
-      segment: "Government-Industry-Academe PSF Commitment Ceremony ",
-      title: "CHED, \nDICT, \nIBPAP",
-      subtitle: "",
-    },
-    {
-      time: "11:01 AM - 11:10 AM",
       segment: "Photo Opportunity",
       title: "",
       subtitle: "",
     },
     {
-      time: "11:11 AM - 11:30 PM",
+      time: "11:01 AM - 11:30 PM",
       segment: "Opening of the Exhibits and Ribbon Cutting",
       title: "Exhibits Tour",
       subtitle: "",
     },
     {
-      time: "11:31 AM - 12: 00",
+      time: "11:31 AM - 12:00",
       segment: "Press Conference",
       title: "",
       subtitle: "",
@@ -100,9 +97,11 @@ const timeline: Timeline = {
     },
     {
       time: "1:31 PM - 2:00 PM",
-      segment: "Bringing the Industry to the Academe: Conceive Design Implement Operate (CDIO) Framework",
+      segment:
+        "Bringing the Industry to the Academe: Conceive Design Implement Operate (CDIO) Framework",
       title: "Mr Kim Fai SOH",
-      subtitle: "Deputy  Director, School of Mechanical and  Aeronautical Engineering, Singapore Polytechnic",
+      subtitle:
+        "Deputy  Director, School of Mechanical and  Aeronautical Engineering, Singapore Polytechnic",
     },
     {
       time: "2:01 PM - 2:45 PM",
@@ -116,7 +115,8 @@ const timeline: Timeline = {
       time: "2:46 PM - 3:30 PM",
       segment: "BREAKOUT 1: AI for Academic Purpose",
       title: "Virgilio Villarico",
-      subtitle: "Associate Director, Innovation and Gen AI Lead, Accenture Operations in the Philippines",
+      subtitle:
+        "Associate Director, Innovation and Gen AI Lead, Accenture Operations in the Philippines",
     },
     {
       time: "",
@@ -146,19 +146,23 @@ const timeline: Timeline = {
     },
     {
       time: "4:11 PM - 4:45 PM",
-      segment: "BREAKOUT 5: Integrating Soft Skills with Domain Expertise for IT Professionals",
+      segment:
+        "BREAKOUT 5: Integrating Soft Skills with Domain Expertise for IT Professionals",
       title: "Ralf Ian Gallegos",
       subtitle: "Manager, Recruiting, iQor",
     },
     {
       time: "",
-      segment: "BREAKOUT 6: Futures Learning Commons and Creative Spaces, Futures Information",
+      segment:
+        "BREAKOUT 6: Futures Learning Commons and Creative Spaces, Futures Information",
       title: "Asso. Prof. Stephen B. Alayon",
-      subtitle: "Program Head, Bachelor of Science and Information Science, West Visayas State University",
+      subtitle:
+        "Program Head, Bachelor of Science and Information Science, West Visayas State University",
     },
     {
       time: "4:46 PM - 5:15 PM",
-      segment: "BREAKOUT 7: Creating Seamless Pathways for Higher Education: Certifications and Microcredentials",
+      segment:
+        "BREAKOUT 7: Creating Seamless Pathways for Higher Education: Certifications and Microcredentials",
       title: "Ms. Yean Feng Yue",
       subtitle: "IBM Corporate Social Responsibility Leader - APAC",
     },
@@ -225,18 +229,20 @@ const MappedTimeline = () => {
                   </div>
                 </div>
               </div>
-              {dayIndex === days.length - 1 && eventIndex === timeline[day].length - 1 && (
-                <Button
-                  onClick={() => navigate("/programme")}
-                  className="absolute -bottom-2 md:-bottom-3 bg-yellow text-white flex flex-row"
-                >
-                  VIEW FULL PROGRAMME
-                </Button>
-              )}
+              {dayIndex === days.length - 1 &&
+                eventIndex === timeline[day].length - 1 && (
+                  <Button
+                    onClick={() => navigate("/programme")}
+                    className="absolute -bottom-2 md:-bottom-3 bg-yellow text-white flex flex-row"
+                  >
+                    VIEW FULL PROGRAMME
+                  </Button>
+                )}
             </div>
-            {dayIndex === days.length - 1 && eventIndex === timeline[day].length - 1 && (
-              <div className="absolute -ml-1.5 bottom-0 h-4 w-4 rounded-full bg-yellow -left-[1px]"></div>
-            )}
+            {dayIndex === days.length - 1 &&
+              eventIndex === timeline[day].length - 1 && (
+                <div className="absolute -ml-1.5 bottom-0 h-4 w-4 rounded-full bg-yellow -left-[1px]"></div>
+              )}
           </div>
         ))}
       </div>
