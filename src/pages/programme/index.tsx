@@ -38,7 +38,7 @@ export default function Programme() {
       >
         <div className="absolute inset-0 bg-center-transparent" />
         <div className="h-full w-full max-w-[568px] max-h-[568px] rounded-full absolute bg-blue opacity-10 blur-3xl" />
-        <h1 className="text-blue text-center relative z-10">THE PROGRAMME</h1>
+        <h1 className="text-blue text-center relative z-10">INDICATIVE PROGRAMME</h1>
       </div>
       <section>
         <Container>
