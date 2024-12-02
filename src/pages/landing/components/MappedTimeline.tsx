@@ -26,10 +26,22 @@ const timeline: Timeline = {
       subtitle: "",
     },
     {
-      time: "8:46 AM - 9:00 AM",
-      segment: "Pambansang Awit & Prayer",
-      title: "USeP Chorale",
-      subtitle: "CHED Hymn",
+      time: "8:46 AM - 8:50 AM",
+      segment: "Pambansang Awit",
+      title: "USeP Harmonia Polinica Chorale",
+      subtitle: "",
+    },
+    {
+      time: "8:51 AM - 8:55 AM",
+      segment: "Prayer",
+      title: "USeP Harmonia Polinica Chorale",
+      subtitle: "",
+    },
+    {
+      time: "8:56 AM - 9:00 AM",
+      segment: "CHED Hymn",
+      title: "USeP Harmonia Polinica Chorale",
+      subtitle: "",
     },
     {
       time: "9:01 AM - 9:15 AM",
