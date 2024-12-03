@@ -185,8 +185,8 @@ const timeline: Timeline = {
     {
       time: "5:16 PM - 5:30 PM",
       segment: "Transitioning CHEDx 2.0 to CHEDx 2025: Levelling up Onwards",
-      title: "Dr. Cherry Lyn Sta. Romana",
-      subtitle: "Dean, College of Computer Studies, Cebu Institute of Technology-University",
+      title: "Dr. Cherri Melanie Ancheta-Diego",
+      subtitle: "Director IV, OPSD, Commission on Higher Education",
     },
     {
       time: "5:31 PM - 5:45 PM",
@@ -293,6 +293,7 @@ const timeline: Timeline = {
       title: `
               Dr. Rolyn Daguil, <p>President, Caraga State University</p>
               Dr. Bobby D. Gerardo,<p>President, Northern Iloilo State University</p>
+              Dr. Cherry Lyn Sta. Romana, <p>Dean, College of Computer Studies, Cebu Institute of Technology-University</p>
               Frankie Antolin, <p>Executive Director for Talent Attraction and Development, IT & Business Process Association of the Philippines</p>
               Jonathan Defensor De Luzuriaga, <p>President, Philippine Software Industry Association</p>
             `,
