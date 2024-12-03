@@ -138,6 +138,13 @@ const speakersData = [
     affil:
       "School of Mechanical and Aeronautical Engineering, Singapore Polytechnic",
   },
+  {
+    name: "Norman Lee",
+    img: "/speakers/norman-lee.jpg",
+    tittle: "Chairperson of the CHED Technical Panel",
+    affil:
+      "Game Development and Animation, Game Developers Association of the Philippines (GDAP)",
+  },
 ];
 
 export { speakersData };
