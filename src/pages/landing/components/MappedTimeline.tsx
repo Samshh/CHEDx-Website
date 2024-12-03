@@ -75,16 +75,7 @@ const timeline: Timeline = {
       title:
         "Sealing Synergy for IT Education \na. Presentation of the PSF to CHED \nb. Launch of the ojt.ph platform",
       subtitle:
-        "",
-    },
-    {
-      time: "",
-      segment:
-        "",
-      title:
-        "Jonathan Defensor De Luzuriaga",
-      subtitle:
-        "Board of Trustee, IT & Business Process Association of the Philippines",
+        "Jonathan Defensor De Luzuriaga\n Board of Trustee, IT & Business Process Association of the Philippines",
     },
     {
       time: "10:46 AM - 11:00 AM",
