@@ -140,7 +140,7 @@ const speakersData = [
   },
   {
     name: "Norman Lee",
-    img: "/speakers/norman-lee.jpg",
+    img: "/speakers/norman-lee.png",
     tittle: "Chairperson of the CHED Technical Panel",
     affil:
       "Game Development and Animation, Game Developers Association of the Philippines (GDAP)",
