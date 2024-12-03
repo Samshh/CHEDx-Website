@@ -127,10 +127,9 @@ const timeline: Timeline = {
     },
     {
       time: "",
-      segment:
-        "BREAKOUT 2: Investigating Generative AI Mechanisms for the Academe in Improving Educational Engagement and Outcomes",
-      title: "Dr. Michelle P. Banawan",
-      subtitle: "Academic Program Director, Asian Institute of Management",
+      segment: "BREAKOUT 2: Women in STEM",
+      title: "Michelle Alarcon",
+      subtitle: "President, Analytics Association of the Philippines",
     },
     {
       time: "3:31 PM - 3:40 PM",
@@ -147,9 +146,12 @@ const timeline: Timeline = {
     },
     {
       time: "",
-      segment: "BREAKOUT 4: Women in STEM",
-      title: "Michelle Alarcon",
-      subtitle: "President, Analytics Association of the Philippines",
+      segment:
+        "BREAKOUT 4: Investigating Generative AI Mechanisms for the Academe in Improving Educational Engagement and Outcomes",
+      title: "Dr. Michelle P. Banawan",
+      subtitle: "Academic Program Director, Asian Institute of Management",
+
+
     },
     {
       time: "4:11 PM - 4:45 PM",
