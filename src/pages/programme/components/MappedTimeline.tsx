@@ -48,20 +48,20 @@ const timeline: Timeline = {
       time: "9:16 AM - 9:30 AM",
       segment: "CHEDˣ2.0 : The Road Ahead for Higher Ed",
       title: "Atty. Cinderella Filipina S. Benitez-Jaro",
-      subtitle: "CHED Executive Director IV",
+      subtitle: "Executive Director IV, Commission on Higher Education",
     },
     {
       time: "9:31 AM - 9:45 AM",
       segment: "Presentation of the CHEDx2023 Coffee Table Book to CHED",
-      title: "Dr. Ma. Teresita Medado",
+      title: "Dr. Ma. Teresita P. Medado",
       subtitle: "President, Asia Pacific College",
     },
     {
       time: "9:46 AM - 10:15 AM",
       segment:
         "Keynote Speaker: Building Synergy, Aligning with Industry, Leveraging IT Expertise",
-      title: "Secretary J. Prospero E. de Vera III",
-      subtitle: "Commission on Higher Education",
+      title: "Dr. J. Prospero E. de Vera III",
+      subtitle: "Secretary, Commission on Higher Education",
     },
     {
       time: "10:16 AM - 10:45 AM",
@@ -99,14 +99,14 @@ const timeline: Timeline = {
     {
       time: "1:00 PM - 1:30 PM",
       segment: "Embracing Digital Transformation in Higher Education",
-      title: "Commissioner Shirely C. Agrupis",
-      subtitle: "Commission on Higher Education",
+      title: "Dr. Shirely C. Agrupis",
+      subtitle: "Commissioner, Commission on Higher Education",
     },
     {
       time: "1:31 PM - 2:00 PM",
       segment:
         "Bringing the Industry to the Academe: Conceive Design Implement Operate (CDIO) Framework",
-      title: "Mr Kim Fai SOH",
+      title: "Mr. Kim Fai SOH",
       subtitle:
         "Deputy  Director, School of Mechanical and  Aeronautical Engineering, Singapore Polytechnic",
     },
@@ -129,7 +129,7 @@ const timeline: Timeline = {
       time: "",
       segment:
         "BREAKOUT 2: Investigating Generative AI Mechanisms for the Academe in Improving Educational Engagement and Outcomes",
-      title: "Michelle Banawan, PhD",
+      title: "Dr. Michelle P. Banawan",
       subtitle: "Academic Program Director, Asian Institute of Management",
     },
     {
@@ -142,7 +142,7 @@ const timeline: Timeline = {
       time: "3:41 PM - 4:10 PM",
       segment:
         "BREAKOUT 3: The Future of Work: How Digital Transformation Is Changing Workforce Requirements and Skills",
-      title: "Dr. Dodjie Maestrecampo",
+      title: "Dr. Dodjie S. Maestrecampo",
       subtitle: "President, Mapua University",
     },
     {
@@ -204,7 +204,7 @@ const timeline: Timeline = {
     {
       time: "9:06 AM - 9:55 AM",
       segment: "PSF Foundational Overview",
-      title: "Raymond S Cardino",
+      title: "Raymond S. Cardino",
       subtitle: "DTI PTTC,  Program Developer and PSF Advocate",
     },
     {
@@ -225,14 +225,14 @@ const timeline: Timeline = {
         "BREAKOUT 9: Contact Center & Business Process Management PSF: Emerging Tech Career Pathways",
       title: "Atty. Ma. Jamea Garcia",
       subtitle:
-        "Contact Center Association of the Philippines (CCAP), Board of Director",
+        "Board of Director, Contact Center Association of the Philippines (CCAP)",
     },
     {
       time: "",
       segment:
         "BREAKOUT 10: Global In-House Center PSF: Emerging Tech Career Pathway",
       title: "Christine Bata",
-      subtitle: "Global In-House Center Council (GICC), Executive Director",
+      subtitle: "Executive Director, Global In-House Center Council (GICC)",
     },
     {
       time: "11:46 PM - 1:00 PM",
@@ -246,7 +246,7 @@ const timeline: Timeline = {
         "BREAKOUT 11: Digital Arts and Animation PSF: Emerging Tech Career Pathways",
       title: "Daniel Enriquez",
       subtitle:
-        "Animation Council of the Philippines (ACPI), Executive Director and Member of the TEchnical Panel for Game Development and Animation",
+        "Executive Director and Member of the TEchnical Panel for Game Development and Animation, Animation Council of the Philippines (ACPI)",
     },
     {
       time: "",
@@ -254,13 +254,13 @@ const timeline: Timeline = {
         "BREAKOUT 12: Game Development PSF: Emerging Tech Career Pathways",
       title: "Norman Lee",
       subtitle:
-        "Game Developers Association of the Philippines (GDAP), Board Trustee and Chairperson of the Technical Panel for Game Development and Animation",
+        "Board Trustee and Chairperson of the Technical Panel for Game Development and Animation, Game Developers Association of the Philippines (GDAP)",
     },
     {
       time: "1:46 PM - 2:30 PM",
       segment:
         "BREAKOUT 13: Health Information Management PSF: Emerging Tech Career Pathways",
-      title: "Dr Carlos Ongaco",
+      title: "Dr. Carlos Ongaco",
       subtitle:
         "Co-Founder and President, MedCode, Inc. for Healthcare Information Management Association of the Philippines, Inc.. (HIMAP)",
     },
@@ -270,7 +270,7 @@ const timeline: Timeline = {
         "BREAKOUT 14: Software Development and Security: PSF Emerging Tech Career Pathways",
       title: "Allan Tan",
       subtitle:
-        "Philippine Software Industry Association (PSIA), Board Trustee",
+        "Board Trustee, Philippine Software Industry Association (PSIA)",
     },
     {
       time: "2:31 PM - 2:45 PM",
@@ -283,8 +283,8 @@ const timeline: Timeline = {
       segment:
         "Building Synergy: Aligning IT Education with Industry Demands (panel discussion with audience Q & A)",
       title: `
-              Dr. Rolyn Daguil, PhD, <p>President, Caraga State University</p>
-              Dr. Bobby D. Gerardo, D. Eng,<p>President, Northern Iloilo State University</p>
+              Dr. Rolyn Daguil, <p>President, Caraga State University</p>
+              Dr. Bobby D. Gerardo,<p>President, Northern Iloilo State University</p>
               Dr. Cherry Lyn Sta. Romana, <p>Dean, College of Computer Studies, Cebu Institute of Technology-University</p>
               Frankie Antolin, <p>Executive Director for Talent Attraction and Development, IT & Business Process Association of the Philippines</p>
               Jonathan Defensor De Luzuriaga, <p>President, Philippine Software Industry Association</p>
@@ -309,7 +309,7 @@ const timeline: Timeline = {
       time: "4:31 PM - 5:00 PM",
       segment: "Closing Remarks",
       title: "Dr. Cherri Melanie Ancheta-Diego",
-      subtitle: "Director IV, OPSD",
+      subtitle: "Director IV, OPSD, Commission on Higher Education",
     },
   ],
 };

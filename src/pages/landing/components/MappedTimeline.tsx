@@ -53,20 +53,20 @@ const timeline: Timeline = {
       time: "9:16 AM - 9:30 AM",
       segment: "CHEDˣ2.0 : The Road Ahead for Higher Ed",
       title: "Atty. Cinderella Filipina S. Benitez-Jaro",
-      subtitle: "CHED Executive Director IV",
+      subtitle: "Executive Director IV, Commission on Higher Education",
     },
     {
       time: "9:31 AM - 9:45 AM",
       segment: "Presentation of the CHEDx2023 Coffee Table Book to CHED",
-      title: "Dr. Ma. Teresita Medado",
+      title: "Dr. Ma. Teresita P. Medado",
       subtitle: "President, Asia Pacific College",
     },
     {
       time: "9:46 AM - 10:15 AM",
       segment:
         "Keynote Speaker: Building Synergy, Aligning with Industry, Leveraging IT Expertise",
-      title: "Secretary J. Prospero E. de Vera III",
-      subtitle: "Commission on Higher Education",
+      title: "Dr. J. Prospero E. de Vera III",
+      subtitle: "Secretary, Commission on Higher Education",
     },
     {
       time: "10:16 AM - 10:45 AM",
@@ -104,16 +104,16 @@ const timeline: Timeline = {
     {
       time: "1:00 PM - 1:30 PM",
       segment: "Embracing Digital Transformation in Higher Education",
-      title: "Commissioner Shirely C. Agrupis",
-      subtitle: "Commission on Higher Education",
+      title: "Dr. Shirely C. Agrupis",
+      subtitle: "Commissioner, Commission on Higher Education",
     },
     {
       time: "1:31 PM - 2:00 PM",
       segment:
         "Bringing the Industry to the Academe: Conceive Design Implement Operate (CDIO) Framework",
-      title: "Mr Kim Fai SOH",
+      title: "Mr. Kim Fai SOH",
       subtitle:
-        "Deputy  Director, School of Mechanical and  Aeronautical Engineering, Singapore Polytechnic",
+        "Deputy Director, School of Mechanical and  Aeronautical Engineering, Singapore Polytechnic",
     },
     {
       time: "2:01 PM - 2:45 PM",
@@ -134,7 +134,7 @@ const timeline: Timeline = {
       time: "",
       segment:
         "BREAKOUT 2: Investigating Generative AI Mechanisms for the Academe in Improving Educational Engagement and Outcomes",
-      title: "Michelle Banawan, PhD",
+      title: "Dr. Michelle Banawan",
       subtitle: "Academic Program Director, Asian Institute of Management",
     },
     {
@@ -147,7 +147,7 @@ const timeline: Timeline = {
       time: "3:41 PM - 4:10 PM",
       segment:
         "BREAKOUT 3: The Future of Work: How Digital Transformation Is Changing Workforce Requirements and Skills",
-      title: "Dr. Dodjie Maestrecampo",
+      title: "Dr. Dodjie S. Maestrecampo",
       subtitle: "President, Mapua University",
     },
     {
