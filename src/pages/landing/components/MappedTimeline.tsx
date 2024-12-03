@@ -189,6 +189,12 @@ const timeline: Timeline = {
     },
     {
       time: "5:16 PM - 5:30 PM",
+      segment: "Transitioning CHEDx 2.0 to CHEDx 2025: Levelling up Onwards",
+      title: "Dr. Cherry Lyn Sta. Romana",
+      subtitle: "Dean, College of Computer Studies, Cebu Institute of Technology-University",
+    },
+    {
+      time: "5:31 PM - 5:45 PM",
       segment: "Highlights of Day 1",
       title: "",
       subtitle: "",
