@@ -48,6 +48,12 @@ const speakersData = [
     affil: "Global In-House Center Council",
   },
   {
+    name: "Yue Yean Feng",
+    img: "/speakers/yean-feng.png",
+    tittle: "Head of IBM Corporate Social Responsibility",
+    affil: "IBM Asia Pacific",
+  },
+  {
     name: "Dr. Carlos Ongaco",
     img: "/speakers/carlos-ongaco.jpg",
     tittle: "Co-Founder and President",
