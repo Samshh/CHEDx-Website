@@ -62,7 +62,7 @@ export default function BreakoutSessions() {
       company: "President - Mapua University",
     },
     {
-      title: "Women in STEM",
+      title: "Women in STEM: Towards a True Inclusive and Innovative Future",
       subtitle: "President",
       time: "3:16 PM - 4:00 PM",
       room: "Room B",
@@ -162,7 +162,7 @@ export default function BreakoutSessions() {
         return BreakoutRoom2;
       case "The Future of Work: How Digital Transformation Is Changing Workforce Requirements and Skills":
         return BreakoutRoom3;
-      case "Women in STEM":
+      case "Women in STEM: Towards a True Inclusive and Innovative Future":
         return BreakoutRoom4;
       case "Integrating Soft Skills with Domain Expertise for IT Professionals":
         return BreakoutRoom5;
