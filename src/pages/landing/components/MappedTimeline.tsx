@@ -85,7 +85,7 @@ const timeline: Timeline = {
     },
     {
       time: "11:01 AM - 11:30 PM",
-      segment: "Opening of the Exhibits and Ribbon Cutting",
+      segment: "Opening of the Exhibits",
       title: "Exhibits Tour",
       subtitle: "",
     },
