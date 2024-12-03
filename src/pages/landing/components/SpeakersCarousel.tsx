@@ -23,7 +23,7 @@ export default function SpeakersCarousel() {
 
     gsap.to(carousel, {
       x: `-${totalWidth}px`,
-      duration: 30,
+      duration: 45,
       ease: "none",
       repeat: -1,
     });
