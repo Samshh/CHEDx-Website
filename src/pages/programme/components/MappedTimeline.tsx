@@ -129,7 +129,7 @@ const timeline: Timeline = {
       time: "",
       segment: "BREAKOUT 2: Women in STEM: Towards a True Inclusive and Innovative Future",
       title: "Michelle Alarcon",
-      subtitle: "President, Analytics Association of the Philippines",
+      subtitle: "President, Analytics and Artificial Intelligence Association of the Philippines (AAP)",
     },
     {
       time: "3:31 PM - 3:40 PM",
