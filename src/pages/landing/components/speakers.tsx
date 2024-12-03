@@ -6,6 +6,12 @@ const speakersData = [
     affil: "Commission on Higher Education",
   },
   {
+    name: "Dr. Shirley C. Agrupis",
+    img: "/speakers/shirley-agrupis.jpg",
+    tittle: "Commissioner",
+    affil: "Commission on Higher Education",
+  },
+  {
     name: "Dr. Dodjie Maestrecampo",
     img: "/speakers/dodjie-maestrecampo.jpg",
     tittle: "President",
@@ -75,7 +81,7 @@ const speakersData = [
     name: "Michell Alarcon",
     img: "/speakers/michelle-alarcon.png",
     tittle: "President",
-    affil: "Analytics Association of the Philippines",
+    affil: "Analytics and Artificial Intelligence Association of the Philippines (AAP)",
   },
   {
     name: "Asso. Prof. Stephen Alayon",

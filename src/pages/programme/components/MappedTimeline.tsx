@@ -99,7 +99,7 @@ const timeline: Timeline = {
     {
       time: "1:00 PM - 1:30 PM",
       segment: "Embracing Digital Transformation in Higher Education",
-      title: "Dr. Shirely C. Agrupis",
+      title: "Dr. Shirley C. Agrupis",
       subtitle: "Commissioner, Commission on Higher Education",
     },
     {
