@@ -310,8 +310,8 @@ const timeline: Timeline = {
     {
       time: "4:31 PM - 5:00 PM",
       segment: "Closing Remarks",
-      title: "Dr. Cherri Melanie Ancheta-Diego",
-      subtitle: "Director IV, OPSD, Commission on Higher Education",
+      title: "Dr. Maricar R. Casquejo, CESO III",
+      subtitle: "Director IV, Commission on Higher Education Regional Office XI",
     },
   ],
 };
