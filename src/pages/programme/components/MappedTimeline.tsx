@@ -311,7 +311,7 @@ const timeline: Timeline = {
       time: "4:31 PM - 5:00 PM",
       segment: "Closing Remarks",
       title: "Dr. Maricar R. Casquejo, CESO III",
-      subtitle: "Director IV, Commission on Higher Education",
+      subtitle: "Director IV, Commission on Higher Education Regional Office XI",
     },
   ],
 };
